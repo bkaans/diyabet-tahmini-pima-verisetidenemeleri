@@ -91,7 +91,7 @@ Bu yapı sayesinde aynı kaynak aileden gelen örneklerin hem eğitim hem test t
 
 ## Dahil Edilen Deney Aileleri
 
-Repo yalnız final artifact'ten oluşmaz. Hoca deney akışını kontrol edebilsin diye veri artırmadan denemeler, literatür profilleri, leakage kontrollü sentetik benchmarklar, küçük/orta ölçek sweep sonuçları ve risk audit raporları da proje içinde bırakıldı.
+Repo yalnız final artifact'ten oluşmaz. Deney akışları kontrol edilebilsin diye veri artırmadan denemeler, literatür profilleri, leakage kontrollü sentetik benchmarklar, küçük/orta ölçek sweep sonuçları ve risk audit raporları da proje içinde bırakılmıştır.
 
 Öne çıkan deney aileleri:
 
@@ -114,8 +114,6 @@ Deney raporları:
 - `makine_ogrenmesi/raporlar/degerlendirme/`
 - `makine_ogrenmesi/raporlar/grafikler_min90_small_scale/`
 - `makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/`
-
-Repo dışı bırakılanlar yalnız çalışma çöpüdür: `.venv`, `tmp`, `node_modules`, cache klasörleri, `.DS_Store` ve eski büyük artifact yedekleri.
 
 ## Kurulum
 
