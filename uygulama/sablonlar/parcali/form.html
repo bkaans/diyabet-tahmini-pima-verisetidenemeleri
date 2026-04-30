@@ -1,0 +1,70 @@
+<form method="post" action="{{ url_for('sonuc_sayfasi') }}" class="risk-formu" id="risk-formu">
+  <div class="alan-grup">
+    <h3>Kişisel Bilgiler</h3>
+
+    <label class="form-alani">
+      <span class="alan-baslik">Yaş (Age) <span class="birim">Yıl</span></span>
+      <input type="number" name="age" min="18" max="120" step="1" required placeholder="Örn: 32"
+        value="{{ form_data.get('age', '') if form_data else '' }}" />
+      <small class="alan-yardim">Geçerli aralık: 18-120</small>
+    </label>
+
+    <label class="form-alani">
+      <span class="alan-baslik">Gebelik Sayısı (Pregnancies)</span>
+      <input type="number" name="pregnancies" min="0" max="20" step="1" required placeholder="Örn: 2"
+        value="{{ form_data.get('pregnancies', '') if form_data else '' }}" />
+      <small class="alan-yardim">Geçerli aralık: 0-20</small>
+    </label>
+
+    <label class="form-alani">
+      <span class="alan-baslik">Soyağacı Fonksiyonu (DPF)</span>
+      <input type="number" name="diabetes_pedigree_function" min="0" max="3" step="0.001" required placeholder="Örn: 0.627"
+        value="{{ form_data.get('diabetes_pedigree_function', '') if form_data else '' }}" />
+      <small class="alan-yardim">Geçerli aralık: 0-3</small>
+    </label>
+  </div>
+
+  <div class="alan-grup">
+    <h3>Klinik Ölçümler</h3>
+
+    <label class="form-alani">
+      <span class="alan-baslik">Glikoz (Glucose) <span class="birim">mg/dL</span></span>
+      <input type="number" name="glucose" min="0" max="300" step="0.1" required placeholder="Örn: 120"
+        value="{{ form_data.get('glucose', '') if form_data else '' }}" />
+      <small class="alan-yardim">Geçerli aralık: 0-300</small>
+    </label>
+
+    <label class="form-alani">
+      <span class="alan-baslik">Kan Basıncı (Blood Pressure) <span class="birim">mmHg</span></span>
+      <input type="number" name="blood_pressure" min="0" max="200" step="0.1" required placeholder="Örn: 72"
+        value="{{ form_data.get('blood_pressure', '') if form_data else '' }}" />
+      <small class="alan-yardim">Geçerli aralık: 0-200</small>
+    </label>
+
+    <label class="form-alani">
+      <span class="alan-baslik">Cilt Kalınlığı (Skin Thickness) <span class="birim">mm</span></span>
+      <input type="number" name="skin_thickness" min="0" max="120" step="0.1" required placeholder="Örn: 35"
+        value="{{ form_data.get('skin_thickness', '') if form_data else '' }}" />
+      <small class="alan-yardim">Geçerli aralık: 0-120</small>
+    </label>
+
+    <label class="form-alani">
+      <span class="alan-baslik">İnsülin (Insulin) <span class="birim">µU/mL</span></span>
+      <input type="number" name="insulin" min="0" max="1000" step="0.1" required placeholder="Örn: 79"
+        value="{{ form_data.get('insulin', '') if form_data else '' }}" />
+      <small class="alan-yardim">Geçerli aralık: 0-1000</small>
+    </label>
+
+    <label class="form-alani">
+      <span class="alan-baslik">Vücut Kitle İndeksi (BMI) <span class="birim">kg/m²</span></span>
+      <input type="number" name="bmi" min="0" max="80" step="0.1" required placeholder="Örn: 33.6"
+        value="{{ form_data.get('bmi', '') if form_data else '' }}" />
+      <small class="alan-yardim">Geçerli aralık: 0-80</small>
+    </label>
+  </div>
+
+  <div class="buton-alani">
+    <button type="reset" class="buton ikincil">Tümünü Temizle</button>
+    <button type="submit" class="buton">Tahmini Hesapla</button>
+  </div>
+</form>

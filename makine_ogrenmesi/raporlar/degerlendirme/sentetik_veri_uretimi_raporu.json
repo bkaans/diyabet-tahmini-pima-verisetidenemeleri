@@ -1,0 +1,51 @@
+{
+  "orijinal_veri": {
+    "satir_sayisi": 768,
+    "sinif_dagilimi": {
+      "0": 500,
+      "1": 268
+    },
+    "sha256": "3c7023e0935097ac63e03c6f398928b6dfce30974d5591d3af09a9661876d9fe"
+  },
+  "final_veri": {
+    "yol": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/sentetik_gercek_pima.csv",
+    "metadata_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/sentetik_gercek_pima_metadata.csv",
+    "split_manifest_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/sentetik_gercek_pima_split_manifest.json",
+    "satir_sayisi": 10000,
+    "sinif_dagilimi": {
+      "0": 5000,
+      "1": 5000
+    },
+    "kolonlar": [
+      "Pregnancies",
+      "Glucose",
+      "BloodPressure",
+      "Insulin",
+      "BMI",
+      "DiabetesPedigreeFunction",
+      "Age",
+      "Outcome"
+    ],
+    "sha256": "c42717071de129de75c31b965349648820dfcbe080bde116350e750ca58d75bd"
+  },
+  "veri_uretim_raporlari": [
+    {
+      "veri_adayi": "sentetik_hybrid_5000x2",
+      "hedef_sinif_sayisi": 5000,
+      "satir_sayisi": 10000,
+      "sinif_dagilimi": {
+        "0": 5000,
+        "1": 5000
+      },
+      "orijinal_satir_sayisi": 768,
+      "sentetik_satir_sayisi": 9232,
+      "teknik_sayilari": {
+        "original_cleaned": 768,
+        "class_conditional_bootstrap_noise": 4154,
+        "smote_like_interpolation": 3231,
+        "class_conditional_gaussian": 1847
+      },
+      "not": "Orijinal PIMA temizlendi, sinif kosullu kontrollu sentetik veriyle dengelendi."
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "amac": "Veri seti boyutunu degistirmeden 9-12 teknik ekseninde optimizasyon",
+  "kurulum": {
+    "veri_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv",
+    "test_boyutu": 0.2,
+    "dogrulama_boyutu": 0.25,
+    "cv": 5,
+    "random_state": 42
+  },
+  "bolme_bilgisi": {
+    "egitim": 460,
+    "dogrulama": 154,
+    "test": 154
+  },
+  "en_iyi_sonuc": {
+    "deney_adi": "xgboost_no_smote",
+    "model_tipi": "xgboost",
+    "smote_kullan": false,
+    "class_weight": "yok",
+    "kalibrasyon": "none",
+    "esik_yontemi": "accuracy_oncelikli_f1_kisitli",
+    "esik": 0.37999999999999995,
+    "dogrulama_accuracy": 0.7727272727272727,
+    "dogrulama_f1": 0.732824427480916,
+    "metrikler": {
+      "accuracy": 0.7727272727272727,
+      "precision": 0.6301369863013698,
+      "recall": 0.8518518518518519,
+      "f1": 0.7244094488188977,
+      "roc_auc": 0.8262962962962963,
+      "brier": 0.16619129478931427
+    },
+    "brier_iyilesme_orani": 0.0,
+    "cv_roc_auc": 0.8176041666666667,
+    "en_iyi_parametreler": {
+      "model__colsample_bytree": 0.8,
+      "model__learning_rate": 0.05,
+      "model__max_depth": 3,
+      "model__n_estimators": 150,
+      "model__scale_pos_weight": 1.875,
+      "model__subsample": 0.8
+    }
+  },
+  "hedefler": {
+    "accuracy_min": 0.78,
+    "roc_auc_min": 0.8,
+    "f1_min": 0.7,
+    "brier_iyilesme_orani_min": 0.1
+  },
+  "hedef_durumu": {
+    "accuracy": false,
+    "roc_auc": true,
+    "f1": true,
+    "brier_iyilesme_orani": false,
+    "tum_hedefler": false
+  },
+  "sirali_sonuclar": [
+    {
+      "deney_adi": "xgboost_no_smote",
+      "model_tipi": "xgboost",
+      "smote_kullan": false,
+      "class_weight": "yok",
+      "kalibrasyon": "none",
+      "esik_yontemi": "accuracy_oncelikli_f1_kisitli",
+      "esik": 0.37999999999999995,
+      "dogrulama_accuracy": 0.7727272727272727,
+      "dogrulama_f1": 0.732824427480916,
+      "metrikler": {
+        "accuracy": 0.7727272727272727,
+        "precision": 0.6301369863013698,
+        "recall": 0.8518518518518519,
+        "f1": 0.7244094488188977,
+        "roc_auc": 0.8262962962962963,
+        "brier": 0.16619129478931427
+      },
+      "brier_iyilesme_orani": 0.0,
+      "cv_roc_auc": 0.8176041666666667,
+      "en_iyi_parametreler": {
+        "model__colsample_bytree": 0.8,
+        "model__learning_rate": 0.05,
+        "model__max_depth": 3,
+        "model__n_estimators": 150,
+        "model__scale_pos_weight": 1.875,
+        "model__subsample": 0.8
+      }
+    },
+    {
+      "deney_adi": "xgboost_no_smote",
+      "model_tipi": "xgboost",
+      "smote_kullan": false,
+      "class_weight": "yok",
+      "kalibrasyon": "none",
+      "esik_yontemi": "f1_optimum_dogrulama",
+      "esik": 0.37999999999999995,
+      "dogrulama_accuracy": 0.7727272727272727,
+      "dogrulama_f1": 0.732824427480916,
+      "metrikler": {
+        "accuracy": 0.7727272727272727,
+        "precision": 0.6301369863013698,
+        "recall": 0.8518518518518519,
+        "f1": 0.7244094488188977,
+        "roc_auc": 0.8262962962962963,
+        "brier": 0.16619129478931427
+      },
+      "brier_iyilesme_orani": 0.0,
+      "cv_roc_auc": 0.8176041666666667,
+      "en_iyi_parametreler": {
+        "model__colsample_bytree": 0.8,
+        "model__learning_rate": 0.05,
+        "model__max_depth": 3,
+        "model__n_estimators": 150,
+        "model__scale_pos_weight": 1.875,
+        "model__subsample": 0.8
+      }
+    },
+    {
+      "deney_adi": "random_forest_balanced",
+      "model_tipi": "random_forest",
+      "smote_kullan": false,
+      "class_weight": "balanced",
+      "kalibrasyon": "none",
+      "esik_yontemi": "accuracy_oncelikli_f1_kisitli",
+      "esik": 0.4599999999999999,
+      "dogrulama_accuracy": 0.7987012987012987,
+      "dogrulama_f1": 0.752,
+      "metrikler": {
+        "accuracy": 0.7727272727272727,
+        "precision": 0.6417910447761194,
+        "recall": 0.7962962962962963,
+        "f1": 0.7107438016528925,
+        "roc_auc": 0.825,
+        "brier": 0.1671092231373129
+      },
+      "brier_iyilesme_orani": 0.0,
+      "cv_roc_auc": 0.8247916666666667,
+      "en_iyi_parametreler": {
+        "model__max_depth": 5,
+        "model__min_samples_leaf": 3,
+        "model__n_estimators": 300
+      }
+    },
+    {
+      "deney_adi": "random_forest_balanced",
+      "model_tipi": "random_forest",
+      "smote_kullan": false,
+      "class_weight": "balanced",
+      "kalibrasyon": "none",
+      "esik_yontemi": "f1_optimum_dogrulama",
+      "esik": 0.4599999999999999,
+      "dogrulama_accuracy": 0.7987012987012987,
+      "dogrulama_f1": 0.752,
+      "metrikler": {
+        "accuracy": 0.7727272727272727,
+        "precision": 0.6417910447761194,
+        "recall": 0.7962962962962963,
+        "f1": 0.7107438016528925,
+        "roc_auc": 0.825,
+        "brier": 0.1671092231373129
+      },
+      "brier_iyilesme_orani": 0.0,
+      "cv_roc_auc": 0.8247916666666667,
+      "en_iyi_parametreler": {
+        "model__max_depth": 5,
+        "model__min_samples_leaf": 3,
+        "model__n_estimators": 300
+      }
+    },
+    {
+      "deney_adi": "xgboost_no_smote",
+      "model_tipi": "xgboost",
+      "smote_kullan": false,
+      "class_weight": "yok",
+      "kalibrasyon": "sigmoid",
+      "esik_yontemi": "f1_optimum_dogrulama",
+      "esik": 0.32999999999999996,
+      "dogrulama_accuracy": 0.7792207792207793,
+      "dogrulama_f1": 0.7258064516129032,
+      "metrikler": {
+        "accuracy": 0.7662337662337663,
+        "precision": 0.6285714285714286,
+        "recall": 0.8148148148148148,
+        "f1": 0.7096774193548387,
+        "roc_auc": 0.8288888888888888,
+        "brier": 0.16240038056303518
+      },
+      "brier_iyilesme_orani": 0.022810546311014316,
+      "cv_roc_auc": 0.8176041666666667,
+      "en_iyi_parametreler": {
+        "model__colsample_bytree": 0.8,
+        "model__learning_rate": 0.05,
+        "model__max_depth": 3,
+        "model__n_estimators": 150,
+        "model__scale_pos_weight": 1.875,
+        "model__subsample": 0.8
+      }
+    },
+    {
+      "deney_adi": "xgboost_smote",
+      "model_tipi": "xgboost",
+      "smote_kullan": true,
+      "class_weight": "yok",
+      "kalibrasyon": "none",
+      "esik_yontemi": "f1_optimum_dogrulama",
+      "esik": 0.3999999999999999,
+      "dogrulama_accuracy": 0.7792207792207793,
+      "dogrulama_f1": 0.7301587301587301,
+      "metrikler": {
+        "accuracy": 0.7662337662337663,
+        "precision": 0.6285714285714286,
+        "recall": 0.8148148148148148,
+        "f1": 0.7096774193548387,
+        "roc_auc": 0.8253703703703703,
+        "brier": 0.16925618052482605
+      },
+      "brier_iyilesme_orani": 0.0,
+      "cv_roc_auc": 0.8226041666666667,
+      "en_iyi_parametreler": {
+        "model__colsample_bytree": 0.8,
+        "model__learning_rate": 0.05,
+        "model__max_depth": 3,
+        "model__n_estimators": 150,
+        "model__subsample": 0.8
+      }
+    },
+    {
+      "deney_adi": "random_forest_balanced",
+      "model_tipi": "random_forest",
+      "smote_kullan": false,
+      "class_weight": "balanced",
+      "kalibrasyon": "sigmoid",
+      "esik_yontemi": "accuracy_oncelikli_f1_kisitli",
+      "esik": 0.33499999999999996,
+      "dogrulama_accuracy": 0.8051948051948052,
+      "dogrulama_f1": 0.7580645161290323,
+      "metrikler": {
+        "accuracy": 0.7662337662337663,
+        "precision": 0.6285714285714286,
+        "recall": 0.8148148148148148,
+        "f1": 0.7096774193548387,
+        "roc_auc": 0.825,
+        "brier": 0.1638695968538842
+      },
+      "brier_iyilesme_orani": 0.01938628055715832,
+      "cv_roc_auc": 0.8247916666666667,
+      "en_iyi_parametreler": {
+        "model__max_depth": 5,
+        "model__min_samples_leaf": 3,
+        "model__n_estimators": 300
+      }
+    },
+    {
+      "deney_adi": "random_forest_balanced",
+      "model_tipi": "random_forest",
+      "smote_kullan": false,
+      "class_weight": "balanced",
+      "kalibrasyon": "sigmoid",
+      "esik_yontemi": "f1_optimum_dogrulama",
+      "esik": 0.33499999999999996,
+      "dogrulama_accuracy": 0.8051948051948052,
+      "dogrulama_f1": 0.7580645161290323,
+      "metrikler": {
+        "accuracy": 0.7662337662337663,
+        "precision": 0.6285714285714286,
+        "recall": 0.8148148148148148,
+        "f1": 0.7096774193548387,
+        "roc_auc": 0.825,
+        "brier": 0.1638695968538842
+      },
+      "brier_iyilesme_orani": 0.01938628055715832,
+      "cv_roc_auc": 0.8247916666666667,
+      "en_iyi_parametreler": {
+        "model__max_depth": 5,
+        "model__min_samples_leaf": 3,
+        "model__n_estimators": 300
+      }
+    },
+    {
+      "deney_adi": "xgboost_no_smote",
+      "model_tipi": "xgboost",
+      "smote_kullan": false,
+      "class_weight": "yok",
+      "kalibrasyon": "isotonic",
+      "esik_yontemi": "accuracy_oncelikli_f1_kisitli",
+      "esik": 0.295,
+      "dogrulama_accuracy": 0.7792207792207793,
+      "dogrulama_f1": 0.734375,
+      "metrikler": {
+        "accuracy": 0.7597402597402597,
+        "precision": 0.6133333333333333,
+        "recall": 0.8518518518518519,
+        "f1": 0.7131782945736435,
+        "roc_auc": 0.8297222222222221,
+        "brier": 0.16392448158618864
+      },
+      "brier_iyilesme_orani": 0.013639783034360142,
+      "cv_roc_auc": 0.8176041666666667,
+      "en_iyi_parametreler": {
+        "model__colsample_bytree": 0.8,
+        "model__learning_rate": 0.05,
+        "model__max_depth": 3,
+        "model__n_estimators": 150,
+        "model__scale_pos_weight": 1.875,
+        "model__subsample": 0.8
+      }
+    },
+    {
+      "deney_adi": "xgboost_no_smote",
+      "model_tipi": "xgboost",
+      "smote_kullan": false,
+      "class_weight": "yok",
+      "kalibrasyon": "isotonic",
+      "esik_yontemi": "f1_optimum_dogrulama",
+      "esik": 0.285,
+      "dogrulama_accuracy": 0.7792207792207793,
+      "dogrulama_f1": 0.734375,
+      "metrikler": {
+        "accuracy": 0.7532467532467533,
+        "precision": 0.6052631578947368,
+        "recall": 0.8518518518518519,
+        "f1": 0.7076923076923077,
+        "roc_auc": 0.8297222222222221,
+        "brier": 0.16392448158618864
+      },
+      "brier_iyilesme_orani": 0.013639783034360142,
+      "cv_roc_auc": 0.8176041666666667,
+      "en_iyi_parametreler": {
+        "model__colsample_bytree": 0.8,
+        "model__learning_rate": 0.05,
+        "model__max_depth": 3,
+        "model__n_estimators": 150,
+        "model__scale_pos_weight": 1.875,
+        "model__subsample": 0.8
+      }
+    }
+  ]
+}

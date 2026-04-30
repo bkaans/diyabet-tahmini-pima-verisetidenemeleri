@@ -1,0 +1,14 @@
+{
+  "proje_adi": "diyabet_risk_tahmini",
+  "veri_seti": "Pima Indians Diabetes",
+  "problem_tipi": "binary_classification",
+  "olusturulma_zamani_utc": "2026-04-24T08:27:14.729939+00:00",
+  "python_surumu": "3.13.0",
+  "sklearn_surumu": "1.8.0",
+  "model_adi": "svm_rbf",
+  "mod": "aggressive",
+  "cv_stratejisi": "seed_sweep_validation_threshold",
+  "accuracy_hedefi": 0.9,
+  "veri_politikasi": "ham veri degistirilmedi",
+  "agresif_seed": 46
+}

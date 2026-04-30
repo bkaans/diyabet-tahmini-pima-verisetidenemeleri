@@ -1,0 +1,23 @@
+{
+  "ikili_siniflama_esikleri": {
+    "accuracy_validation": {
+      "esik": 0.47017833304301065,
+      "aciklama": "Validation set uzerinde accuracy maksimize eden esik."
+    },
+    "default_0_5": {
+      "esik": 0.5,
+      "aciklama": "Standart olasilik esigi."
+    }
+  },
+  "onerilen_ikili_siniflama_esigi": 0.47017833304301065,
+  "onerilen_ikili_siniflama_yontemi": "validation_accuracy_threshold",
+  "risk_kategorileri": {
+    "dusuk_ust_esik": 0.33,
+    "orta_ust_esik": 0.66,
+    "etiketler": [
+      "dusuk",
+      "orta",
+      "yuksek"
+    ]
+  }
+}

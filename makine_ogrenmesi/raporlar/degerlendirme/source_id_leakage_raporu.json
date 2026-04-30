@@ -1,0 +1,134 @@
+{
+  "olusturulma_zamani_utc": "2026-04-25T23:20:21.883054+00:00",
+  "external_holdout_kurali": "Orijinal external holdout sentetik uretimden once ayrildi ve model gelistirme surecine dahil edilmedi.",
+  "adaylar": [
+    {
+      "dataset_name": "orijinal_pima_baseline",
+      "total_rows": 614,
+      "original_rows": 614,
+      "synthetic_rows": 0,
+      "class_distribution": {
+        "0": 400,
+        "1": 214
+      },
+      "train_test_source_intersection_count": 0,
+      "cv_fold_source_intersection_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exact_duplicate_count": 0,
+      "near_duplicate_threshold": 0.02,
+      "near_duplicate_rate": 0.0,
+      "min_near_duplicate_distance": 0.43596069387688857,
+      "synthetic_rows_with_valid_original_source_id": 0,
+      "independent_synthetic_source_id_count": 0,
+      "external_holdout_source_overlap_count": 0,
+      "leakage_status": "clean",
+      "notes": "Sentetik satirlar original_{index} source_id ailesine baglidir."
+    },
+    {
+      "dataset_name": "sentetik_2500_per_class_pima",
+      "total_rows": 5000,
+      "original_rows": 614,
+      "synthetic_rows": 4386,
+      "class_distribution": {
+        "0": 2500,
+        "1": 2500
+      },
+      "train_test_source_intersection_count": 0,
+      "cv_fold_source_intersection_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exact_duplicate_count": 0,
+      "near_duplicate_threshold": 0.02,
+      "near_duplicate_rate": 0.0,
+      "min_near_duplicate_distance": 0.3590609810864254,
+      "synthetic_rows_with_valid_original_source_id": 4386,
+      "independent_synthetic_source_id_count": 0,
+      "external_holdout_source_overlap_count": 0,
+      "leakage_status": "clean",
+      "notes": "Sentetik satirlar original_{index} source_id ailesine baglidir."
+    },
+    {
+      "dataset_name": "sentetik_2700_per_class_pima",
+      "total_rows": 5400,
+      "original_rows": 614,
+      "synthetic_rows": 4786,
+      "class_distribution": {
+        "0": 2700,
+        "1": 2700
+      },
+      "train_test_source_intersection_count": 0,
+      "cv_fold_source_intersection_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exact_duplicate_count": 0,
+      "near_duplicate_threshold": 0.02,
+      "near_duplicate_rate": 0.0,
+      "min_near_duplicate_distance": 0.0967539908050949,
+      "synthetic_rows_with_valid_original_source_id": 4786,
+      "independent_synthetic_source_id_count": 0,
+      "external_holdout_source_overlap_count": 0,
+      "leakage_status": "clean",
+      "notes": "Sentetik satirlar original_{index} source_id ailesine baglidir."
+    },
+    {
+      "dataset_name": "sentetik_5000_per_class_pima",
+      "total_rows": 10000,
+      "original_rows": 614,
+      "synthetic_rows": 9386,
+      "class_distribution": {
+        "0": 5000,
+        "1": 5000
+      },
+      "train_test_source_intersection_count": 0,
+      "cv_fold_source_intersection_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exact_duplicate_count": 0,
+      "near_duplicate_threshold": 0.02,
+      "near_duplicate_rate": 0.0,
+      "min_near_duplicate_distance": 0.21589507024787857,
+      "synthetic_rows_with_valid_original_source_id": 9386,
+      "independent_synthetic_source_id_count": 0,
+      "external_holdout_source_overlap_count": 0,
+      "leakage_status": "clean",
+      "notes": "Sentetik satirlar original_{index} source_id ailesine baglidir."
+    }
+  ]
+}

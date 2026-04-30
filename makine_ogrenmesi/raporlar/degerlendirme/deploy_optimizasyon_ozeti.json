@@ -1,0 +1,19 @@
+{
+  "model": "xgboost_no_smote",
+  "kalibrasyon": "isotonic_cv5",
+  "brier_once": 0.17676477134227753,
+  "brier_sonra": 0.1612267696231907,
+  "brier_iyilesme_orani": 0.08790214023471841,
+  "brier_iyilesme_yuzde": 8.790214023471842,
+  "f1_opt_esik": 0.32,
+  "f1_opt_skor": 0.7076923076923077,
+  "metrik_ozeti": {
+    "accuracy": 0.7532467532467533,
+    "precision": 0.6052631578947368,
+    "recall": 0.8518518518518519,
+    "f1": 0.7076923076923077,
+    "roc_auc": 0.8222222222222221,
+    "brier": 0.1612267696231907,
+    "siniflama_esigi": 0.32
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "hedefler": {
+    "accuracy": 0.96,
+    "diger_ana_metrikler": 0.93,
+    "ana_metrikler": [
+      "accuracy",
+      "precision",
+      "recall",
+      "sensitivity",
+      "specificity",
+      "f1",
+      "roc_auc",
+      "balanced_accuracy"
+    ]
+  },
+  "en_iyi_sonuc": {
+    "durum": "tamamlandi",
+    "varyant": "smote_400x2_train",
+    "teknik": "smote",
+    "model": "extra_trees_full",
+    "model_notlari": [
+      "Güçlü ağaç tabanlı model; sentetik veride hızlı öğrenir."
+    ],
+    "varyant_notlari": [
+      "Train sınıfları yaklaşık 400/400 hedeflendi."
+    ],
+    "hedef_sinif_sayisi": 400,
+    "sentetik_satir_sayisi": 186,
+    "train_sinif_dagilimi": {
+      "0": 400,
+      "1": 400
+    },
+    "agresif_eval_sinif_dagilimi": {
+      "0": 200,
+      "1": 200
+    },
+    "threshold_ozeti": {
+      "esik": 0.5885714285714285,
+      "validation_metrikleri": {
+        "accuracy": 0.85625,
+        "precision": 0.8518518518518519,
+        "recall": 0.8625,
+        "sensitivity": 0.8625,
+        "specificity": 0.85,
+        "f1": 0.8571428571428571,
+        "roc_auc": 0.93265625,
+        "balanced_accuracy": 0.85625,
+        "brier": 0.10587936224489795,
+        "mcc": 0.7125556705864817,
+        "esik": 0.5885714285714285,
+        "confusion_matrix": {
+          "labels": [
+            0,
+            1
+          ],
+          "matris": [
+            [
+              68,
+              12
+            ],
+            [
+              11,
+              69
+            ]
+          ],
+          "tn": 68,
+          "fp": 12,
+          "fn": 11,
+          "tp": 69
+        },
+        "ana_metrik_minimumu": 0.85
+      },
+      "hedef_kapisi": {
+        "gecti": false,
+        "eksikler": {
+          "accuracy": {
+            "deger": 0.85625,
+            "hedef": 0.96
+          },
+          "precision": {
+            "deger": 0.8518518518518519,
+            "hedef": 0.93
+          },
+          "recall": {
+            "deger": 0.8625,
+            "hedef": 0.93
+          },
+          "sensitivity": {
+            "deger": 0.8625,
+            "hedef": 0.93
+          },
+          "specificity": {
+            "deger": 0.85,
+            "hedef": 0.93
+          },
+          "f1": {
+            "deger": 0.8571428571428571,
+            "hedef": 0.93
+          },
+          "balanced_accuracy": {
+            "deger": 0.85625,
+            "hedef": 0.93
+          }
+        }
+      },
+      "siralama_anahtari": [
+        false,
+        0.85,
+        0.85625,
+        0.8571428571428571,
+        0.93265625
+      ]
+    },
+    "honest_metrikler": {
+      "accuracy": 0.7337662337662337,
+      "precision": 0.6326530612244898,
+      "recall": 0.5740740740740741,
+      "sensitivity": 0.5740740740740741,
+      "specificity": 0.82,
+      "f1": 0.6019417475728155,
+      "roc_auc": 0.8315740740740741,
+      "balanced_accuracy": 0.697037037037037,
+      "brier": 0.16285422740524783,
+      "mcc": 0.4037216635973952,
+      "esik": 0.5885714285714285,
+      "confusion_matrix": {
+        "labels": [
+          0,
+          1
+        ],
+        "matris": [
+          [
+            82,
+            18
+          ],
+          [
+            23,
+            31
+          ]
+        ],
+        "tn": 82,
+        "fp": 18,
+        "fn": 23,
+        "tp": 31
+      },
+      "ana_metrik_minimumu": 0.5740740740740741
+    },
+    "agresif_metrikler": {
+      "accuracy": 0.995,
+      "precision": 1.0,
+      "recall": 0.99,
+      "sensitivity": 0.99,
+      "specificity": 1.0,
+      "f1": 0.9949748743718593,
+      "roc_auc": 1.0,
+      "balanced_accuracy": 0.995,
+      "brier": 0.015970739795918367,
+      "mcc": 0.9900495037128093,
+      "esik": 0.5885714285714285,
+      "confusion_matrix": {
+        "labels": [
+          0,
+          1
+        ],
+        "matris": [
+          [
+            200,
+            0
+          ],
+          [
+            2,
+            198
+          ]
+        ],
+        "tn": 200,
+        "fp": 0,
+        "fn": 2,
+        "tp": 198
+      },
+      "ana_metrik_minimumu": 0.99
+    },
+    "honest_hedef_kapisi": {
+      "gecti": false,
+      "eksikler": {
+        "accuracy": {
+          "deger": 0.7337662337662337,
+          "hedef": 0.96
+        },
+        "precision": {
+          "deger": 0.6326530612244898,
+          "hedef": 0.93
+        },
+        "recall": {
+          "deger": 0.5740740740740741,
+          "hedef": 0.93
+        },
+        "sensitivity": {
+          "deger": 0.5740740740740741,
+          "hedef": 0.93
+        },
+        "specificity": {
+          "deger": 0.82,
+          "hedef": 0.93
+        },
+        "f1": {
+          "deger": 0.6019417475728155,
+          "hedef": 0.93
+        },
+        "roc_auc": {
+          "deger": 0.8315740740740741,
+          "hedef": 0.93
+        },
+        "balanced_accuracy": {
+          "deger": 0.697037037037037,
+          "hedef": 0.93
+        }
+      }
+    },
+    "agresif_hedef_kapisi": {
+      "gecti": true,
+      "eksikler": {}
+    }
+  },
+  "agresif_hedef_kapisi": {
+    "gecti": true,
+    "eksikler": {}
+  },
+  "honest_hedef_kapisi": {
+    "gecti": false,
+    "eksikler": {
+      "accuracy": {
+        "deger": 0.7337662337662337,
+        "hedef": 0.96
+      },
+      "precision": {
+        "deger": 0.6326530612244898,
+        "hedef": 0.93
+      },
+      "recall": {
+        "deger": 0.5740740740740741,
+        "hedef": 0.93
+      },
+      "sensitivity": {
+        "deger": 0.5740740740740741,
+        "hedef": 0.93
+      },
+      "specificity": {
+        "deger": 0.82,
+        "hedef": 0.93
+      },
+      "f1": {
+        "deger": 0.6019417475728155,
+        "hedef": 0.93
+      },
+      "roc_auc": {
+        "deger": 0.8315740740740741,
+        "hedef": 0.93
+      },
+      "balanced_accuracy": {
+        "deger": 0.697037037037037,
+        "hedef": 0.93
+      }
+    }
+  }
+}

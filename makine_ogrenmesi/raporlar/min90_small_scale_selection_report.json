@@ -1,0 +1,714 @@
+{
+  "created_at_utc": "2026-04-26T20:31:17.063679+00:00",
+  "selection_goal": {
+    "synthetic_holdout_min_main_metric": 0.92,
+    "synthetic_holdout_accuracy": 0.93,
+    "synthetic_group_cv_min_main_metric_minimum": 0.9
+  },
+  "external_holdout_in_selection": false,
+  "final": {
+    "status": "completed",
+    "dataset_name": "small_t1000_s0p6_adaptive",
+    "target_per_class": 1000,
+    "model": "extra_trees",
+    "feature_set": "all_features",
+    "preprocessing": "tree_models_no_scaler",
+    "resampling": "class_weight=balanced",
+    "default_threshold_metrics": {
+      "accuracy": 0.9415887850467289,
+      "precision": 0.9563106796116505,
+      "recall": 0.9248826291079812,
+      "sensitivity": 0.9248826291079812,
+      "specificity": 0.958139534883721,
+      "f1": 0.9403341288782816,
+      "roc_auc": 0.9854787640572116,
+      "balanced_accuracy": 0.9415110819958511,
+      "mcc": 0.88363017643956,
+      "brier": 0.04720215107746968,
+      "threshold": 0.5,
+      "confusion_matrix": {
+        "tn": 206,
+        "fp": 9,
+        "fn": 16,
+        "tp": 197,
+        "matrix": [
+          [
+            206,
+            9
+          ],
+          [
+            16,
+            197
+          ]
+        ]
+      },
+      "ana_metrik_minimumu": 0.9248826291079812
+    },
+    "tuned_threshold_metrics": {
+      "accuracy": 0.9415887850467289,
+      "precision": 0.9563106796116505,
+      "recall": 0.9248826291079812,
+      "sensitivity": 0.9248826291079812,
+      "specificity": 0.958139534883721,
+      "f1": 0.9403341288782816,
+      "roc_auc": 0.9854787640572116,
+      "balanced_accuracy": 0.9415110819958511,
+      "mcc": 0.88363017643956,
+      "brier": 0.04720215107746968,
+      "threshold": 0.51,
+      "confusion_matrix": {
+        "tn": 206,
+        "fp": 9,
+        "fn": 16,
+        "tp": 197,
+        "matrix": [
+          [
+            206,
+            9
+          ],
+          [
+            16,
+            197
+          ]
+        ]
+      },
+      "ana_metrik_minimumu": 0.9248826291079812
+    },
+    "threshold_report": {
+      "default_threshold": 0.5,
+      "default_min_main_metric": 0.9419354838709677,
+      "selected_threshold": 0.51,
+      "tuned_min_main_metric": 0.9419354838709677,
+      "selected_validation_metrics": {
+        "accuracy": 0.9485530546623794,
+        "precision": 0.954248366013072,
+        "recall": 0.9419354838709677,
+        "sensitivity": 0.9419354838709677,
+        "specificity": 0.9551282051282052,
+        "f1": 0.948051948051948,
+        "roc_auc": 0.989516129032258,
+        "balanced_accuracy": 0.9485318444995865,
+        "mcc": 0.8971750079409676,
+        "brier": 0.03916192766602004,
+        "threshold": 0.51,
+        "confusion_matrix": {
+          "tn": 149,
+          "fp": 7,
+          "fn": 9,
+          "tp": 146,
+          "matrix": [
+            [
+              149,
+              7
+            ],
+            [
+              9,
+              146
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9419354838709677
+      }
+    },
+    "split": {
+      "method": "GroupShuffleSplit(source_id)",
+      "train_rows": 1572,
+      "test_rows": 428,
+      "train_source_families": 491,
+      "test_source_families": 123,
+      "train_class_distribution": {
+        "0": 785,
+        "1": 787
+      },
+      "test_class_distribution": {
+        "0": 215,
+        "1": 213
+      }
+    },
+    "leakage": {
+      "train_test_source_intersection_count": 0,
+      "exact_duplicate_count": 0,
+      "near_duplicate_rate": 0.0,
+      "minimum_near_duplicate_distance": 0.19705308891886728,
+      "near_duplicate_threshold": 0.02
+    },
+    "selection_score_pre_cv": 1.0424864624921528,
+    "phase": "Aşama 1",
+    "selection_flags": {
+      "holdout_min_main_metric_92": true,
+      "holdout_accuracy_93": true,
+      "group_cv_min_main_metric_90": true
+    },
+    "selection_score": 0.9328100113601201
+  },
+  "final_cv": {
+    "dataset_name": "small_t1000_s0p6_adaptive",
+    "model": "extra_trees",
+    "feature_set": "all_features",
+    "preprocessing": "tree_models_no_scaler",
+    "resampling": "class_weight=balanced",
+    "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+    "folds": [
+      {
+        "fold": 1,
+        "threshold": 0.47,
+        "train_rows": 1599,
+        "test_rows": 401,
+        "source_intersection_count": 0,
+        "metrics": {
+          "accuracy": 0.9201995012468828,
+          "precision": 0.9246231155778895,
+          "recall": 0.9154228855721394,
+          "sensitivity": 0.9154228855721394,
+          "specificity": 0.925,
+          "f1": 0.92,
+          "roc_auc": 0.9783208955223881,
+          "balanced_accuracy": 0.9202114427860697,
+          "mcc": 0.8404437923941774,
+          "brier": 0.057072453164609134,
+          "threshold": 0.47,
+          "confusion_matrix": {
+            "tn": 185,
+            "fp": 15,
+            "fn": 17,
+            "tp": 184,
+            "matrix": [
+              [
+                185,
+                15
+              ],
+              [
+                17,
+                184
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.9154228855721394
+        }
+      },
+      {
+        "fold": 2,
+        "threshold": 0.42,
+        "train_rows": 1600,
+        "test_rows": 400,
+        "source_intersection_count": 0,
+        "metrics": {
+          "accuracy": 0.925,
+          "precision": 0.9047619047619048,
+          "recall": 0.95,
+          "sensitivity": 0.95,
+          "specificity": 0.9,
+          "f1": 0.926829268292683,
+          "roc_auc": 0.9765499999999999,
+          "balanced_accuracy": 0.925,
+          "mcc": 0.85106449634699,
+          "brier": 0.05785454545454545,
+          "threshold": 0.42,
+          "confusion_matrix": {
+            "tn": 180,
+            "fp": 20,
+            "fn": 10,
+            "tp": 190,
+            "matrix": [
+              [
+                180,
+                20
+              ],
+              [
+                10,
+                190
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.9
+        }
+      },
+      {
+        "fold": 3,
+        "threshold": 0.48,
+        "train_rows": 1600,
+        "test_rows": 400,
+        "source_intersection_count": 0,
+        "metrics": {
+          "accuracy": 0.92,
+          "precision": 0.9158415841584159,
+          "recall": 0.925,
+          "sensitivity": 0.925,
+          "specificity": 0.915,
+          "f1": 0.9203980099502488,
+          "roc_auc": 0.9842625,
+          "balanced_accuracy": 0.92,
+          "mcc": 0.8400420031502625,
+          "brier": 0.050715340909090904,
+          "threshold": 0.48,
+          "confusion_matrix": {
+            "tn": 183,
+            "fp": 17,
+            "fn": 15,
+            "tp": 185,
+            "matrix": [
+              [
+                183,
+                17
+              ],
+              [
+                15,
+                185
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.915
+        }
+      },
+      {
+        "fold": 4,
+        "threshold": 0.51,
+        "train_rows": 1600,
+        "test_rows": 400,
+        "source_intersection_count": 0,
+        "metrics": {
+          "accuracy": 0.925,
+          "precision": 0.9292929292929293,
+          "recall": 0.92,
+          "sensitivity": 0.92,
+          "specificity": 0.93,
+          "f1": 0.9246231155778895,
+          "roc_auc": 0.9745624999999999,
+          "balanced_accuracy": 0.925,
+          "mcc": 0.8500425031877656,
+          "brier": 0.05898243801652892,
+          "threshold": 0.51,
+          "confusion_matrix": {
+            "tn": 186,
+            "fp": 14,
+            "fn": 16,
+            "tp": 184,
+            "matrix": [
+              [
+                186,
+                14
+              ],
+              [
+                16,
+                184
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.92
+        }
+      },
+      {
+        "fold": 5,
+        "threshold": 0.46,
+        "train_rows": 1601,
+        "test_rows": 399,
+        "source_intersection_count": 0,
+        "metrics": {
+          "accuracy": 0.9223057644110275,
+          "precision": 0.9158415841584159,
+          "recall": 0.9296482412060302,
+          "sensitivity": 0.9296482412060302,
+          "specificity": 0.915,
+          "f1": 0.9226932668329177,
+          "roc_auc": 0.9879396984924623,
+          "balanced_accuracy": 0.922324120603015,
+          "mcc": 0.8447119153583142,
+          "brier": 0.04703851571076451,
+          "threshold": 0.46,
+          "confusion_matrix": {
+            "tn": 183,
+            "fp": 17,
+            "fn": 14,
+            "tp": 185,
+            "matrix": [
+              [
+                183,
+                17
+              ],
+              [
+                14,
+                185
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.915
+        }
+      }
+    ],
+    "summary": {
+      "accuracy_mean": 0.922501053131582,
+      "accuracy_std": 0.0024535696664088748,
+      "precision_mean": 0.9180722235899111,
+      "precision_std": 0.009433113406529234,
+      "recall_mean": 0.928014225355634,
+      "recall_std": 0.01339682326711298,
+      "specificity_mean": 0.9170000000000001,
+      "specificity_std": 0.011510864433221349,
+      "f1_mean": 0.9229087321307479,
+      "f1_std": 0.0028775244643416066,
+      "roc_auc_mean": 0.9803271188029701,
+      "roc_auc_std": 0.005589297427710933,
+      "balanced_accuracy_mean": 0.922507112677817,
+      "balanced_accuracy_std": 0.002450417042708639,
+      "mcc_mean": 0.8452609420875021,
+      "mcc_std": 0.0051790021661095665,
+      "brier_mean": 0.05433265865110779,
+      "brier_std": 0.005191823322793408,
+      "ana_metrik_minimumu_mean": 0.913084577114428,
+      "ana_metrik_minimumu_std": 0.007613057993576835,
+      "max_source_intersection_count": 0
+    }
+  },
+  "external_holdout": {
+    "note": "External holdout selection_score icine dahil edilmedi; yalniz dis kontrol olarak raporlandi.",
+    "rows": 154,
+    "class_distribution": {
+      "0": 100,
+      "1": 54
+    },
+    "metrics": {
+      "accuracy": 0.7402597402597403,
+      "precision": 0.6346153846153846,
+      "recall": 0.6111111111111112,
+      "sensitivity": 0.6111111111111112,
+      "specificity": 0.81,
+      "f1": 0.6226415094339622,
+      "roc_auc": 0.8180555555555554,
+      "balanced_accuracy": 0.7105555555555556,
+      "mcc": 0.42490498154100403,
+      "brier": 0.16948816679188577,
+      "threshold": 0.51,
+      "confusion_matrix": {
+        "tn": 81,
+        "fp": 19,
+        "fn": 21,
+        "tp": 33,
+        "matrix": [
+          [
+            81,
+            19
+          ],
+          [
+            21,
+            33
+          ]
+        ]
+      },
+      "ana_metrik_minimumu": 0.6111111111111112
+    }
+  },
+  "leakage_summary": {
+    "dataset_name": "small_t1000_s0p6_adaptive",
+    "total_rows": 2000,
+    "original_dev_rows": 614,
+    "synthetic_rows": 1386,
+    "class_distribution": {
+      "0": 1000,
+      "1": 1000
+    },
+    "source_id_family_count": 614,
+    "synthetic_row_valid_source_id_ratio": 1.0,
+    "independent_synthetic_source_id_count": 0,
+    "train_test_source_intersection": 0,
+    "cv_source_intersections": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "exact_duplicate_count": 0,
+    "near_duplicate_rate": 0.0,
+    "minimum_near_duplicate_distance": 0.057039136076029444,
+    "external_holdout_source_overlap_count": 0,
+    "leakage_status": "clean"
+  },
+  "quality_summary": {
+    "dataset_name": "small_t1000_s0p6_adaptive",
+    "class_separation": {
+      "by_feature": {
+        "Pregnancies": {
+          "cohens_d": 0.7963795692934363,
+          "abs_cohens_d": 0.7963795692934363,
+          "negative_mean": 2.936,
+          "positive_mean": 4.88
+        },
+        "Glucose": {
+          "cohens_d": 2.6485987971308993,
+          "abs_cohens_d": 2.6485987971308993,
+          "negative_mean": 103.59732085357008,
+          "positive_mean": 154.34303269881116
+        },
+        "BloodPressure": {
+          "cohens_d": 0.927679822284195,
+          "abs_cohens_d": 0.927679822284195,
+          "negative_mean": 69.49958412914688,
+          "positive_mean": 77.53155884112496
+        },
+        "SkinThickness": {
+          "cohens_d": 1.2783417789358626,
+          "abs_cohens_d": 1.2783417789358626,
+          "negative_mean": 25.094193995861993,
+          "positive_mean": 33.17341021618301
+        },
+        "Insulin": {
+          "cohens_d": 1.3076793502264414,
+          "abs_cohens_d": 1.3076793502264414,
+          "negative_mean": 99.66812969955359,
+          "positive_mean": 177.2334015078753
+        },
+        "BMI": {
+          "cohens_d": 1.6302523226190848,
+          "abs_cohens_d": 1.6302523226190848,
+          "negative_mean": 29.045159684934937,
+          "positive_mean": 36.913848576829494
+        },
+        "DiabetesPedigreeFunction": {
+          "cohens_d": 1.1473700883471079,
+          "abs_cohens_d": 1.1473700883471079,
+          "negative_mean": 0.3749303675738512,
+          "positive_mean": 0.648321395628997
+        },
+        "Age": {
+          "cohens_d": 1.3203280417304653,
+          "abs_cohens_d": 1.3203280417304653,
+          "negative_mean": 31.109,
+          "positive_mean": 42.855
+        }
+      },
+      "aggregate": {
+        "mean_abs_cohens_d": 1.3820787213209367
+      }
+    },
+    "distribution_shift_vs_original_dev": {
+      "by_feature": {
+        "Pregnancies": {
+          "z_mean_shift": 0.026788711719175233,
+          "reference_mean": 3.8192182410423454,
+          "candidate_mean": 3.908
+        },
+        "Glucose": {
+          "z_mean_shift": 0.2432748024544769,
+          "reference_mean": 121.67100977198697,
+          "candidate_mean": 128.9701767761906
+        },
+        "BloodPressure": {
+          "z_mean_shift": 0.10949222094008326,
+          "reference_mean": 72.18892508143323,
+          "candidate_mean": 73.51557148513594
+        },
+        "SkinThickness": {
+          "z_mean_shift": 0.01614228503352748,
+          "reference_mean": 28.995114006514658,
+          "candidate_mean": 29.1338021060225
+        },
+        "Insulin": {
+          "z_mean_shift": 0.009465575887113307,
+          "reference_mean": 137.70521172638436,
+          "candidate_mean": 138.45076560371444
+        },
+        "BMI": {
+          "z_mean_shift": 0.07785553929985058,
+          "reference_mean": 32.44820846905537,
+          "candidate_mean": 32.97950413088221
+        },
+        "DiabetesPedigreeFunction": {
+          "z_mean_shift": 0.10353470909522718,
+          "reference_mean": 0.4774283387622149,
+          "candidate_mean": 0.5116258816014242
+        },
+        "Age": {
+          "z_mean_shift": 0.30553677077697605,
+          "reference_mean": 33.36644951140065,
+          "candidate_mean": 36.982
+        }
+      },
+      "aggregate": {
+        "avg_abs_z_mean_shift": 0.11151132690080376
+      }
+    },
+    "external_distribution_shift": {
+      "by_feature": {
+        "Pregnancies": {
+          "z_mean_shift": 0.038873852887270036,
+          "reference_mean": 3.8192182410423454,
+          "candidate_mean": 3.948051948051948
+        },
+        "Glucose": {
+          "z_mean_shift": 0.0022368394006327817,
+          "reference_mean": 121.67100977198697,
+          "candidate_mean": 121.6038961038961
+        },
+        "BloodPressure": {
+          "z_mean_shift": 0.0974884757072314,
+          "reference_mean": 72.18892508143323,
+          "candidate_mean": 73.37012987012987
+        },
+        "SkinThickness": {
+          "z_mean_shift": 0.043649116139405295,
+          "reference_mean": 28.995114006514658,
+          "candidate_mean": 29.37012987012987
+        },
+        "Insulin": {
+          "z_mean_shift": 0.18783510541074144,
+          "reference_mean": 137.70521172638436,
+          "candidate_mean": 152.5
+        },
+        "BMI": {
+          "z_mean_shift": 0.006162151572257949,
+          "reference_mean": 32.44820846905537,
+          "candidate_mean": 32.49025974025974
+        },
+        "DiabetesPedigreeFunction": {
+          "z_mean_shift": 0.08382699366508294,
+          "reference_mean": 0.4774283387622149,
+          "candidate_mean": 0.44974025974025966
+        },
+        "Age": {
+          "z_mean_shift": 0.052916976590772796,
+          "reference_mean": 33.36644951140065,
+          "candidate_mean": 32.74025974025974
+        }
+      },
+      "aggregate": {
+        "avg_abs_z_mean_shift": 0.06412368892167433
+      }
+    },
+    "key_feature_summary": {
+      "Glucose": {
+        "0": {
+          "mean": 103.59732085357008,
+          "std": 18.060938379911008,
+          "q25": 91.41746482272143,
+          "median": 100.1480053348464,
+          "q75": 112.0
+        },
+        "1": {
+          "mean": 154.34303269881116,
+          "std": 20.198316896593663,
+          "q25": 142.524557954705,
+          "median": 156.05838990740222,
+          "q75": 168.010174686185
+        }
+      },
+      "BMI": {
+        "0": {
+          "mean": 29.045159684934937,
+          "std": 4.981071829101496,
+          "q25": 25.52167469254603,
+          "median": 28.39795332289849,
+          "q75": 31.723145643165967
+        },
+        "1": {
+          "mean": 36.913848576829494,
+          "std": 4.667161572997353,
+          "q25": 33.95829603220651,
+          "median": 36.68856464135595,
+          "q75": 39.59365125760588
+        }
+      },
+      "Age": {
+        "0": {
+          "mean": 31.109,
+          "std": 8.769722175019401,
+          "q25": 25.0,
+          "median": 30.0,
+          "q75": 35.0
+        },
+        "1": {
+          "mean": 42.855,
+          "std": 9.021050623644363,
+          "q25": 37.0,
+          "median": 43.0,
+          "q75": 49.0
+        }
+      },
+      "DiabetesPedigreeFunction": {
+        "0": {
+          "mean": 0.3749303675738512,
+          "std": 0.2258376422022563,
+          "q25": 0.237,
+          "median": 0.32056979526153395,
+          "q75": 0.44411487162804864
+        },
+        "1": {
+          "mean": 0.648321395628997,
+          "std": 0.2500969619919805,
+          "q25": 0.4914545653015677,
+          "median": 0.6445884953547929,
+          "q75": 0.7794853003502881
+        }
+      }
+    },
+    "feature_signal_concentration": {
+      "top_feature": "Glucose",
+      "top_feature_auc": 0.954128,
+      "top_feature_share": 0.14215872589231743,
+      "top3_feature_share": 0.40541730876591936,
+      "scores": {
+        "Pregnancies": 0.722001,
+        "Glucose": 0.954128,
+        "BloodPressure": 0.766199,
+        "SkinThickness": 0.83937,
+        "Insulin": 0.885736,
+        "BMI": 0.881179,
+        "DiabetesPedigreeFunction": 0.824519,
+        "Age": 0.838577
+      }
+    },
+    "outcome_encoding_warning": false,
+    "reference_2500_comparison": {
+      "reference_min_main_metric": 0.9667,
+      "reference_mean_abs_cohens_d": 2.95,
+      "reference_distribution_shift": 0.556
+    }
+  },
+  "target_hit": {
+    "holdout_min_main_metric_92": true,
+    "holdout_accuracy_93": true,
+    "group_cv_min_main_metric_90": true
+  },
+  "recommended_over_2500_reference": true,
+  "why_selected": "Leakage-clean adaylar içinde hedefi sağlayan en küçük ve dağılım kayması daha savunulabilir aday önceliklendirildi.",
+  "graphics": {
+    "holdout_min_metric": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_small_scale/small_scale_ana_metrik_minimumu.png",
+    "holdout_accuracy": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_small_scale/small_scale_accuracy.png",
+    "holdout_roc_auc": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_small_scale/small_scale_roc_auc.png",
+    "cv_min_metric": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_small_scale/small_scale_cv_min_metric.png",
+    "cohens_d": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_small_scale/small_scale_class_separation.png",
+    "distribution_shift": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_small_scale/small_scale_distribution_shift_vs_original_dev.png",
+    "confusion_matrix": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_small_scale/small_scale_final_confusion_matrix.png",
+    "feature_importance": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_small_scale/small_scale_final_feature_signal.png",
+    "protocol_summary": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_small_scale/small_scale_literatur_protokol_ozeti.png"
+  }
+}

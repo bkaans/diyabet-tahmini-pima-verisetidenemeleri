@@ -1,0 +1,148 @@
+{
+  "created_at_utc": "2026-04-26T20:31:17.064043+00:00",
+  "diabetes_csv_path": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv",
+  "diabetes_csv_rows_distribution_unchanged": true,
+  "final_dataset_name": "small_t1000_s0p6_adaptive",
+  "target_hit": {
+    "holdout_min_main_metric_92": true,
+    "holdout_accuracy_93": true,
+    "group_cv_min_main_metric_90": true
+  },
+  "leakage_clean": true,
+  "empty_graph_check_required": true,
+  "package_report": {
+    "xgboost": {
+      "available": true,
+      "version": "3.2.0"
+    },
+    "lightgbm": {
+      "available": true,
+      "version": "4.6.0"
+    },
+    "catboost": {
+      "available": true,
+      "version": "1.2.10"
+    },
+    "imblearn": {
+      "available": true,
+      "version": "0.14.1"
+    },
+    "optuna": {
+      "available": true,
+      "version": "4.8.0"
+    },
+    "sdv_ctgan": {
+      "available": false,
+      "used": false,
+      "note": "Parent source_id takibi final benchmarkta zayıf kalacağı için kurulmadı ve kullanılmadı."
+    }
+  },
+  "final_quality_status": "pass",
+  "notes": [
+    "Dış kontrol verisi seçim skoruna dahil edilmedi.",
+    "Tüm aday CSV dosyaları min90_small_scale klasörüne yazıldı.",
+    "CTGAN final deney ailesine dahil edilmedi; parent source_id takibi zayıf kalacağı için yalnız literatür notunda açıklandı."
+  ],
+  "empty_graph_check_summary": {
+    "checked_graph_count": 9,
+    "blank_like_count": 0,
+    "graphs": [
+      {
+        "file": "small_scale_accuracy.png",
+        "bytes": 27839,
+        "size": [
+          1548,
+          630
+        ],
+        "variance_sum": 25360.64,
+        "blank_like": false
+      },
+      {
+        "file": "small_scale_ana_metrik_minimumu.png",
+        "bytes": 29139,
+        "size": [
+          1548,
+          630
+        ],
+        "variance_sum": 25373.388,
+        "blank_like": false
+      },
+      {
+        "file": "small_scale_class_separation.png",
+        "bytes": 27896,
+        "size": [
+          1548,
+          630
+        ],
+        "variance_sum": 14247.455,
+        "blank_like": false
+      },
+      {
+        "file": "small_scale_cv_min_metric.png",
+        "bytes": 34003,
+        "size": [
+          1548,
+          630
+        ],
+        "variance_sum": 18089.368,
+        "blank_like": false
+      },
+      {
+        "file": "small_scale_distribution_shift_vs_original_dev.png",
+        "bytes": 31370,
+        "size": [
+          1548,
+          630
+        ],
+        "variance_sum": 14353.423,
+        "blank_like": false
+      },
+      {
+        "file": "small_scale_final_confusion_matrix.png",
+        "bytes": 27154,
+        "size": [
+          756,
+          648
+        ],
+        "variance_sum": 27938.411,
+        "blank_like": false
+      },
+      {
+        "file": "small_scale_final_feature_signal.png",
+        "bytes": 41835,
+        "size": [
+          1296,
+          684
+        ],
+        "variance_sum": 15306.862,
+        "blank_like": false
+      },
+      {
+        "file": "small_scale_literatur_protokol_ozeti.png",
+        "bytes": 39716,
+        "size": [
+          1296,
+          576
+        ],
+        "variance_sum": 17940.472,
+        "blank_like": false
+      },
+      {
+        "file": "small_scale_roc_auc.png",
+        "bytes": 27793,
+        "size": [
+          1548,
+          630
+        ],
+        "variance_sum": 25573.605,
+        "blank_like": false
+      }
+    ]
+  },
+  "word_report_check_summary": {
+    "text_scan_code_like_labels_found": false,
+    "tables": 5,
+    "inline_shapes": 9,
+    "quicklook_thumbnail_generated": true
+  }
+}

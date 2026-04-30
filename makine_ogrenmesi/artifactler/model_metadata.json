@@ -1,0 +1,233 @@
+{
+  "proje_adi": "diyabet_risk_tahmini",
+  "veri_seti": "PIMA + source_id kontrollu sentetik benchmark",
+  "problem_tipi": "binary_classification",
+  "olusturulma_zamani_utc": "2026-04-30T16:44:10.175425+00:00",
+  "python_surumu": "3.13.0",
+  "sklearn_surumu": "1.8.0",
+  "model_adi": "ExtraTrees",
+  "mod": "final_1000_source_id_kontrollu_sentetik_benchmark",
+  "final_benchmark_adayi": "1000/1000",
+  "veri_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/min90_small_scale/small_t1000_s0p6_adaptive.csv",
+  "metadata_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/min90_small_scale/small_t1000_s0p6_adaptive_metadata.csv",
+  "feature_set": "high_signal_features",
+  "model_girdi_kolonlari": [
+    "Pregnancies",
+    "Glucose",
+    "BloodPressure",
+    "SkinThickness",
+    "Insulin",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age"
+  ],
+  "model_ic_ozellikler": [
+    "Pregnancies",
+    "Glucose",
+    "BMI",
+    "DiabetesPedigreeFunction",
+    "Age",
+    "Insulin",
+    "glucose_bmi_interaction",
+    "insulin_glucose_ratio",
+    "glucose_pedigree_interaction"
+  ],
+  "orijinal_dev_satiri": 614,
+  "sentetik_satir": 1386,
+  "toplam_satir": 2000,
+  "sinif_dagilimi": {
+    "0": 1000,
+    "1": 1000
+  },
+  "source_id_kurali": "Her sentetik satir kaynak aldigi original_{index} ailesine baglidir.",
+  "independent_synthetic_source_id_count": 0,
+  "benchmark_holdout_metrikleri": {
+    "accuracy": 0.9392523364485982,
+    "precision": 0.943127962085308,
+    "recall": 0.9342723004694836,
+    "sensitivity": 0.9342723004694836,
+    "specificity": 0.9441860465116279,
+    "f1": 0.9386792452830188,
+    "roc_auc": 0.9860246751828803,
+    "balanced_accuracy": 0.9392291734905558,
+    "mcc": 0.8785350866651979,
+    "brier": 0.04589904997296672,
+    "threshold": 0.45,
+    "confusion_matrix": {
+      "tn": 203,
+      "fp": 12,
+      "fn": 14,
+      "tp": 199,
+      "matrix": [
+        [
+          203,
+          12
+        ],
+        [
+          14,
+          199
+        ]
+      ]
+    },
+    "ana_metrik_minimumu": 0.9342723004694836
+  },
+  "benchmark_group_cv": {
+    "accuracy_mean": 0.918001046881543,
+    "accuracy_std": 0.002035606897307796,
+    "precision_mean": 0.9092939244663383,
+    "precision_std": 0.012882712642926371,
+    "recall_mean": 0.9289893497337435,
+    "recall_std": 0.01251075457760963,
+    "specificity_mean": 0.907,
+    "specificity_std": 0.015652475842498542,
+    "f1_mean": 0.9188970545983102,
+    "f1_std": 0.0013169086324667106,
+    "roc_auc_mean": 0.9784548098702469,
+    "roc_auc_std": 0.005160274032554252,
+    "balanced_accuracy_mean": 0.9179946748668717,
+    "balanced_accuracy_std": 0.0020432998515946313,
+    "mcc_mean": 0.8364622838364777,
+    "mcc_std": 0.003742888839916392,
+    "brier_mean": 0.05610909457659834,
+    "brier_std": 0.005376175555938533,
+    "ana_metrik_minimumu_mean": 0.9030000000000001,
+    "ana_metrik_minimumu_std": 0.009746794344808973,
+    "max_source_intersection_count": 0
+  },
+  "selection_report_final": {
+    "status": "completed",
+    "dataset_name": "small_t1000_s0p6_adaptive",
+    "target_per_class": 1000,
+    "model": "extra_trees",
+    "feature_set": "all_features",
+    "preprocessing": "tree_models_no_scaler",
+    "resampling": "class_weight=balanced",
+    "default_threshold_metrics": {
+      "accuracy": 0.9415887850467289,
+      "precision": 0.9563106796116505,
+      "recall": 0.9248826291079812,
+      "sensitivity": 0.9248826291079812,
+      "specificity": 0.958139534883721,
+      "f1": 0.9403341288782816,
+      "roc_auc": 0.9854787640572116,
+      "balanced_accuracy": 0.9415110819958511,
+      "mcc": 0.88363017643956,
+      "brier": 0.04720215107746968,
+      "threshold": 0.5,
+      "confusion_matrix": {
+        "tn": 206,
+        "fp": 9,
+        "fn": 16,
+        "tp": 197,
+        "matrix": [
+          [
+            206,
+            9
+          ],
+          [
+            16,
+            197
+          ]
+        ]
+      },
+      "ana_metrik_minimumu": 0.9248826291079812
+    },
+    "tuned_threshold_metrics": {
+      "accuracy": 0.9415887850467289,
+      "precision": 0.9563106796116505,
+      "recall": 0.9248826291079812,
+      "sensitivity": 0.9248826291079812,
+      "specificity": 0.958139534883721,
+      "f1": 0.9403341288782816,
+      "roc_auc": 0.9854787640572116,
+      "balanced_accuracy": 0.9415110819958511,
+      "mcc": 0.88363017643956,
+      "brier": 0.04720215107746968,
+      "threshold": 0.51,
+      "confusion_matrix": {
+        "tn": 206,
+        "fp": 9,
+        "fn": 16,
+        "tp": 197,
+        "matrix": [
+          [
+            206,
+            9
+          ],
+          [
+            16,
+            197
+          ]
+        ]
+      },
+      "ana_metrik_minimumu": 0.9248826291079812
+    },
+    "threshold_report": {
+      "default_threshold": 0.5,
+      "default_min_main_metric": 0.9419354838709677,
+      "selected_threshold": 0.51,
+      "tuned_min_main_metric": 0.9419354838709677,
+      "selected_validation_metrics": {
+        "accuracy": 0.9485530546623794,
+        "precision": 0.954248366013072,
+        "recall": 0.9419354838709677,
+        "sensitivity": 0.9419354838709677,
+        "specificity": 0.9551282051282052,
+        "f1": 0.948051948051948,
+        "roc_auc": 0.989516129032258,
+        "balanced_accuracy": 0.9485318444995865,
+        "mcc": 0.8971750079409676,
+        "brier": 0.03916192766602004,
+        "threshold": 0.51,
+        "confusion_matrix": {
+          "tn": 149,
+          "fp": 7,
+          "fn": 9,
+          "tp": 146,
+          "matrix": [
+            [
+              149,
+              7
+            ],
+            [
+              9,
+              146
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9419354838709677
+      }
+    },
+    "split": {
+      "method": "GroupShuffleSplit(source_id)",
+      "train_rows": 1572,
+      "test_rows": 428,
+      "train_source_families": 491,
+      "test_source_families": 123,
+      "train_class_distribution": {
+        "0": 785,
+        "1": 787
+      },
+      "test_class_distribution": {
+        "0": 215,
+        "1": 213
+      }
+    },
+    "leakage": {
+      "train_test_source_intersection_count": 0,
+      "exact_duplicate_count": 0,
+      "near_duplicate_rate": 0.0,
+      "minimum_near_duplicate_distance": 0.19705308891886728,
+      "near_duplicate_threshold": 0.02
+    },
+    "selection_score_pre_cv": 1.0424864624921528,
+    "phase": "Aşama 1",
+    "selection_flags": {
+      "holdout_min_main_metric_92": true,
+      "holdout_accuracy_93": true,
+      "group_cv_min_main_metric_90": true
+    },
+    "selection_score": 0.9328100113601201
+  },
+  "not": "Bu artifact 1000/1000 source_id kontrollu sentetik benchmark secimine gore uretilmistir. Original external holdout klinik genellenebilirlik kaniti degil, dis kontrol siniri olarak raporlanir."
+}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Diyabet Risk Tahmini | Hata{% endblock %}
+
+{% block icerik %}
+<section class="kart">
+  <h2>İşlem Sırasında Hata Oluştu</h2>
+  <div class="uyari hata">
+    {{ hata_mesaji or "Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin." }}
+  </div>
+  <a class="buton" href="{{ url_for('ana_sayfa') }}">Ana Sayfaya Dön</a>
+</section>
+{% endblock %}

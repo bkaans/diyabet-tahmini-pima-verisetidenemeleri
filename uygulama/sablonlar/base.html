@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Diyabet Risk Tahmini{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Nunito+Sans:wght@600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('statik', path='css/stiller.css') }}" />
+</head>
+<body>
+  <div class="arka-plan"></div>
+
+  <header class="ust-cubuk">
+    <div class="ust-cubuk-icerik">
+      <div class="logo-kutu">
+        <img src="{{ url_for('statik', path='img/diyabet_glikoz_logo.png') }}" alt="Diyabet Risk Logo" />
+      </div>
+      <div>
+        <h1 class="marka-baslik">Kadınlarda Diyabet Risk Tahmini</h1>
+        <p class="marka-alt">Tip-2 Diyabet Klinik Analiz Prototipi</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="sayfa-konteyneri">
+    <header class="ust-alan">
+      <p class="etiket ekip-imza">Berat Kaan SEVEN &amp; Berfin KÜLEKÇİ</p>
+      <h2>Kadın Bireylerde Diyabet Risk Tahmini</h2>
+      <p class="alt-metin">
+        Bu ekran klinik tanı aracı değildir. Sonuçlar farkındalık amaçlı yorumlanmalıdır.
+      </p>
+    </header>
+
+    {% block icerik %}{% endblock %}
+  </main>
+
+  <footer class="alt-cubuk">
+    <div class="alt-cubuk-icerik">
+      <div class="alt-logo-kutu">
+        <img src="{{ url_for('statik', path='img/diyabet_glikoz_logo.png') }}" alt="Kadın Diyabet Risk Logo" />
+      </div>
+      <p>
+        <strong class="yasal-baslik">Yasal Uyarı:</strong> Bu uygulama istatistiksel bir tahmin sunar. Sonuçlar kesin tanı değildir ve
+        profesyonel tıbbi değerlendirme yerine geçmez.
+      </p>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('statik', path='js/uygulama.js') }}"></script>
+</body>
+</html>

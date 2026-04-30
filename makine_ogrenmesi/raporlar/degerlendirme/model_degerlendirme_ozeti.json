@@ -1,0 +1,93 @@
+{
+  "veri_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv",
+  "test_boyutu": 0.2,
+  "random_state": 42,
+  "en_iyi_model_secim_kriteri": "roc_auc > recall > f1 > accuracy (deploy ile tutarlilik)",
+  "en_iyi_model": {
+    "model_adi": "xgboost",
+    "accuracy": 0.7402597402597403,
+    "precision": 0.6029411764705882,
+    "recall": 0.7592592592592593,
+    "f1": 0.6721311475409836,
+    "roc_auc": 0.8338888888888889,
+    "brier": 0.16558994352817535,
+    "en_iyi_cv_roc_auc": 0.8186780177187153,
+    "en_iyi_parametreler": {
+      "model__learning_rate": 0.1,
+      "model__max_depth": 3,
+      "model__n_estimators": 100
+    }
+  },
+  "en_iyi_test_modeli": {
+    "model_adi": "xgboost",
+    "accuracy": 0.7402597402597403,
+    "precision": 0.6029411764705882,
+    "recall": 0.7592592592592593,
+    "f1": 0.6721311475409836,
+    "roc_auc": 0.8338888888888889,
+    "brier": 0.16558994352817535,
+    "en_iyi_cv_roc_auc": 0.8186780177187153,
+    "en_iyi_parametreler": {
+      "model__learning_rate": 0.1,
+      "model__max_depth": 3,
+      "model__n_estimators": 100
+    }
+  },
+  "sirali_sonuclar": [
+    {
+      "model_adi": "xgboost",
+      "accuracy": 0.7402597402597403,
+      "precision": 0.6029411764705882,
+      "recall": 0.7592592592592593,
+      "f1": 0.6721311475409836,
+      "roc_auc": 0.8338888888888889,
+      "brier": 0.16558994352817535,
+      "en_iyi_cv_roc_auc": 0.8186780177187153,
+      "en_iyi_parametreler": {
+        "model__learning_rate": 0.1,
+        "model__max_depth": 3,
+        "model__n_estimators": 100
+      }
+    },
+    {
+      "model_adi": "random_forest",
+      "accuracy": 0.7207792207792207,
+      "precision": 0.5753424657534246,
+      "recall": 0.7777777777777778,
+      "f1": 0.6614173228346457,
+      "roc_auc": 0.8142592592592592,
+      "brier": 0.17251332506258243,
+      "en_iyi_cv_roc_auc": 0.8368092469545958,
+      "en_iyi_parametreler": {
+        "model__max_depth": 5,
+        "model__n_estimators": 200
+      }
+    },
+    {
+      "model_adi": "logistic_regression",
+      "accuracy": 0.7142857142857143,
+      "precision": 0.5833333333333334,
+      "recall": 0.6481481481481481,
+      "f1": 0.6140350877192983,
+      "roc_auc": 0.8081481481481482,
+      "brier": 0.18278873129913262,
+      "en_iyi_cv_roc_auc": 0.8438468992248062,
+      "en_iyi_parametreler": {
+        "model__C": 0.1
+      }
+    }
+  ],
+  "performans_hedef_durumu": {
+    "accuracy": 0.7402597402597403,
+    "roc_auc": 0.8338888888888889,
+    "f1": 0.6721311475409836,
+    "brier": 0.16558994352817535,
+    "hedefler": {
+      "accuracy_min": 0.9,
+      "roc_auc_min": 0.8,
+      "f1_min": 0.7
+    },
+    "hedefler_saglandi_mi": false,
+    "yorum": "Hedeflerin tamami saglanamadi. Proje planindaki B-plani devreye alindi ve AUC/F1 dengesine gore en tutarli model adaylari raporlandi."
+  }
+}

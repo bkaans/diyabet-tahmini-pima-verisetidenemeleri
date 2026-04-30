@@ -1,0 +1,18 @@
+{
+  "created_at_utc": "2026-04-30T11:18:43.710102+00:00",
+  "diabetes_csv_rows_distribution_unchanged": true,
+  "final_dataset_name": "cons500_s0p16_very_low_p0p25_m0p2_b0p0_r28",
+  "leakage_clean": true,
+  "target_hit": {
+    "accuracy_not_below_500": false,
+    "min_main_not_below_500": false,
+    "group_cv_not_below_500": false,
+    "computed_cohens_below_reported_500": true,
+    "shift_below_reported_500": true
+  },
+  "final_quality_status": "pass",
+  "notes": [
+    "Bu audit conservative_500 deney hattına aittir.",
+    "External holdout seçim skoruna dahil edilmedi."
+  ]
+}

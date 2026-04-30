@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Diyabet Risk Tahmini | Sonuç{% endblock %}
+
+{% block icerik %}
+<section class="kart">
+  <h2>Tahmin Sonucu</h2>
+  <p class="kart-aciklama">Hesaplanan risk değerleri aşağıdaki gibidir.</p>
+
+  {% include "parcali/risk_karti.html" %}
+  {% include "parcali/faktor_listesi.html" %}
+
+  <div class="aciklama-karti">
+    <h3>Kısa Açıklama</h3>
+    <p>{{ sonuc.kisa_aciklama }}</p>
+  </div>
+
+  <div class="uyari bilgi">
+    Etik/Klinik Uyarı: Bu sonuç tanı amaçlı kullanılmaz. Klinik değerlendirme için sağlık
+    profesyoneline başvurunuz.
+  </div>
+
+  <a class="buton ikincil" href="{{ url_for('ana_sayfa') }}">Yeni Hesaplama</a>
+</section>
+{% endblock %}

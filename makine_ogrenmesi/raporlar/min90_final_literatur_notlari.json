@@ -1,0 +1,35 @@
+{
+  "created_at_utc": "2026-04-26T00:42:49.823386+00:00",
+  "message": "PIMA veri setinde ham veriyle yapilan calismalarda performans genellikle sinirli kalirken, SMOTE, SMOTE-ENN, SMOTE-Tomek, CTGAN ve benzeri sentetik/hibrit dengeleme yaklasimlari performansi artirmak icin sik kullanilmaktadir.",
+  "warning": "Resampling ve sentetik uretim test verisini gorecek sekilde uygulanirsa leakage riski olusur. Bu calismada external holdout dis kontrol olarak saklanmistir.",
+  "optional_package_availability": {
+    "catboost": {
+      "available": false,
+      "version": null,
+      "note": "Paket mevcut degil; kurulum zorlanmadi."
+    },
+    "optuna": {
+      "available": false,
+      "version": null,
+      "note": "Paket mevcut degil; kurulum zorlanmadi."
+    },
+    "sdv": {
+      "available": false,
+      "version": null,
+      "note": "Paket mevcut degil; kurulum zorlanmadi."
+    }
+  },
+  "train_only_resampling": {
+    "available": true,
+    "methods_considered": [
+      "class_weight=balanced",
+      "RandomOverSampler",
+      "SMOTE",
+      "BorderlineSMOTE",
+      "ADASYN",
+      "SMOTEENN",
+      "SMOTETomek"
+    ],
+    "implementation_note": "Final CSV uretiminde iki ebeveynli SMOTE kullanilmadi; resampling yalniz train-only pipeline karsilastirmasi olarak not edildi."
+  }
+}

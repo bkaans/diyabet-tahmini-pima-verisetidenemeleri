@@ -1,0 +1,84 @@
+{
+  "proje_adi": "diyabet_risk_tahmini",
+  "veri_seti": "Pima Indians Diabetes",
+  "problem_tipi": "binary_classification",
+  "olusturulma_zamani_utc": "2026-04-25T19:13:35.496990+00:00",
+  "python_surumu": "3.13.0",
+  "sklearn_surumu": "1.8.0",
+  "model_adi": "extra_trees_full",
+  "mod": "veri_mudahale_aggressive",
+  "cv_stratejisi": "train_validation_threshold_plus_honest_and_aggressive_eval",
+  "veri_varyanti": "smote_400x2_train",
+  "veri_teknigi": "smote",
+  "sentetik_satir_sayisi": 186,
+  "hedef_sinif_sayisi": 400,
+  "honest_metrikler": {
+    "accuracy": 0.7337662337662337,
+    "precision": 0.6326530612244898,
+    "recall": 0.5740740740740741,
+    "sensitivity": 0.5740740740740741,
+    "specificity": 0.82,
+    "f1": 0.6019417475728155,
+    "roc_auc": 0.8315740740740741,
+    "balanced_accuracy": 0.697037037037037,
+    "brier": 0.16285422740524783,
+    "mcc": 0.4037216635973952,
+    "esik": 0.5885714285714285,
+    "confusion_matrix": {
+      "labels": [
+        0,
+        1
+      ],
+      "matris": [
+        [
+          82,
+          18
+        ],
+        [
+          23,
+          31
+        ]
+      ],
+      "tn": 82,
+      "fp": 18,
+      "fn": 23,
+      "tp": 31
+    },
+    "ana_metrik_minimumu": 0.5740740740740741
+  },
+  "agresif_metrikler": {
+    "accuracy": 0.995,
+    "precision": 1.0,
+    "recall": 0.99,
+    "sensitivity": 0.99,
+    "specificity": 1.0,
+    "f1": 0.9949748743718593,
+    "roc_auc": 1.0,
+    "balanced_accuracy": 0.995,
+    "brier": 0.015970739795918367,
+    "mcc": 0.9900495037128093,
+    "esik": 0.5885714285714285,
+    "confusion_matrix": {
+      "labels": [
+        0,
+        1
+      ],
+      "matris": [
+        [
+          200,
+          0
+        ],
+        [
+          2,
+          198
+        ]
+      ],
+      "tn": 200,
+      "fp": 0,
+      "fn": 2,
+      "tp": 198
+    },
+    "ana_metrik_minimumu": 0.99
+  },
+  "veri_politikasi": "ham diabetes.csv korunur; final model agresif veri müdahalesi deneyinden seçildi"
+}

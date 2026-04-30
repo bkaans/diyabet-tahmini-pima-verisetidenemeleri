@@ -1,0 +1,191 @@
+{
+  "veri_butunlugu": {
+    "dosya": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv",
+    "sha256": "3c7023e0935097ac63e03c6f398928b6dfce30974d5591d3af09a9661876d9fe",
+    "satir_sayisi": 768,
+    "kolon_sayisi": 9,
+    "sinif_dagilimi": {
+      "0": 500,
+      "1": 268
+    }
+  },
+  "sinif_oranlari": {
+    "0": 0.6510416666666666,
+    "1": 0.3489583333333333
+  },
+  "sifir_analizi": {
+    "Pregnancies": {
+      "sifir_sayisi": 111,
+      "sifir_orani": 0.14453125
+    },
+    "Glucose": {
+      "sifir_sayisi": 5,
+      "sifir_orani": 0.006510416666666667
+    },
+    "BloodPressure": {
+      "sifir_sayisi": 35,
+      "sifir_orani": 0.045572916666666664
+    },
+    "SkinThickness": {
+      "sifir_sayisi": 227,
+      "sifir_orani": 0.2955729166666667
+    },
+    "Insulin": {
+      "sifir_sayisi": 374,
+      "sifir_orani": 0.4869791666666667
+    },
+    "BMI": {
+      "sifir_sayisi": 11,
+      "sifir_orani": 0.014322916666666666
+    },
+    "DiabetesPedigreeFunction": {
+      "sifir_sayisi": 0,
+      "sifir_orani": 0.0
+    },
+    "Age": {
+      "sifir_sayisi": 0,
+      "sifir_orani": 0.0
+    }
+  },
+  "korelasyon_outcome": {
+    "Glucose": 0.46658139830687373,
+    "BMI": 0.29269466264444544,
+    "Age": 0.23835598302719754,
+    "Pregnancies": 0.22189815303398636,
+    "DiabetesPedigreeFunction": 0.17384406565296,
+    "Insulin": 0.13054795488404794,
+    "SkinThickness": 0.07475223191831948,
+    "BloodPressure": 0.06506835955033277
+  },
+  "sinif_bazli_ortalama_farklari": {
+    "Pregnancies": {
+      "outcome_0_ortalama": 3.298,
+      "outcome_1_ortalama": 4.865671641791045,
+      "fark": 1.567671641791045
+    },
+    "Glucose": {
+      "outcome_0_ortalama": 109.98,
+      "outcome_1_ortalama": 141.25746268656715,
+      "fark": 31.277462686567148
+    },
+    "BloodPressure": {
+      "outcome_0_ortalama": 68.184,
+      "outcome_1_ortalama": 70.82462686567165,
+      "fark": 2.640626865671649
+    },
+    "SkinThickness": {
+      "outcome_0_ortalama": 19.664,
+      "outcome_1_ortalama": 22.16417910447761,
+      "fark": 2.50017910447761
+    },
+    "Insulin": {
+      "outcome_0_ortalama": 68.792,
+      "outcome_1_ortalama": 100.33582089552239,
+      "fark": 31.543820895522387
+    },
+    "BMI": {
+      "outcome_0_ortalama": 30.3042,
+      "outcome_1_ortalama": 35.14253731343284,
+      "fark": 4.838337313432838
+    },
+    "DiabetesPedigreeFunction": {
+      "outcome_0_ortalama": 0.42973400000000006,
+      "outcome_1_ortalama": 0.5505,
+      "fark": 0.12076599999999993
+    },
+    "Age": {
+      "outcome_0_ortalama": 31.19,
+      "outcome_1_ortalama": 37.06716417910448,
+      "fark": 5.877164179104479
+    }
+  },
+  "aykiri_deger_ozeti": {
+    "Pregnancies": {
+      "q1": 1.0,
+      "q3": 6.0,
+      "iqr": 5.0,
+      "alt_sinir": -6.5,
+      "ust_sinir": 13.5,
+      "aykiri_sayisi": 4,
+      "aykiri_orani": 0.005208333333333333
+    },
+    "Glucose": {
+      "q1": 99.0,
+      "q3": 140.25,
+      "iqr": 41.25,
+      "alt_sinir": 37.125,
+      "ust_sinir": 202.125,
+      "aykiri_sayisi": 5,
+      "aykiri_orani": 0.006510416666666667
+    },
+    "BloodPressure": {
+      "q1": 62.0,
+      "q3": 80.0,
+      "iqr": 18.0,
+      "alt_sinir": 35.0,
+      "ust_sinir": 107.0,
+      "aykiri_sayisi": 45,
+      "aykiri_orani": 0.05859375
+    },
+    "SkinThickness": {
+      "q1": 0.0,
+      "q3": 32.0,
+      "iqr": 32.0,
+      "alt_sinir": -48.0,
+      "ust_sinir": 80.0,
+      "aykiri_sayisi": 1,
+      "aykiri_orani": 0.0013020833333333333
+    },
+    "Insulin": {
+      "q1": 0.0,
+      "q3": 127.25,
+      "iqr": 127.25,
+      "alt_sinir": -190.875,
+      "ust_sinir": 318.125,
+      "aykiri_sayisi": 34,
+      "aykiri_orani": 0.044270833333333336
+    },
+    "BMI": {
+      "q1": 27.3,
+      "q3": 36.6,
+      "iqr": 9.3,
+      "alt_sinir": 13.35,
+      "ust_sinir": 50.550000000000004,
+      "aykiri_sayisi": 19,
+      "aykiri_orani": 0.024739583333333332
+    },
+    "DiabetesPedigreeFunction": {
+      "q1": 0.24375,
+      "q3": 0.62625,
+      "iqr": 0.38249999999999995,
+      "alt_sinir": -0.32999999999999996,
+      "ust_sinir": 1.2,
+      "aykiri_sayisi": 29,
+      "aykiri_orani": 0.037760416666666664
+    },
+    "Age": {
+      "q1": 24.0,
+      "q3": 41.0,
+      "iqr": 17.0,
+      "alt_sinir": -1.5,
+      "ust_sinir": 66.5,
+      "aykiri_sayisi": 9,
+      "aykiri_orani": 0.01171875
+    }
+  },
+  "temel_feature_importance": {
+    "Glucose_BMI": 0.13494277612239286,
+    "Glucose": 0.13117461741383732,
+    "Glucose_Age": 0.11795231105469076,
+    "BMI_Age": 0.08965634582182076,
+    "BMI": 0.07653286428639944,
+    "Age": 0.07281378512820598,
+    "DiabetesPedigreeFunction": 0.06605394736129373,
+    "Pregnancies": 0.05792371859703215,
+    "Pregnancies_Age_Ratio": 0.05782348257456073,
+    "BloodPressure": 0.05424952307388056,
+    "SkinThickness": 0.050853127863045945,
+    "Insulin": 0.04826824880118074,
+    "Insulin_Glucose_Ratio": 0.04175525190165909
+  }
+}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Diyabet Risk Tahmini | Ana Sayfa{% endblock %}
+
+{% block icerik %}
+<section class="kart">
+  <h2>Risk Hesaplama Formu</h2>
+  <p class="kart-aciklama">
+    Aşağıdaki bilgileri girerek tahmini risk olasılığını hesaplayabilirsiniz.
+  </p>
+
+  {% if hata_mesaji %}
+  <div class="uyari hata">{{ hata_mesaji }}</div>
+  {% endif %}
+
+  {% include "parcali/form.html" %}
+</section>
+{% endblock %}

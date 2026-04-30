@@ -1,0 +1,544 @@
+{
+  "created_at_utc": "2026-04-27T12:19:14.377404+00:00",
+  "source_files": {
+    "sweep": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/min90_small_scale_sweep_results.json",
+    "selection": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/min90_small_scale_selection_report.json"
+  },
+  "candidate_rows": [
+    {
+      "target": 500,
+      "candidate": "500/500",
+      "dataset_name": "small_t500_s0p4_low",
+      "best_model": "XGB+LGBM+ET Soft Voting",
+      "accuracy": 0.92,
+      "min_main": 0.91,
+      "roc_auc": 0.9732000000000001,
+      "confusion_matrix": {
+        "tn": 93,
+        "fp": 7,
+        "fn": 9,
+        "tp": 91,
+        "matrix": [
+          [
+            93,
+            7
+          ],
+          [
+            9,
+            91
+          ]
+        ]
+      },
+      "cv_min_main": 0.8560000000000001,
+      "cv_min_main_std": 0.026076809620810618,
+      "cv_accuracy": 0.8649999999999999,
+      "cohens_d": 0.8358567744425426,
+      "shift": 0.11500896086765702,
+      "status": "Geçmedi"
+    },
+    {
+      "target": 650,
+      "candidate": "650/650",
+      "dataset_name": "small_t650_s0p5_low",
+      "best_model": "XGB+LGBM+ET Soft Voting",
+      "accuracy": 0.9198606271777003,
+      "min_main": 0.916083916083916,
+      "roc_auc": 0.9771756021756022,
+      "confusion_matrix": {
+        "tn": 131,
+        "fp": 12,
+        "fn": 11,
+        "tp": 133,
+        "matrix": [
+          [
+            131,
+            12
+          ],
+          [
+            11,
+            133
+          ]
+        ]
+      },
+      "cv_min_main": 0.8738461538461539,
+      "cv_min_main_std": 0.02078347090170199,
+      "cv_accuracy": 0.8938461538461538,
+      "cohens_d": 1.0502093436757374,
+      "shift": 0.12500046151211122,
+      "status": "Geçmedi"
+    },
+    {
+      "target": 800,
+      "candidate": "800/800",
+      "dataset_name": "small_t800_s0p6_low",
+      "best_model": "XGB+LGBM+ET Soft Voting",
+      "accuracy": 0.9119496855345912,
+      "min_main": 0.9119496855345912,
+      "roc_auc": 0.972983663620901,
+      "confusion_matrix": {
+        "tn": 145,
+        "fp": 14,
+        "fn": 14,
+        "tp": 145,
+        "matrix": [
+          [
+            145,
+            14
+          ],
+          [
+            14,
+            145
+          ]
+        ]
+      },
+      "cv_min_main": 0.9,
+      "cv_min_main_std": 0.011692679333668585,
+      "cv_accuracy": 0.911875,
+      "cohens_d": 1.2808864327378098,
+      "shift": 0.11724476332638606,
+      "status": "Geçmedi"
+    },
+    {
+      "target": 1000,
+      "candidate": "1000/1000",
+      "dataset_name": "small_t1000_s0p6_adaptive",
+      "best_model": "ExtraTrees",
+      "accuracy": 0.9415887850467289,
+      "min_main": 0.9248826291079812,
+      "roc_auc": 0.9854787640572116,
+      "confusion_matrix": {
+        "tn": 206,
+        "fp": 9,
+        "fn": 16,
+        "tp": 197,
+        "matrix": [
+          [
+            206,
+            9
+          ],
+          [
+            16,
+            197
+          ]
+        ]
+      },
+      "cv_min_main": 0.913084577114428,
+      "cv_min_main_std": 0.007613057993576835,
+      "cv_accuracy": 0.922501053131582,
+      "cohens_d": 1.3820787213209367,
+      "shift": 0.11151132690080376,
+      "status": "Seçildi"
+    },
+    {
+      "target": 1250,
+      "candidate": "1250/1250",
+      "dataset_name": "small_t1250_s0p5_low",
+      "best_model": "XGBoost",
+      "accuracy": 0.9344894026974951,
+      "min_main": 0.9343629343629344,
+      "roc_auc": 0.9772497772497772,
+      "confusion_matrix": {
+        "tn": 242,
+        "fp": 17,
+        "fn": 17,
+        "tp": 243,
+        "matrix": [
+          [
+            242,
+            17
+          ],
+          [
+            17,
+            243
+          ]
+        ]
+      },
+      "cv_min_main": 0.9256,
+      "cv_min_main_std": 0.01824280680158617,
+      "cv_accuracy": 0.9368063072252288,
+      "cohens_d": 1.3685772551914424,
+      "shift": 0.1070491997466286,
+      "status": "Geçti ama daha büyük"
+    },
+    {
+      "target": 1500,
+      "candidate": "1500/1500",
+      "dataset_name": "small_t1500_s0p6_adaptive",
+      "best_model": "XGB+LGBM+ET Soft Voting",
+      "accuracy": 0.9479674796747968,
+      "min_main": 0.9478827361563518,
+      "roc_auc": 0.9870975929607851,
+      "confusion_matrix": {
+        "tn": 292,
+        "fp": 16,
+        "fn": 16,
+        "tp": 291,
+        "matrix": [
+          [
+            292,
+            16
+          ],
+          [
+            16,
+            291
+          ]
+        ]
+      },
+      "cv_min_main": 0.9379620958751393,
+      "cv_min_main_std": 0.024552701045206116,
+      "cv_accuracy": 0.9466593934983154,
+      "cohens_d": 1.5825431708027395,
+      "shift": 0.11227843074137504,
+      "status": "Geçti ama daha büyük"
+    },
+    {
+      "target": 2000,
+      "candidate": "2000/2000",
+      "dataset_name": "small_t2000_s0p6_low",
+      "best_model": "LightGBM",
+      "accuracy": 0.963855421686747,
+      "min_main": 0.9637681159420289,
+      "roc_auc": 0.9927478167967299,
+      "confusion_matrix": {
+        "tn": 399,
+        "fp": 15,
+        "fn": 15,
+        "tp": 401,
+        "matrix": [
+          [
+            399,
+            15
+          ],
+          [
+            15,
+            401
+          ]
+        ]
+      },
+      "cv_min_main": 0.9554319899244332,
+      "cv_min_main_std": 0.0032761470428464136,
+      "cv_accuracy": 0.9607545547676446,
+      "cohens_d": 1.7706172125753636,
+      "shift": 0.11116098032101868,
+      "status": "Geçti ama daha büyük"
+    },
+    {
+      "target": 2250,
+      "candidate": "2250/2250",
+      "dataset_name": "small_t2250_s0p6_low",
+      "best_model": "ExtraTrees",
+      "accuracy": 0.9675615212527964,
+      "min_main": 0.9664429530201343,
+      "roc_auc": 0.9924527924167581,
+      "confusion_matrix": {
+        "tn": 432,
+        "fp": 15,
+        "fn": 14,
+        "tp": 433,
+        "matrix": [
+          [
+            432,
+            15
+          ],
+          [
+            14,
+            433
+          ]
+        ]
+      },
+      "cv_min_main": 0.9595205881039895,
+      "cv_min_main_std": 0.0028759116293986596,
+      "cv_accuracy": 0.9673324944289574,
+      "cohens_d": 1.8149882208180046,
+      "shift": 0.11414559011540985,
+      "status": "Geçti ama daha büyük"
+    },
+    {
+      "target": 2500,
+      "candidate": "2500/2500",
+      "dataset_name": "small_t2500_s0p6_low",
+      "best_model": "ExtraTrees",
+      "accuracy": 0.9698795180722891,
+      "min_main": 0.9678714859437751,
+      "roc_auc": 0.995804503153175,
+      "confusion_matrix": {
+        "tn": 482,
+        "fp": 16,
+        "fn": 14,
+        "tp": 484,
+        "matrix": [
+          [
+            482,
+            16
+          ],
+          [
+            14,
+            484
+          ]
+        ]
+      },
+      "cv_min_main": 0.9644091288768468,
+      "cv_min_main_std": 0.004378338963005826,
+      "cv_accuracy": 0.9682004961483746,
+      "cohens_d": 1.8513503898911974,
+      "shift": 0.10931023765515685,
+      "status": "Referans / daha büyük"
+    }
+  ],
+  "focus_rows_500_to_1000": [
+    {
+      "target": 500,
+      "candidate": "500/500",
+      "dataset_name": "small_t500_s0p4_low",
+      "best_model": "XGB+LGBM+ET Soft Voting",
+      "accuracy": 0.92,
+      "min_main": 0.91,
+      "roc_auc": 0.9732000000000001,
+      "confusion_matrix": {
+        "tn": 93,
+        "fp": 7,
+        "fn": 9,
+        "tp": 91,
+        "matrix": [
+          [
+            93,
+            7
+          ],
+          [
+            9,
+            91
+          ]
+        ]
+      },
+      "cv_min_main": 0.8560000000000001,
+      "cv_min_main_std": 0.026076809620810618,
+      "cv_accuracy": 0.8649999999999999,
+      "cohens_d": 0.8358567744425426,
+      "shift": 0.11500896086765702,
+      "status": "Geçmedi"
+    },
+    {
+      "target": 650,
+      "candidate": "650/650",
+      "dataset_name": "small_t650_s0p5_low",
+      "best_model": "XGB+LGBM+ET Soft Voting",
+      "accuracy": 0.9198606271777003,
+      "min_main": 0.916083916083916,
+      "roc_auc": 0.9771756021756022,
+      "confusion_matrix": {
+        "tn": 131,
+        "fp": 12,
+        "fn": 11,
+        "tp": 133,
+        "matrix": [
+          [
+            131,
+            12
+          ],
+          [
+            11,
+            133
+          ]
+        ]
+      },
+      "cv_min_main": 0.8738461538461539,
+      "cv_min_main_std": 0.02078347090170199,
+      "cv_accuracy": 0.8938461538461538,
+      "cohens_d": 1.0502093436757374,
+      "shift": 0.12500046151211122,
+      "status": "Geçmedi"
+    },
+    {
+      "target": 800,
+      "candidate": "800/800",
+      "dataset_name": "small_t800_s0p6_low",
+      "best_model": "XGB+LGBM+ET Soft Voting",
+      "accuracy": 0.9119496855345912,
+      "min_main": 0.9119496855345912,
+      "roc_auc": 0.972983663620901,
+      "confusion_matrix": {
+        "tn": 145,
+        "fp": 14,
+        "fn": 14,
+        "tp": 145,
+        "matrix": [
+          [
+            145,
+            14
+          ],
+          [
+            14,
+            145
+          ]
+        ]
+      },
+      "cv_min_main": 0.9,
+      "cv_min_main_std": 0.011692679333668585,
+      "cv_accuracy": 0.911875,
+      "cohens_d": 1.2808864327378098,
+      "shift": 0.11724476332638606,
+      "status": "Geçmedi"
+    },
+    {
+      "target": 1000,
+      "candidate": "1000/1000",
+      "dataset_name": "small_t1000_s0p6_adaptive",
+      "best_model": "ExtraTrees",
+      "accuracy": 0.9415887850467289,
+      "min_main": 0.9248826291079812,
+      "roc_auc": 0.9854787640572116,
+      "confusion_matrix": {
+        "tn": 206,
+        "fp": 9,
+        "fn": 16,
+        "tp": 197,
+        "matrix": [
+          [
+            206,
+            9
+          ],
+          [
+            16,
+            197
+          ]
+        ]
+      },
+      "cv_min_main": 0.913084577114428,
+      "cv_min_main_std": 0.007613057993576835,
+      "cv_accuracy": 0.922501053131582,
+      "cohens_d": 1.3820787213209367,
+      "shift": 0.11151132690080376,
+      "status": "Seçildi"
+    }
+  ],
+  "risk_summary": {
+    "selected_candidate": {
+      "target": 1000,
+      "candidate": "1000/1000",
+      "dataset_name": "small_t1000_s0p6_adaptive",
+      "best_model": "ExtraTrees",
+      "accuracy": 0.9415887850467289,
+      "min_main": 0.9248826291079812,
+      "roc_auc": 0.9854787640572116,
+      "confusion_matrix": {
+        "tn": 206,
+        "fp": 9,
+        "fn": 16,
+        "tp": 197,
+        "matrix": [
+          [
+            206,
+            9
+          ],
+          [
+            16,
+            197
+          ]
+        ]
+      },
+      "cv_min_main": 0.913084577114428,
+      "cv_min_main_std": 0.007613057993576835,
+      "cv_accuracy": 0.922501053131582,
+      "cohens_d": 1.3820787213209367,
+      "shift": 0.11151132690080376,
+      "status": "Seçildi"
+    },
+    "external_holdout": {
+      "accuracy": 0.7402597402597403,
+      "precision": 0.6346153846153846,
+      "recall": 0.6111111111111112,
+      "sensitivity": 0.6111111111111112,
+      "specificity": 0.81,
+      "f1": 0.6226415094339622,
+      "roc_auc": 0.8180555555555554,
+      "balanced_accuracy": 0.7105555555555556,
+      "mcc": 0.42490498154100403,
+      "brier": 0.16948816679188577,
+      "threshold": 0.51,
+      "confusion_matrix": {
+        "tn": 81,
+        "fp": 19,
+        "fn": 21,
+        "tp": 33,
+        "matrix": [
+          [
+            81,
+            19
+          ],
+          [
+            21,
+            33
+          ]
+        ]
+      },
+      "ana_metrik_minimumu": 0.6111111111111112
+    },
+    "synthetic_holdout_accuracy_gap": 0.20132904478698865,
+    "synthetic_cv_accuracy_gap": 0.18224131287184175,
+    "synthetic_min_main_gap": 0.3137715179968701,
+    "external_error_count": null,
+    "selected_external_false_negative": 21,
+    "selected_synthetic_false_negative": 16,
+    "selected_shift": 0.11151132690080376,
+    "selected_cohens_d": 1.3820787213209367,
+    "candidate_500": {
+      "target": 500,
+      "candidate": "500/500",
+      "dataset_name": "small_t500_s0p4_low",
+      "best_model": "XGB+LGBM+ET Soft Voting",
+      "accuracy": 0.92,
+      "min_main": 0.91,
+      "roc_auc": 0.9732000000000001,
+      "confusion_matrix": {
+        "tn": 93,
+        "fp": 7,
+        "fn": 9,
+        "tp": 91,
+        "matrix": [
+          [
+            93,
+            7
+          ],
+          [
+            9,
+            91
+          ]
+        ]
+      },
+      "cv_min_main": 0.8560000000000001,
+      "cv_min_main_std": 0.026076809620810618,
+      "cv_accuracy": 0.8649999999999999,
+      "cohens_d": 0.8358567744425426,
+      "shift": 0.11500896086765702,
+      "status": "Geçmedi"
+    },
+    "leakage_status": "clean",
+    "source_intersection": 0,
+    "exact_duplicate_count": 0,
+    "near_duplicate_rate": 0.0,
+    "risk_levels": {
+      "synthetic_overfitting": "yüksek",
+      "imputation_leakage": "düşük-orta",
+      "man_made_separation": "orta",
+      "small_data_variance": "orta",
+      "ensemble_overfit": "orta"
+    }
+  },
+  "graphics": {
+    "gap": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_risk_audit/risk_audit_gap_analizi.png",
+    "candidate_risk": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_risk_audit/risk_audit_aday_karsilastirma.png",
+    "risk_level": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_risk_audit/risk_audit_risk_duzeyleri.png",
+    "candidate_confusion": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_risk_audit/risk_audit_aday_hata_matrisi_heatmap.png"
+  },
+  "quality_metric_definitions": {
+    "cohens_d": "Outcome=0 ve Outcome=1 siniflari arasindaki ortalama mutlak standartlastirilmis fark. Deger yukseldikce siniflar daha kolay ayrisir.",
+    "distribution_shift": "Aday benchmark ortalamasinin original_dev ortalamasindan sapmasi. Her ozellik icin original_dev standart sapmasina bolunur ve ortalamasi alinir.",
+    "note": "Cohen's d ile shift ayni sey degildir; siniflar arasi ayrim artarken genel ortalama kaymasi dusuk kalabilir."
+  },
+  "notes": [
+    "Bu rapor yeni model egitmez; mevcut small-scale sweep sonuclarini risk denetimi icin ozetler.",
+    "Original dış kontrol sentetik benchmark basari hedefi olarak yorumlanmamistir.",
+    "Rapor ana karar hattini 500/500 adayindan 1000/1000 adayina kadar odaklar.",
+    "500/500 daha muhafazakar gorunse de hedef metrikleri tam karsilamadigi icin final aday degildir."
+  ]
+}

@@ -1,0 +1,90 @@
+{% set risk_metin = {
+  "dusuk": "Düşük",
+  "cok_dusuk": "Düşük",
+  "çok_düşük": "Düşük",
+  "orta": "Orta",
+  "yuksek": "Yüksek",
+  "cok_yuksek": "Yüksek",
+  "çok_yüksek": "Yüksek"
+} %}
+{% set oran_yuzde = '%.1f'|format(sonuc.olasilik * 100) %}
+{% set sonuc_renk = {
+  "dusuk": "#16a34a",
+  "cok_dusuk": "#16a34a",
+  "çok_düşük": "#16a34a",
+  "orta": "#dade00",
+  "yuksek": "#dc2626",
+  "cok_yuksek": "#dc2626",
+  "çok_yüksek": "#dc2626"
+} %}
+{% set risk_css_sinifi = {
+  "dusuk": "dusuk",
+  "cok_dusuk": "dusuk",
+  "çok_düşük": "dusuk",
+  "orta": "orta",
+  "yuksek": "yuksek",
+  "cok_yuksek": "yuksek",
+  "çok_yüksek": "yuksek"
+}.get(sonuc.risk_kategorisi, "orta") %}
+{% set risk_metin_degeri = risk_metin.get(sonuc.risk_kategorisi, "Orta") %}
+{% set risk_renk_degeri = sonuc_renk.get(sonuc.risk_kategorisi, sonuc_renk["orta"]) %}
+{% set ikili_tahmin_metin = "Diyabet Risk Sinyali Var - 1" if sonuc.sinif|int == 1 else "Diyabet Risk Sinyali Yok - 0" %}
+
+<section class="sonuc-ust">
+  <h3>Tahmin Özeti</h3>
+  <span class="risk-rozet risk-{{ risk_css_sinifi }}">{{ risk_metin_degeri }} Risk</span>
+</section>
+
+<section class="ozet-grid">
+  <div class="ozet-sol">
+    <section class="risk-karti">
+      <div class="ozet-kutusu">
+        <p class="etiket ozet-etiket">Risk Yüzdesi</p>
+        <p class="deger">%{{ oran_yuzde }}</p>
+      </div>
+      <div class="ozet-kutusu">
+        <p class="etiket ozet-etiket">Risk Seviyesi</p>
+        <p class="deger buyuk">{{ risk_metin_degeri }}</p>
+      </div>
+      <div class="ozet-kutusu">
+        <p class="etiket ozet-etiket">İkili Tahmin</p>
+        <p class="deger buyuk">{{ ikili_tahmin_metin }}</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="ozet-sag">
+    <section class="grafik-karti">
+      <div class="pie-blok">
+        <h4>Risk Yüzdesi Grafiği</h4>
+        <div class="pie-grafik"
+          style="--oran-yuzde: {{ oran_yuzde }}%; --sonuc-renk: {{ risk_renk_degeri }};">
+          <div class="pie-merkez">
+            <strong>%{{ oran_yuzde }}</strong>
+            <span>{{ risk_metin_degeri }} risk</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cizgi-blok">
+        <h4>Doğrusal Risk Barı</h4>
+        <div class="cizgi-etiketler">
+          <span>Düşük (%0-33)</span>
+          <span>Orta (%33-66)</span>
+          <span>Yüksek (%66-100)</span>
+        </div>
+        <div class="risk-cizgi"
+          style="--oran-yuzde: {{ oran_yuzde }}%; --sonuc-renk: {{ risk_renk_degeri }};">
+          <div class="risk-segment dusuk"></div>
+          <div class="risk-segment orta"></div>
+          <div class="risk-segment yuksek"></div>
+          <div class="risk-dolgu"></div>
+          <div class="risk-gosterge"></div>
+        </div>
+        <p class="cizgi-notu">
+          Gösterge, modelin tahmin ettiği risk olasılığının doğrusal konumunu gösterir.
+        </p>
+      </div>
+    </section>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+{
+  "ikili_siniflama_esikleri": {
+    "veri_mudahale_agresif": {
+      "esik": 0.5885714285714285,
+      "aciklama": "Veri müdahalesi deneylerinde validation metrik kapısı için seçilen eşik."
+    },
+    "default_0_5": {
+      "esik": 0.5,
+      "aciklama": "Standart olasılık eşiği."
+    }
+  },
+  "onerilen_ikili_siniflama_esigi": 0.5885714285714285,
+  "onerilen_ikili_siniflama_yontemi": "veri_mudahale_metrik_kapisi",
+  "risk_kategorileri": {
+    "dusuk_ust_esik": 0.33,
+    "orta_ust_esik": 0.66,
+    "etiketler": [
+      "dusuk",
+      "orta",
+      "yuksek"
+    ]
+  }
+}

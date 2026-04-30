@@ -1,0 +1,263 @@
+{
+  "final_dataset_name": "min90_sentetik_2500_per_class_pima",
+  "final_model": "soft_voting_xgb_lgbm_et",
+  "final_feature_set": "all_features",
+  "final_threshold": 0.52,
+  "synthetic_holdout_metrics": {
+    "accuracy": 0.9677103718199609,
+    "precision": 0.9686274509803922,
+    "recall": 0.9667318982387475,
+    "sensitivity": 0.9667318982387475,
+    "specificity": 0.9686888454011742,
+    "f1": 0.9676787463271302,
+    "roc_auc": 0.996189506014453,
+    "balanced_accuracy": 0.9677103718199609,
+    "mcc": 0.9354225348084421,
+    "brier": 0.025347762053460655,
+    "threshold": 0.52,
+    "confusion_matrix": {
+      "tn": 495,
+      "fp": 16,
+      "fn": 17,
+      "tp": 494,
+      "matrix": [
+        [
+          495,
+          16
+        ],
+        [
+          17,
+          494
+        ]
+      ]
+    },
+    "ana_metrik_minimumu": 0.9667318982387475
+  },
+  "synthetic_group_cv_metrics": {
+    "accuracy_mean": 0.9690055390948069,
+    "accuracy_std": 0.0060108419659243234,
+    "precision_mean": 0.9644707904744143,
+    "precision_std": 0.01032569511316966,
+    "recall_mean": 0.9739957381012623,
+    "recall_std": 0.006012166405850426,
+    "specificity_mean": 0.9640000000000001,
+    "specificity_std": 0.010770329614269018,
+    "f1_mean": 0.9691793580373815,
+    "f1_std": 0.005866284556215538,
+    "roc_auc_mean": 0.9966696715221468,
+    "roc_auc_std": 0.0016754330399083091,
+    "balanced_accuracy_mean": 0.9689978690506311,
+    "balanced_accuracy_std": 0.006006281396123157,
+    "mcc_mean": 0.9381161896719536,
+    "mcc_std": 0.01202060638007441,
+    "brier_mean": 0.02183683259756708,
+    "brier_std": 0.005106267063733429,
+    "ana_metrik_minimumu_mean": 0.9619661971830986,
+    "ana_metrik_minimumu_std": 0.006720166867691422,
+    "max_source_intersection_count": 0
+  },
+  "external_holdout_metrics": {
+    "accuracy": 0.7337662337662337,
+    "precision": 0.6326530612244898,
+    "recall": 0.5740740740740741,
+    "sensitivity": 0.5740740740740741,
+    "specificity": 0.82,
+    "f1": 0.6019417475728155,
+    "roc_auc": 0.8166666666666668,
+    "balanced_accuracy": 0.697037037037037,
+    "mcc": 0.4037216635973952,
+    "brier": 0.18339654169923444,
+    "threshold": 0.52,
+    "confusion_matrix": {
+      "tn": 82,
+      "fp": 18,
+      "fn": 23,
+      "tp": 31,
+      "matrix": [
+        [
+          82,
+          18
+        ],
+        [
+          23,
+          31
+        ]
+      ]
+    },
+    "ana_metrik_minimumu": 0.5740740740740741
+  },
+  "leakage_summary": {
+    "dataset_name": "min90_sentetik_2500_per_class_pima",
+    "total_rows": 5000,
+    "original_dev_rows": 614,
+    "synthetic_rows": 4386,
+    "class_distribution": {
+      "0": 2500,
+      "1": 2500
+    },
+    "source_id_family_count": 614,
+    "synthetic_row_valid_source_id_ratio": 1.0,
+    "independent_synthetic_source_id_count": 0,
+    "train_test_source_intersection": 0,
+    "cv_source_intersections": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "exact_duplicate_count": 0,
+    "near_duplicate_rate": 0.0,
+    "minimum_near_duplicate_distance": 0.16721105173019227,
+    "external_holdout_source_overlap_count": 0,
+    "leakage_status": "clean"
+  },
+  "turkish_character_fix_summary": {
+    "checked_terms": [
+      "yapilan",
+      "sinirli",
+      "yaklasimlari",
+      "artirmak",
+      "uretimi",
+      "uretim",
+      "gorecek",
+      "olusur",
+      "calismada",
+      "calisma",
+      "performansi",
+      "kullanilmaktadir",
+      "uygulanirsa",
+      "saklanmistir",
+      "basari",
+      "sinif",
+      "ozellik",
+      "onemli",
+      "ogrenci",
+      "aciklama",
+      "olcut",
+      "guvenilirlik"
+    ],
+    "flagged_terms": [],
+    "status": "pass",
+    "note": "Rapor metni Türkçe karakterlerle yeniden yazıldı; teknik İngilizce terimler ve source_id korunmuştur."
+  },
+  "empty_graph_check_summary": {
+    "checked_graph_count": 14,
+    "included_graph_count": 13,
+    "empty_or_missing_graphs": [],
+    "resolution": "Boş grafik bulunmadı; mevcut grafikler doğrulanıp V2 klasörüne kopyalandı ve üç yeni analiz grafiği üretildi."
+  },
+  "min90_vs_strict2700_summary": {
+    "farkin_ana_nedeni": "Ana fark modelden cok veri uretiminden geliyor. Min90 uretimi parent satiri sinif hedef merkezlerine yuksek synthetic_strength ile yaklastirdigi icin Glucose, BMI, Age ve DPF sinif ayrimi belirgin artiyor.",
+    "veri_uretimi_etkisi_min_main_metric_delta": 0.15057127940304238,
+    "model_etkisi_strict_data_delta": -0.01814882032667875,
+    "model_etkisi_min90_data_delta": 0.017612524461839474,
+    "threshold_etkisi": {
+      "strict_xgb_no_skin_on_strict2700": {
+        "default_min_main_metric": 0.7731397459165155,
+        "tuned_min_main_metric": 0.7985480943738656,
+        "delta": 0.025408348457350183,
+        "selected_threshold": 0.57
+      },
+      "strict_xgb_no_skin_on_min90_2500": {
+        "default_min_main_metric": 0.9647749510763209,
+        "tuned_min_main_metric": 0.949119373776908,
+        "delta": -0.015655577299412915,
+        "selected_threshold": 0.66
+      },
+      "new_soft_all_on_strict2700": {
+        "default_min_main_metric": 0.7695099818511797,
+        "tuned_min_main_metric": 0.7803992740471869,
+        "delta": 0.010889292196007205,
+        "selected_threshold": 0.54
+      },
+      "new_soft_all_on_min90_2500": {
+        "default_min_main_metric": 0.9667318982387475,
+        "tuned_min_main_metric": 0.9667318982387475,
+        "delta": 0.0,
+        "selected_threshold": 0.52
+      }
+    },
+    "feature_set_etkisi": {
+      "strict_xgb_strict2700_all_vs_no_skin": {
+        "all_features": 0.79491833030853,
+        "no_skinthickness": 0.7985480943738656,
+        "delta_second_minus_first": 0.003629764065335661
+      },
+      "new_soft_min90_2500_all_vs_no_skin": {
+        "all_features": 0.9667318982387475,
+        "no_skinthickness": 0.9530332681017613,
+        "delta_second_minus_first": -0.013698630136986245
+      }
+    },
+    "synthetic_distribution_shift": {
+      "strict2700_avg_abs_z_shift": 0.0843539881803578,
+      "min90_2500_avg_abs_z_shift": 0.556317960769961,
+      "strict2700_mean_abs_cohens_d": 0.8597766896684065,
+      "min90_2500_mean_abs_cohens_d": 2.9503879928080963,
+      "var_mi": true
+    },
+    "rapor_dili": "Yeni skorlar 'ham PIMA genellenebilirliği' olarak değil, source_id aile ayrımı korunmuş fakat sınıf hedef merkezleriyle güçlendirilmiş kontrollü sentetik benchmark sonucu olarak açıklanmalı."
+  },
+  "distribution_shift_summary": {
+    "strict2700_avg_abs_z_shift": 0.0843539881803578,
+    "min90_2500_avg_abs_z_shift": 0.556317960769961,
+    "strict2700_mean_abs_cohens_d": 0.8597766896684065,
+    "min90_2500_mean_abs_cohens_d": 2.9503879928080963,
+    "var_mi": true
+  },
+  "outcome_encoding_check": {
+    "status": "pass",
+    "details": {
+      "diabetes.csv": {
+        "unique_values": [
+          0,
+          1
+        ],
+        "valid_binary_0_1": true
+      },
+      "min90_sentetik_2500_per_class_pima.csv": {
+        "unique_values": [
+          0,
+          1
+        ],
+        "valid_binary_0_1": true
+      },
+      "sentetik_2700_per_class_pima.csv": {
+        "unique_values": [
+          0,
+          1
+        ],
+        "valid_binary_0_1": true
+      }
+    }
+  },
+  "feature_importance_concentration_check": {
+    "status": "warning",
+    "top_feature": "Glucose",
+    "top_single_feature_auc_directionless": 0.9894576,
+    "all_single_feature_auc_directionless": {
+      "Pregnancies": 0.8185808,
+      "Glucose": 0.9894576,
+      "BloodPressure": 0.89282576,
+      "SkinThickness": 0.9495136,
+      "Insulin": 0.96148352,
+      "BMI": 0.96848976,
+      "DiabetesPedigreeFunction": 0.94745296,
+      "Age": 0.93657248
+    },
+    "note": "Tek değişken ayrımı yüksekse bu durum sentetik veri sınıf ayrımının güçlendiğini gösterir; raporda sınırlılık olarak açıklandı."
+  },
+  "final_quality_status": "pass",
+  "notes": [
+    "Final benchmark sonucu korunmuştur; model yeniden eğitilmemiş veya yeniden optimize edilmemiştir.",
+    "Yüksek sentetik benchmark sonucunun üretim stratejisiyle ilişkisi raporda açıkça sınırlılık olarak anlatılmıştır."
+  ],
+  "word_report_path": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/pima_sentetik_benchmark_min90_final_rapor_v2.docx",
+  "desktop_word_report_path": "/Users/beratkaanseven/Desktop/PIMA_Sentetik_Benchmark_Min90_Final_Rapor_v2.docx"
+}

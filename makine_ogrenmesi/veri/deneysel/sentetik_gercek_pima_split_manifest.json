@@ -1,0 +1,25 @@
+{
+  "dataset_name": "sentetik_2700_per_class_pima",
+  "not": "Bu manifest leakage duzeltmesi sonrasi final source_id kontrollu kosuya aittir.",
+  "split": {
+    "yontem": "GroupShuffleSplit(source_id)",
+    "train_satir": 4296,
+    "test_satir": 1104,
+    "train_sinif_dagilimi": {
+      "0": 2149,
+      "1": 2147
+    },
+    "test_sinif_dagilimi": {
+      "0": 551,
+      "1": 553
+    },
+    "train_source_family_count": 491,
+    "test_source_family_count": 123
+  },
+  "model": "xgboost",
+  "feature_set": "no_skinthickness",
+  "cikarilan_featurelar": [
+    "SkinThickness"
+  ],
+  "threshold": 0.5350450873374939
+}

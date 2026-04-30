@@ -1,0 +1,1237 @@
+{
+  "raw_pima": {
+    "path": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv",
+    "rows": 768,
+    "class_distribution": {
+      "0": 500,
+      "1": 268
+    },
+    "features": [
+      "Pregnancies",
+      "Glucose",
+      "BloodPressure",
+      "SkinThickness",
+      "Insulin",
+      "BMI",
+      "DiabetesPedigreeFunction",
+      "Age"
+    ],
+    "correlation_matrix": {
+      "Pregnancies": {
+        "Pregnancies": 1.0,
+        "Glucose": 0.129459,
+        "BloodPressure": 0.141282,
+        "SkinThickness": -0.081672,
+        "Insulin": -0.073535,
+        "BMI": 0.017683,
+        "DiabetesPedigreeFunction": -0.033523,
+        "Age": 0.544341,
+        "Outcome": 0.221898
+      },
+      "Glucose": {
+        "Pregnancies": 0.129459,
+        "Glucose": 1.0,
+        "BloodPressure": 0.15259,
+        "SkinThickness": 0.057328,
+        "Insulin": 0.331357,
+        "BMI": 0.221071,
+        "DiabetesPedigreeFunction": 0.137337,
+        "Age": 0.263514,
+        "Outcome": 0.466581
+      },
+      "BloodPressure": {
+        "Pregnancies": 0.141282,
+        "Glucose": 0.15259,
+        "BloodPressure": 1.0,
+        "SkinThickness": 0.207371,
+        "Insulin": 0.088933,
+        "BMI": 0.281805,
+        "DiabetesPedigreeFunction": 0.041265,
+        "Age": 0.239528,
+        "Outcome": 0.065068
+      },
+      "SkinThickness": {
+        "Pregnancies": -0.081672,
+        "Glucose": 0.057328,
+        "BloodPressure": 0.207371,
+        "SkinThickness": 1.0,
+        "Insulin": 0.436783,
+        "BMI": 0.392573,
+        "DiabetesPedigreeFunction": 0.183928,
+        "Age": -0.11397,
+        "Outcome": 0.074752
+      },
+      "Insulin": {
+        "Pregnancies": -0.073535,
+        "Glucose": 0.331357,
+        "BloodPressure": 0.088933,
+        "SkinThickness": 0.436783,
+        "Insulin": 1.0,
+        "BMI": 0.197859,
+        "DiabetesPedigreeFunction": 0.185071,
+        "Age": -0.042163,
+        "Outcome": 0.130548
+      },
+      "BMI": {
+        "Pregnancies": 0.017683,
+        "Glucose": 0.221071,
+        "BloodPressure": 0.281805,
+        "SkinThickness": 0.392573,
+        "Insulin": 0.197859,
+        "BMI": 1.0,
+        "DiabetesPedigreeFunction": 0.140647,
+        "Age": 0.036242,
+        "Outcome": 0.292695
+      },
+      "DiabetesPedigreeFunction": {
+        "Pregnancies": -0.033523,
+        "Glucose": 0.137337,
+        "BloodPressure": 0.041265,
+        "SkinThickness": 0.183928,
+        "Insulin": 0.185071,
+        "BMI": 0.140647,
+        "DiabetesPedigreeFunction": 1.0,
+        "Age": 0.033561,
+        "Outcome": 0.173844
+      },
+      "Age": {
+        "Pregnancies": 0.544341,
+        "Glucose": 0.263514,
+        "BloodPressure": 0.239528,
+        "SkinThickness": -0.11397,
+        "Insulin": -0.042163,
+        "BMI": 0.036242,
+        "DiabetesPedigreeFunction": 0.033561,
+        "Age": 1.0,
+        "Outcome": 0.238356
+      },
+      "Outcome": {
+        "Pregnancies": 0.221898,
+        "Glucose": 0.466581,
+        "BloodPressure": 0.065068,
+        "SkinThickness": 0.074752,
+        "Insulin": 0.130548,
+        "BMI": 0.292695,
+        "DiabetesPedigreeFunction": 0.173844,
+        "Age": 0.238356,
+        "Outcome": 1.0
+      }
+    }
+  },
+  "experiments": [
+    {
+      "label": "500/500",
+      "dataset_name": "small_t500_s0p4_low",
+      "target_per_class": 500,
+      "total_rows": 1000,
+      "original_dev_rows": 614,
+      "synthetic_rows": 386,
+      "class_distribution": {
+        "0": 500,
+        "1": 500
+      },
+      "original_dev_distribution": {
+        "0": 400,
+        "1": 214
+      },
+      "added_negative": 100,
+      "added_positive": 286,
+      "generation_method_counts": {
+        "original_dev": 614,
+        "source_id_controlled_local_augmentation": 386
+      },
+      "synthetic_strength": 0.4,
+      "noise_profile": "low",
+      "synthetic_parent_family_count": 259,
+      "synthetic_parent_family_negative": 94,
+      "synthetic_parent_family_positive": 165,
+      "independent_synthetic_source_id_count": 0,
+      "previous_best_model": "XGBoost + LightGBM + ExtraTrees soft voting",
+      "previous_feature_set": "SkinThickness çıkarılmış",
+      "previous_status": "Geçmedi",
+      "top_standardized_mean_differences": [
+        "SkinThickness: +0.58",
+        "Insulin: +0.57",
+        "Glucose: +0.24",
+        "BloodPressure: +0.20"
+      ],
+      "standardized_mean_difference": {
+        "Pregnancies": {
+          "Genel": 0.02611758171613516,
+          "Negatif": -0.013270669726603576,
+          "Pozitif": -0.06900219925869079
+        },
+        "Glucose": {
+          "Genel": 0.23617601040994357,
+          "Negatif": -0.04360356699141183,
+          "Pozitif": 0.21276063666892636
+        },
+        "BloodPressure": {
+          "Genel": 0.20262137119088508,
+          "Negatif": 0.11798538573691052,
+          "Pozitif": 0.22897771193632238
+        },
+        "SkinThickness": {
+          "Genel": 0.5787154484566499,
+          "Negatif": 0.4903889696458173,
+          "Pozitif": 0.5894441794014752
+        },
+        "Insulin": {
+          "Genel": 0.5677490065823473,
+          "Negatif": 0.49628346412825575,
+          "Pozitif": 0.5217731836911684
+        },
+        "BMI": {
+          "Genel": 0.16971971045594847,
+          "Negatif": 0.007086404184658757,
+          "Pozitif": 0.15979685028042045
+        },
+        "DiabetesPedigreeFunction": {
+          "Genel": 0.13361769570097248,
+          "Negatif": -0.0242087621672441,
+          "Pozitif": 0.15938504176903692
+        },
+        "Age": {
+          "Genel": 0.17231244973615087,
+          "Negatif": 0.001715857248746079,
+          "Pozitif": 0.20596299877662766
+        }
+      },
+      "feature_change_rows": [
+        {
+          "feature": "Pregnancies",
+          "feature_tr": "Gebelik",
+          "pima_mean": 3.8450520833333335,
+          "candidate_mean": 3.933,
+          "net_delta": 0.08794791666666635,
+          "net_delta_percent": 0.022873010497798763,
+          "standardized_delta_vs_pima": 0.02611758171613516,
+          "synthetic_parent_abs_change": 1.3212435233160622,
+          "synthetic_parent_abs_change_std": 0.39899265726041605,
+          "negative_mean": 3.258,
+          "positive_mean": 4.608
+        },
+        {
+          "feature": "Glucose",
+          "feature_tr": "Glikoz",
+          "pima_mean": 120.89453125,
+          "candidate_mean": 128.44077893303208,
+          "net_delta": 7.546247683032078,
+          "net_delta_percent": 0.062420091339177745,
+          "standardized_delta_vs_pima": 0.23617601040994357,
+          "synthetic_parent_abs_change": 12.04358427332166,
+          "synthetic_parent_abs_change_std": 0.40172932255492666,
+          "negative_mean": 108.84129086528175,
+          "positive_mean": 148.04026700078236
+        },
+        {
+          "feature": "BloodPressure",
+          "feature_tr": "Kan basıncı",
+          "pima_mean": 69.10546875,
+          "candidate_mean": 73.02481478728603,
+          "net_delta": 3.919346037286033,
+          "net_delta_percent": 0.05671542510571615,
+          "standardized_delta_vs_pima": 0.20262137119088508,
+          "synthetic_parent_abs_change": 4.487471102923534,
+          "synthetic_parent_abs_change_std": 0.370666804727425,
+          "negative_mean": 70.31304667465717,
+          "positive_mean": 75.73658289991488
+        },
+        {
+          "feature": "SkinThickness",
+          "feature_tr": "Deri kalınlığı",
+          "pima_mean": 20.536458333333332,
+          "candidate_mean": 29.762240836135568,
+          "net_delta": 9.225782502802236,
+          "net_delta_percent": 0.44923921900533337,
+          "standardized_delta_vs_pima": 0.5787154484566499,
+          "synthetic_parent_abs_change": 3.1747117192821177,
+          "synthetic_parent_abs_change_std": 0.36981460461510485,
+          "negative_mean": 26.958560302778142,
+          "positive_mean": 32.56592136949299
+        },
+        {
+          "feature": "Insulin",
+          "feature_tr": "İnsülin",
+          "pima_mean": 79.79947916666667,
+          "candidate_mean": 145.1865357008173,
+          "net_delta": 65.38705653415063,
+          "net_delta_percent": 0.819392021313639,
+          "standardized_delta_vs_pima": 0.5677490065823473,
+          "synthetic_parent_abs_change": 32.03949027970423,
+          "synthetic_parent_abs_change_std": 0.4071060486525919,
+          "negative_mean": 117.8081184866142,
+          "positive_mean": 172.5649529150204
+        },
+        {
+          "feature": "BMI",
+          "feature_tr": "Vücut kitle indeksi",
+          "pima_mean": 31.992578124999998,
+          "candidate_mean": 33.329804090831956,
+          "net_delta": 1.3372259658319585,
+          "net_delta_percent": 0.041798005793944076,
+          "standardized_delta_vs_pima": 0.16971971045594847,
+          "synthetic_parent_abs_change": 2.5059025047627883,
+          "synthetic_parent_abs_change_std": 0.36751186619926274,
+          "negative_mean": 30.358638900039253,
+          "positive_mean": 36.30096928162467
+        },
+        {
+          "feature": "DiabetesPedigreeFunction",
+          "feature_tr": "Diyabet soy geçmişi fonksiyonu",
+          "pima_mean": 0.47187630208333325,
+          "candidate_mean": 0.5161188335781387,
+          "net_delta": 0.04424253149480545,
+          "net_delta_percent": 0.09375874842511635,
+          "standardized_delta_vs_pima": 0.13361769570097248,
+          "synthetic_parent_abs_change": 0.1446508261089062,
+          "synthetic_parent_abs_change_std": 0.4382944102020477,
+          "negative_mean": 0.42250075910796187,
+          "positive_mean": 0.6097369080483154
+        },
+        {
+          "feature": "Age",
+          "feature_tr": "Yaş",
+          "pima_mean": 33.240885416666664,
+          "candidate_mean": 35.266,
+          "net_delta": 2.025114583333334,
+          "net_delta_percent": 0.06092240197422542,
+          "standardized_delta_vs_pima": 0.17231244973615087,
+          "synthetic_parent_abs_change": 5.515544041450777,
+          "synthetic_parent_abs_change_std": 0.4664782066566328,
+          "negative_mean": 31.21,
+          "positive_mean": 39.322
+        }
+      ],
+      "feature_change_summary": {
+        "mean_abs_standardized_delta_vs_pima": 0.2608786592811291,
+        "mean_abs_parent_change_in_std": 0.4025742401085509,
+        "max_changed_feature_by_parent": "Age",
+        "max_shift_feature_vs_pima": "SkinThickness"
+      },
+      "model_effect": {
+        "holdout_model_raw": "soft_voting_xgb_lgbm_et",
+        "holdout_model": "XGBoost + LightGBM + ExtraTrees soft voting",
+        "holdout_feature_set_raw": "no_skinthickness",
+        "holdout_feature_set": "SkinThickness çıkarılmış",
+        "holdout_resampling": "none",
+        "holdout_threshold": 0.5,
+        "holdout_accuracy": 0.92,
+        "holdout_precision": 0.9285714285714286,
+        "holdout_recall": 0.91,
+        "holdout_specificity": 0.93,
+        "holdout_f1": 0.9191919191919192,
+        "holdout_roc_auc": 0.9732000000000001,
+        "holdout_min_main": 0.91,
+        "holdout_confusion_matrix": {
+          "tn": 93,
+          "fp": 7,
+          "fn": 9,
+          "tp": 91,
+          "matrix": [
+            [
+              93,
+              7
+            ],
+            [
+              9,
+              91
+            ]
+          ]
+        },
+        "cv_same_model": {
+          "available": true,
+          "model": "XGBoost + LightGBM + ExtraTrees soft voting",
+          "feature_set": "SkinThickness çıkarılmış",
+          "accuracy_mean": 0.8649999999999999,
+          "accuracy_std": 0.02828427124746193,
+          "precision_mean": 0.8676578974543261,
+          "precision_std": 0.03314851766972958,
+          "recall_mean": 0.8619999999999999,
+          "recall_std": 0.029495762407505278,
+          "specificity_mean": 0.868,
+          "specificity_std": 0.03492849839314599,
+          "f1_mean": 0.8646396343281042,
+          "f1_std": 0.02795054677790241,
+          "roc_auc_mean": 0.92838,
+          "roc_auc_std": 0.021046781226591375,
+          "balanced_accuracy_mean": 0.8649999999999999,
+          "balanced_accuracy_std": 0.02828427124746193,
+          "mcc_mean": 0.7303118505987491,
+          "mcc_std": 0.056770204798618586,
+          "brier_mean": 0.10721270069230429,
+          "brier_std": 0.019073301957990736,
+          "ana_metrik_minimumu_mean": 0.8560000000000001,
+          "ana_metrik_minimumu_std": 0.026076809620810618,
+          "max_source_intersection_count": 0
+        },
+        "cv_best_overall": {
+          "available": true,
+          "model": "XGBoost + LightGBM + ExtraTrees soft voting",
+          "feature_set": "SkinThickness çıkarılmış",
+          "accuracy_mean": 0.8649999999999999,
+          "accuracy_std": 0.02828427124746193,
+          "precision_mean": 0.8676578974543261,
+          "precision_std": 0.03314851766972958,
+          "recall_mean": 0.8619999999999999,
+          "recall_std": 0.029495762407505278,
+          "specificity_mean": 0.868,
+          "specificity_std": 0.03492849839314599,
+          "f1_mean": 0.8646396343281042,
+          "f1_std": 0.02795054677790241,
+          "roc_auc_mean": 0.92838,
+          "roc_auc_std": 0.021046781226591375,
+          "balanced_accuracy_mean": 0.8649999999999999,
+          "balanced_accuracy_std": 0.02828427124746193,
+          "mcc_mean": 0.7303118505987491,
+          "mcc_std": 0.056770204798618586,
+          "brier_mean": 0.10721270069230429,
+          "brier_std": 0.019073301957990736,
+          "ana_metrik_minimumu_mean": 0.8560000000000001,
+          "ana_metrik_minimumu_std": 0.026076809620810618,
+          "max_source_intersection_count": 0
+        }
+      }
+    },
+    {
+      "label": "650/650",
+      "dataset_name": "small_t650_s0p5_low",
+      "target_per_class": 650,
+      "total_rows": 1300,
+      "original_dev_rows": 614,
+      "synthetic_rows": 686,
+      "class_distribution": {
+        "0": 650,
+        "1": 650
+      },
+      "original_dev_distribution": {
+        "0": 400,
+        "1": 214
+      },
+      "added_negative": 250,
+      "added_positive": 436,
+      "generation_method_counts": {
+        "source_id_controlled_local_augmentation": 686,
+        "original_dev": 614
+      },
+      "synthetic_strength": 0.5,
+      "noise_profile": "low",
+      "synthetic_parent_family_count": 377,
+      "synthetic_parent_family_negative": 181,
+      "synthetic_parent_family_positive": 196,
+      "independent_synthetic_source_id_count": 0,
+      "previous_best_model": "XGBoost + LightGBM + ExtraTrees soft voting",
+      "previous_feature_set": "SkinThickness çıkarılmış",
+      "previous_status": "Geçmedi",
+      "top_standardized_mean_differences": [
+        "SkinThickness: +0.57",
+        "Insulin: +0.54",
+        "Glucose: +0.26",
+        "Age: +0.26"
+      ],
+      "standardized_mean_difference": {
+        "Pregnancies": {
+          "Genel": 0.032079754544600186,
+          "Negatif": -0.054460786916484684,
+          "Pozitif": -0.025002044466549873
+        },
+        "Glucose": {
+          "Genel": 0.26194362544616095,
+          "Negatif": -0.11240702032749338,
+          "Pozitif": 0.32077352543767707
+        },
+        "BloodPressure": {
+          "Genel": 0.22230599603893053,
+          "Negatif": 0.10736590688167533,
+          "Pozitif": 0.2734104079439252
+        },
+        "SkinThickness": {
+          "Genel": 0.5697384394335255,
+          "Negatif": 0.4548021688465744,
+          "Pozitif": 0.6032221439388669
+        },
+        "Insulin": {
+          "Genel": 0.5435075966826646,
+          "Negatif": 0.4265044457023728,
+          "Pozitif": 0.5312227537445677
+        },
+        "BMI": {
+          "Genel": 0.1566578863189185,
+          "Negatif": -0.04391710322987937,
+          "Pozitif": 0.1854525134819204
+        },
+        "DiabetesPedigreeFunction": {
+          "Genel": 0.1274047243729017,
+          "Negatif": -0.09162268740611314,
+          "Pozitif": 0.20251045163658946
+        },
+        "Age": {
+          "Genel": 0.26134042036216715,
+          "Negatif": 0.02817965558517635,
+          "Pozitif": 0.3689325919626878
+        }
+      },
+      "feature_change_rows": [
+        {
+          "feature": "Pregnancies",
+          "feature_tr": "Gebelik",
+          "pima_mean": 3.8450520833333335,
+          "candidate_mean": 3.953076923076923,
+          "net_delta": 0.10802483974358967,
+          "net_delta_percent": 0.028094506238766293,
+          "standardized_delta_vs_pima": 0.032079754544600186,
+          "synthetic_parent_abs_change": 1.629737609329446,
+          "synthetic_parent_abs_change_std": 0.49215252745503346,
+          "negative_mean": 3.1338461538461537,
+          "positive_mean": 4.772307692307693
+        },
+        {
+          "feature": "Glucose",
+          "feature_tr": "Glikoz",
+          "pima_mean": 120.89453125,
+          "candidate_mean": 129.26410050971043,
+          "net_delta": 8.369569259710431,
+          "net_delta_percent": 0.06923033799107792,
+          "standardized_delta_vs_pima": 0.26194362544616095,
+          "synthetic_parent_abs_change": 14.439895963626762,
+          "synthetic_parent_abs_change_std": 0.48166139677216574,
+          "negative_mean": 107.04448555278545,
+          "positive_mean": 151.4837154666354
+        },
+        {
+          "feature": "BloodPressure",
+          "feature_tr": "Kan basıncı",
+          "pima_mean": 69.10546875,
+          "candidate_mean": 73.40557845471264,
+          "net_delta": 4.300109704712639,
+          "net_delta_percent": 0.062225317076843346,
+          "standardized_delta_vs_pima": 0.22230599603893053,
+          "synthetic_parent_abs_change": 5.538701942625725,
+          "synthetic_parent_abs_change_std": 0.457498868365558,
+          "negative_mean": 70.12141814369872,
+          "positive_mean": 76.68973876572655
+        },
+        {
+          "feature": "SkinThickness",
+          "feature_tr": "Deri kalınlığı",
+          "pima_mean": 20.536458333333332,
+          "candidate_mean": 29.619130896710402,
+          "net_delta": 9.08267256337707,
+          "net_delta_percent": 0.4422706396572147,
+          "standardized_delta_vs_pima": 0.5697384394335255,
+          "synthetic_parent_abs_change": 4.179438659461561,
+          "synthetic_parent_abs_change_std": 0.48685285217372876,
+          "negative_mean": 26.42920487171998,
+          "positive_mean": 32.80905692170082
+        },
+        {
+          "feature": "Insulin",
+          "feature_tr": "İnsülin",
+          "pima_mean": 79.79947916666667,
+          "candidate_mean": 142.39467799397661,
+          "net_delta": 62.59519882730994,
+          "net_delta_percent": 0.7844061074205207,
+          "standardized_delta_vs_pima": 0.5435075966826646,
+          "synthetic_parent_abs_change": 40.282674837193795,
+          "synthetic_parent_abs_change_std": 0.511847112390408,
+          "negative_mean": 110.91629781906362,
+          "positive_mean": 173.8730581688896
+        },
+        {
+          "feature": "BMI",
+          "feature_tr": "Vücut kitle indeksi",
+          "pima_mean": 31.992578124999998,
+          "candidate_mean": 33.226889642355445,
+          "net_delta": 1.2343115173554473,
+          "net_delta_percent": 0.038581183189826077,
+          "standardized_delta_vs_pima": 0.1566578863189185,
+          "synthetic_parent_abs_change": 3.34096567332142,
+          "synthetic_parent_abs_change_std": 0.4899809658102643,
+          "negative_mean": 29.966821728814075,
+          "positive_mean": 36.486957555896815
+        },
+        {
+          "feature": "DiabetesPedigreeFunction",
+          "feature_tr": "Diyabet soy geçmişi fonksiyonu",
+          "pima_mean": 0.47187630208333325,
+          "candidate_mean": 0.5140616391457961,
+          "net_delta": 0.0421853370624628,
+          "net_delta_percent": 0.08939914311486843,
+          "standardized_delta_vs_pima": 0.1274047243729017,
+          "synthetic_parent_abs_change": 0.16869498440720745,
+          "synthetic_parent_abs_change_std": 0.5111486099577016,
+          "negative_mean": 0.402358417365666,
+          "positive_mean": 0.625764860925926
+        },
+        {
+          "feature": "Age",
+          "feature_tr": "Yaş",
+          "pima_mean": 33.240885416666664,
+          "candidate_mean": 36.31230769230769,
+          "net_delta": 3.0714222756410265,
+          "net_delta_percent": 0.09239893092922984,
+          "standardized_delta_vs_pima": 0.26134042036216715,
+          "synthetic_parent_abs_change": 6.673469387755102,
+          "synthetic_parent_abs_change_std": 0.5644099673183108,
+          "negative_mean": 31.518461538461537,
+          "positive_mean": 41.106153846153845
+        }
+      ],
+      "feature_change_summary": {
+        "mean_abs_standardized_delta_vs_pima": 0.27187230539998364,
+        "mean_abs_parent_change_in_std": 0.49944403753039635,
+        "max_changed_feature_by_parent": "Age",
+        "max_shift_feature_vs_pima": "SkinThickness"
+      },
+      "model_effect": {
+        "holdout_model_raw": "soft_voting_xgb_lgbm_et",
+        "holdout_model": "XGBoost + LightGBM + ExtraTrees soft voting",
+        "holdout_feature_set_raw": "no_skinthickness",
+        "holdout_feature_set": "SkinThickness çıkarılmış",
+        "holdout_resampling": "none",
+        "holdout_threshold": 0.47,
+        "holdout_accuracy": 0.9198606271777003,
+        "holdout_precision": 0.9172413793103448,
+        "holdout_recall": 0.9236111111111112,
+        "holdout_specificity": 0.916083916083916,
+        "holdout_f1": 0.9204152249134948,
+        "holdout_roc_auc": 0.9771756021756022,
+        "holdout_min_main": 0.916083916083916,
+        "holdout_confusion_matrix": {
+          "tn": 131,
+          "fp": 12,
+          "fn": 11,
+          "tp": 133,
+          "matrix": [
+            [
+              131,
+              12
+            ],
+            [
+              11,
+              133
+            ]
+          ]
+        },
+        "cv_same_model": {
+          "available": true,
+          "model": "XGBoost + LightGBM + ExtraTrees soft voting",
+          "feature_set": "SkinThickness çıkarılmış",
+          "accuracy_mean": 0.8938461538461538,
+          "accuracy_std": 0.017750739629560492,
+          "precision_mean": 0.9016940591747993,
+          "precision_std": 0.03740266363786328,
+          "recall_mean": 0.8861538461538462,
+          "recall_std": 0.03326422816990716,
+          "specificity_mean": 0.9015384615384615,
+          "specificity_std": 0.039747725177734804,
+          "f1_mean": 0.8930375365641355,
+          "f1_std": 0.01741868210986218,
+          "roc_auc_mean": 0.9562011834319527,
+          "roc_auc_std": 0.0062158911360684676,
+          "balanced_accuracy_mean": 0.8938461538461538,
+          "balanced_accuracy_std": 0.017750739629560492,
+          "mcc_mean": 0.7891405694464753,
+          "mcc_std": 0.03687839390171332,
+          "brier_mean": 0.08176703331639669,
+          "brier_std": 0.008449989192968348,
+          "ana_metrik_minimumu_mean": 0.8738461538461539,
+          "ana_metrik_minimumu_std": 0.02078347090170199,
+          "max_source_intersection_count": 0
+        },
+        "cv_best_overall": {
+          "available": true,
+          "model": "XGBoost + LightGBM + ExtraTrees soft voting",
+          "feature_set": "SkinThickness çıkarılmış",
+          "accuracy_mean": 0.8938461538461538,
+          "accuracy_std": 0.017750739629560492,
+          "precision_mean": 0.9016940591747993,
+          "precision_std": 0.03740266363786328,
+          "recall_mean": 0.8861538461538462,
+          "recall_std": 0.03326422816990716,
+          "specificity_mean": 0.9015384615384615,
+          "specificity_std": 0.039747725177734804,
+          "f1_mean": 0.8930375365641355,
+          "f1_std": 0.01741868210986218,
+          "roc_auc_mean": 0.9562011834319527,
+          "roc_auc_std": 0.0062158911360684676,
+          "balanced_accuracy_mean": 0.8938461538461538,
+          "balanced_accuracy_std": 0.017750739629560492,
+          "mcc_mean": 0.7891405694464753,
+          "mcc_std": 0.03687839390171332,
+          "brier_mean": 0.08176703331639669,
+          "brier_std": 0.008449989192968348,
+          "ana_metrik_minimumu_mean": 0.8738461538461539,
+          "ana_metrik_minimumu_std": 0.02078347090170199,
+          "max_source_intersection_count": 0
+        }
+      }
+    },
+    {
+      "label": "800/800",
+      "dataset_name": "small_t800_s0p6_low",
+      "target_per_class": 800,
+      "total_rows": 1600,
+      "original_dev_rows": 614,
+      "synthetic_rows": 986,
+      "class_distribution": {
+        "0": 800,
+        "1": 800
+      },
+      "original_dev_distribution": {
+        "0": 400,
+        "1": 214
+      },
+      "added_negative": 400,
+      "added_positive": 586,
+      "generation_method_counts": {
+        "source_id_controlled_local_augmentation": 986,
+        "original_dev": 614
+      },
+      "synthetic_strength": 0.6,
+      "noise_profile": "low",
+      "synthetic_parent_family_count": 461,
+      "synthetic_parent_family_negative": 259,
+      "synthetic_parent_family_positive": 202,
+      "independent_synthetic_source_id_count": 0,
+      "previous_best_model": "XGBoost + LightGBM + ExtraTrees soft voting",
+      "previous_feature_set": "Tüm orijinal PIMA değişkenleri",
+      "previous_status": "Geçmedi",
+      "top_standardized_mean_differences": [
+        "SkinThickness: +0.55",
+        "Insulin: +0.51",
+        "Age: +0.29",
+        "Glucose: +0.26"
+      ],
+      "standardized_mean_difference": {
+        "Pregnancies": {
+          "Genel": 0.016503292485559713,
+          "Negatif": -0.1084047833291929,
+          "Pozitif": -0.009552551913129724
+        },
+        "Glucose": {
+          "Genel": 0.2560469669491707,
+          "Negatif": -0.1910783360706309,
+          "Pozitif": 0.3733986356412587
+        },
+        "BloodPressure": {
+          "Genel": 0.22973214400452976,
+          "Negatif": 0.08951488719867677,
+          "Pozitif": 0.301819033027269
+        },
+        "SkinThickness": {
+          "Genel": 0.5539095637381959,
+          "Negatif": 0.3900102102949708,
+          "Pozitif": 0.629238411017303
+        },
+        "Insulin": {
+          "Genel": 0.514014222703052,
+          "Negatif": 0.35089755559825797,
+          "Pozitif": 0.5360914670749537
+        },
+        "BMI": {
+          "Genel": 0.13005659397200697,
+          "Negatif": -0.12161287616491227,
+          "Pozitif": 0.20996306915069005
+        },
+        "DiabetesPedigreeFunction": {
+          "Genel": 0.14590521995205288,
+          "Negatif": -0.1344044452184291,
+          "Pozitif": 0.26986812626804113
+        },
+        "Age": {
+          "Genel": 0.2944346474227317,
+          "Negatif": -0.004825848512098632,
+          "Pozitif": 0.47512737031121843
+        }
+      },
+      "feature_change_rows": [
+        {
+          "feature": "Pregnancies",
+          "feature_tr": "Gebelik",
+          "pima_mean": 3.8450520833333335,
+          "candidate_mean": 3.900625,
+          "net_delta": 0.055572916666666305,
+          "net_delta_percent": 0.014453098543853614,
+          "standardized_delta_vs_pima": 0.016503292485559713,
+          "synthetic_parent_abs_change": 1.8346855983772818,
+          "synthetic_parent_abs_change_std": 0.5540432700072778,
+          "negative_mean": 2.97125,
+          "positive_mean": 4.83
+        },
+        {
+          "feature": "Glucose",
+          "feature_tr": "Glikoz",
+          "pima_mean": 120.89453125,
+          "candidate_mean": 129.07569168087423,
+          "net_delta": 8.181160430874229,
+          "net_delta_percent": 0.0676718818153673,
+          "standardized_delta_vs_pima": 0.2560469669491707,
+          "synthetic_parent_abs_change": 17.03542534333051,
+          "synthetic_parent_abs_change_std": 0.568238634554238,
+          "negative_mean": 104.98998056481831,
+          "positive_mean": 153.16140279693016
+        },
+        {
+          "feature": "BloodPressure",
+          "feature_tr": "Kan basıncı",
+          "pima_mean": 69.10546875,
+          "candidate_mean": 73.54922393213788,
+          "net_delta": 4.443755182137878,
+          "net_delta_percent": 0.06430395831933168,
+          "standardized_delta_vs_pima": 0.22973214400452976,
+          "synthetic_parent_abs_change": 6.605516448349297,
+          "synthetic_parent_abs_change_std": 0.5456181486915759,
+          "negative_mean": 69.79929643465863,
+          "positive_mean": 77.29915142961713
+        },
+        {
+          "feature": "SkinThickness",
+          "feature_tr": "Deri kalınlığı",
+          "pima_mean": 20.536458333333332,
+          "candidate_mean": 29.366789673025334,
+          "net_delta": 8.830331339692002,
+          "net_delta_percent": 0.429983164397886,
+          "standardized_delta_vs_pima": 0.5539095637381959,
+          "synthetic_parent_abs_change": 5.139964430502649,
+          "synthetic_parent_abs_change_std": 0.598742210846113,
+          "negative_mean": 25.46542126718432,
+          "positive_mean": 33.26815807886634
+        },
+        {
+          "feature": "Insulin",
+          "feature_tr": "İnsülin",
+          "pima_mean": 79.79947916666667,
+          "candidate_mean": 138.9979571024746,
+          "net_delta": 59.19847793580793,
+          "net_delta_percent": 0.7418404048999852,
+          "standardized_delta_vs_pima": 0.514014222703052,
+          "synthetic_parent_abs_change": 45.722402527323325,
+          "synthetic_parent_abs_change_std": 0.5809663782196011,
+          "negative_mean": 103.44887939468111,
+          "positive_mean": 174.5470348102681
+        },
+        {
+          "feature": "BMI",
+          "feature_tr": "Vücut kitle indeksi",
+          "pima_mean": 31.992578124999998,
+          "candidate_mean": 33.01729737546191,
+          "net_delta": 1.02471925046191,
+          "net_delta_percent": 0.032029905387998804,
+          "standardized_delta_vs_pima": 0.13005659397200697,
+          "synthetic_parent_abs_change": 3.913829966752494,
+          "synthetic_parent_abs_change_std": 0.5739963754910593,
+          "negative_mean": 29.369950268188195,
+          "positive_mean": 36.66464448273562
+        },
+        {
+          "feature": "DiabetesPedigreeFunction",
+          "feature_tr": "Diyabet soy geçmişi fonksiyonu",
+          "pima_mean": 0.47187630208333325,
+          "candidate_mean": 0.520187390334934,
+          "net_delta": 0.04831108825160074,
+          "net_delta_percent": 0.1023808316677641,
+          "standardized_delta_vs_pima": 0.14590521995205288,
+          "synthetic_parent_abs_change": 0.19462037305960764,
+          "synthetic_parent_abs_change_std": 0.589702968991279,
+          "negative_mean": 0.38957582410858393,
+          "positive_mean": 0.6507989565612843
+        },
+        {
+          "feature": "Age",
+          "feature_tr": "Yaş",
+          "pima_mean": 33.240885416666664,
+          "candidate_mean": 36.70125,
+          "net_delta": 3.4603645833333374,
+          "net_delta_percent": 0.10409965137686565,
+          "standardized_delta_vs_pima": 0.2944346474227317,
+          "synthetic_parent_abs_change": 7.505070993914807,
+          "synthetic_parent_abs_change_std": 0.6347428343897734,
+          "negative_mean": 31.13375,
+          "positive_mean": 42.26875
+        }
+      ],
+      "feature_change_summary": {
+        "mean_abs_standardized_delta_vs_pima": 0.26757533140341244,
+        "mean_abs_parent_change_in_std": 0.5807563526488647,
+        "max_changed_feature_by_parent": "Age",
+        "max_shift_feature_vs_pima": "SkinThickness"
+      },
+      "model_effect": {
+        "holdout_model_raw": "soft_voting_xgb_lgbm_et",
+        "holdout_model": "XGBoost + LightGBM + ExtraTrees soft voting",
+        "holdout_feature_set_raw": "all_features",
+        "holdout_feature_set": "Tüm orijinal değişkenler",
+        "holdout_resampling": "none",
+        "holdout_threshold": 0.52,
+        "holdout_accuracy": 0.9119496855345912,
+        "holdout_precision": 0.9119496855345912,
+        "holdout_recall": 0.9119496855345912,
+        "holdout_specificity": 0.9119496855345912,
+        "holdout_f1": 0.9119496855345912,
+        "holdout_roc_auc": 0.972983663620901,
+        "holdout_min_main": 0.9119496855345912,
+        "holdout_confusion_matrix": {
+          "tn": 145,
+          "fp": 14,
+          "fn": 14,
+          "tp": 145,
+          "matrix": [
+            [
+              145,
+              14
+            ],
+            [
+              14,
+              145
+            ]
+          ]
+        },
+        "cv_same_model": {
+          "available": true,
+          "model": "XGBoost + LightGBM + ExtraTrees soft voting",
+          "feature_set": "Tüm orijinal değişkenler",
+          "accuracy_mean": 0.906875,
+          "accuracy_std": 0.014888911561964504,
+          "precision_mean": 0.9061432095814201,
+          "precision_std": 0.02346492341928914,
+          "recall_mean": 0.9087500000000001,
+          "recall_std": 0.03324859019567596,
+          "specificity_mean": 0.905,
+          "specificity_std": 0.027027185388049546,
+          "f1_mean": 0.9069222660275529,
+          "f1_std": 0.01535913248594274,
+          "roc_auc_mean": 0.9714531249999998,
+          "roc_auc_std": 0.006858411716957265,
+          "balanced_accuracy_mean": 0.906875,
+          "balanced_accuracy_std": 0.014888911561964546,
+          "mcc_mean": 0.8146687172489987,
+          "mcc_std": 0.029936331028158434,
+          "brier_mean": 0.0676995547356323,
+          "brier_std": 0.010515392612239808,
+          "ana_metrik_minimumu_mean": 0.8887500000000002,
+          "ana_metrik_minimumu_std": 0.021830311495716206,
+          "max_source_intersection_count": 0
+        },
+        "cv_best_overall": {
+          "available": true,
+          "model": "ExtraTrees",
+          "feature_set": "Tüm orijinal değişkenler",
+          "accuracy_mean": 0.911875,
+          "accuracy_std": 0.009217425752345397,
+          "precision_mean": 0.913699837691874,
+          "precision_std": 0.014654110594257684,
+          "recall_mean": 0.9099999999999999,
+          "recall_std": 0.01800607536360993,
+          "specificity_mean": 0.91375,
+          "specificity_std": 0.01677050983124845,
+          "f1_mean": 0.9116852288304568,
+          "f1_std": 0.00931962022983404,
+          "roc_auc_mean": 0.9726796875,
+          "roc_auc_std": 0.00663130377514863,
+          "balanced_accuracy_mean": 0.911875,
+          "balanced_accuracy_std": 0.009217425752345432,
+          "mcc_mean": 0.8240425422381751,
+          "mcc_std": 0.018411778834111662,
+          "brier_mean": 0.06525657283057851,
+          "brier_std": 0.007506986713845124,
+          "ana_metrik_minimumu_mean": 0.9,
+          "ana_metrik_minimumu_std": 0.011692679333668585,
+          "max_source_intersection_count": 0
+        }
+      }
+    },
+    {
+      "label": "1000/1000",
+      "dataset_name": "small_t1000_s0p6_adaptive",
+      "target_per_class": 1000,
+      "total_rows": 2000,
+      "original_dev_rows": 614,
+      "synthetic_rows": 1386,
+      "class_distribution": {
+        "0": 1000,
+        "1": 1000
+      },
+      "original_dev_distribution": {
+        "0": 400,
+        "1": 214
+      },
+      "added_negative": 600,
+      "added_positive": 786,
+      "generation_method_counts": {
+        "source_id_controlled_local_augmentation": 1386,
+        "original_dev": 614
+      },
+      "synthetic_strength": 0.6,
+      "noise_profile": "adaptive",
+      "synthetic_parent_family_count": 524,
+      "synthetic_parent_family_negative": 313,
+      "synthetic_parent_family_positive": 211,
+      "independent_synthetic_source_id_count": 0,
+      "previous_best_model": "ExtraTrees",
+      "previous_feature_set": "Yüksek sinyal değişken seti",
+      "previous_status": "Seçildi",
+      "top_standardized_mean_differences": [
+        "SkinThickness: +0.54",
+        "Insulin: +0.51",
+        "Age: +0.32",
+        "Glucose: +0.25"
+      ],
+      "standardized_mean_difference": {
+        "Pregnancies": {
+          "Genel": 0.01869342014812327,
+          "Negatif": -0.12009956102576229,
+          "Pozitif": 0.003837008299834408
+        },
+        "Glucose": {
+          "Genel": 0.25274465164311527,
+          "Negatif": -0.24440620458788598,
+          "Pozitif": 0.41046358969047925
+        },
+        "BloodPressure": {
+          "Genel": 0.22799238821604023,
+          "Negatif": 0.07290572949592407,
+          "Pozitif": 0.31265303010564605
+        },
+        "SkinThickness": {
+          "Genel": 0.5392947054015816,
+          "Negatif": 0.3650538384874952,
+          "Pozitif": 0.6238692550868336
+        },
+        "Insulin": {
+          "Genel": 0.5092630158694927,
+          "Negatif": 0.3126178302011493,
+          "Pozitif": 0.555497405720237
+        },
+        "BMI": {
+          "Genel": 0.12525990389033767,
+          "Negatif": -0.16389141865280515,
+          "Pozitif": 0.2443388723110123
+        },
+        "DiabetesPedigreeFunction": {
+          "Genel": 0.12004844751963316,
+          "Negatif": -0.1834209758956137,
+          "Pozitif": 0.26320190809953253
+        },
+        "Age": {
+          "Genel": 0.31832303411529894,
+          "Negatif": -0.006949221857421726,
+          "Pozitif": 0.5286770819637693
+        }
+      },
+      "feature_change_rows": [
+        {
+          "feature": "Pregnancies",
+          "feature_tr": "Gebelik",
+          "pima_mean": 3.8450520833333335,
+          "candidate_mean": 3.908,
+          "net_delta": 0.06294791666666644,
+          "net_delta_percent": 0.016371147985099838,
+          "standardized_delta_vs_pima": 0.01869342014812327,
+          "synthetic_parent_abs_change": 1.9942279942279941,
+          "synthetic_parent_abs_change_std": 0.6022223099365742,
+          "negative_mean": 2.936,
+          "positive_mean": 4.88
+        },
+        {
+          "feature": "Glucose",
+          "feature_tr": "Glikoz",
+          "pima_mean": 120.89453125,
+          "candidate_mean": 128.9701767761906,
+          "net_delta": 8.075645526190613,
+          "net_delta_percent": 0.06679909705337157,
+          "standardized_delta_vs_pima": 0.25274465164311527,
+          "synthetic_parent_abs_change": 17.958235508959774,
+          "synthetic_parent_abs_change_std": 0.5990201605743817,
+          "negative_mean": 103.59732085357008,
+          "positive_mean": 154.34303269881116
+        },
+        {
+          "feature": "BloodPressure",
+          "feature_tr": "Kan basıncı",
+          "pima_mean": 69.10546875,
+          "candidate_mean": 73.51557148513594,
+          "net_delta": 4.410102735135936,
+          "net_delta_percent": 0.0638169860491097,
+          "standardized_delta_vs_pima": 0.22799238821604023,
+          "synthetic_parent_abs_change": 6.875443968038078,
+          "synthetic_parent_abs_change_std": 0.5679142635714814,
+          "negative_mean": 69.49958412914688,
+          "positive_mean": 77.53155884112496
+        },
+        {
+          "feature": "SkinThickness",
+          "feature_tr": "Deri kalınlığı",
+          "pima_mean": 20.536458333333332,
+          "candidate_mean": 29.1338021060225,
+          "net_delta": 8.597343772689168,
+          "net_delta_percent": 0.41863809392754764,
+          "standardized_delta_vs_pima": 0.5392947054015816,
+          "synthetic_parent_abs_change": 5.287627228343499,
+          "synthetic_parent_abs_change_std": 0.6159430983686571,
+          "negative_mean": 25.094193995861993,
+          "positive_mean": 33.17341021618301
+        },
+        {
+          "feature": "Insulin",
+          "feature_tr": "İnsülin",
+          "pima_mean": 79.79947916666667,
+          "candidate_mean": 138.45076560371444,
+          "net_delta": 58.65128643704777,
+          "net_delta_percent": 0.734983323820329,
+          "standardized_delta_vs_pima": 0.5092630158694927,
+          "synthetic_parent_abs_change": 48.33247355690388,
+          "synthetic_parent_abs_change_std": 0.6141309415219156,
+          "negative_mean": 99.66812969955359,
+          "positive_mean": 177.2334015078753
+        },
+        {
+          "feature": "BMI",
+          "feature_tr": "Vücut kitle indeksi",
+          "pima_mean": 31.992578124999998,
+          "candidate_mean": 32.97950413088221,
+          "net_delta": 0.9869260058822142,
+          "net_delta_percent": 0.03084859250874188,
+          "standardized_delta_vs_pima": 0.12525990389033767,
+          "synthetic_parent_abs_change": 4.077820771901156,
+          "synthetic_parent_abs_change_std": 0.5980470186127117,
+          "negative_mean": 29.045159684934937,
+          "positive_mean": 36.913848576829494
+        },
+        {
+          "feature": "DiabetesPedigreeFunction",
+          "feature_tr": "Diyabet soy geçmişi fonksiyonu",
+          "pima_mean": 0.47187630208333325,
+          "candidate_mean": 0.5116258816014241,
+          "net_delta": 0.03974957951809083,
+          "net_delta_percent": 0.08423728706569177,
+          "standardized_delta_vs_pima": 0.12004844751963316,
+          "synthetic_parent_abs_change": 0.2001747487604856,
+          "synthetic_parent_abs_change_std": 0.6065328197936798,
+          "negative_mean": 0.3749303675738512,
+          "positive_mean": 0.6483213956289969
+        },
+        {
+          "feature": "Age",
+          "feature_tr": "Yaş",
+          "pima_mean": 33.240885416666664,
+          "candidate_mean": 36.982,
+          "net_delta": 3.741114583333335,
+          "net_delta_percent": 0.11254557561988333,
+          "standardized_delta_vs_pima": 0.31832303411529894,
+          "synthetic_parent_abs_change": 8.028860028860029,
+          "synthetic_parent_abs_change_std": 0.6790423935722228,
+          "negative_mean": 31.109,
+          "positive_mean": 42.855
+        }
+      ],
+      "feature_change_summary": {
+        "mean_abs_standardized_delta_vs_pima": 0.26395244585045285,
+        "mean_abs_parent_change_in_std": 0.610356625743953,
+        "max_changed_feature_by_parent": "Age",
+        "max_shift_feature_vs_pima": "SkinThickness"
+      },
+      "model_effect": {
+        "holdout_model_raw": "extra_trees",
+        "holdout_model": "ExtraTrees",
+        "holdout_feature_set_raw": "high_signal_features",
+        "holdout_feature_set": "Yüksek sinyal değişken seti",
+        "holdout_resampling": "class_weight=balanced",
+        "holdout_threshold": 0.45,
+        "holdout_accuracy": 0.9392523364485982,
+        "holdout_precision": 0.943127962085308,
+        "holdout_recall": 0.9342723004694836,
+        "holdout_specificity": 0.9441860465116279,
+        "holdout_f1": 0.9386792452830188,
+        "holdout_roc_auc": 0.9860246751828803,
+        "holdout_min_main": 0.9342723004694836,
+        "holdout_confusion_matrix": {
+          "tn": 203,
+          "fp": 12,
+          "fn": 14,
+          "tp": 199,
+          "matrix": [
+            [
+              203,
+              12
+            ],
+            [
+              14,
+              199
+            ]
+          ]
+        },
+        "cv_same_model": {
+          "available": true,
+          "model": "ExtraTrees",
+          "feature_set": "Yüksek sinyal değişken seti",
+          "accuracy_mean": 0.918001046881543,
+          "accuracy_std": 0.002035606897307796,
+          "precision_mean": 0.9092939244663383,
+          "precision_std": 0.012882712642926371,
+          "recall_mean": 0.9289893497337435,
+          "recall_std": 0.01251075457760963,
+          "specificity_mean": 0.907,
+          "specificity_std": 0.015652475842498542,
+          "f1_mean": 0.9188970545983102,
+          "f1_std": 0.0013169086324667106,
+          "roc_auc_mean": 0.9784548098702469,
+          "roc_auc_std": 0.005160274032554252,
+          "balanced_accuracy_mean": 0.9179946748668717,
+          "balanced_accuracy_std": 0.0020432998515946313,
+          "mcc_mean": 0.8364622838364777,
+          "mcc_std": 0.003742888839916392,
+          "brier_mean": 0.05610909457659834,
+          "brier_std": 0.005376175555938533,
+          "ana_metrik_minimumu_mean": 0.9030000000000001,
+          "ana_metrik_minimumu_std": 0.009746794344808973,
+          "max_source_intersection_count": 0
+        },
+        "cv_best_overall": {
+          "available": true,
+          "model": "XGBoost + LightGBM + ExtraTrees soft voting",
+          "feature_set": "Tüm orijinal değişkenler",
+          "accuracy_mean": 0.92399606560041,
+          "accuracy_std": 0.005814756924692144,
+          "precision_mean": 0.9232431082520918,
+          "precision_std": 0.009179127657775113,
+          "recall_mean": 0.9250093502337557,
+          "recall_std": 0.012192714163810882,
+          "specificity_mean": 0.923,
+          "specificity_std": 0.01036822067666387,
+          "f1_mean": 0.9240559226173957,
+          "f1_std": 0.006056003528739048,
+          "roc_auc_mean": 0.9800315495387384,
+          "roc_auc_std": 0.004795701087662975,
+          "balanced_accuracy_mean": 0.924004675116878,
+          "balanced_accuracy_std": 0.005811513399972261,
+          "mcc_mean": 0.8481257511835254,
+          "mcc_std": 0.011559085473407754,
+          "brier_mean": 0.05565537798050659,
+          "brier_std": 0.005061899492290599,
+          "ana_metrik_minimumu_mean": 0.9179999999999999,
+          "ana_metrik_minimumu_std": 0.011510864433221349,
+          "max_source_intersection_count": 0
+        }
+      }
+    }
+  ],
+  "graphs": {
+    "pima_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/pima_korelasyon_matrisi.png",
+    "pima_distributions": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/pima_tum_ozellik_dagilimlari.png",
+    "class_counts": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/aday_sinif_dagilimlari.png",
+    "synthetic_additions": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/aday_sentetik_eklenen_satirlar.png",
+    "model_effects": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/aday_model_etkisi.png",
+    "feature_change_summary": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/aday_ozellik_oynama_ozeti.png",
+    "small_t500_s0p4_low_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/small_t500_s0p4_low_korelasyon_matrisi.png",
+    "small_t500_s0p4_low_diff": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/small_t500_s0p4_low_pima_fark_heatmap.png",
+    "small_t650_s0p5_low_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/small_t650_s0p5_low_korelasyon_matrisi.png",
+    "small_t650_s0p5_low_diff": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/small_t650_s0p5_low_pima_fark_heatmap.png",
+    "small_t800_s0p6_low_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/small_t800_s0p6_low_korelasyon_matrisi.png",
+    "small_t800_s0p6_low_diff": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/small_t800_s0p6_low_pima_fark_heatmap.png",
+    "small_t1000_s0p6_adaptive_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/small_t1000_s0p6_adaptive_korelasyon_matrisi.png",
+    "small_t1000_s0p6_adaptive_diff": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/small_t1000_s0p6_adaptive_pima_fark_heatmap.png"
+  },
+  "word_report": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/pima_korelasyon_deney_dagilim_raporu.docx",
+  "desktop_copy": "/Users/beratkaanseven/Desktop/PIMA_Korelasyon_Deney_Dagilim_Raporu.docx"
+}

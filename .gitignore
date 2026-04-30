@@ -1,0 +1,40 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Test and tooling
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+tmp/
+
+# Environment files
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+.virtual_documents/
+
+# Node/report build dependencies
+node_modules/
+raporlar/**/node_modules/
+raporlar/**/.DS_Store
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Proje ciktisi olan artifact, veri, rapor, grafik, JSON, DOCX ve deney dosyalari repoya dahil edilir.

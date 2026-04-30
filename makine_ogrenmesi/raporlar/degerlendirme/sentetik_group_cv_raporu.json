@@ -1,0 +1,2458 @@
+{
+  "olusturulma_zamani_utc": "2026-04-25T23:20:21.882421+00:00",
+  "cv_yontemi": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+  "group_kolonu": "source_id",
+  "sonuclar": [
+    {
+      "veri_adayi": "orijinal_pima_baseline",
+      "model": "extra_trees",
+      "feature_set": "no_insulin",
+      "cv_yontemi": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "foldlar": [
+        {
+          "fold": 1,
+          "train_satir": 491,
+          "test_satir": 123,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.38636363636363635,
+          "metrikler": {
+            "accuracy": 0.7235772357723578,
+            "precision": 0.6097560975609756,
+            "recall": 0.5813953488372093,
+            "sensitivity": 0.5813953488372093,
+            "specificity": 0.8,
+            "f1": 0.5952380952380952,
+            "roc_auc": 0.8203488372093023,
+            "balanced_accuracy": 0.6906976744186046,
+            "mcc": 0.3857942577363297,
+            "brier": 0.15895568769737287,
+            "esik": 0.38636363636363635,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  64,
+                  16
+                ],
+                [
+                  18,
+                  25
+                ]
+              ],
+              "tn": 64,
+              "fp": 16,
+              "fn": 18,
+              "tp": 25
+            },
+            "ana_metrik_minimumu": 0.5813953488372093
+          }
+        },
+        {
+          "fold": 2,
+          "train_satir": 491,
+          "test_satir": 123,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.509090909090909,
+          "metrikler": {
+            "accuracy": 0.7235772357723578,
+            "precision": 0.6285714285714286,
+            "recall": 0.5116279069767442,
+            "sensitivity": 0.5116279069767442,
+            "specificity": 0.8375,
+            "f1": 0.5641025641025641,
+            "roc_auc": 0.7584302325581395,
+            "balanced_accuracy": 0.6745639534883721,
+            "mcc": 0.36896776699004485,
+            "brier": 0.18856413357522,
+            "esik": 0.509090909090909,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  67,
+                  13
+                ],
+                [
+                  21,
+                  22
+                ]
+              ],
+              "tn": 67,
+              "fp": 13,
+              "fn": 21,
+              "tp": 22
+            },
+            "ana_metrik_minimumu": 0.5116279069767442
+          }
+        },
+        {
+          "fold": 3,
+          "train_satir": 491,
+          "test_satir": 123,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.39,
+          "metrikler": {
+            "accuracy": 0.7723577235772358,
+            "precision": 0.6363636363636364,
+            "recall": 0.813953488372093,
+            "sensitivity": 0.813953488372093,
+            "specificity": 0.75,
+            "f1": 0.7142857142857143,
+            "roc_auc": 0.8200581395348836,
+            "balanced_accuracy": 0.7819767441860466,
+            "mcc": 0.5408622961347709,
+            "brier": 0.1635065175031916,
+            "esik": 0.39,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  60,
+                  20
+                ],
+                [
+                  8,
+                  35
+                ]
+              ],
+              "tn": 60,
+              "fp": 20,
+              "fn": 8,
+              "tp": 35
+            },
+            "ana_metrik_minimumu": 0.6363636363636364
+          }
+        },
+        {
+          "fold": 4,
+          "train_satir": 491,
+          "test_satir": 123,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.4681818181818182,
+          "metrikler": {
+            "accuracy": 0.7804878048780488,
+            "precision": 0.6904761904761905,
+            "recall": 0.6744186046511628,
+            "sensitivity": 0.6744186046511628,
+            "specificity": 0.8375,
+            "f1": 0.6823529411764706,
+            "roc_auc": 0.8561046511627907,
+            "balanced_accuracy": 0.7559593023255814,
+            "mcc": 0.5147697049602141,
+            "brier": 0.1472278774440637,
+            "esik": 0.4681818181818182,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  67,
+                  13
+                ],
+                [
+                  14,
+                  29
+                ]
+              ],
+              "tn": 67,
+              "fp": 13,
+              "fn": 14,
+              "tp": 29
+            },
+            "ana_metrik_minimumu": 0.6744186046511628
+          }
+        },
+        {
+          "fold": 5,
+          "train_satir": 492,
+          "test_satir": 122,
+          "train_source_family_count": 492,
+          "test_source_family_count": 122,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.38636363636363635,
+          "metrikler": {
+            "accuracy": 0.7950819672131147,
+            "precision": 0.6666666666666666,
+            "recall": 0.8095238095238095,
+            "sensitivity": 0.8095238095238095,
+            "specificity": 0.7875,
+            "f1": 0.7311827956989247,
+            "roc_auc": 0.8674107142857143,
+            "balanced_accuracy": 0.7985119047619047,
+            "mcc": 0.5751048466313112,
+            "brier": 0.1417114889581358,
+            "esik": 0.38636363636363635,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  63,
+                  17
+                ],
+                [
+                  8,
+                  34
+                ]
+              ],
+              "tn": 63,
+              "fp": 17,
+              "fn": 8,
+              "tp": 34
+            },
+            "ana_metrik_minimumu": 0.6666666666666666
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.759016393442623,
+        "accuracy_std": 0.03336017836785604,
+        "precision_mean": 0.6463668039277795,
+        "precision_std": 0.032073372815159616,
+        "recall_mean": 0.6781838316722038,
+        "recall_std": 0.1349135397742251,
+        "specificity_mean": 0.8025,
+        "specificity_std": 0.036869703009381576,
+        "f1_mean": 0.6574324221003538,
+        "f1_std": 0.07394430910658864,
+        "roc_auc_mean": 0.8244705149501661,
+        "roc_auc_std": 0.042551014898351835,
+        "balanced_accuracy_mean": 0.7403419158361018,
+        "balanced_accuracy_std": 0.05511896302693218,
+        "mcc_mean": 0.47709977449053415,
+        "mcc_std": 0.09370019400884315,
+        "brier_mean": 0.15999314103559678,
+        "brier_std": 0.018213267798324252,
+        "ana_metrik_minimumu_mean": 0.6140944326990838,
+        "ana_metrik_minimumu_std": 0.0679473728647995,
+        "max_source_id_kesisim_sayisi": 0
+      }
+    },
+    {
+      "veri_adayi": "orijinal_pima_baseline",
+      "model": "xgboost",
+      "feature_set": "no_skinthickness_no_insulin",
+      "cv_yontemi": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "foldlar": [
+        {
+          "fold": 1,
+          "train_satir": 491,
+          "test_satir": 123,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.49763739109039307,
+          "metrikler": {
+            "accuracy": 0.7723577235772358,
+            "precision": 0.7419354838709677,
+            "recall": 0.5348837209302325,
+            "sensitivity": 0.5348837209302325,
+            "specificity": 0.9,
+            "f1": 0.6216216216216216,
+            "roc_auc": 0.8194767441860464,
+            "balanced_accuracy": 0.7174418604651163,
+            "mcc": 0.477614619314903,
+            "brier": 0.17534050802238546,
+            "esik": 0.49763739109039307,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  72,
+                  8
+                ],
+                [
+                  20,
+                  23
+                ]
+              ],
+              "tn": 72,
+              "fp": 8,
+              "fn": 20,
+              "tp": 23
+            },
+            "ana_metrik_minimumu": 0.5348837209302325
+          }
+        },
+        {
+          "fold": 2,
+          "train_satir": 491,
+          "test_satir": 123,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.5700000000000001,
+          "metrikler": {
+            "accuracy": 0.7398373983739838,
+            "precision": 0.6571428571428571,
+            "recall": 0.5348837209302325,
+            "sensitivity": 0.5348837209302325,
+            "specificity": 0.85,
+            "f1": 0.5897435897435898,
+            "roc_auc": 0.7895348837209302,
+            "balanced_accuracy": 0.6924418604651162,
+            "mcc": 0.4067554733512235,
+            "brier": 0.19018924613163668,
+            "esik": 0.5700000000000001,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  68,
+                  12
+                ],
+                [
+                  20,
+                  23
+                ]
+              ],
+              "tn": 68,
+              "fp": 12,
+              "fn": 20,
+              "tp": 23
+            },
+            "ana_metrik_minimumu": 0.5348837209302325
+          }
+        },
+        {
+          "fold": 3,
+          "train_satir": 491,
+          "test_satir": 123,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.37,
+          "metrikler": {
+            "accuracy": 0.7886178861788617,
+            "precision": 0.6491228070175439,
+            "recall": 0.8604651162790697,
+            "sensitivity": 0.8604651162790697,
+            "specificity": 0.75,
+            "f1": 0.74,
+            "roc_auc": 0.8287790697674419,
+            "balanced_accuracy": 0.8052325581395349,
+            "mcc": 0.5837550865840214,
+            "brier": 0.1573914227654783,
+            "esik": 0.37,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  60,
+                  20
+                ],
+                [
+                  6,
+                  37
+                ]
+              ],
+              "tn": 60,
+              "fp": 20,
+              "fn": 6,
+              "tp": 37
+            },
+            "ana_metrik_minimumu": 0.6491228070175439
+          }
+        },
+        {
+          "fold": 4,
+          "train_satir": 491,
+          "test_satir": 123,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.31,
+          "metrikler": {
+            "accuracy": 0.7804878048780488,
+            "precision": 0.6379310344827587,
+            "recall": 0.8604651162790697,
+            "sensitivity": 0.8604651162790697,
+            "specificity": 0.7375,
+            "f1": 0.7326732673267327,
+            "roc_auc": 0.8526162790697674,
+            "balanced_accuracy": 0.7989825581395349,
+            "mcc": 0.5711949975693836,
+            "brier": 0.1477474749756739,
+            "esik": 0.31,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  59,
+                  21
+                ],
+                [
+                  6,
+                  37
+                ]
+              ],
+              "tn": 59,
+              "fp": 21,
+              "fn": 6,
+              "tp": 37
+            },
+            "ana_metrik_minimumu": 0.6379310344827587
+          }
+        },
+        {
+          "fold": 5,
+          "train_satir": 492,
+          "test_satir": 122,
+          "train_source_family_count": 492,
+          "test_source_family_count": 122,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.24000000000000002,
+          "metrikler": {
+            "accuracy": 0.7459016393442623,
+            "precision": 0.5901639344262295,
+            "recall": 0.8571428571428571,
+            "sensitivity": 0.8571428571428571,
+            "specificity": 0.6875,
+            "f1": 0.6990291262135923,
+            "roc_auc": 0.8842261904761904,
+            "balanced_accuracy": 0.7723214285714286,
+            "mcc": 0.5175491695067657,
+            "brier": 0.13173364974108331,
+            "esik": 0.24000000000000002,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  55,
+                  25
+                ],
+                [
+                  6,
+                  36
+                ]
+              ],
+              "tn": 55,
+              "fp": 25,
+              "fn": 6,
+              "tp": 36
+            },
+            "ana_metrik_minimumu": 0.5901639344262295
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.7654404904704785,
+        "accuracy_std": 0.021498526023837675,
+        "precision_mean": 0.6552592233880714,
+        "precision_std": 0.054980998056277236,
+        "recall_mean": 0.7295681063122923,
+        "recall_std": 0.17772689112029919,
+        "specificity_mean": 0.7849999999999999,
+        "specificity_std": 0.0872317316118395,
+        "f1_mean": 0.6766135209811073,
+        "f1_std": 0.06751572814733953,
+        "roc_auc_mean": 0.8349266334440753,
+        "roc_auc_std": 0.03563801497733007,
+        "balanced_accuracy_mean": 0.7572840531561462,
+        "balanced_accuracy_std": 0.050139448986755174,
+        "mcc_mean": 0.5113738692652594,
+        "mcc_std": 0.07235405666932868,
+        "brier_mean": 0.16048046032725152,
+        "brier_std": 0.02292096834435154,
+        "ana_metrik_minimumu_mean": 0.5893970435573994,
+        "ana_metrik_minimumu_std": 0.05446721010239062,
+        "max_source_id_kesisim_sayisi": 0
+      }
+    },
+    {
+      "veri_adayi": "sentetik_2500_per_class_pima",
+      "model": "random_forest",
+      "feature_set": "all_features",
+      "cv_yontemi": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "foldlar": [
+        {
+          "fold": 1,
+          "train_satir": 3999,
+          "test_satir": 1001,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.5363636363636364,
+          "metrikler": {
+            "accuracy": 0.7722277722277723,
+            "precision": 0.8095238095238095,
+            "recall": 0.7125748502994012,
+            "sensitivity": 0.7125748502994012,
+            "specificity": 0.832,
+            "f1": 0.7579617834394905,
+            "roc_auc": 0.8620159680638722,
+            "balanced_accuracy": 0.7722874251497005,
+            "mcc": 0.5484640138159457,
+            "brier": 0.15380258171580485,
+            "esik": 0.5363636363636364,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  416,
+                  84
+                ],
+                [
+                  144,
+                  357
+                ]
+              ],
+              "tn": 416,
+              "fp": 84,
+              "fn": 144,
+              "tp": 357
+            },
+            "ana_metrik_minimumu": 0.7125748502994012
+          }
+        },
+        {
+          "fold": 2,
+          "train_satir": 3999,
+          "test_satir": 1001,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.4772727272727273,
+          "metrikler": {
+            "accuracy": 0.8111888111888111,
+            "precision": 0.8696682464454977,
+            "recall": 0.7325349301397206,
+            "sensitivity": 0.7325349301397206,
+            "specificity": 0.89,
+            "f1": 0.7952329360780065,
+            "roc_auc": 0.8965289421157684,
+            "balanced_accuracy": 0.8112674650698604,
+            "mcc": 0.6303359576670409,
+            "brier": 0.1348818743240231,
+            "esik": 0.4772727272727273,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  445,
+                  55
+                ],
+                [
+                  134,
+                  367
+                ]
+              ],
+              "tn": 445,
+              "fp": 55,
+              "fn": 134,
+              "tp": 367
+            },
+            "ana_metrik_minimumu": 0.7325349301397206
+          }
+        },
+        {
+          "fold": 3,
+          "train_satir": 3999,
+          "test_satir": 1001,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.44000000000000006,
+          "metrikler": {
+            "accuracy": 0.7952047952047953,
+            "precision": 0.7483221476510067,
+            "recall": 0.8902195608782435,
+            "sensitivity": 0.8902195608782435,
+            "specificity": 0.7,
+            "f1": 0.813126709206928,
+            "roc_auc": 0.8817624750499002,
+            "balanced_accuracy": 0.7951097804391217,
+            "mcc": 0.6012662435914116,
+            "brier": 0.14127927857266703,
+            "esik": 0.44000000000000006,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  350,
+                  150
+                ],
+                [
+                  55,
+                  446
+                ]
+              ],
+              "tn": 350,
+              "fp": 150,
+              "fn": 55,
+              "tp": 446
+            },
+            "ana_metrik_minimumu": 0.7
+          }
+        },
+        {
+          "fold": 4,
+          "train_satir": 4004,
+          "test_satir": 996,
+          "train_source_family_count": 492,
+          "test_source_family_count": 122,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.5954545454545455,
+          "metrikler": {
+            "accuracy": 0.8363453815261044,
+            "precision": 0.9193954659949622,
+            "recall": 0.7358870967741935,
+            "sensitivity": 0.7358870967741935,
+            "specificity": 0.936,
+            "f1": 0.8174692049272116,
+            "roc_auc": 0.9170504032258064,
+            "balanced_accuracy": 0.8359435483870967,
+            "mcc": 0.6861411666383833,
+            "brier": 0.11701647499087257,
+            "esik": 0.5954545454545455,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  468,
+                  32
+                ],
+                [
+                  131,
+                  365
+                ]
+              ],
+              "tn": 468,
+              "fp": 32,
+              "fn": 131,
+              "tp": 365
+            },
+            "ana_metrik_minimumu": 0.7358870967741935
+          }
+        },
+        {
+          "fold": 5,
+          "train_satir": 3999,
+          "test_satir": 1001,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.39545454545454545,
+          "metrikler": {
+            "accuracy": 0.7562437562437563,
+            "precision": 0.7204116638078902,
+            "recall": 0.8383233532934131,
+            "sensitivity": 0.8383233532934131,
+            "specificity": 0.674,
+            "f1": 0.7749077490774908,
+            "roc_auc": 0.8541417165668662,
+            "balanced_accuracy": 0.7561616766467065,
+            "mcc": 0.5194282905066935,
+            "brier": 0.15715881226211806,
+            "esik": 0.39545454545454545,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  337,
+                  163
+                ],
+                [
+                  81,
+                  420
+                ]
+              ],
+              "tn": 337,
+              "fp": 163,
+              "fn": 81,
+              "tp": 420
+            },
+            "ana_metrik_minimumu": 0.674
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.7942421032782478,
+        "accuracy_std": 0.03158048793527977,
+        "precision_mean": 0.8134642666846332,
+        "precision_std": 0.08261070769768379,
+        "recall_mean": 0.7819079582769943,
+        "recall_std": 0.07790506324310072,
+        "specificity_mean": 0.8064,
+        "specificity_std": 0.11542443415499165,
+        "f1_mean": 0.7917396765458256,
+        "f1_std": 0.025277838633559365,
+        "roc_auc_mean": 0.8822999010044427,
+        "roc_auc_std": 0.02556693728528877,
+        "balanced_accuracy_mean": 0.7941539791384971,
+        "balanced_accuracy_std": 0.03147107515960258,
+        "mcc_mean": 0.597127134443895,
+        "mcc_std": 0.06604669891514366,
+        "brier_mean": 0.1408278043730971,
+        "brier_std": 0.016105775251553826,
+        "ana_metrik_minimumu_mean": 0.7109993754426631,
+        "ana_metrik_minimumu_std": 0.02537518942533179,
+        "max_source_id_kesisim_sayisi": 0
+      }
+    },
+    {
+      "veri_adayi": "sentetik_2500_per_class_pima",
+      "model": "random_forest",
+      "feature_set": "no_insulin",
+      "cv_yontemi": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "foldlar": [
+        {
+          "fold": 1,
+          "train_satir": 3999,
+          "test_satir": 1001,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.5545454545454546,
+          "metrikler": {
+            "accuracy": 0.7392607392607392,
+            "precision": 0.8061224489795918,
+            "recall": 0.6307385229540918,
+            "sensitivity": 0.6307385229540918,
+            "specificity": 0.848,
+            "f1": 0.7077267637178052,
+            "roc_auc": 0.8389760479041917,
+            "balanced_accuracy": 0.739369261477046,
+            "mcc": 0.4904001121285027,
+            "brier": 0.16806288752569742,
+            "esik": 0.5545454545454546,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  424,
+                  76
+                ],
+                [
+                  185,
+                  316
+                ]
+              ],
+              "tn": 424,
+              "fp": 76,
+              "fn": 185,
+              "tp": 316
+            },
+            "ana_metrik_minimumu": 0.6307385229540918
+          }
+        },
+        {
+          "fold": 2,
+          "train_satir": 3999,
+          "test_satir": 1001,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.4772727272727273,
+          "metrikler": {
+            "accuracy": 0.8141858141858141,
+            "precision": 0.8637413394919169,
+            "recall": 0.7465069860279441,
+            "sensitivity": 0.7465069860279441,
+            "specificity": 0.882,
+            "f1": 0.8008565310492506,
+            "roc_auc": 0.8988862275449102,
+            "balanced_accuracy": 0.814253493013972,
+            "mcc": 0.6343016752639064,
+            "brier": 0.13947901272281438,
+            "esik": 0.4772727272727273,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  441,
+                  59
+                ],
+                [
+                  127,
+                  374
+                ]
+              ],
+              "tn": 441,
+              "fp": 59,
+              "fn": 127,
+              "tp": 374
+            },
+            "ana_metrik_minimumu": 0.7465069860279441
+          }
+        },
+        {
+          "fold": 3,
+          "train_satir": 3999,
+          "test_satir": 1001,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.49,
+          "metrikler": {
+            "accuracy": 0.7922077922077922,
+            "precision": 0.7565674255691769,
+            "recall": 0.8622754491017964,
+            "sensitivity": 0.8622754491017964,
+            "specificity": 0.722,
+            "f1": 0.8059701492537313,
+            "roc_auc": 0.8640858283433134,
+            "balanced_accuracy": 0.7921377245508983,
+            "mcc": 0.5901592534825624,
+            "brier": 0.14857208906795683,
+            "esik": 0.49,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  361,
+                  139
+                ],
+                [
+                  69,
+                  432
+                ]
+              ],
+              "tn": 361,
+              "fp": 139,
+              "fn": 69,
+              "tp": 432
+            },
+            "ana_metrik_minimumu": 0.722
+          }
+        },
+        {
+          "fold": 4,
+          "train_satir": 4004,
+          "test_satir": 996,
+          "train_source_family_count": 492,
+          "test_source_family_count": 122,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.58,
+          "metrikler": {
+            "accuracy": 0.8092369477911646,
+            "precision": 0.8943298969072165,
+            "recall": 0.6995967741935484,
+            "sensitivity": 0.6995967741935484,
+            "specificity": 0.918,
+            "f1": 0.7850678733031674,
+            "roc_auc": 0.9057157258064517,
+            "balanced_accuracy": 0.8087983870967742,
+            "mcc": 0.6332325152348093,
+            "brier": 0.12925045222211157,
+            "esik": 0.58,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  459,
+                  41
+                ],
+                [
+                  149,
+                  347
+                ]
+              ],
+              "tn": 459,
+              "fp": 41,
+              "fn": 149,
+              "tp": 347
+            },
+            "ana_metrik_minimumu": 0.6995967741935484
+          }
+        },
+        {
+          "fold": 5,
+          "train_satir": 3999,
+          "test_satir": 1001,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.38,
+          "metrikler": {
+            "accuracy": 0.7812187812187812,
+            "precision": 0.7456445993031359,
+            "recall": 0.8542914171656687,
+            "sensitivity": 0.8542914171656687,
+            "specificity": 0.708,
+            "f1": 0.7962790697674419,
+            "roc_auc": 0.8586007984031936,
+            "balanced_accuracy": 0.7811457085828344,
+            "mcc": 0.5684541427574493,
+            "brier": 0.15276413668975652,
+            "esik": 0.38,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  354,
+                  146
+                ],
+                [
+                  73,
+                  428
+                ]
+              ],
+              "tn": 354,
+              "fp": 146,
+              "fn": 73,
+              "tp": 428
+            },
+            "ana_metrik_minimumu": 0.708
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.7872220149328583,
+        "accuracy_std": 0.02988680516995552,
+        "precision_mean": 0.8132811420502076,
+        "precision_std": 0.06511053414785178,
+        "recall_mean": 0.7586818298886099,
+        "recall_std": 0.099851879726719,
+        "specificity_mean": 0.8156000000000001,
+        "specificity_std": 0.09524074758211426,
+        "f1_mean": 0.7791800774182793,
+        "f1_std": 0.04068228825140468,
+        "roc_auc_mean": 0.873252925600412,
+        "roc_auc_std": 0.028215795283498938,
+        "balanced_accuracy_mean": 0.7871409149443049,
+        "balanced_accuracy_std": 0.0297791011876442,
+        "mcc_mean": 0.583309539773446,
+        "mcc_std": 0.059144451355355475,
+        "brier_mean": 0.14762571564566734,
+        "brier_std": 0.014568768499198333,
+        "ana_metrik_minimumu_mean": 0.7013684566351168,
+        "ana_metrik_minimumu_std": 0.043297953690746925,
+        "max_source_id_kesisim_sayisi": 0
+      }
+    },
+    {
+      "veri_adayi": "sentetik_2700_per_class_pima",
+      "model": "xgboost",
+      "feature_set": "no_skinthickness",
+      "cv_yontemi": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "foldlar": [
+        {
+          "fold": 1,
+          "train_satir": 4319,
+          "test_satir": 1081,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.44000000000000006,
+          "metrikler": {
+            "accuracy": 0.851063829787234,
+            "precision": 0.8558052434456929,
+            "recall": 0.844731977818854,
+            "sensitivity": 0.844731977818854,
+            "specificity": 0.8574074074074074,
+            "f1": 0.8502325581395349,
+            "roc_auc": 0.9290408708153625,
+            "balanced_accuracy": 0.8510696926131307,
+            "mcc": 0.7021898627957563,
+            "brier": 0.10972294559710295,
+            "esik": 0.44000000000000006,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  463,
+                  77
+                ],
+                [
+                  84,
+                  457
+                ]
+              ],
+              "tn": 463,
+              "fp": 77,
+              "fn": 84,
+              "tp": 457
+            },
+            "ana_metrik_minimumu": 0.844731977818854
+          }
+        },
+        {
+          "fold": 2,
+          "train_satir": 4324,
+          "test_satir": 1076,
+          "train_source_family_count": 492,
+          "test_source_family_count": 122,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.58,
+          "metrikler": {
+            "accuracy": 0.8215613382899628,
+            "precision": 0.8185185185185185,
+            "recall": 0.8246268656716418,
+            "sensitivity": 0.8246268656716418,
+            "specificity": 0.8185185185185185,
+            "f1": 0.8215613382899628,
+            "roc_auc": 0.9222084024322831,
+            "balanced_accuracy": 0.8215726920950801,
+            "mcc": 0.6431453841901603,
+            "brier": 0.11528764046741939,
+            "esik": 0.58,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  442,
+                  98
+                ],
+                [
+                  94,
+                  442
+                ]
+              ],
+              "tn": 442,
+              "fp": 98,
+              "fn": 94,
+              "tp": 442
+            },
+            "ana_metrik_minimumu": 0.8185185185185185
+          }
+        },
+        {
+          "fold": 3,
+          "train_satir": 4318,
+          "test_satir": 1082,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.3863790035247803,
+          "metrikler": {
+            "accuracy": 0.7855822550831792,
+            "precision": 0.7859778597785978,
+            "recall": 0.7859778597785978,
+            "sensitivity": 0.7859778597785978,
+            "specificity": 0.7851851851851852,
+            "f1": 0.7859778597785978,
+            "roc_auc": 0.8625187918545851,
+            "balanced_accuracy": 0.7855815224818915,
+            "mcc": 0.571163044963783,
+            "brier": 0.1590688182818819,
+            "esik": 0.3863790035247803,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  424,
+                  116
+                ],
+                [
+                  116,
+                  426
+                ]
+              ],
+              "tn": 424,
+              "fp": 116,
+              "fn": 116,
+              "tp": 426
+            },
+            "ana_metrik_minimumu": 0.7851851851851852
+          }
+        },
+        {
+          "fold": 4,
+          "train_satir": 4321,
+          "test_satir": 1079,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.39210909605026245,
+          "metrikler": {
+            "accuracy": 0.768303985171455,
+            "precision": 0.7613019891500904,
+            "recall": 0.7810760667903525,
+            "sensitivity": 0.7810760667903525,
+            "specificity": 0.7555555555555555,
+            "f1": 0.7710622710622711,
+            "roc_auc": 0.8438912938912939,
+            "balanced_accuracy": 0.768315811172954,
+            "mcc": 0.536799479115223,
+            "brier": 0.17258701830896514,
+            "esik": 0.39210909605026245,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  408,
+                  132
+                ],
+                [
+                  118,
+                  421
+                ]
+              ],
+              "tn": 408,
+              "fp": 132,
+              "fn": 118,
+              "tp": 421
+            },
+            "ana_metrik_minimumu": 0.7555555555555555
+          }
+        },
+        {
+          "fold": 5,
+          "train_satir": 4318,
+          "test_satir": 1082,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.35,
+          "metrikler": {
+            "accuracy": 0.7966728280961183,
+            "precision": 0.7523510971786834,
+            "recall": 0.8856088560885609,
+            "sensitivity": 0.8856088560885609,
+            "specificity": 0.7074074074074074,
+            "f1": 0.8135593220338984,
+            "roc_auc": 0.8920664206642067,
+            "balanced_accuracy": 0.7965081317479841,
+            "mcc": 0.6027834264070075,
+            "brier": 0.13926380944837383,
+            "esik": 0.35,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  382,
+                  158
+                ],
+                [
+                  62,
+                  480
+                ]
+              ],
+              "tn": 382,
+              "fp": 158,
+              "fn": 62,
+              "tp": 480
+            },
+            "ana_metrik_minimumu": 0.7074074074074074
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.8046368472855898,
+        "accuracy_std": 0.03235924541386993,
+        "precision_mean": 0.7947909416143166,
+        "precision_std": 0.04267922116800553,
+        "recall_mean": 0.8244043252296013,
+        "recall_std": 0.04333932627573523,
+        "specificity_mean": 0.7848148148148149,
+        "specificity_std": 0.057562514475154175,
+        "f1_mean": 0.8084786698608528,
+        "f1_std": 0.03101060213673054,
+        "roc_auc_mean": 0.8899451559315462,
+        "roc_auc_std": 0.036902084685064215,
+        "balanced_accuracy_mean": 0.804609570022208,
+        "balanced_accuracy_std": 0.032369844486567025,
+        "mcc_mean": 0.6112162394943861,
+        "mcc_std": 0.06424347315406072,
+        "brier_mean": 0.13918604642074864,
+        "brier_std": 0.027157704727674432,
+        "ana_metrik_minimumu_mean": 0.7822797288971042,
+        "ana_metrik_minimumu_std": 0.05371689890271248,
+        "max_source_id_kesisim_sayisi": 0
+      }
+    },
+    {
+      "veri_adayi": "sentetik_2700_per_class_pima",
+      "model": "xgboost",
+      "feature_set": "all_features",
+      "cv_yontemi": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "foldlar": [
+        {
+          "fold": 1,
+          "train_satir": 4319,
+          "test_satir": 1081,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.36209017038345337,
+          "metrikler": {
+            "accuracy": 0.851063829787234,
+            "precision": 0.8345070422535211,
+            "recall": 0.8761552680221811,
+            "sensitivity": 0.8761552680221811,
+            "specificity": 0.825925925925926,
+            "f1": 0.8548241659152389,
+            "roc_auc": 0.924245224892175,
+            "balanced_accuracy": 0.8510405969740535,
+            "mcc": 0.7029913838585199,
+            "brier": 0.11332046470570442,
+            "esik": 0.36209017038345337,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  446,
+                  94
+                ],
+                [
+                  67,
+                  474
+                ]
+              ],
+              "tn": 446,
+              "fp": 94,
+              "fn": 67,
+              "tp": 474
+            },
+            "ana_metrik_minimumu": 0.825925925925926
+          }
+        },
+        {
+          "fold": 2,
+          "train_satir": 4324,
+          "test_satir": 1076,
+          "train_source_family_count": 492,
+          "test_source_family_count": 122,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.5419145226478577,
+          "metrikler": {
+            "accuracy": 0.8252788104089219,
+            "precision": 0.8118279569892473,
+            "recall": 0.8451492537313433,
+            "sensitivity": 0.8451492537313433,
+            "specificity": 0.8055555555555556,
+            "f1": 0.8281535648994516,
+            "roc_auc": 0.9197139303482587,
+            "balanced_accuracy": 0.8253524046434495,
+            "mcc": 0.651150400455759,
+            "brier": 0.11619917498538801,
+            "esik": 0.5419145226478577,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  435,
+                  105
+                ],
+                [
+                  83,
+                  453
+                ]
+              ],
+              "tn": 435,
+              "fp": 105,
+              "fn": 83,
+              "tp": 453
+            },
+            "ana_metrik_minimumu": 0.8055555555555556
+          }
+        },
+        {
+          "fold": 3,
+          "train_satir": 4318,
+          "test_satir": 1082,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.44000000000000006,
+          "metrikler": {
+            "accuracy": 0.7809611829944547,
+            "precision": 0.7984344422700587,
+            "recall": 0.7527675276752768,
+            "sensitivity": 0.7527675276752768,
+            "specificity": 0.8092592592592592,
+            "f1": 0.7749287749287749,
+            "roc_auc": 0.8591157578242449,
+            "balanced_accuracy": 0.7810133934672681,
+            "mcc": 0.5628919452071773,
+            "brier": 0.162357538584368,
+            "esik": 0.44000000000000006,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  437,
+                  103
+                ],
+                [
+                  134,
+                  408
+                ]
+              ],
+              "tn": 437,
+              "fp": 103,
+              "fn": 134,
+              "tp": 408
+            },
+            "ana_metrik_minimumu": 0.7527675276752768
+          }
+        },
+        {
+          "fold": 4,
+          "train_satir": 4321,
+          "test_satir": 1079,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.38,
+          "metrikler": {
+            "accuracy": 0.7636700648748842,
+            "precision": 0.7526690391459074,
+            "recall": 0.7847866419294991,
+            "sensitivity": 0.7847866419294991,
+            "specificity": 0.7425925925925926,
+            "f1": 0.7683923705722071,
+            "roc_auc": 0.845832474403903,
+            "balanced_accuracy": 0.7636896172610459,
+            "mcc": 0.5278382504230289,
+            "brier": 0.17127315521662836,
+            "esik": 0.38,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  401,
+                  139
+                ],
+                [
+                  116,
+                  423
+                ]
+              ],
+              "tn": 401,
+              "fp": 139,
+              "fn": 116,
+              "tp": 423
+            },
+            "ana_metrik_minimumu": 0.7425925925925926
+          }
+        },
+        {
+          "fold": 5,
+          "train_satir": 4318,
+          "test_satir": 1082,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.3652411103248596,
+          "metrikler": {
+            "accuracy": 0.8031423290203327,
+            "precision": 0.7590551181102362,
+            "recall": 0.8892988929889298,
+            "sensitivity": 0.8892988929889298,
+            "specificity": 0.7166666666666667,
+            "f1": 0.8190314358538657,
+            "roc_auc": 0.8911712450457838,
+            "balanced_accuracy": 0.8029827798277982,
+            "mcc": 0.6153239800632998,
+            "brier": 0.13887226560334637,
+            "esik": 0.3652411103248596,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  387,
+                  153
+                ],
+                [
+                  60,
+                  482
+                ]
+              ],
+              "tn": 387,
+              "fp": 153,
+              "fn": 60,
+              "tp": 482
+            },
+            "ana_metrik_minimumu": 0.7166666666666667
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.8048232434171656,
+        "accuracy_std": 0.034721857502736896,
+        "precision_mean": 0.7912987197537942,
+        "precision_std": 0.03489709630239615,
+        "recall_mean": 0.8296315168694461,
+        "recall_std": 0.058916447183366166,
+        "specificity_mean": 0.78,
+        "specificity_std": 0.04751001627120891,
+        "f1_mean": 0.8090660624339077,
+        "f1_std": 0.03666452324743986,
+        "roc_auc_mean": 0.888015726502873,
+        "roc_auc_std": 0.03514948408266349,
+        "balanced_accuracy_mean": 0.804815758434723,
+        "balanced_accuracy_std": 0.03471225076231794,
+        "mcc_mean": 0.612039192001557,
+        "mcc_std": 0.06949465463818559,
+        "brier_mean": 0.14040451981908703,
+        "brier_std": 0.026251667790350965,
+        "ana_metrik_minimumu_mean": 0.7687016536832035,
+        "ana_metrik_minimumu_std": 0.0454863900892538,
+        "max_source_id_kesisim_sayisi": 0
+      }
+    },
+    {
+      "veri_adayi": "sentetik_5000_per_class_pima",
+      "model": "extra_trees",
+      "feature_set": "no_skinthickness",
+      "cv_yontemi": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "foldlar": [
+        {
+          "fold": 1,
+          "train_satir": 7998,
+          "test_satir": 2002,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.4681818181818182,
+          "metrikler": {
+            "accuracy": 0.8276723276723277,
+            "precision": 0.859802847754655,
+            "recall": 0.783433133732535,
+            "sensitivity": 0.783433133732535,
+            "specificity": 0.872,
+            "f1": 0.8198433420365535,
+            "roc_auc": 0.9043113772455089,
+            "balanced_accuracy": 0.8277165668662675,
+            "mcc": 0.6579803505637412,
+            "brier": 0.13312747170185185,
+            "esik": 0.4681818181818182,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  872,
+                  128
+                ],
+                [
+                  217,
+                  785
+                ]
+              ],
+              "tn": 872,
+              "fp": 128,
+              "fn": 217,
+              "tp": 785
+            },
+            "ana_metrik_minimumu": 0.783433133732535
+          }
+        },
+        {
+          "fold": 2,
+          "train_satir": 7998,
+          "test_satir": 2002,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.44545454545454544,
+          "metrikler": {
+            "accuracy": 0.8471528471528471,
+            "precision": 0.8536585365853658,
+            "recall": 0.8383233532934131,
+            "sensitivity": 0.8383233532934131,
+            "specificity": 0.856,
+            "f1": 0.8459214501510574,
+            "roc_auc": 0.9195508982035929,
+            "balanced_accuracy": 0.8471616766467065,
+            "mcc": 0.6944231578055542,
+            "brier": 0.12382800051188482,
+            "esik": 0.44545454545454544,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  856,
+                  144
+                ],
+                [
+                  162,
+                  840
+                ]
+              ],
+              "tn": 856,
+              "fp": 144,
+              "fn": 162,
+              "tp": 840
+            },
+            "ana_metrik_minimumu": 0.8383233532934131
+          }
+        },
+        {
+          "fold": 3,
+          "train_satir": 7998,
+          "test_satir": 2002,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.52,
+          "metrikler": {
+            "accuracy": 0.8046953046953047,
+            "precision": 0.7769718948322756,
+            "recall": 0.8552894211576846,
+            "sensitivity": 0.8552894211576846,
+            "specificity": 0.754,
+            "f1": 0.8142517814726841,
+            "roc_auc": 0.8747175648702594,
+            "balanced_accuracy": 0.8046447105788423,
+            "mcc": 0.6124771577574539,
+            "brier": 0.14087983903838547,
+            "esik": 0.52,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  754,
+                  246
+                ],
+                [
+                  145,
+                  857
+                ]
+              ],
+              "tn": 754,
+              "fp": 246,
+              "fn": 145,
+              "tp": 857
+            },
+            "ana_metrik_minimumu": 0.754
+          }
+        },
+        {
+          "fold": 4,
+          "train_satir": 8008,
+          "test_satir": 1992,
+          "train_source_family_count": 492,
+          "test_source_family_count": 122,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.4090909090909091,
+          "metrikler": {
+            "accuracy": 0.7525100401606426,
+            "precision": 0.7318435754189944,
+            "recall": 0.79313824419778,
+            "sensitivity": 0.79313824419778,
+            "specificity": 0.7122877122877123,
+            "f1": 0.7612590799031477,
+            "roc_auc": 0.84328386043825,
+            "balanced_accuracy": 0.7527129782427462,
+            "mcc": 0.5069766138073446,
+            "brier": 0.16646261699691328,
+            "esik": 0.4090909090909091,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  713,
+                  288
+                ],
+                [
+                  205,
+                  786
+                ]
+              ],
+              "tn": 713,
+              "fp": 288,
+              "fn": 205,
+              "tp": 786
+            },
+            "ana_metrik_minimumu": 0.7122877122877123
+          }
+        },
+        {
+          "fold": 5,
+          "train_satir": 7998,
+          "test_satir": 2002,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.45,
+          "metrikler": {
+            "accuracy": 0.8041958041958042,
+            "precision": 0.7645021645021645,
+            "recall": 0.8803589232303091,
+            "sensitivity": 0.8803589232303091,
+            "specificity": 0.7277277277277278,
+            "f1": 0.8183503243744208,
+            "roc_auc": 0.8867516569410887,
+            "balanced_accuracy": 0.8040433254790185,
+            "mcc": 0.6154120320786314,
+            "brier": 0.1350009907447924,
+            "esik": 0.45,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  727,
+                  272
+                ],
+                [
+                  120,
+                  883
+                ]
+              ],
+              "tn": 727,
+              "fp": 272,
+              "fn": 120,
+              "tp": 883
+            },
+            "ana_metrik_minimumu": 0.7277277277277278
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.8072452647753853,
+        "accuracy_std": 0.03543171725189276,
+        "precision_mean": 0.797355803818691,
+        "precision_std": 0.056692919410488825,
+        "recall_mean": 0.8301086151223445,
+        "recall_std": 0.041146255206350006,
+        "specificity_mean": 0.784403088003088,
+        "specificity_std": 0.07439154595100761,
+        "f1_mean": 0.8119251955875726,
+        "f1_std": 0.03095235422342169,
+        "roc_auc_mean": 0.88572307153974,
+        "roc_auc_std": 0.02921092590841431,
+        "balanced_accuracy_mean": 0.8072558515627162,
+        "balanced_accuracy_std": 0.03536657729213207,
+        "mcc_mean": 0.617453862402545,
+        "mcc_std": 0.07035770710248647,
+        "brier_mean": 0.13985978379876557,
+        "brier_std": 0.016083385980021774,
+        "ana_metrik_minimumu_mean": 0.7631543854082776,
+        "ana_metrik_minimumu_std": 0.049969667418063975,
+        "max_source_id_kesisim_sayisi": 0
+      }
+    },
+    {
+      "veri_adayi": "sentetik_5000_per_class_pima",
+      "model": "xgboost",
+      "feature_set": "no_insulin",
+      "cv_yontemi": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "foldlar": [
+        {
+          "fold": 1,
+          "train_satir": 7998,
+          "test_satir": 2002,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.4216911792755127,
+          "metrikler": {
+            "accuracy": 0.8266733266733267,
+            "precision": 0.8331637843336724,
+            "recall": 0.8173652694610778,
+            "sensitivity": 0.8173652694610778,
+            "specificity": 0.836,
+            "f1": 0.8251889168765743,
+            "roc_auc": 0.9092624750499001,
+            "balanced_accuracy": 0.8266826347305389,
+            "mcc": 0.6534706028030994,
+            "brier": 0.12452778071367276,
+            "esik": 0.4216911792755127,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  836,
+                  164
+                ],
+                [
+                  183,
+                  819
+                ]
+              ],
+              "tn": 836,
+              "fp": 164,
+              "fn": 183,
+              "tp": 819
+            },
+            "ana_metrik_minimumu": 0.8173652694610778
+          }
+        },
+        {
+          "fold": 2,
+          "train_satir": 7998,
+          "test_satir": 2002,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.4672718346118927,
+          "metrikler": {
+            "accuracy": 0.7897102897102897,
+            "precision": 0.8342922899884925,
+            "recall": 0.7235528942115769,
+            "sensitivity": 0.7235528942115769,
+            "specificity": 0.856,
+            "f1": 0.774986638161411,
+            "roc_auc": 0.894434131736527,
+            "balanced_accuracy": 0.7897764471057884,
+            "mcc": 0.5846582692295499,
+            "brier": 0.14118949221178817,
+            "esik": 0.4672718346118927,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  856,
+                  144
+                ],
+                [
+                  277,
+                  725
+                ]
+              ],
+              "tn": 856,
+              "fp": 144,
+              "fn": 277,
+              "tp": 725
+            },
+            "ana_metrik_minimumu": 0.7235528942115769
+          }
+        },
+        {
+          "fold": 3,
+          "train_satir": 7998,
+          "test_satir": 2002,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.46998247504234314,
+          "metrikler": {
+            "accuracy": 0.7782217782217782,
+            "precision": 0.7473404255319149,
+            "recall": 0.8413173652694611,
+            "sensitivity": 0.8413173652694611,
+            "specificity": 0.715,
+            "f1": 0.7915492957746478,
+            "roc_auc": 0.8700878243512975,
+            "balanced_accuracy": 0.7781586826347305,
+            "mcc": 0.5608493374209345,
+            "brier": 0.15289928292467933,
+            "esik": 0.46998247504234314,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  715,
+                  285
+                ],
+                [
+                  159,
+                  843
+                ]
+              ],
+              "tn": 715,
+              "fp": 285,
+              "fn": 159,
+              "tp": 843
+            },
+            "ana_metrik_minimumu": 0.715
+          }
+        },
+        {
+          "fold": 4,
+          "train_satir": 8008,
+          "test_satir": 1992,
+          "train_source_family_count": 492,
+          "test_source_family_count": 122,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.4236299395561218,
+          "metrikler": {
+            "accuracy": 0.7866465863453815,
+            "precision": 0.7664783427495292,
+            "recall": 0.8213925327951564,
+            "sensitivity": 0.8213925327951564,
+            "specificity": 0.7522477522477522,
+            "f1": 0.7929858743302484,
+            "roc_auc": 0.8622059071100443,
+            "balanced_accuracy": 0.7868201425214543,
+            "mcc": 0.574896647757372,
+            "brier": 0.1581319798811612,
+            "esik": 0.4236299395561218,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  753,
+                  248
+                ],
+                [
+                  177,
+                  814
+                ]
+              ],
+              "tn": 753,
+              "fp": 248,
+              "fn": 177,
+              "tp": 814
+            },
+            "ana_metrik_minimumu": 0.7522477522477522
+          }
+        },
+        {
+          "fold": 5,
+          "train_satir": 7998,
+          "test_satir": 2002,
+          "train_source_family_count": 491,
+          "test_source_family_count": 123,
+          "source_id_kesisim_sayisi": 0,
+          "threshold": 0.3967002034187317,
+          "metrikler": {
+            "accuracy": 0.7857142857142857,
+            "precision": 0.7436332767402377,
+            "recall": 0.8733798604187437,
+            "sensitivity": 0.8733798604187437,
+            "specificity": 0.6976976976976977,
+            "f1": 0.8033012379642366,
+            "roc_auc": 0.8823439591136502,
+            "balanced_accuracy": 0.7855387790582207,
+            "mcc": 0.5802191431820889,
+            "brier": 0.14487607974929942,
+            "esik": 0.3967002034187317,
+            "confusion_matrix": {
+              "labels": [
+                0,
+                1
+              ],
+              "matris": [
+                [
+                  697,
+                  302
+                ],
+                [
+                  127,
+                  876
+                ]
+              ],
+              "tn": 697,
+              "fp": 302,
+              "fn": 127,
+              "tp": 876
+            },
+            "ana_metrik_minimumu": 0.6976976976976977
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.7933932533330124,
+        "accuracy_std": 0.019077376776991898,
+        "precision_mean": 0.7849816238687695,
+        "precision_std": 0.04533756559110246,
+        "recall_mean": 0.8154015844312031,
+        "recall_std": 0.055921904472221395,
+        "specificity_mean": 0.77138908998909,
+        "specificity_std": 0.07125678452519756,
+        "f1_mean": 0.7976023926214236,
+        "f1_std": 0.018458857840384507,
+        "roc_auc_mean": 0.8836668594722837,
+        "roc_auc_std": 0.01882672585235959,
+        "balanced_accuracy_mean": 0.7933953372101465,
+        "balanced_accuracy_std": 0.019093551762557746,
+        "mcc_mean": 0.590818800078609,
+        "mcc_std": 0.036149816312897924,
+        "brier_mean": 0.14432492309612016,
+        "brier_std": 0.01290558029044625,
+        "ana_metrik_minimumu_mean": 0.7411727227236209,
+        "ana_metrik_minimumu_std": 0.046940142814721926,
+        "max_source_id_kesisim_sayisi": 0
+      }
+    }
+  ],
+  "final_cv": {
+    "veri_adayi": "sentetik_2700_per_class_pima",
+    "model": "xgboost",
+    "feature_set": "no_skinthickness",
+    "cv_yontemi": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+    "foldlar": [
+      {
+        "fold": 1,
+        "train_satir": 4319,
+        "test_satir": 1081,
+        "train_source_family_count": 491,
+        "test_source_family_count": 123,
+        "source_id_kesisim_sayisi": 0,
+        "threshold": 0.44000000000000006,
+        "metrikler": {
+          "accuracy": 0.851063829787234,
+          "precision": 0.8558052434456929,
+          "recall": 0.844731977818854,
+          "sensitivity": 0.844731977818854,
+          "specificity": 0.8574074074074074,
+          "f1": 0.8502325581395349,
+          "roc_auc": 0.9290408708153625,
+          "balanced_accuracy": 0.8510696926131307,
+          "mcc": 0.7021898627957563,
+          "brier": 0.10972294559710295,
+          "esik": 0.44000000000000006,
+          "confusion_matrix": {
+            "labels": [
+              0,
+              1
+            ],
+            "matris": [
+              [
+                463,
+                77
+              ],
+              [
+                84,
+                457
+              ]
+            ],
+            "tn": 463,
+            "fp": 77,
+            "fn": 84,
+            "tp": 457
+          },
+          "ana_metrik_minimumu": 0.844731977818854
+        }
+      },
+      {
+        "fold": 2,
+        "train_satir": 4324,
+        "test_satir": 1076,
+        "train_source_family_count": 492,
+        "test_source_family_count": 122,
+        "source_id_kesisim_sayisi": 0,
+        "threshold": 0.58,
+        "metrikler": {
+          "accuracy": 0.8215613382899628,
+          "precision": 0.8185185185185185,
+          "recall": 0.8246268656716418,
+          "sensitivity": 0.8246268656716418,
+          "specificity": 0.8185185185185185,
+          "f1": 0.8215613382899628,
+          "roc_auc": 0.9222084024322831,
+          "balanced_accuracy": 0.8215726920950801,
+          "mcc": 0.6431453841901603,
+          "brier": 0.11528764046741939,
+          "esik": 0.58,
+          "confusion_matrix": {
+            "labels": [
+              0,
+              1
+            ],
+            "matris": [
+              [
+                442,
+                98
+              ],
+              [
+                94,
+                442
+              ]
+            ],
+            "tn": 442,
+            "fp": 98,
+            "fn": 94,
+            "tp": 442
+          },
+          "ana_metrik_minimumu": 0.8185185185185185
+        }
+      },
+      {
+        "fold": 3,
+        "train_satir": 4318,
+        "test_satir": 1082,
+        "train_source_family_count": 491,
+        "test_source_family_count": 123,
+        "source_id_kesisim_sayisi": 0,
+        "threshold": 0.3863790035247803,
+        "metrikler": {
+          "accuracy": 0.7855822550831792,
+          "precision": 0.7859778597785978,
+          "recall": 0.7859778597785978,
+          "sensitivity": 0.7859778597785978,
+          "specificity": 0.7851851851851852,
+          "f1": 0.7859778597785978,
+          "roc_auc": 0.8625187918545851,
+          "balanced_accuracy": 0.7855815224818915,
+          "mcc": 0.571163044963783,
+          "brier": 0.1590688182818819,
+          "esik": 0.3863790035247803,
+          "confusion_matrix": {
+            "labels": [
+              0,
+              1
+            ],
+            "matris": [
+              [
+                424,
+                116
+              ],
+              [
+                116,
+                426
+              ]
+            ],
+            "tn": 424,
+            "fp": 116,
+            "fn": 116,
+            "tp": 426
+          },
+          "ana_metrik_minimumu": 0.7851851851851852
+        }
+      },
+      {
+        "fold": 4,
+        "train_satir": 4321,
+        "test_satir": 1079,
+        "train_source_family_count": 491,
+        "test_source_family_count": 123,
+        "source_id_kesisim_sayisi": 0,
+        "threshold": 0.39210909605026245,
+        "metrikler": {
+          "accuracy": 0.768303985171455,
+          "precision": 0.7613019891500904,
+          "recall": 0.7810760667903525,
+          "sensitivity": 0.7810760667903525,
+          "specificity": 0.7555555555555555,
+          "f1": 0.7710622710622711,
+          "roc_auc": 0.8438912938912939,
+          "balanced_accuracy": 0.768315811172954,
+          "mcc": 0.536799479115223,
+          "brier": 0.17258701830896514,
+          "esik": 0.39210909605026245,
+          "confusion_matrix": {
+            "labels": [
+              0,
+              1
+            ],
+            "matris": [
+              [
+                408,
+                132
+              ],
+              [
+                118,
+                421
+              ]
+            ],
+            "tn": 408,
+            "fp": 132,
+            "fn": 118,
+            "tp": 421
+          },
+          "ana_metrik_minimumu": 0.7555555555555555
+        }
+      },
+      {
+        "fold": 5,
+        "train_satir": 4318,
+        "test_satir": 1082,
+        "train_source_family_count": 491,
+        "test_source_family_count": 123,
+        "source_id_kesisim_sayisi": 0,
+        "threshold": 0.35,
+        "metrikler": {
+          "accuracy": 0.7966728280961183,
+          "precision": 0.7523510971786834,
+          "recall": 0.8856088560885609,
+          "sensitivity": 0.8856088560885609,
+          "specificity": 0.7074074074074074,
+          "f1": 0.8135593220338984,
+          "roc_auc": 0.8920664206642067,
+          "balanced_accuracy": 0.7965081317479841,
+          "mcc": 0.6027834264070075,
+          "brier": 0.13926380944837383,
+          "esik": 0.35,
+          "confusion_matrix": {
+            "labels": [
+              0,
+              1
+            ],
+            "matris": [
+              [
+                382,
+                158
+              ],
+              [
+                62,
+                480
+              ]
+            ],
+            "tn": 382,
+            "fp": 158,
+            "fn": 62,
+            "tp": 480
+          },
+          "ana_metrik_minimumu": 0.7074074074074074
+        }
+      }
+    ],
+    "summary": {
+      "accuracy_mean": 0.8046368472855898,
+      "accuracy_std": 0.03235924541386993,
+      "precision_mean": 0.7947909416143166,
+      "precision_std": 0.04267922116800553,
+      "recall_mean": 0.8244043252296013,
+      "recall_std": 0.04333932627573523,
+      "specificity_mean": 0.7848148148148149,
+      "specificity_std": 0.057562514475154175,
+      "f1_mean": 0.8084786698608528,
+      "f1_std": 0.03101060213673054,
+      "roc_auc_mean": 0.8899451559315462,
+      "roc_auc_std": 0.036902084685064215,
+      "balanced_accuracy_mean": 0.804609570022208,
+      "balanced_accuracy_std": 0.032369844486567025,
+      "mcc_mean": 0.6112162394943861,
+      "mcc_std": 0.06424347315406072,
+      "brier_mean": 0.13918604642074864,
+      "brier_std": 0.027157704727674432,
+      "ana_metrik_minimumu_mean": 0.7822797288971042,
+      "ana_metrik_minimumu_std": 0.05371689890271248,
+      "max_source_id_kesisim_sayisi": 0
+    }
+  },
+  "fold_ici_sentetik_uretim_cv": {
+    "uygulandi": true,
+    "not": "Her fold'da sentetik uretim yalniz train_original tarafindan yapildi; test_original dokunulmadi.",
+    "hedef_sinif_sayisi": 2700,
+    "model": "xgboost",
+    "feature_set": "no_skinthickness",
+    "foldlar": [
+      {
+        "fold": 1,
+        "train_original_rows": 491,
+        "train_after_synthetic_rows": 5400,
+        "test_original_rows": 123,
+        "source_id_kesisim_sayisi": 0,
+        "metrikler": {
+          "accuracy": 0.7560975609756098,
+          "precision": 0.6382978723404256,
+          "recall": 0.6976744186046512,
+          "sensitivity": 0.6976744186046512,
+          "specificity": 0.7875,
+          "f1": 0.6666666666666666,
+          "roc_auc": 0.8450581395348837,
+          "balanced_accuracy": 0.7425872093023256,
+          "mcc": 0.47612544358838926,
+          "brier": 0.1672476094764815,
+          "esik": 0.46886372566223145,
+          "confusion_matrix": {
+            "labels": [
+              0,
+              1
+            ],
+            "matris": [
+              [
+                63,
+                17
+              ],
+              [
+                13,
+                30
+              ]
+            ],
+            "tn": 63,
+            "fp": 17,
+            "fn": 13,
+            "tp": 30
+          },
+          "ana_metrik_minimumu": 0.6382978723404256
+        }
+      },
+      {
+        "fold": 2,
+        "train_original_rows": 491,
+        "train_after_synthetic_rows": 5400,
+        "test_original_rows": 123,
+        "source_id_kesisim_sayisi": 0,
+        "metrikler": {
+          "accuracy": 0.7235772357723578,
+          "precision": 0.6097560975609756,
+          "recall": 0.5813953488372093,
+          "sensitivity": 0.5813953488372093,
+          "specificity": 0.8,
+          "f1": 0.5952380952380952,
+          "roc_auc": 0.8058139534883721,
+          "balanced_accuracy": 0.6906976744186046,
+          "mcc": 0.3857942577363297,
+          "brier": 0.19732267620898888,
+          "esik": 0.6396084427833557,
+          "confusion_matrix": {
+            "labels": [
+              0,
+              1
+            ],
+            "matris": [
+              [
+                64,
+                16
+              ],
+              [
+                18,
+                25
+              ]
+            ],
+            "tn": 64,
+            "fp": 16,
+            "fn": 18,
+            "tp": 25
+          },
+          "ana_metrik_minimumu": 0.5813953488372093
+        }
+      },
+      {
+        "fold": 3,
+        "train_original_rows": 491,
+        "train_after_synthetic_rows": 5400,
+        "test_original_rows": 123,
+        "source_id_kesisim_sayisi": 0,
+        "metrikler": {
+          "accuracy": 0.7886178861788617,
+          "precision": 0.6808510638297872,
+          "recall": 0.7441860465116279,
+          "sensitivity": 0.7441860465116279,
+          "specificity": 0.8125,
+          "f1": 0.7111111111111111,
+          "roc_auc": 0.8337209302325581,
+          "balanced_accuracy": 0.778343023255814,
+          "mcc": 0.5463033100489907,
+          "brier": 0.16006561897338845,
+          "esik": 0.5163143873214722,
+          "confusion_matrix": {
+            "labels": [
+              0,
+              1
+            ],
+            "matris": [
+              [
+                65,
+                15
+              ],
+              [
+                11,
+                32
+              ]
+            ],
+            "tn": 65,
+            "fp": 15,
+            "fn": 11,
+            "tp": 32
+          },
+          "ana_metrik_minimumu": 0.6808510638297872
+        }
+      },
+      {
+        "fold": 4,
+        "train_original_rows": 491,
+        "train_after_synthetic_rows": 5400,
+        "test_original_rows": 123,
+        "source_id_kesisim_sayisi": 0,
+        "metrikler": {
+          "accuracy": 0.7804878048780488,
+          "precision": 0.6379310344827587,
+          "recall": 0.8604651162790697,
+          "sensitivity": 0.8604651162790697,
+          "specificity": 0.7375,
+          "f1": 0.7326732673267327,
+          "roc_auc": 0.858139534883721,
+          "balanced_accuracy": 0.7989825581395349,
+          "mcc": 0.5711949975693836,
+          "brier": 0.14843461305198863,
+          "esik": 0.3728716969490051,
+          "confusion_matrix": {
+            "labels": [
+              0,
+              1
+            ],
+            "matris": [
+              [
+                59,
+                21
+              ],
+              [
+                6,
+                37
+              ]
+            ],
+            "tn": 59,
+            "fp": 21,
+            "fn": 6,
+            "tp": 37
+          },
+          "ana_metrik_minimumu": 0.6379310344827587
+        }
+      },
+      {
+        "fold": 5,
+        "train_original_rows": 492,
+        "train_after_synthetic_rows": 5400,
+        "test_original_rows": 122,
+        "source_id_kesisim_sayisi": 0,
+        "metrikler": {
+          "accuracy": 0.7540983606557377,
+          "precision": 0.6153846153846154,
+          "recall": 0.7619047619047619,
+          "sensitivity": 0.7619047619047619,
+          "specificity": 0.75,
+          "f1": 0.6808510638297872,
+          "roc_auc": 0.8705357142857143,
+          "balanced_accuracy": 0.7559523809523809,
+          "mcc": 0.49182218668705335,
+          "brier": 0.1488126569406928,
+          "esik": 0.398501992225647,
+          "confusion_matrix": {
+            "labels": [
+              0,
+              1
+            ],
+            "matris": [
+              [
+                60,
+                20
+              ],
+              [
+                10,
+                32
+              ]
+            ],
+            "tn": 60,
+            "fp": 20,
+            "fn": 10,
+            "tp": 32
+          },
+          "ana_metrik_minimumu": 0.6153846153846154
+        }
+      }
+    ],
+    "summary": {
+      "accuracy_mean": 0.7605757696921231,
+      "accuracy_std": 0.02556243403730703,
+      "precision_mean": 0.6364441367197124,
+      "precision_std": 0.027988288841363743,
+      "recall_mean": 0.729125138427464,
+      "recall_std": 0.10169164537886989,
+      "specificity_mean": 0.7775000000000001,
+      "specificity_std": 0.032355447763861955,
+      "f1_mean": 0.6773080408344786,
+      "f1_std": 0.0526051891237536,
+      "roc_auc_mean": 0.8426536544850498,
+      "roc_auc_std": 0.02479899408696006,
+      "balanced_accuracy_mean": 0.7533125692137321,
+      "balanced_accuracy_std": 0.04109409482968726,
+      "mcc_mean": 0.4942480391260293,
+      "mcc_std": 0.07198458441108684,
+      "brier_mean": 0.16437663493030807,
+      "brier_std": 0.020054017439107907,
+      "ana_metrik_minimumu_mean": 0.6307719869749593,
+      "ana_metrik_minimumu_std": 0.036368353168072014,
+      "max_source_id_kesisim_sayisi": 0
+    }
+  }
+}

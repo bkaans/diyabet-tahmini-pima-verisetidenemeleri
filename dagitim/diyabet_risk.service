@@ -1,0 +1,27 @@
+[Unit]
+Description=Diyabet Risk Tahmini FastAPI Servisi
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/diyabet_risk_tahmini
+EnvironmentFile=/opt/diyabet_risk_tahmini/.env
+Environment="PYTHONUNBUFFERED=1"
+
+# Socket yolu nginx.conf ile ayni olmalidir.
+ExecStart=/opt/diyabet_risk_tahmini/.venv/bin/gunicorn \
+    -c /opt/diyabet_risk_tahmini/dagitim/gunicorn_conf.py \
+    --bind unix:/run/diyabet_risk/diyabet_risk.sock \
+    uygulama.main:app
+
+RuntimeDirectory=diyabet_risk
+RuntimeDirectoryMode=0755
+UMask=0007
+
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

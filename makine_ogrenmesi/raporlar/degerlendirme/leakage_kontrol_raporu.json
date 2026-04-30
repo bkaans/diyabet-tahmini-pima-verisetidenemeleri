@@ -1,0 +1,37 @@
+{
+  "veri_butunlugu_baslangic": {
+    "dosya": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv",
+    "sha256": "3c7023e0935097ac63e03c6f398928b6dfce30974d5591d3af09a9661876d9fe",
+    "satir_sayisi": 768,
+    "kolon_sayisi": 9,
+    "sinif_dagilimi": {
+      "0": 500,
+      "1": 268
+    }
+  },
+  "veri_butunlugu_bitis": {
+    "dosya": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv",
+    "sha256": "3c7023e0935097ac63e03c6f398928b6dfce30974d5591d3af09a9661876d9fe",
+    "satir_sayisi": 768,
+    "kolon_sayisi": 9,
+    "sinif_dagilimi": {
+      "0": 500,
+      "1": 268
+    }
+  },
+  "leakage_kontrolu": [
+    {
+      "varyant": "clean_imputed_baseline",
+      "honest_test_exact_duplicate_sayisi": 0,
+      "honest_test_exact_duplicate_orani": 0.0,
+      "not": "Exact duplicate kontrolu ham holdout ile train varyanti arasinda yapildi."
+    },
+    {
+      "varyant": "smote_400x2_train",
+      "honest_test_exact_duplicate_sayisi": 0,
+      "honest_test_exact_duplicate_orani": 0.0,
+      "not": "Exact duplicate kontrolu ham holdout ile train varyanti arasinda yapildi."
+    }
+  ],
+  "uyari": "Agresif skor, sentetik/agresif degerlendirme hattidir; ham holdout skoruyla akademik olarak ayri raporlanmalidir."
+}

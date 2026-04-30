@@ -1,0 +1,19 @@
+{
+  "ikili_siniflama_esikleri": {
+    "sentetik_1000_benchmark": {
+      "esik": 0.45,
+      "aciklama": "1000/1000 source_id kontrollu sentetik benchmark ic validasyon/holdout dengesine gore secilen esik."
+    }
+  },
+  "onerilen_ikili_siniflama_esigi": 0.45,
+  "onerilen_ikili_siniflama_yontemi": "source_id_kontrollu_1000_sentetik_benchmark",
+  "risk_kategorileri": {
+    "dusuk_ust_esik": 0.33,
+    "orta_ust_esik": 0.66,
+    "etiketler": [
+      "dusuk",
+      "orta",
+      "yuksek"
+    ]
+  }
+}

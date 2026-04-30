@@ -1,0 +1,60 @@
+{% set ozellik_adlari = {
+  "glucose": "Glikoz",
+  "blood_pressure": "Kan Basıncı",
+  "skin_thickness": "Cilt Kalınlığı",
+  "insulin": "İnsülin",
+  "bmi": "Vücut Kitle İndeksi",
+  "diabetes_pedigree_function": "Soyağacı Fonksiyonu",
+  "pregnancies": "Gebelik Sayısı",
+  "age": "Yaş"
+} %}
+{% set yon_adlari = {"arttirici": "Artırıcı", "azaltici": "Azaltıcı"} %}
+
+<section class="faktor-karti">
+  <div class="faktor-baslik-satir">
+    <h3>En Etkili Faktörler (Top 3)</h3>
+    <details class="tum-faktor-detay">
+      <summary class="tum-faktor-buton">Tüm Faktörleri Gör</summary>
+      <div class="tum-faktor-panel">
+        <h4>Kişiye Özel Faktör Dağılımı</h4>
+        {% if tum_faktorler and tum_faktorler|length > 0 %}
+        <div class="shap-grafik">
+          {% for faktor in tum_faktorler %}
+          {% set shap_deger = faktor.shap_katkisi|float %}
+          {% set oran = (shap_deger|abs / max_mutlak_shap * 100) %}
+          <div class="shap-satir">
+            <span class="shap-ozellik">{{ ozellik_adlari.get(faktor.ozellik, faktor.ozellik) }}</span>
+            <div class="shap-cubuk-zemin">
+              <div class="shap-cubuk {{ 'arttirici' if shap_deger >= 0 else 'azaltici' }}"
+                style="width: {{ '%.1f'|format(oran) }}%;"></div>
+            </div>
+            <span class="shap-deger">{{ '%+.4f'|format(shap_deger) }}</span>
+          </div>
+          {% endfor %}
+        </div>
+        <p class="shap-notu">
+          Pozitif değerler (Kırmızı Barlar) riski artırır, negatif değerler (Yeşil Barlar) riski azaltır.
+        </p>
+        {% else %}
+        <p class="bos-durum">Bu aşamada detay SHAP faktörleri henüz üretilemedi.</p>
+        {% endif %}
+      </div>
+    </details>
+  </div>
+  {% if sonuc.top_faktorler and sonuc.top_faktorler|length > 0 %}
+  <ul class="faktor-listesi">
+    {% for faktor in sonuc.top_faktorler %}
+    <li>
+      <span class="sira-balonu">{{ loop.index }}</span>
+      <div class="faktor-icerik">
+        <strong>{{ ozellik_adlari.get(faktor.ozellik, faktor.ozellik) }}</strong>
+        <span>Değer: {{ faktor.ozellik_degeri }}</span>
+        <span>Katkı: {{ '%.4f'|format(faktor.shap_katkisi) }} ({{ yon_adlari.get(faktor.yon, faktor.yon) }})</span>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="bos-durum">Bu aşamada faktör açıklamaları henüz eklenmedi.</p>
+  {% endif %}
+</section>

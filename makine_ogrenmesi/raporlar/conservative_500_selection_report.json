@@ -1,0 +1,610 @@
+{
+  "created_at_utc": "2026-04-30T11:18:43.298845+00:00",
+  "final": {
+    "status": "completed",
+    "dataset_name": "cons500_s0p16_very_low_p0p25_m0p2_b0p0_r28",
+    "target_per_class": 500,
+    "model": "extra_trees",
+    "feature_set": "no_skinthickness",
+    "preprocessing": "tree_models_no_scaler",
+    "resampling": "class_weight=balanced",
+    "default_threshold_metrics": {
+      "accuracy": 0.8272727272727273,
+      "precision": 0.9186046511627907,
+      "recall": 0.7181818181818181,
+      "sensitivity": 0.7181818181818181,
+      "specificity": 0.9363636363636364,
+      "f1": 0.8061224489795918,
+      "roc_auc": 0.9346280991735537,
+      "balanced_accuracy": 0.8272727272727273,
+      "mcc": 0.6707039616959488,
+      "brier": 0.13025558095750406,
+      "threshold": 0.5,
+      "confusion_matrix": {
+        "tn": 103,
+        "fp": 7,
+        "fn": 31,
+        "tp": 79,
+        "matrix": [
+          [
+            103,
+            7
+          ],
+          [
+            31,
+            79
+          ]
+        ]
+      },
+      "ana_metrik_minimumu": 0.7181818181818181
+    },
+    "tuned_threshold_metrics": {
+      "accuracy": 0.8909090909090909,
+      "precision": 0.8771929824561403,
+      "recall": 0.9090909090909091,
+      "sensitivity": 0.9090909090909091,
+      "specificity": 0.8727272727272727,
+      "f1": 0.8928571428571429,
+      "roc_auc": 0.9346280991735537,
+      "balanced_accuracy": 0.8909090909090909,
+      "mcc": 0.7823355995993853,
+      "brier": 0.13025558095750406,
+      "threshold": 0.42,
+      "confusion_matrix": {
+        "tn": 96,
+        "fp": 14,
+        "fn": 10,
+        "tp": 100,
+        "matrix": [
+          [
+            96,
+            14
+          ],
+          [
+            10,
+            100
+          ]
+        ]
+      },
+      "ana_metrik_minimumu": 0.8727272727272727
+    },
+    "threshold_report": {
+      "default_threshold": 0.5,
+      "default_min_main_metric": 0.6621621621621622,
+      "selected_threshold": 0.42,
+      "tuned_min_main_metric": 0.7432432432432432,
+      "selected_validation_metrics": {
+        "accuracy": 0.7432432432432432,
+        "precision": 0.7432432432432432,
+        "recall": 0.7432432432432432,
+        "sensitivity": 0.7432432432432432,
+        "specificity": 0.7432432432432432,
+        "f1": 0.7432432432432432,
+        "roc_auc": 0.8541818845872899,
+        "balanced_accuracy": 0.7432432432432432,
+        "mcc": 0.4864864864864865,
+        "brier": 0.1668522109387494,
+        "threshold": 0.42,
+        "confusion_matrix": {
+          "tn": 55,
+          "fp": 19,
+          "fn": 19,
+          "tp": 55,
+          "matrix": [
+            [
+              55,
+              19
+            ],
+            [
+              19,
+              55
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.7432432432432432
+      }
+    },
+    "split": {
+      "method": "GroupShuffleSplit(source_id)",
+      "train_rows": 780,
+      "test_rows": 220,
+      "train_source_families": 491,
+      "test_source_families": 123,
+      "train_class_distribution": {
+        "0": 390,
+        "1": 390
+      },
+      "test_class_distribution": {
+        "0": 110,
+        "1": 110
+      }
+    },
+    "leakage": {
+      "train_test_source_intersection_count": 0,
+      "exact_duplicate_count": 0,
+      "near_duplicate_rate": 0.0,
+      "minimum_near_duplicate_distance": 0.4060737334190814,
+      "near_duplicate_threshold": 0.02
+    },
+    "selection_score_pre_cv": 0.9835849710254779,
+    "selection_score": -0.03090618239819357,
+    "selection_flags": {
+      "accuracy_not_below_500": false,
+      "min_main_not_below_500": false,
+      "group_cv_not_below_500": false,
+      "computed_cohens_below_reported_500": true,
+      "shift_below_reported_500": true
+    }
+  },
+  "final_cv": {
+    "dataset_name": "cons500_s0p16_very_low_p0p25_m0p2_b0p0_r28",
+    "model": "extra_trees",
+    "feature_set": "no_skinthickness",
+    "preprocessing": "tree_models_no_scaler",
+    "resampling": "class_weight=balanced",
+    "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+    "folds": [
+      {
+        "fold": 1,
+        "threshold": 0.56,
+        "train_rows": 800,
+        "test_rows": 200,
+        "source_intersection_count": 0,
+        "metrics": {
+          "accuracy": 0.775,
+          "precision": 0.8571428571428571,
+          "recall": 0.66,
+          "sensitivity": 0.66,
+          "specificity": 0.89,
+          "f1": 0.7457627118644068,
+          "roc_auc": 0.8764500000000001,
+          "balanced_accuracy": 0.775,
+          "mcc": 0.5651513523856846,
+          "brier": 0.1487676775147929,
+          "threshold": 0.56,
+          "confusion_matrix": {
+            "tn": 89,
+            "fp": 11,
+            "fn": 34,
+            "tp": 66,
+            "matrix": [
+              [
+                89,
+                11
+              ],
+              [
+                34,
+                66
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.66
+        }
+      },
+      {
+        "fold": 2,
+        "threshold": 0.48,
+        "train_rows": 800,
+        "test_rows": 200,
+        "source_intersection_count": 0,
+        "metrics": {
+          "accuracy": 0.78,
+          "precision": 0.78,
+          "recall": 0.78,
+          "sensitivity": 0.78,
+          "specificity": 0.78,
+          "f1": 0.78,
+          "roc_auc": 0.8654000000000001,
+          "balanced_accuracy": 0.78,
+          "mcc": 0.56,
+          "brier": 0.15253113905325444,
+          "threshold": 0.48,
+          "confusion_matrix": {
+            "tn": 78,
+            "fp": 22,
+            "fn": 22,
+            "tp": 78,
+            "matrix": [
+              [
+                78,
+                22
+              ],
+              [
+                22,
+                78
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.78
+        }
+      },
+      {
+        "fold": 3,
+        "threshold": 0.46,
+        "train_rows": 800,
+        "test_rows": 200,
+        "source_intersection_count": 0,
+        "metrics": {
+          "accuracy": 0.805,
+          "precision": 0.801980198019802,
+          "recall": 0.81,
+          "sensitivity": 0.81,
+          "specificity": 0.8,
+          "f1": 0.8059701492537313,
+          "roc_auc": 0.8752500000000001,
+          "balanced_accuracy": 0.805,
+          "mcc": 0.6100305022876906,
+          "brier": 0.14790207100591718,
+          "threshold": 0.46,
+          "confusion_matrix": {
+            "tn": 80,
+            "fp": 20,
+            "fn": 19,
+            "tp": 81,
+            "matrix": [
+              [
+                80,
+                20
+              ],
+              [
+                19,
+                81
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.8
+        }
+      },
+      {
+        "fold": 4,
+        "threshold": 0.4,
+        "train_rows": 800,
+        "test_rows": 200,
+        "source_intersection_count": 0,
+        "metrics": {
+          "accuracy": 0.725,
+          "precision": 0.7472527472527473,
+          "recall": 0.68,
+          "sensitivity": 0.68,
+          "specificity": 0.77,
+          "f1": 0.7120418848167539,
+          "roc_auc": 0.83045,
+          "balanced_accuracy": 0.7250000000000001,
+          "mcc": 0.45183364695495726,
+          "brier": 0.18083727810650888,
+          "threshold": 0.4,
+          "confusion_matrix": {
+            "tn": 77,
+            "fp": 23,
+            "fn": 32,
+            "tp": 68,
+            "matrix": [
+              [
+                77,
+                23
+              ],
+              [
+                32,
+                68
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.68
+        }
+      },
+      {
+        "fold": 5,
+        "threshold": 0.44,
+        "train_rows": 800,
+        "test_rows": 200,
+        "source_intersection_count": 0,
+        "metrics": {
+          "accuracy": 0.775,
+          "precision": 0.7477477477477478,
+          "recall": 0.83,
+          "sensitivity": 0.83,
+          "specificity": 0.72,
+          "f1": 0.7867298578199052,
+          "roc_auc": 0.8552500000000001,
+          "balanced_accuracy": 0.7749999999999999,
+          "mcc": 0.553358004808804,
+          "brier": 0.15688158284023668,
+          "threshold": 0.44,
+          "confusion_matrix": {
+            "tn": 72,
+            "fp": 28,
+            "fn": 17,
+            "tp": 83,
+            "matrix": [
+              [
+                72,
+                28
+              ],
+              [
+                17,
+                83
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.72
+        }
+      }
+    ],
+    "summary": {
+      "accuracy_mean": 0.772,
+      "accuracy_std": 0.02906888370749729,
+      "precision_mean": 0.7868247100326308,
+      "precision_std": 0.045590175794355266,
+      "recall_mean": 0.752,
+      "recall_std": 0.07726577508832741,
+      "specificity_mean": 0.792,
+      "specificity_std": 0.06220932405998317,
+      "f1_mean": 0.7661009207509595,
+      "f1_std": 0.03723007835346526,
+      "roc_auc_mean": 0.8605600000000001,
+      "roc_auc_std": 0.018884663089396136,
+      "balanced_accuracy_mean": 0.772,
+      "balanced_accuracy_std": 0.029068883707497245,
+      "mcc_mean": 0.5480747012874273,
+      "mcc_std": 0.058229287894547475,
+      "brier_mean": 0.15738394970414202,
+      "brier_std": 0.013583141452894716,
+      "ana_metrik_minimumu_mean": 0.7280000000000001,
+      "ana_metrik_minimumu_std": 0.06099180272790763,
+      "max_source_intersection_count": 0
+    }
+  },
+  "external_holdout": {
+    "note": "External holdout selection_score icine dahil edilmedi; yalniz dis kontrol olarak raporlandi.",
+    "rows": 154,
+    "class_distribution": {
+      "0": 100,
+      "1": 54
+    },
+    "metrics": {
+      "accuracy": 0.7337662337662337,
+      "precision": 0.6031746031746031,
+      "recall": 0.7037037037037037,
+      "sensitivity": 0.7037037037037037,
+      "specificity": 0.75,
+      "f1": 0.6495726495726496,
+      "roc_auc": 0.8173148148148147,
+      "balanced_accuracy": 0.7268518518518519,
+      "mcc": 0.44032995772289835,
+      "brier": 0.16687456773995235,
+      "threshold": 0.42,
+      "confusion_matrix": {
+        "tn": 75,
+        "fp": 25,
+        "fn": 16,
+        "tp": 38,
+        "matrix": [
+          [
+            75,
+            25
+          ],
+          [
+            16,
+            38
+          ]
+        ]
+      },
+      "ana_metrik_minimumu": 0.6031746031746031
+    }
+  },
+  "quality_summary": {
+    "dataset_name": "cons500_s0p16_very_low_p0p25_m0p2_b0p0_r28",
+    "class_separation": {
+      "by_feature": {
+        "Pregnancies": {
+          "cohens_d": 0.48239948256153425,
+          "abs_cohens_d": 0.48239948256153425,
+          "negative_mean": 3.286,
+          "positive_mean": 4.828
+        },
+        "Glucose": {
+          "cohens_d": 1.2828082518276538,
+          "abs_cohens_d": 1.2828082518276538,
+          "negative_mean": 109.79779581458345,
+          "positive_mean": 142.35859885232318
+        },
+        "BloodPressure": {
+          "cohens_d": 0.3919761841737784,
+          "abs_cohens_d": 0.3919761841737784,
+          "negative_mean": 70.68548639567368,
+          "positive_mean": 75.17630009766843
+        },
+        "SkinThickness": {
+          "cohens_d": 0.5760619561079388,
+          "abs_cohens_d": 0.5760619561079388,
+          "negative_mean": 27.43284395589757,
+          "positive_mean": 31.92106240128789
+        },
+        "Insulin": {
+          "cohens_d": 0.5324696826832341,
+          "abs_cohens_d": 0.5324696826832341,
+          "negative_mean": 123.13316302506966,
+          "positive_mean": 162.3260604578998
+        },
+        "BMI": {
+          "cohens_d": 0.801129158917065,
+          "abs_cohens_d": 0.801129158917065,
+          "negative_mean": 30.644316564136673,
+          "positive_mean": 35.60829076822782
+        },
+        "DiabetesPedigreeFunction": {
+          "cohens_d": 0.3455856219965872,
+          "abs_cohens_d": 0.3455856219965872,
+          "negative_mean": 0.43205473554912843,
+          "positive_mean": 0.5367602052878462
+        },
+        "Age": {
+          "cohens_d": 0.5618552490977937,
+          "abs_cohens_d": 0.5618552490977937,
+          "negative_mean": 31.302,
+          "positive_mean": 37.396
+        }
+      },
+      "aggregate": {
+        "mean_abs_cohens_d": 0.6217856984206982
+      }
+    },
+    "distribution_shift_vs_original_dev": {
+      "by_feature": {
+        "Pregnancies": {
+          "z_mean_shift": 0.07174747456663046,
+          "reference_mean": 3.8192182410423454,
+          "candidate_mean": 4.057
+        },
+        "Glucose": {
+          "z_mean_shift": 0.14688767674148206,
+          "reference_mean": 121.67100977198697,
+          "candidate_mean": 126.07819733345333
+        },
+        "BloodPressure": {
+          "z_mean_shift": 0.061236921949952276,
+          "reference_mean": 72.18892508143323,
+          "candidate_mean": 72.93089324667105
+        },
+        "SkinThickness": {
+          "z_mean_shift": 0.07936111534996017,
+          "reference_mean": 28.995114006514658,
+          "candidate_mean": 29.67695317859273
+        },
+        "Insulin": {
+          "z_mean_shift": 0.06378994339142813,
+          "reference_mean": 137.70521172638436,
+          "candidate_mean": 142.72961174148472
+        },
+        "BMI": {
+          "z_mean_shift": 0.09936739759444364,
+          "reference_mean": 32.44820846905537,
+          "candidate_mean": 33.12630366618224
+        },
+        "DiabetesPedigreeFunction": {
+          "z_mean_shift": 0.021129657448399165,
+          "reference_mean": 0.4774283387622149,
+          "candidate_mean": 0.48440747041848725
+        },
+        "Age": {
+          "z_mean_shift": 0.083031699974485,
+          "reference_mean": 33.36644951140065,
+          "candidate_mean": 34.349
+        }
+      },
+      "aggregate": {
+        "avg_abs_z_mean_shift": 0.0783189858770976
+      }
+    },
+    "quality_goal": {
+      "lower_than_reported_500_cohens_d": true,
+      "lower_than_reported_500_shift": true
+    }
+  },
+  "leakage_summary": {
+    "dataset_name": "cons500_s0p16_very_low_p0p25_m0p2_b0p0_r28",
+    "total_rows": 1000,
+    "original_dev_rows": 614,
+    "synthetic_rows": 386,
+    "class_distribution": {
+      "0": 500,
+      "1": 500
+    },
+    "source_id_family_count": 614,
+    "synthetic_row_valid_source_id_ratio": 1.0,
+    "independent_synthetic_source_id_count": 0,
+    "train_test_source_intersection": 0,
+    "cv_source_intersections": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "exact_duplicate_count": 0,
+    "near_duplicate_rate": 0.0,
+    "minimum_near_duplicate_distance": 0.4060737334190814,
+    "external_holdout_source_overlap_count": 0,
+    "leakage_status": "clean"
+  },
+  "baseline_thresholds": {
+    "accuracy": 0.92,
+    "min_main_metric": 0.91,
+    "group_cv_min_main_metric": 0.856,
+    "reported_cohens_d": 0.704,
+    "reported_shift": 0.105
+  },
+  "target_hit": {
+    "accuracy_not_below_500": false,
+    "min_main_not_below_500": false,
+    "group_cv_not_below_500": false,
+    "computed_cohens_below_reported_500": true,
+    "shift_below_reported_500": true
+  },
+  "interpretation": "Eger skor kosullari korunurken cohen/shift duserse 500/500 icin daha muhafazakar aday bulunmus olur; aksi durumda mevcut 500/500 denge noktasi korunur.",
+  "graphics": {
+    "quality_scatter": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_conservative_500/conservative_500_quality_scatter.png",
+    "score_vs_quality": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_conservative_500/conservative_500_score_quality.png",
+    "final_confusion": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_conservative_500/conservative_500_final_confusion.png"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "veri_yolu": "makine_ogrenmesi/veri/ham/diabetes.csv",
+  "test_boyutu": 0.2,
+  "random_state": 42,
+  "en_iyi_model": {
+    "model_adi": "logistic_regression",
+    "en_iyi_cv_roc_auc": 0.8438468992248062,
+    "en_iyi_parametreler": {
+      "model__C": 0.1
+    }
+  },
+  "tum_model_sonuclari": [
+    {
+      "model_adi": "logistic_regression",
+      "en_iyi_cv_roc_auc": 0.8438468992248062,
+      "en_iyi_parametreler": {
+        "model__C": 0.1
+      }
+    },
+    {
+      "model_adi": "random_forest",
+      "en_iyi_cv_roc_auc": 0.8368092469545958,
+      "en_iyi_parametreler": {
+        "model__max_depth": 5,
+        "model__n_estimators": 200
+      }
+    },
+    {
+      "model_adi": "xgboost",
+      "en_iyi_cv_roc_auc": 0.8186780177187153,
+      "en_iyi_parametreler": {
+        "model__learning_rate": 0.1,
+        "model__max_depth": 3,
+        "model__n_estimators": 100
+      }
+    }
+  ]
+}
