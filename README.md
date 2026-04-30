@@ -2,6 +2,39 @@
 
 Bu repo, PIMA Indians Diabetes veri seti üzerinde geliştirilen diyabet risk tahmini çalışmasının ML deneme sürümüdür. Ana odak, ham PIMA üzerinde klinik genellenebilirlik iddiası kurmak değil; `source_id` aile yapısı korunmuş PIMA + sentetik benchmark üzerinde savunulabilir bir modelleme ve raporlama akışı oluşturmaktır.
 
+## Deney Ölçeği
+
+Bu kopya proje üzerinde yalnız tek bir final model eğitilmedi. Veri artırmadan başlayan, literatür profilleriyle genişleyen, daha sonra `source_id` kontrollü sentetik benchmark ve küçük/orta ölçek sweep aşamalarına ayrılan kapsamlı bir deneme süreci yürütüldü.
+
+Repo içinde kayıtlı sonuçlara göre yaklaşık deney ölçeği:
+
+| Kategori | Sayı |
+| --- | ---: |
+| Toplam kayıtlı model/konfigürasyon denemesi | ~4.957 |
+| Üretilen deneysel CSV dosyası | 3.608 |
+| Gerçek veri adayı CSV | 1.806 |
+| Metadata CSV | 1.802 |
+| Conservative 500 veri adayı | 1.704 |
+| Small-scale sweep veri adayı | 87 |
+| JSON değerlendirme/rapor dosyası | 40+ |
+| Kullanılabilir Word raporu | 17 |
+
+Deneme gruplarının yaklaşık dağılımı:
+
+| Deney grubu | Yaklaşık deneme |
+| --- | ---: |
+| Veri artırmadan ilk model karşılaştırmaları | 10 |
+| CV strateji denemeleri | 10 |
+| Agresif accuracy araması | 75 |
+| Literatür profilleri | 16 |
+| İlk veri müdahalesi ve sentetik benchmark denemeleri | 100+ |
+| Strict `source_id` 2500/2700/5000 benchmark | 88 |
+| Min90 geniş benchmark | 678 |
+| Small-scale sweep | 1.635 |
+| Conservative 500 sweep | 2.420 |
+
+Bu sayıların amacı skoru şişirmek değildir. Amaç, hangi veri boyutu, üretim yaklaşımı, model ailesi, feature seti ve doğrulama protokolünün daha savunulabilir sonuç verdiğini sistematik olarak görmekti.
+
 ## Final Seçim
 
 Final proje adayı 1000/1000 source_id kontrollü sentetik benchmarktır.
