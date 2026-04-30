@@ -31,6 +31,10 @@ Thumbs.db
 node_modules/
 raporlar/**/node_modules/
 raporlar/**/.DS_Store
+raporlar/**/~$*.docx
+
+# ML runtime logs
+catboost_info/
 
 # Build artifacts
 build/

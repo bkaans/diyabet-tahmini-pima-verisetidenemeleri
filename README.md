@@ -60,6 +60,25 @@ Min ana metrik; accuracy, precision, recall, specificity, F1 ve balanced accurac
 
 Sentetik benchmark sonucu ile original external holdout sonucu aynı anlama gelmez. Sentetik benchmark, kontrollü veri artırımı sonrası modelin ayrıştırma gücünü gösterir. Original external holdout ise gerçek PIMA dağılımına dış kontrol olarak bakar. Bu çalışma klinik tanı aracı değildir ve gerçek dünya genellenebilirliği için bağımsız dış veri setleri gerekir.
 
+External holdout sonuçları seçim skoruna dahil edilmedi. Yalnızca gerçek PIMA dağılımındaki dış kontrol sınırını göstermek için raporlandı.
+
+| External holdout metriği | Değer |
+| --- | ---: |
+| Satır sayısı | 154 |
+| Sınıf dağılımı | 100 negatif / 54 pozitif |
+| Accuracy | 0.7403 |
+| Precision | 0.6346 |
+| Recall / Sensitivity | 0.6111 |
+| Specificity | 0.8100 |
+| F1 | 0.6226 |
+| ROC-AUC | 0.8181 |
+| Balanced accuracy | 0.7106 |
+| Min ana metrik | 0.6111 |
+| Brier | 0.1695 |
+| Confusion matrix | TN=81, FP=19, FN=21, TP=33 |
+
+Bu fark kritik bir sınırlılıktır: final model sentetik benchmark üzerinde güçlüdür, fakat gerçek PIMA external holdout tarafında aynı seviyeye çıkmamıştır. Bu nedenle sonuçlar klinik genellenebilirlik kanıtı olarak değil, leakage kontrollü sentetik benchmark başarısı olarak yorumlanmalıdır.
+
 ## Source ID ve Leakage Kontrolü
 
 Her orijinal PIMA satırı bir kaynak aile olarak kabul edildi.
