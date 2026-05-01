@@ -711,8 +711,8 @@
 - Exact duplicate: 0
 - Near duplicate oranı: 0.0
 - Minimum mesafe: 0.16721105173019227
-- Yeni Word raporu yolu: /Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/controlled_synthetic_benchmark_report.docx
-- Masaüstü Word raporu yolu: /Users/beratkaanseven/Desktop/PIMA_Sentetik_Benchmark_Controlled Benchmark_Final_Rapor.docx
+- Yeni Word raporu yolu: makine_ogrenmesi/raporlar/controlled_synthetic_benchmark_report.docx
+- Masaüstü Word raporu yolu: ~/Desktop/pima_controlled_synthetic_benchmark_report.docx
 - Minimum 0.90 hedefi yakalandı mı: Evet
 - Hedef yakalandıysa hangi benchmarkta yakalandı: controlled_synthetic_2500_per_class_pima
 - Hedef yakalanmadıysa hangi metrikler altında kaldı: Holdout tarafında yok

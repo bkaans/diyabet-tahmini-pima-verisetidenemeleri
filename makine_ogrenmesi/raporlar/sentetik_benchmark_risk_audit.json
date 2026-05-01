@@ -1,8 +1,8 @@
 {
   "created_at_utc": "2026-04-27T12:19:14.377404+00:00",
   "source_files": {
-    "sweep": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/benchmark_scale_sweep_results.json",
-    "selection": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/benchmark_scale_sweep_selection_report.json"
+    "sweep": "makine_ogrenmesi/raporlar/benchmark_scale_sweep_results.json",
+    "selection": "makine_ogrenmesi/raporlar/benchmark_scale_sweep_selection_report.json"
   },
   "candidate_rows": [
     {
@@ -525,10 +525,10 @@
     }
   },
   "graphics": {
-    "gap": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_synthetic_risk_audit/risk_audit_gap_analizi.png",
-    "candidate_risk": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_synthetic_risk_audit/risk_audit_aday_karsilastirma.png",
-    "risk_level": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_synthetic_risk_audit/risk_audit_risk_duzeyleri.png",
-    "candidate_confusion": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_synthetic_risk_audit/risk_audit_aday_hata_matrisi_heatmap.png"
+    "gap": "makine_ogrenmesi/raporlar/grafikler_synthetic_risk_audit/risk_audit_gap_analizi.png",
+    "candidate_risk": "makine_ogrenmesi/raporlar/grafikler_synthetic_risk_audit/risk_audit_aday_karsilastirma.png",
+    "risk_level": "makine_ogrenmesi/raporlar/grafikler_synthetic_risk_audit/risk_audit_risk_duzeyleri.png",
+    "candidate_confusion": "makine_ogrenmesi/raporlar/grafikler_synthetic_risk_audit/risk_audit_aday_hata_matrisi_heatmap.png"
   },
   "quality_metric_definitions": {
     "cohens_d": "Outcome=0 ve Outcome=1 siniflari arasindaki ortalama mutlak standartlastirilmis fark. Deger yukseldikce siniflar daha kolay ayrisir.",

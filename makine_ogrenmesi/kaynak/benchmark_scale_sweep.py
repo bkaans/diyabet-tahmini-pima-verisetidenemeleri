@@ -230,7 +230,7 @@ def benchmark_scale_sweep_calistir(
             selection=selection_report,
             graphics=graphics,
         )
-        desktop_word_path = Path("/Users/beratkaanseven/Desktop/Controlled Benchmark_Kucuk_Olcek_Literatur_Stili_Rapor.docx")
+        desktop_word_path = Path.home() / "Desktop" / "pima_benchmark_scale_sweep_literature_report.docx"
         shutil.copy2(word_path, desktop_word_path)
 
     result = {

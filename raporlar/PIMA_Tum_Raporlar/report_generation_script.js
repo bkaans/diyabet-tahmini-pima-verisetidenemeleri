@@ -4,6 +4,12 @@ const {
   VerticalAlign, PageNumber, LevelFormat, PageBreak
 } = require('docx');
 const fs = require('fs');
+const path = require('path');
+
+const REPORT_DIR = __dirname;
+const CHART_DIR = path.join(REPORT_DIR, 'charts');
+const chartPath = (fileName) => path.join(CHART_DIR, fileName);
+const reportPath = (fileName) => path.join(REPORT_DIR, fileName);
 
 // ─── Renk paleti ─────────────────────────────────────────────────────────
 const DARK="1B4332",MID="2D6A4F",LIGHT="74C69D",PALE="D8F3DC",WHITE="FFFFFF";
@@ -187,7 +193,7 @@ const doc=new Document({
         ]
       }),
       sp(160),
-      img("/Users/beratkaanseven/Desktop/PIMA Yeni Raporlar/charts/r1_sifir_degeri.png",656,268),
+      img(chartPath("r1_sifir_degeri.png"),656,268),
 
       sp(260),
       heading("2. Veri Arttırmadan Model Karşılaştırması"),
@@ -219,7 +225,7 @@ const doc=new Document({
         ]
       }),
       sp(160),
-      img("/Users/beratkaanseven/Desktop/PIMA Yeni Raporlar/charts/r1_model_comparison.png",656,300),
+      img(chartPath("r1_model_comparison.png"),656,300),
 
       sp(260),
       heading("3. Literatür Profillerinden Üretilen Deneyler"),
@@ -251,7 +257,7 @@ const doc=new Document({
         ]
       }),
       sp(160),
-      img("/Users/beratkaanseven/Desktop/PIMA Yeni Raporlar/charts/r1_literatur.png",656,280),
+      img(chartPath("r1_literatur.png"),656,280),
 
       sp(260),
       heading("4. Genel Sonuç"),
@@ -267,7 +273,7 @@ const doc=new Document({
   }]
 });
 const buf=await Packer.toBuffer(doc);
-fs.writeFileSync("/Users/beratkaanseven/Desktop/PIMA Yeni Raporlar/01_raw_pima_benchmark_report.docx",buf);
+fs.writeFileSync(reportPath("01_raw_pima_benchmark_report.docx"),buf);
 console.log("Rapor 1 tamamlandı.");
 }
 
@@ -374,7 +380,7 @@ const doc=new Document({
         ]
       }),
       sp(160),
-      img("/Users/beratkaanseven/Desktop/PIMA Yeni Raporlar/charts/r2_model_comparison.png",656,310),
+      img(chartPath("r2_model_comparison.png"),656,310),
 
       sp(260),
       heading("4. Final Model Sonuçları"),
@@ -417,13 +423,13 @@ const doc=new Document({
         ]
       }),
       sp(160),
-      img("/Users/beratkaanseven/Desktop/PIMA Yeni Raporlar/charts/r2_final_metrics.png",656,280),
+      img(chartPath("r2_final_metrics.png"),656,280),
       sp(80),
     ]
   }]
 });
 const buf=await Packer.toBuffer(doc);
-fs.writeFileSync("/Users/beratkaanseven/Desktop/PIMA Yeni Raporlar/02_source_id_benchmark_report.docx",buf);
+fs.writeFileSync(reportPath("02_source_id_benchmark_report.docx"),buf);
 console.log("Rapor 2 tamamlandı.");
 }
 
@@ -504,7 +510,7 @@ const doc=new Document({
         ]
       }),
       sp(160),
-      img("/Users/beratkaanseven/Desktop/PIMA Yeni Raporlar/charts/r3_boyut_metrik.png",656,268),
+      img(chartPath("r3_boyut_metrik.png"),656,268),
 
       sp(260),
       heading("3. Final Model Sonuçları"),
@@ -538,7 +544,7 @@ const doc=new Document({
         ]
       }),
       sp(160),
-      img("/Users/beratkaanseven/Desktop/PIMA Yeni Raporlar/charts/r3_confusion.png",656,262),
+      img(chartPath("r3_confusion.png"),656,262),
 
       sp(260),
       heading("4. Sentetik Benchmark Sonucunun Yorumlanması"),
@@ -568,7 +574,7 @@ const doc=new Document({
         ]
       }),
       sp(160),
-      img("/Users/beratkaanseven/Desktop/PIMA Yeni Raporlar/charts/r3_capraz_model.png",656,295),
+      img(chartPath("r3_capraz_model.png"),656,295),
 
       sp(260),
       heading("5. Dış Kontrol, Literatür ve Sınırlılıklar"),
@@ -591,7 +597,7 @@ const doc=new Document({
   }]
 });
 const buf=await Packer.toBuffer(doc);
-fs.writeFileSync("/Users/beratkaanseven/Desktop/PIMA Yeni Raporlar/03_controlled_synthetic_benchmark_report.docx",buf);
+fs.writeFileSync(reportPath("03_controlled_synthetic_benchmark_report.docx"),buf);
 console.log("Rapor 3 tamamlandı.");
 }
 
@@ -684,9 +690,9 @@ const doc=new Document({
         ]
       }),
       sp(160),
-      img("/Users/beratkaanseven/Desktop/PIMA Yeni Raporlar/charts/r4_aday_tarama.png",656,310),
+      img(chartPath("r4_aday_tarama.png"),656,310),
       sp(160),
-      img("/Users/beratkaanseven/Desktop/PIMA Yeni Raporlar/charts/r4_cohens_shift.png",656,262),
+      img(chartPath("r4_cohens_shift.png"),656,262),
 
       sp(260),
       heading("3. Seçilen Küçük Benchmark Adayı"),
@@ -754,13 +760,13 @@ const doc=new Document({
         ]
       }),
       sp(160),
-      img("/Users/beratkaanseven/Desktop/PIMA Yeni Raporlar/charts/r4_dis_kontrol_karsilastirma.png",656,268),
+      img(chartPath("r4_dis_kontrol_karsilastirma.png"),656,268),
       sp(80),
     ]
   }]
 });
 const buf=await Packer.toBuffer(doc);
-fs.writeFileSync("/Users/beratkaanseven/Desktop/PIMA Yeni Raporlar/04_scale_sweep_benchmark_report.docx",buf);
+fs.writeFileSync(reportPath("04_scale_sweep_benchmark_report.docx"),buf);
 console.log("Rapor 4 tamamlandı.");
 }
 

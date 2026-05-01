@@ -654,17 +654,17 @@
   },
   "why_selected": "Leakage-clean adaylar arasinda selection_score ve min ana metrik dengesine gore secildi.",
   "graphics": {
-    "original_class_distribution": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_orijinal_pima_sinif_dagilimi.png",
-    "candidate_distribution": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_aday_veri_boyutlari.png",
-    "holdout_min_metric": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_holdout_ana_metrik_minimumu.png",
-    "cv_min_metric": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_cv_ana_metrik_minimumu_mean.png",
-    "holdout_roc_auc": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_holdout_roc_auc.png",
-    "cv_roc_auc": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_cv_roc_auc_mean.png",
-    "threshold_effect": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_threshold_tuning_etkisi.png",
-    "confusion_matrix": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_selected_model_confusion_matrix.png",
-    "feature_importance": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_selected_model_feature_importance.png",
-    "calibration_curve": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_selected_model_calibration_curve.png",
-    "brier": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_brier_karsilastirma.png",
-    "leakage_summary": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_leakage_ozeti.png"
+    "original_class_distribution": "makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_orijinal_pima_sinif_dagilimi.png",
+    "candidate_distribution": "makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_aday_veri_boyutlari.png",
+    "holdout_min_metric": "makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_holdout_ana_metrik_minimumu.png",
+    "cv_min_metric": "makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_cv_ana_metrik_minimumu_mean.png",
+    "holdout_roc_auc": "makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_holdout_roc_auc.png",
+    "cv_roc_auc": "makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_cv_roc_auc_mean.png",
+    "threshold_effect": "makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_threshold_tuning_etkisi.png",
+    "confusion_matrix": "makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_selected_model_confusion_matrix.png",
+    "feature_importance": "makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_selected_model_feature_importance.png",
+    "calibration_curve": "makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_selected_model_calibration_curve.png",
+    "brier": "makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_brier_karsilastirma.png",
+    "leakage_summary": "makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_leakage_ozeti.png"
   }
 }

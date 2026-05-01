@@ -183,7 +183,7 @@ def conservative_500_sweep_calistir(
     desktop_word_path = None
     if word_raporu_yaz:
         word_path = _write_word_report(proje_koku, sweep, selection, graphics)
-        desktop_word_path = Path("/Users/beratkaanseven/Desktop/Conservative_500_Sweep_Raporu.docx")
+        desktop_word_path = Path.home() / "Desktop" / "pima_conservative_scale_sweep_report.docx"
         shutil.copy2(word_path, desktop_word_path)
 
     result = {

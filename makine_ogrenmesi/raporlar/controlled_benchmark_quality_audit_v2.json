@@ -258,6 +258,6 @@
     "Final benchmark sonucu korunmuştur; model yeniden eğitilmemiş veya yeniden optimize edilmemiştir.",
     "Yüksek sentetik benchmark sonucunun üretim stratejisiyle ilişkisi raporda açıkça sınırlılık olarak anlatılmıştır."
   ],
-  "word_report_path": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/controlled_synthetic_benchmark_report_v2.docx",
-  "desktop_word_report_path": "/Users/beratkaanseven/Desktop/PIMA_Sentetik_Benchmark_Controlled Benchmark_Final_Rapor_v2.docx"
+  "word_report_path": "makine_ogrenmesi/raporlar/controlled_synthetic_benchmark_report_v2.docx",
+  "desktop_word_report_path": "~/Desktop/pima_controlled_synthetic_benchmark_report_v2.docx"
 }

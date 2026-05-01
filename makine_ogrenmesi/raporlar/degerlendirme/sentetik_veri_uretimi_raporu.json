@@ -8,9 +8,9 @@
     "sha256": "3c7023e0935097ac63e03c6f398928b6dfce30974d5591d3af09a9661876d9fe"
   },
   "final_veri": {
-    "yol": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/sentetik_gercek_pima.csv",
-    "metadata_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/sentetik_gercek_pima_metadata.csv",
-    "split_manifest_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/sentetik_gercek_pima_split_manifest.json",
+    "yol": "makine_ogrenmesi/veri/deneysel/sentetik_gercek_pima.csv",
+    "metadata_yolu": "makine_ogrenmesi/veri/deneysel/sentetik_gercek_pima_metadata.csv",
+    "split_manifest_yolu": "makine_ogrenmesi/veri/deneysel/sentetik_gercek_pima_split_manifest.json",
     "satir_sayisi": 10000,
     "sinif_dagilimi": {
       "0": 5000,

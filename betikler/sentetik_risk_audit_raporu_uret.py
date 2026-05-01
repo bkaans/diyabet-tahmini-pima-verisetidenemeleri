@@ -32,7 +32,7 @@ SWEEP_JSON = RAPOR_DIR / "benchmark_scale_sweep_results.json"
 SELECTION_JSON = RAPOR_DIR / "benchmark_scale_sweep_selection_report.json"
 AUDIT_JSON = RAPOR_DIR / "sentetik_benchmark_risk_audit.json"
 DOCX_PATH = RAPOR_DIR / "sentetik_benchmark_risk_audit_raporu.docx"
-DESKTOP_DOCX = Path("/Users/beratkaanseven/Desktop/Sentetik_Benchmark_Risk_Audit_Raporu.docx")
+DESKTOP_DOCX = Path.home() / "Desktop" / "pima_synthetic_benchmark_risk_audit_report.docx"
 
 
 def main() -> None:

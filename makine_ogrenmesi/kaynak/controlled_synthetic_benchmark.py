@@ -340,7 +340,7 @@ def controlled_benchmark_calistir(
             literature_notes=literature_notes,
             graphics=graphics,
         )
-        desktop_word_path = Path("/Users/beratkaanseven/Desktop/PIMA_Sentetik_Benchmark_Controlled Benchmark_Final_Rapor.docx")
+        desktop_word_path = Path.home() / "Desktop" / "pima_controlled_synthetic_benchmark_report.docx"
         shutil.copy2(word_path, desktop_word_path)
 
     result = {

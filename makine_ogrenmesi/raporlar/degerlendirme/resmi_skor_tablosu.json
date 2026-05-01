@@ -1,7 +1,7 @@
 {
   "olusturma_zamani_utc": "2026-04-07T17:58:29.039064+00:00",
   "veri": {
-    "veri_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv",
+    "veri_yolu": "makine_ogrenmesi/veri/ham/diabetes.csv",
     "test_boyutu": 0.2,
     "random_state": 42,
     "test_ornek_sayisi": 154
@@ -52,7 +52,7 @@
     "brier_iyilesme_yuzde": 0.0
   },
   "model_degerlendirme_raporu": {
-    "rapor_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/degerlendirme/model_degerlendirme_ozeti.json",
+    "rapor_yolu": "makine_ogrenmesi/raporlar/degerlendirme/model_degerlendirme_ozeti.json",
     "en_iyi_model": {
       "model_adi": "xgboost",
       "accuracy": 0.7402597402597403,

@@ -1,7 +1,7 @@
 {
   "amac": "Veri seti boyutunu degistirmeden 9-12 teknik ekseninde optimizasyon",
   "kurulum": {
-    "veri_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv",
+    "veri_yolu": "makine_ogrenmesi/veri/ham/diabetes.csv",
     "test_boyutu": 0.2,
     "dogrulama_boyutu": 0.25,
     "cv": 5,

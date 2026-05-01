@@ -1,6 +1,6 @@
 {
   "raw_pima": {
-    "path": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv",
+    "path": "makine_ogrenmesi/veri/ham/diabetes.csv",
     "rows": 768,
     "class_distribution": {
       "0": 500,
@@ -1217,21 +1217,21 @@
     }
   ],
   "graphs": {
-    "pima_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/pima_korelasyon_matrisi.png",
-    "pima_distributions": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/pima_tum_ozellik_dagilimlari.png",
-    "class_counts": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/aday_sinif_dagilimlari.png",
-    "synthetic_additions": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/aday_sentetik_eklenen_satirlar.png",
-    "model_effects": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/aday_model_etkisi.png",
-    "feature_change_summary": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/aday_ozellik_oynama_ozeti.png",
-    "scale_sweep_500_per_class_strength_0p40_low_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_500_per_class_strength_0p40_low_korelasyon_matrisi.png",
-    "scale_sweep_500_per_class_strength_0p40_low_diff": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_500_per_class_strength_0p40_low_pima_fark_heatmap.png",
-    "scale_sweep_650_per_class_strength_0p50_low_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_650_per_class_strength_0p50_low_korelasyon_matrisi.png",
-    "scale_sweep_650_per_class_strength_0p50_low_diff": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_650_per_class_strength_0p50_low_pima_fark_heatmap.png",
-    "scale_sweep_800_per_class_strength_0p60_low_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_800_per_class_strength_0p60_low_korelasyon_matrisi.png",
-    "scale_sweep_800_per_class_strength_0p60_low_diff": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_800_per_class_strength_0p60_low_pima_fark_heatmap.png",
-    "scale_sweep_1000_per_class_strength_0p60_adaptive_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_1000_per_class_strength_0p60_adaptive_korelasyon_matrisi.png",
-    "scale_sweep_1000_per_class_strength_0p60_adaptive_diff": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_1000_per_class_strength_0p60_adaptive_pima_fark_heatmap.png"
+    "pima_corr": "makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/pima_korelasyon_matrisi.png",
+    "pima_distributions": "makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/pima_tum_ozellik_dagilimlari.png",
+    "class_counts": "makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/aday_sinif_dagilimlari.png",
+    "synthetic_additions": "makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/aday_sentetik_eklenen_satirlar.png",
+    "model_effects": "makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/aday_model_etkisi.png",
+    "feature_change_summary": "makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/aday_ozellik_oynama_ozeti.png",
+    "scale_sweep_500_per_class_strength_0p40_low_corr": "makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_500_per_class_strength_0p40_low_korelasyon_matrisi.png",
+    "scale_sweep_500_per_class_strength_0p40_low_diff": "makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_500_per_class_strength_0p40_low_pima_fark_heatmap.png",
+    "scale_sweep_650_per_class_strength_0p50_low_corr": "makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_650_per_class_strength_0p50_low_korelasyon_matrisi.png",
+    "scale_sweep_650_per_class_strength_0p50_low_diff": "makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_650_per_class_strength_0p50_low_pima_fark_heatmap.png",
+    "scale_sweep_800_per_class_strength_0p60_low_corr": "makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_800_per_class_strength_0p60_low_korelasyon_matrisi.png",
+    "scale_sweep_800_per_class_strength_0p60_low_diff": "makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_800_per_class_strength_0p60_low_pima_fark_heatmap.png",
+    "scale_sweep_1000_per_class_strength_0p60_adaptive_corr": "makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_1000_per_class_strength_0p60_adaptive_korelasyon_matrisi.png",
+    "scale_sweep_1000_per_class_strength_0p60_adaptive_diff": "makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_1000_per_class_strength_0p60_adaptive_pima_fark_heatmap.png"
   },
-  "word_report": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/pima_korelasyon_deney_dagilim_raporu.docx",
-  "desktop_copy": "/Users/beratkaanseven/Desktop/PIMA_Korelasyon_Deney_Dagilim_Raporu.docx"
+  "word_report": "makine_ogrenmesi/raporlar/pima_korelasyon_deney_dagilim_raporu.docx",
+  "desktop_copy": "~/Desktop/pima_correlation_distribution_analysis_report.docx"
 }

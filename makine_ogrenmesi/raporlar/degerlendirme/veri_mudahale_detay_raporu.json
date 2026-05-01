@@ -23,7 +23,7 @@
     "durust_ve_agresif_skor_ayri": true
   },
   "veri_butunlugu_baslangic": {
-    "dosya": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv",
+    "dosya": "makine_ogrenmesi/veri/ham/diabetes.csv",
     "sha256": "3c7023e0935097ac63e03c6f398928b6dfce30974d5591d3af09a9661876d9fe",
     "satir_sayisi": 768,
     "kolon_sayisi": 9,
@@ -33,7 +33,7 @@
     }
   },
   "veri_butunlugu_bitis": {
-    "dosya": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv",
+    "dosya": "makine_ogrenmesi/veri/ham/diabetes.csv",
     "sha256": "3c7023e0935097ac63e03c6f398928b6dfce30974d5591d3af09a9661876d9fe",
     "satir_sayisi": 768,
     "kolon_sayisi": 9,
@@ -58,8 +58,8 @@
     {
       "varyant": "clean_imputed_baseline",
       "teknik": "0->NaN + median imputation",
-      "train_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/clean_imputed_baseline__train.csv",
-      "agresif_eval_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/clean_imputed_baseline__agresif_eval.csv",
+      "train_yolu": "makine_ogrenmesi/veri/deneysel/clean_imputed_baseline__train.csv",
+      "agresif_eval_yolu": "makine_ogrenmesi/veri/deneysel/clean_imputed_baseline__agresif_eval.csv",
       "train_sha256": "ecd60343ed01a5b48224f368858f81b57237cc017ec86544890cb29b432dc663",
       "agresif_eval_sha256": "78e974433ff9a88a32c043c4c1423b68d8d7f1be6f74f9a49373100ab11ad7bf",
       "train_satir_sayisi": 614,
@@ -80,8 +80,8 @@
     {
       "varyant": "smote_400x2_train",
       "teknik": "smote",
-      "train_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/smote_400x2_train__train.csv",
-      "agresif_eval_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/smote_400x2_train__agresif_eval.csv",
+      "train_yolu": "makine_ogrenmesi/veri/deneysel/smote_400x2_train__train.csv",
+      "agresif_eval_yolu": "makine_ogrenmesi/veri/deneysel/smote_400x2_train__agresif_eval.csv",
       "train_sha256": "19f84bbdc49f3e98d0703b3b3a5de53cb115da550921cfb977c9a17a9aab06d9",
       "agresif_eval_sha256": "031e01d906db73bd813941e1619a39b861ec48e0a4f0237ef1f18b75a1ad22be",
       "train_satir_sayisi": 800,
@@ -324,8 +324,8 @@
   },
   "artifact_ozeti": {
     "yazildi": true,
-    "artifact_klasoru": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/artifactler",
-    "onceki_artifact_yedegi": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/artifactler/yedek/veri_mudahale_20260425_221335",
+    "artifact_klasoru": "makine_ogrenmesi/artifactler",
+    "onceki_artifact_yedegi": "makine_ogrenmesi/artifactler/yedek/veri_mudahale_20260425_221335",
     "model": "extra_trees_full",
     "varyant": "smote_400x2_train"
   },
@@ -4670,5 +4670,5 @@
     }
   ],
   "uyari": "Agresif skor, sentetik/agresif degerlendirme hattidir; ham holdout skoruyla akademik olarak ayri raporlanmalidir.",
-  "word_raporu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/degerlendirme/veri_mudahale_deney_raporu.docx"
+  "word_raporu": "makine_ogrenmesi/raporlar/degerlendirme/veri_mudahale_deney_raporu.docx"
 }

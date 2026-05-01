@@ -365,7 +365,7 @@ def sentetik_benchmark_calistir(
             leakage_raporu=leakage_json,
             grafikler=grafikler,
         )
-        masaustu_yolu = Path("/Users/beratkaanseven/Desktop/PIMA_Sentetik_Benchmark_Raporu.docx")
+        masaustu_yolu = Path.home() / "Desktop" / "pima_source_id_benchmark_report.docx"
         shutil.copy2(word_yolu, masaustu_yolu)
         karsilastirma["word_raporu"] = str(word_yolu)
         karsilastirma["masaustu_word_raporu"] = str(masaustu_yolu)

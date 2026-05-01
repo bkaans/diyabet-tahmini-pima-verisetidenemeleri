@@ -36,7 +36,7 @@ RAPOR_DIR = PROJE_KOKU / "makine_ogrenmesi" / "raporlar"
 GRAFIK_DIR = RAPOR_DIR / "grafikler_controlled_benchmark"
 GRAFIK_V2_DIR = RAPOR_DIR / "grafikler_controlled_benchmark_v2"
 DOCX_PATH = RAPOR_DIR / "controlled_synthetic_benchmark_report_v2.docx"
-DESKTOP_DOCX_PATH = Path("/Users/beratkaanseven/Desktop/PIMA_Sentetik_Benchmark_Controlled Benchmark_Final_Rapor_v2.docx")
+DESKTOP_DOCX_PATH = Path.home() / "Desktop" / "pima_controlled_synthetic_benchmark_report_v2.docx"
 AUDIT_PATH = RAPOR_DIR / "controlled_benchmark_quality_audit_v2.json"
 VERI_DIR = PROJE_KOKU / "makine_ogrenmesi" / "veri" / "deneysel"
 

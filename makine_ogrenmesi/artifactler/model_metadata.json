@@ -8,8 +8,8 @@
   "model_adi": "ExtraTrees",
   "mod": "selected_source_id_controlled_synthetic_benchmark",
   "final_benchmark_adayi": "1000/1000",
-  "veri_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/benchmark_scale_sweep/scale_sweep_1000_per_class_strength_0p60_adaptive.csv",
-  "metadata_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/benchmark_scale_sweep/scale_sweep_1000_per_class_strength_0p60_adaptive_metadata.csv",
+  "veri_yolu": "makine_ogrenmesi/veri/deneysel/benchmark_scale_sweep/scale_sweep_1000_per_class_strength_0p60_adaptive.csv",
+  "metadata_yolu": "makine_ogrenmesi/veri/deneysel/benchmark_scale_sweep/scale_sweep_1000_per_class_strength_0p60_adaptive_metadata.csv",
   "feature_set": "high_signal_features",
   "model_girdi_kolonlari": [
     "Pregnancies",

@@ -1,6 +1,6 @@
 {
   "created_at_utc": "2026-04-26T20:31:17.064043+00:00",
-  "diabetes_csv_path": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv",
+  "diabetes_csv_path": "makine_ogrenmesi/veri/ham/diabetes.csv",
   "diabetes_csv_rows_distribution_unchanged": true,
   "final_dataset_name": "scale_sweep_1000_per_class_strength_0p60_adaptive",
   "target_hit": {

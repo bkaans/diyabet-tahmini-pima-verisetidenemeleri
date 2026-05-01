@@ -1,7 +1,7 @@
 # EDA Raporu
 
 ## Veri Butunlugu
-- Dosya: `/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv`
+- Dosya: `makine_ogrenmesi/veri/ham/diabetes.csv`
 - SHA256: `3c7023e0935097ac63e03c6f398928b6dfce30974d5591d3af09a9661876d9fe`
 - Satir/Kolon: 768 / 9
 - Sinif dagilimi: {0: 500, 1: 268}

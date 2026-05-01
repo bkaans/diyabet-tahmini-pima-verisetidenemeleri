@@ -20,7 +20,7 @@ SMALL_DIR = ROOT / "makine_ogrenmesi" / "veri" / "deneysel" / "benchmark_scale_s
 REPORT_DIR = ROOT / "makine_ogrenmesi" / "raporlar"
 GRAPH_DIR = REPORT_DIR / "grafikler_pima_korelasyon_deney_dagilim"
 OUT_DOCX = REPORT_DIR / "pima_korelasyon_deney_dagilim_raporu.docx"
-DESKTOP_DOCX = Path("/Users/beratkaanseven/Desktop/PIMA_Korelasyon_Deney_Dagilim_Raporu.docx")
+DESKTOP_DOCX = Path.home() / "Desktop" / "pima_correlation_distribution_analysis_report.docx"
 OUT_JSON = REPORT_DIR / "pima_korelasyon_deney_dagilim_ozeti.json"
 SWEEP_RESULTS_JSON = REPORT_DIR / "benchmark_scale_sweep_results.json"
 

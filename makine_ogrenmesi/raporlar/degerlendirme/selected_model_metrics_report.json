@@ -1,7 +1,7 @@
 {
   "olusturulma_zamani_utc": "2026-04-25T23:20:21.497707+00:00",
   "orijinal_veri": {
-    "veri_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv",
+    "veri_yolu": "makine_ogrenmesi/veri/ham/diabetes.csv",
     "sha256": "3c7023e0935097ac63e03c6f398928b6dfce30974d5591d3af09a9661876d9fe",
     "satir_sayisi": 768,
     "sinif_dagilimi": {
@@ -16906,8 +16906,8 @@
   ],
   "final_veri": {
     "dataset_name": "sentetik_2700_per_class_pima",
-    "yol": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/sentetik_gercek_pima.csv",
-    "metadata_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/sentetik_gercek_pima_metadata.csv",
+    "yol": "makine_ogrenmesi/veri/deneysel/sentetik_gercek_pima.csv",
+    "metadata_yolu": "makine_ogrenmesi/veri/deneysel/sentetik_gercek_pima_metadata.csv",
     "satir_sayisi": 5400,
     "sinif_dagilimi": {
       "0": 2700,
@@ -17629,14 +17629,14 @@
   },
   "karar_notu": "Final sonuc leakage duzeltmesi sonrasi yeniden uretilen source_id kontrollu sentetik benchmark sonuclarina dayanir. Eski 5000/sinif sonucu final karar icin kullanilmadi.",
   "grafikler": {
-    "orijinal_sinif_dagilimi": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler/orijinal_pima_sinif_dagilimi.png",
-    "aday_sinif_dagilimi": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler/sentetik_aday_sinif_dagilimi.png",
-    "metrik_karsilastirma": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler/sentetik_metrik_karsilastirma.png",
-    "holdout_cv_karsilastirma": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler/holdout_group_cv_karsilastirma.png",
-    "confusion_matrix": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler/selected_model_confusion_matrix.png",
-    "feature_importance": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler/selected_model_feature_importance.png",
-    "calibration_curve": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler/selected_model_calibration_curve.png",
-    "brier_karsilastirma": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler/brier_score_karsilastirma.png",
-    "leakage_ozeti": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler/leakage_kontrol_ozeti.png"
+    "orijinal_sinif_dagilimi": "makine_ogrenmesi/raporlar/grafikler/orijinal_pima_sinif_dagilimi.png",
+    "aday_sinif_dagilimi": "makine_ogrenmesi/raporlar/grafikler/sentetik_aday_sinif_dagilimi.png",
+    "metrik_karsilastirma": "makine_ogrenmesi/raporlar/grafikler/sentetik_metrik_karsilastirma.png",
+    "holdout_cv_karsilastirma": "makine_ogrenmesi/raporlar/grafikler/holdout_group_cv_karsilastirma.png",
+    "confusion_matrix": "makine_ogrenmesi/raporlar/grafikler/selected_model_confusion_matrix.png",
+    "feature_importance": "makine_ogrenmesi/raporlar/grafikler/selected_model_feature_importance.png",
+    "calibration_curve": "makine_ogrenmesi/raporlar/grafikler/selected_model_calibration_curve.png",
+    "brier_karsilastirma": "makine_ogrenmesi/raporlar/grafikler/brier_score_karsilastirma.png",
+    "leakage_ozeti": "makine_ogrenmesi/raporlar/grafikler/leakage_kontrol_ozeti.png"
   }
 }

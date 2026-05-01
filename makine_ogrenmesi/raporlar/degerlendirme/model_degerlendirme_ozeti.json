@@ -1,5 +1,5 @@
 {
-  "veri_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv",
+  "veri_yolu": "makine_ogrenmesi/veri/ham/diabetes.csv",
   "test_boyutu": 0.2,
   "random_state": 42,
   "en_iyi_model_secim_kriteri": "roc_auc > recall > f1 > accuracy (deploy ile tutarlilik)",

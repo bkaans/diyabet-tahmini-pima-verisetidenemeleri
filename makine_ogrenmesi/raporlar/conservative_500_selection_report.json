@@ -603,8 +603,8 @@
   },
   "interpretation": "Eger skor kosullari korunurken cohen/shift duserse 500/500 icin daha muhafazakar aday bulunmus olur; aksi durumda mevcut 500/500 denge noktasi korunur.",
   "graphics": {
-    "quality_scatter": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_conservative_500/conservative_500_quality_scatter.png",
-    "score_vs_quality": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_conservative_500/conservative_500_score_quality.png",
-    "final_confusion": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_conservative_500/conservative_500_selected_confusion.png"
+    "quality_scatter": "makine_ogrenmesi/raporlar/grafikler_conservative_500/conservative_500_quality_scatter.png",
+    "score_vs_quality": "makine_ogrenmesi/raporlar/grafikler_conservative_500/conservative_500_score_quality.png",
+    "final_confusion": "makine_ogrenmesi/raporlar/grafikler_conservative_500/conservative_500_selected_confusion.png"
   }
 }
