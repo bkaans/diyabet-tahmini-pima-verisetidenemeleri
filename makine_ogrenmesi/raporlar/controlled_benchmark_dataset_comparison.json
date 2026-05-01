@@ -1,0 +1,6267 @@
+{
+  "created_at_utc": "2026-04-26T00:42:49.824605+00:00",
+  "goal": "PIMA + source_id kontrollu sentetik benchmark uzerinde tum ana metriklerde min 0.90 hedefi.",
+  "original_csv": {
+    "path": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/ham/diabetes.csv",
+    "sha256": "3c7023e0935097ac63e03c6f398928b6dfce30974d5591d3af09a9661876d9fe",
+    "rows": 768,
+    "class_distribution": {
+      "0": 500,
+      "1": 268
+    }
+  },
+  "original_dev": {
+    "rows": 614,
+    "class_distribution": {
+      "0": 400,
+      "1": 214
+    }
+  },
+  "external_holdout": {
+    "rows": 154,
+    "class_distribution": {
+      "0": 100,
+      "1": 54
+    },
+    "role": "selection score disinda dis kontrol"
+  },
+  "datasets": [
+    {
+      "dataset_name": "controlled_synthetic_2500_per_class_pima",
+      "target_per_class": 2500,
+      "original_dev_rows": 614,
+      "synthetic_rows": 4386,
+      "total_rows": 5000,
+      "class_distribution": {
+        "0": 2500,
+        "1": 2500
+      },
+      "source_id_family_count": 614,
+      "generation_method_counts": {
+        "original_dev": 614,
+        "one_parent_gaussian_local": 1052,
+        "class_conditional_source_bound_gaussian": 1491,
+        "quantile_preserving_local_augmentation": 1052,
+        "controlled_jitter_augmentation": 791
+      },
+      "synthetic_valid_source_id_ratio": 1.0
+    },
+    {
+      "dataset_name": "controlled_synthetic_2700_per_class_pima",
+      "target_per_class": 2700,
+      "original_dev_rows": 614,
+      "synthetic_rows": 4786,
+      "total_rows": 5400,
+      "class_distribution": {
+        "0": 2700,
+        "1": 2700
+      },
+      "source_id_family_count": 614,
+      "generation_method_counts": {
+        "original_dev": 614,
+        "one_parent_gaussian_local": 1148,
+        "class_conditional_source_bound_gaussian": 1627,
+        "quantile_preserving_local_augmentation": 1148,
+        "controlled_jitter_augmentation": 863
+      },
+      "synthetic_valid_source_id_ratio": 1.0
+    },
+    {
+      "dataset_name": "controlled_synthetic_3000_per_class_pima",
+      "target_per_class": 3000,
+      "original_dev_rows": 614,
+      "synthetic_rows": 5386,
+      "total_rows": 6000,
+      "class_distribution": {
+        "0": 3000,
+        "1": 3000
+      },
+      "source_id_family_count": 614,
+      "generation_method_counts": {
+        "original_dev": 614,
+        "one_parent_gaussian_local": 1292,
+        "class_conditional_source_bound_gaussian": 1831,
+        "quantile_preserving_local_augmentation": 1292,
+        "controlled_jitter_augmentation": 971
+      },
+      "synthetic_valid_source_id_ratio": 1.0
+    },
+    {
+      "dataset_name": "controlled_synthetic_4000_per_class_pima",
+      "target_per_class": 4000,
+      "original_dev_rows": 614,
+      "synthetic_rows": 7386,
+      "total_rows": 8000,
+      "class_distribution": {
+        "0": 4000,
+        "1": 4000
+      },
+      "source_id_family_count": 614,
+      "generation_method_counts": {
+        "original_dev": 614,
+        "one_parent_gaussian_local": 1772,
+        "class_conditional_source_bound_gaussian": 2511,
+        "quantile_preserving_local_augmentation": 1772,
+        "controlled_jitter_augmentation": 1331
+      },
+      "synthetic_valid_source_id_ratio": 1.0
+    },
+    {
+      "dataset_name": "controlled_synthetic_5000_per_class_pima",
+      "target_per_class": 5000,
+      "original_dev_rows": 614,
+      "synthetic_rows": 9386,
+      "total_rows": 10000,
+      "class_distribution": {
+        "0": 5000,
+        "1": 5000
+      },
+      "source_id_family_count": 614,
+      "generation_method_counts": {
+        "original_dev": 614,
+        "one_parent_gaussian_local": 2252,
+        "class_conditional_source_bound_gaussian": 3191,
+        "quantile_preserving_local_augmentation": 2252,
+        "controlled_jitter_augmentation": 1691
+      },
+      "synthetic_valid_source_id_ratio": 1.0
+    },
+    {
+      "dataset_name": "controlled_synthetic_7500_per_class_pima",
+      "target_per_class": 7500,
+      "original_dev_rows": 614,
+      "synthetic_rows": 14386,
+      "total_rows": 15000,
+      "class_distribution": {
+        "0": 7500,
+        "1": 7500
+      },
+      "source_id_family_count": 614,
+      "generation_method_counts": {
+        "original_dev": 614,
+        "one_parent_gaussian_local": 3452,
+        "class_conditional_source_bound_gaussian": 4891,
+        "quantile_preserving_local_augmentation": 3452,
+        "controlled_jitter_augmentation": 2591
+      },
+      "synthetic_valid_source_id_ratio": 1.0
+    },
+    {
+      "dataset_name": "controlled_synthetic_10000_per_class_pima",
+      "target_per_class": 10000,
+      "original_dev_rows": 614,
+      "synthetic_rows": 19386,
+      "total_rows": 20000,
+      "class_distribution": {
+        "0": 10000,
+        "1": 10000
+      },
+      "source_id_family_count": 614,
+      "generation_method_counts": {
+        "original_dev": 614,
+        "one_parent_gaussian_local": 4652,
+        "class_conditional_source_bound_gaussian": 6591,
+        "quantile_preserving_local_augmentation": 4652,
+        "controlled_jitter_augmentation": 3491
+      },
+      "synthetic_valid_source_id_ratio": 1.0
+    }
+  ],
+  "top_by_dataset": {
+    "controlled_synthetic_2500_per_class_pima": {
+      "status": "completed",
+      "dataset_name": "controlled_synthetic_2500_per_class_pima",
+      "target_per_class": 2500,
+      "model": "soft_voting_xgb_lgbm_et",
+      "feature_set": "all_features",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "default_threshold_metrics": {
+        "accuracy": 0.9667318982387475,
+        "precision": 0.9667318982387475,
+        "recall": 0.9667318982387475,
+        "sensitivity": 0.9667318982387475,
+        "specificity": 0.9667318982387475,
+        "f1": 0.9667318982387475,
+        "roc_auc": 0.996189506014453,
+        "balanced_accuracy": 0.9667318982387475,
+        "mcc": 0.9334637964774951,
+        "brier": 0.025347762053460655,
+        "threshold": 0.5,
+        "confusion_matrix": {
+          "tn": 494,
+          "fp": 17,
+          "fn": 17,
+          "tp": 494,
+          "matrix": [
+            [
+              494,
+              17
+            ],
+            [
+              17,
+              494
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9667318982387475
+      },
+      "tuned_threshold_metrics": {
+        "accuracy": 0.9677103718199609,
+        "precision": 0.9686274509803922,
+        "recall": 0.9667318982387475,
+        "sensitivity": 0.9667318982387475,
+        "specificity": 0.9686888454011742,
+        "f1": 0.9676787463271302,
+        "roc_auc": 0.996189506014453,
+        "balanced_accuracy": 0.9677103718199609,
+        "mcc": 0.9354225348084421,
+        "brier": 0.025347762053460655,
+        "threshold": 0.52,
+        "confusion_matrix": {
+          "tn": 495,
+          "fp": 16,
+          "fn": 17,
+          "tp": 494,
+          "matrix": [
+            [
+              495,
+              16
+            ],
+            [
+              17,
+              494
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9667318982387475
+      },
+      "threshold_report": {
+        "default_threshold": 0.5,
+        "default_min_main_metric": 0.9701897018970189,
+        "selected_threshold": 0.52,
+        "tuned_min_main_metric": 0.975609756097561,
+        "selected_validation_metrics": {
+          "accuracy": 0.975609756097561,
+          "precision": 0.975609756097561,
+          "recall": 0.975609756097561,
+          "sensitivity": 0.975609756097561,
+          "specificity": 0.975609756097561,
+          "f1": 0.975609756097561,
+          "roc_auc": 0.9965555482113087,
+          "balanced_accuracy": 0.975609756097561,
+          "mcc": 0.9512195121951219,
+          "brier": 0.021307399992608726,
+          "threshold": 0.52,
+          "confusion_matrix": {
+            "tn": 360,
+            "fp": 9,
+            "fn": 9,
+            "tp": 360,
+            "matrix": [
+              [
+                360,
+                9
+              ],
+              [
+                9,
+                360
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.975609756097561
+        }
+      },
+      "split": {
+        "method": "GroupShuffleSplit(source_id)",
+        "train_rows": 3978,
+        "test_rows": 1022,
+        "train_source_families": 491,
+        "test_source_families": 123,
+        "train_class_distribution": {
+          "0": 1989,
+          "1": 1989
+        },
+        "test_class_distribution": {
+          "0": 511,
+          "1": 511
+        }
+      },
+      "leakage": {
+        "train_test_source_intersection_count": 0,
+        "exact_duplicate_count": 0,
+        "near_duplicate_rate": 0.0,
+        "minimum_near_duplicate_distance": 0.16721105173019227,
+        "near_duplicate_threshold": 0.02
+      },
+      "selection_score_pre_cv": 1.0858438935991235
+    },
+    "controlled_synthetic_2700_per_class_pima": {
+      "status": "completed",
+      "dataset_name": "controlled_synthetic_2700_per_class_pima",
+      "target_per_class": 2700,
+      "model": "lightgbm",
+      "feature_set": "all_features",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "default_threshold_metrics": {
+        "accuracy": 0.9719710669077758,
+        "precision": 0.9797794117647058,
+        "recall": 0.9638336347197106,
+        "sensitivity": 0.9638336347197106,
+        "specificity": 0.9801084990958409,
+        "f1": 0.9717411121239745,
+        "roc_auc": 0.997217217282683,
+        "balanced_accuracy": 0.9719710669077757,
+        "mcc": 0.944067170202799,
+        "brier": 0.021518968278322802,
+        "threshold": 0.5,
+        "confusion_matrix": {
+          "tn": 542,
+          "fp": 11,
+          "fn": 20,
+          "tp": 533,
+          "matrix": [
+            [
+              542,
+              11
+            ],
+            [
+              20,
+              533
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9638336347197106
+      },
+      "tuned_threshold_metrics": {
+        "accuracy": 0.976491862567812,
+        "precision": 0.976491862567812,
+        "recall": 0.976491862567812,
+        "sensitivity": 0.976491862567812,
+        "specificity": 0.976491862567812,
+        "f1": 0.976491862567812,
+        "roc_auc": 0.997217217282683,
+        "balanced_accuracy": 0.976491862567812,
+        "mcc": 0.9529837251356239,
+        "brier": 0.021518968278322802,
+        "threshold": 0.3,
+        "confusion_matrix": {
+          "tn": 540,
+          "fp": 13,
+          "fn": 13,
+          "tp": 540,
+          "matrix": [
+            [
+              540,
+              13
+            ],
+            [
+              13,
+              540
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.976491862567812
+      },
+      "threshold_report": {
+        "default_threshold": 0.5,
+        "default_min_main_metric": 0.9723618090452262,
+        "selected_threshold": 0.3,
+        "tuned_min_main_metric": 0.974937343358396,
+        "selected_validation_metrics": {
+          "accuracy": 0.9761904761904762,
+          "precision": 0.974937343358396,
+          "recall": 0.9773869346733668,
+          "sensitivity": 0.9773869346733668,
+          "specificity": 0.975,
+          "f1": 0.9761606022584692,
+          "roc_auc": 0.9961180904522613,
+          "balanced_accuracy": 0.9761934673366834,
+          "mcc": 0.9523839435224624,
+          "brier": 0.019936409853197095,
+          "threshold": 0.3,
+          "confusion_matrix": {
+            "tn": 390,
+            "fp": 10,
+            "fn": 9,
+            "tp": 389,
+            "matrix": [
+              [
+                390,
+                10
+              ],
+              [
+                9,
+                389
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.974937343358396
+        }
+      },
+      "split": {
+        "method": "GroupShuffleSplit(source_id)",
+        "train_rows": 4294,
+        "test_rows": 1106,
+        "train_source_families": 491,
+        "test_source_families": 123,
+        "train_class_distribution": {
+          "0": 2147,
+          "1": 2147
+        },
+        "test_class_distribution": {
+          "0": 553,
+          "1": 553
+        }
+      },
+      "leakage": {
+        "train_test_source_intersection_count": 0,
+        "exact_duplicate_count": 0,
+        "near_duplicate_rate": 0.0,
+        "minimum_near_duplicate_distance": 0.1632017166006249,
+        "near_duplicate_threshold": 0.02
+      },
+      "selection_score_pre_cv": 1.0957832049305138
+    },
+    "controlled_synthetic_3000_per_class_pima": {
+      "status": "completed",
+      "dataset_name": "controlled_synthetic_3000_per_class_pima",
+      "target_per_class": 3000,
+      "model": "adaboost",
+      "feature_set": "compact_best_features",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "default_threshold_metrics": {
+        "accuracy": 0.9818037974683544,
+        "precision": 0.9826498422712934,
+        "recall": 0.9811023622047244,
+        "sensitivity": 0.9811023622047244,
+        "specificity": 0.9825119236883942,
+        "f1": 0.9818754925137904,
+        "roc_auc": 0.9957951003342388,
+        "balanced_accuracy": 0.9818071429465594,
+        "mcc": 0.963608254539521,
+        "brier": 0.10895231669718172,
+        "threshold": 0.5,
+        "confusion_matrix": {
+          "tn": 618,
+          "fp": 11,
+          "fn": 12,
+          "tp": 623,
+          "matrix": [
+            [
+              618,
+              11
+            ],
+            [
+              12,
+              623
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9811023622047244
+      },
+      "tuned_threshold_metrics": {
+        "accuracy": 0.9818037974683544,
+        "precision": 0.9826498422712934,
+        "recall": 0.9811023622047244,
+        "sensitivity": 0.9811023622047244,
+        "specificity": 0.9825119236883942,
+        "f1": 0.9818754925137904,
+        "roc_auc": 0.9957951003342388,
+        "balanced_accuracy": 0.9818071429465594,
+        "mcc": 0.963608254539521,
+        "brier": 0.10895231669718172,
+        "threshold": 0.5,
+        "confusion_matrix": {
+          "tn": 618,
+          "fp": 11,
+          "fn": 12,
+          "tp": 623,
+          "matrix": [
+            [
+              618,
+              11
+            ],
+            [
+              12,
+              623
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9811023622047244
+      },
+      "threshold_report": {
+        "default_threshold": 0.5,
+        "default_min_main_metric": 0.969626168224299,
+        "selected_threshold": 0.5,
+        "tuned_min_main_metric": 0.969626168224299,
+        "selected_validation_metrics": {
+          "accuracy": 0.9766081871345029,
+          "precision": 0.9834123222748815,
+          "recall": 0.969626168224299,
+          "sensitivity": 0.969626168224299,
+          "specificity": 0.9836065573770492,
+          "f1": 0.9764705882352941,
+          "roc_auc": 0.9965500448685679,
+          "balanced_accuracy": 0.9766163628006741,
+          "mcc": 0.9533109733824507,
+          "brier": 0.11859946832809316,
+          "threshold": 0.5,
+          "confusion_matrix": {
+            "tn": 420,
+            "fp": 7,
+            "fn": 13,
+            "tp": 415,
+            "matrix": [
+              [
+                420,
+                7
+              ],
+              [
+                13,
+                415
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.969626168224299
+        }
+      },
+      "split": {
+        "method": "GroupShuffleSplit(source_id)",
+        "train_rows": 4736,
+        "test_rows": 1264,
+        "train_source_families": 491,
+        "test_source_families": 123,
+        "train_class_distribution": {
+          "0": 2371,
+          "1": 2365
+        },
+        "test_class_distribution": {
+          "0": 629,
+          "1": 635
+        }
+      },
+      "leakage": {
+        "train_test_source_intersection_count": 0,
+        "exact_duplicate_count": 0,
+        "near_duplicate_rate": 0.0007911392405063291,
+        "minimum_near_duplicate_distance": 0.013560598319533502,
+        "near_duplicate_threshold": 0.02
+      },
+      "selection_score_pre_cv": 1.0985028259042044
+    },
+    "controlled_synthetic_4000_per_class_pima": {
+      "status": "completed",
+      "dataset_name": "controlled_synthetic_4000_per_class_pima",
+      "target_per_class": 4000,
+      "model": "extra_trees",
+      "feature_set": "no_skinthickness",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "class_weight=balanced",
+      "default_threshold_metrics": {
+        "accuracy": 0.980379746835443,
+        "precision": 0.9761606022584692,
+        "recall": 0.9848101265822785,
+        "sensitivity": 0.9848101265822785,
+        "specificity": 0.9759493670886076,
+        "f1": 0.980466288594833,
+        "roc_auc": 0.998475404582599,
+        "balanced_accuracy": 0.980379746835443,
+        "mcc": 0.960797211975247,
+        "brier": 0.013336982261258935,
+        "threshold": 0.5,
+        "confusion_matrix": {
+          "tn": 771,
+          "fp": 19,
+          "fn": 12,
+          "tp": 778,
+          "matrix": [
+            [
+              771,
+              19
+            ],
+            [
+              12,
+              778
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9759493670886076
+      },
+      "tuned_threshold_metrics": {
+        "accuracy": 0.9829113924050633,
+        "precision": 0.9823008849557522,
+        "recall": 0.9835443037974684,
+        "sensitivity": 0.9835443037974684,
+        "specificity": 0.9822784810126582,
+        "f1": 0.9829222011385199,
+        "roc_auc": 0.998475404582599,
+        "balanced_accuracy": 0.9829113924050633,
+        "mcc": 0.9658235585835165,
+        "brier": 0.013336982261258935,
+        "threshold": 0.53,
+        "confusion_matrix": {
+          "tn": 776,
+          "fp": 14,
+          "fn": 13,
+          "tp": 777,
+          "matrix": [
+            [
+              776,
+              14
+            ],
+            [
+              13,
+              777
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9822784810126582
+      },
+      "threshold_report": {
+        "default_threshold": 0.5,
+        "default_min_main_metric": 0.9819494584837545,
+        "selected_threshold": 0.53,
+        "tuned_min_main_metric": 0.9858156028368794,
+        "selected_validation_metrics": {
+          "accuracy": 0.9874776386404294,
+          "precision": 0.9893238434163701,
+          "recall": 0.9858156028368794,
+          "sensitivity": 0.9858156028368794,
+          "specificity": 0.9891696750902527,
+          "f1": 0.9875666074600356,
+          "roc_auc": 0.9989326497170801,
+          "balanced_accuracy": 0.9874926389635661,
+          "mcc": 0.9749603157478859,
+          "brier": 0.0117242687176242,
+          "threshold": 0.53,
+          "confusion_matrix": {
+            "tn": 548,
+            "fp": 6,
+            "fn": 8,
+            "tp": 556,
+            "matrix": [
+              [
+                548,
+                6
+              ],
+              [
+                8,
+                556
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.9858156028368794
+        }
+      },
+      "split": {
+        "method": "GroupShuffleSplit(source_id)",
+        "train_rows": 6420,
+        "test_rows": 1580,
+        "train_source_families": 491,
+        "test_source_families": 123,
+        "train_class_distribution": {
+          "0": 3210,
+          "1": 3210
+        },
+        "test_class_distribution": {
+          "0": 790,
+          "1": 790
+        }
+      },
+      "leakage": {
+        "train_test_source_intersection_count": 0,
+        "exact_duplicate_count": 0,
+        "near_duplicate_rate": 0.0,
+        "minimum_near_duplicate_distance": 0.04178128652406851,
+        "near_duplicate_threshold": 0.02
+      },
+      "selection_score_pre_cv": 1.101859281825693
+    },
+    "controlled_synthetic_5000_per_class_pima": {
+      "status": "completed",
+      "dataset_name": "controlled_synthetic_5000_per_class_pima",
+      "target_per_class": 5000,
+      "model": "logistic_regression",
+      "feature_set": "no_skinthickness_clinical_interactions",
+      "preprocessing": "StandardScaler",
+      "resampling": "class_weight=balanced",
+      "default_threshold_metrics": {
+        "accuracy": 0.9891248058001035,
+        "precision": 0.986639260020555,
+        "recall": 0.9917355371900827,
+        "sensitivity": 0.9917355371900827,
+        "specificity": 0.9865005192107996,
+        "f1": 0.9891808346213292,
+        "roc_auc": 0.9972612703071496,
+        "balanced_accuracy": 0.9891180282004411,
+        "mcc": 0.978262292514427,
+        "brier": 0.009855122698037384,
+        "threshold": 0.5,
+        "confusion_matrix": {
+          "tn": 950,
+          "fp": 13,
+          "fn": 8,
+          "tp": 960,
+          "matrix": [
+            [
+              950,
+              13
+            ],
+            [
+              8,
+              960
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9865005192107996
+      },
+      "tuned_threshold_metrics": {
+        "accuracy": 0.988089073019161,
+        "precision": 0.9886246122026887,
+        "recall": 0.987603305785124,
+        "sensitivity": 0.987603305785124,
+        "specificity": 0.9885773624091381,
+        "f1": 0.9881136950904392,
+        "roc_auc": 0.9972612703071496,
+        "balanced_accuracy": 0.988090334097131,
+        "mcc": 0.9761785738061872,
+        "brier": 0.009855122698037384,
+        "threshold": 0.68,
+        "confusion_matrix": {
+          "tn": 952,
+          "fp": 11,
+          "fn": 12,
+          "tp": 956,
+          "matrix": [
+            [
+              952,
+              11
+            ],
+            [
+              12,
+              956
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.987603305785124
+      },
+      "threshold_report": {
+        "default_threshold": 0.5,
+        "default_min_main_metric": 0.983739837398374,
+        "selected_threshold": 0.68,
+        "tuned_min_main_metric": 0.9865771812080537,
+        "selected_validation_metrics": {
+          "accuracy": 0.987862440997977,
+          "precision": 0.9892328398384926,
+          "recall": 0.9865771812080537,
+          "sensitivity": 0.9865771812080537,
+          "specificity": 0.989159891598916,
+          "f1": 0.9879032258064516,
+          "roc_auc": 0.9982521234608319,
+          "balanced_accuracy": 0.9878685364034849,
+          "mcc": 0.9757281995256278,
+          "brier": 0.011608980478082748,
+          "threshold": 0.68,
+          "confusion_matrix": {
+            "tn": 730,
+            "fp": 8,
+            "fn": 10,
+            "tp": 735,
+            "matrix": [
+              [
+                730,
+                8
+              ],
+              [
+                10,
+                735
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.9865771812080537
+        }
+      },
+      "split": {
+        "method": "GroupShuffleSplit(source_id)",
+        "train_rows": 8069,
+        "test_rows": 1931,
+        "train_source_families": 491,
+        "test_source_families": 123,
+        "train_class_distribution": {
+          "0": 4037,
+          "1": 4032
+        },
+        "test_class_distribution": {
+          "0": 963,
+          "1": 968
+        }
+      },
+      "leakage": {
+        "train_test_source_intersection_count": 0,
+        "exact_duplicate_count": 0,
+        "near_duplicate_rate": 0.0,
+        "minimum_near_duplicate_distance": 0.10769515972214444,
+        "near_duplicate_threshold": 0.02
+      },
+      "selection_score_pre_cv": 1.107132330361878
+    },
+    "controlled_synthetic_7500_per_class_pima": {
+      "status": "completed",
+      "dataset_name": "controlled_synthetic_7500_per_class_pima",
+      "target_per_class": 7500,
+      "model": "extra_trees",
+      "feature_set": "high_signal_features",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "class_weight=balanced",
+      "default_threshold_metrics": {
+        "accuracy": 0.9882154882154882,
+        "precision": 0.985254691689008,
+        "recall": 0.9912339851652057,
+        "sensitivity": 0.9912339851652057,
+        "specificity": 0.9852051109616677,
+        "f1": 0.9882352941176471,
+        "roc_auc": 0.9988837853439633,
+        "balanced_accuracy": 0.9882195480634367,
+        "mcc": 0.9764490589450711,
+        "brier": 0.008257743725997694,
+        "threshold": 0.5,
+        "confusion_matrix": {
+          "tn": 1465,
+          "fp": 22,
+          "fn": 13,
+          "tp": 1470,
+          "matrix": [
+            [
+              1465,
+              22
+            ],
+            [
+              13,
+              1470
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9852051109616677
+      },
+      "tuned_threshold_metrics": {
+        "accuracy": 0.9902356902356902,
+        "precision": 0.9898921832884097,
+        "recall": 0.9905596763317599,
+        "sensitivity": 0.9905596763317599,
+        "specificity": 0.9899125756556826,
+        "f1": 0.9902258173238961,
+        "roc_auc": 0.9988837853439633,
+        "balanced_accuracy": 0.9902361259937212,
+        "mcc": 0.9804715850670399,
+        "brier": 0.008257743725997694,
+        "threshold": 0.57,
+        "confusion_matrix": {
+          "tn": 1472,
+          "fp": 15,
+          "fn": 14,
+          "tp": 1469,
+          "matrix": [
+            [
+              1472,
+              15
+            ],
+            [
+              14,
+              1469
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9898921832884097
+      },
+      "threshold_report": {
+        "default_threshold": 0.5,
+        "default_min_main_metric": 0.9909747292418772,
+        "selected_threshold": 0.57,
+        "tuned_min_main_metric": 0.9909747292418772,
+        "selected_validation_metrics": {
+          "accuracy": 0.9923285198555957,
+          "precision": 0.9936651583710407,
+          "recall": 0.9909747292418772,
+          "sensitivity": 0.9909747292418772,
+          "specificity": 0.9936823104693141,
+          "f1": 0.9923181201988251,
+          "roc_auc": 0.9997438224139504,
+          "balanced_accuracy": 0.9923285198555957,
+          "mcc": 0.9846606489894966,
+          "brier": 0.0062042878222287705,
+          "threshold": 0.57,
+          "confusion_matrix": {
+            "tn": 1101,
+            "fp": 7,
+            "fn": 10,
+            "tp": 1098,
+            "matrix": [
+              [
+                1101,
+                7
+              ],
+              [
+                10,
+                1098
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.9909747292418772
+        }
+      },
+      "split": {
+        "method": "GroupShuffleSplit(source_id)",
+        "train_rows": 12030,
+        "test_rows": 2970,
+        "train_source_families": 491,
+        "test_source_families": 123,
+        "train_class_distribution": {
+          "0": 6013,
+          "1": 6017
+        },
+        "test_class_distribution": {
+          "0": 1487,
+          "1": 1483
+        }
+      },
+      "leakage": {
+        "train_test_source_intersection_count": 0,
+        "exact_duplicate_count": 0,
+        "near_duplicate_rate": 0.0,
+        "minimum_near_duplicate_distance": 0.039284760617495154,
+        "near_duplicate_threshold": 0.02
+      },
+      "selection_score_pre_cv": 1.109615406948286
+    },
+    "controlled_synthetic_10000_per_class_pima": {
+      "status": "completed",
+      "dataset_name": "controlled_synthetic_10000_per_class_pima",
+      "target_per_class": 10000,
+      "model": "gaussian_nb",
+      "feature_set": "compact_best_features",
+      "preprocessing": "StandardScaler",
+      "resampling": "none",
+      "default_threshold_metrics": {
+        "accuracy": 0.992619926199262,
+        "precision": 0.9931305201177625,
+        "recall": 0.9921568627450981,
+        "sensitivity": 0.9921568627450981,
+        "specificity": 0.9930864197530864,
+        "f1": 0.9926434526728789,
+        "roc_auc": 0.998805979181796,
+        "balanced_accuracy": 0.9926216412490922,
+        "mcc": 0.9852401820135045,
+        "brier": 0.007038201592623535,
+        "threshold": 0.5,
+        "confusion_matrix": {
+          "tn": 2011,
+          "fp": 14,
+          "fn": 16,
+          "tp": 2024,
+          "matrix": [
+            [
+              2011,
+              14
+            ],
+            [
+              16,
+              2024
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9921568627450981
+      },
+      "tuned_threshold_metrics": {
+        "accuracy": 0.9928659286592866,
+        "precision": 0.9936180657830143,
+        "recall": 0.9921568627450981,
+        "sensitivity": 0.9921568627450981,
+        "specificity": 0.9935802469135803,
+        "f1": 0.9928869266617611,
+        "roc_auc": 0.998805979181796,
+        "balanced_accuracy": 0.9928685548293392,
+        "mcc": 0.9857328145359464,
+        "brier": 0.007038201592623535,
+        "threshold": 0.85,
+        "confusion_matrix": {
+          "tn": 2012,
+          "fp": 13,
+          "fn": 16,
+          "tp": 2024,
+          "matrix": [
+            [
+              2012,
+              13
+            ],
+            [
+              16,
+              2024
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9921568627450981
+      },
+      "threshold_report": {
+        "default_threshold": 0.5,
+        "default_min_main_metric": 0.9851049424509141,
+        "selected_threshold": 0.85,
+        "tuned_min_main_metric": 0.987136086662153,
+        "selected_validation_metrics": {
+          "accuracy": 0.99153403318659,
+          "precision": 0.9872397582269979,
+          "recall": 0.9959349593495935,
+          "sensitivity": 0.9959349593495935,
+          "specificity": 0.987136086662153,
+          "f1": 0.9915682967959528,
+          "roc_auc": 0.9970184197441162,
+          "balanced_accuracy": 0.9915355230058733,
+          "mcc": 0.9831062211622044,
+          "brier": 0.008978509015337902,
+          "threshold": 0.85,
+          "confusion_matrix": {
+            "tn": 1458,
+            "fp": 19,
+            "fn": 6,
+            "tp": 1470,
+            "matrix": [
+              [
+                1458,
+                19
+              ],
+              [
+                6,
+                1470
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.987136086662153
+        }
+      },
+      "split": {
+        "method": "GroupShuffleSplit(source_id)",
+        "train_rows": 15935,
+        "test_rows": 4065,
+        "train_source_families": 491,
+        "test_source_families": 123,
+        "train_class_distribution": {
+          "0": 7975,
+          "1": 7960
+        },
+        "test_class_distribution": {
+          "0": 2025,
+          "1": 2040
+        }
+      },
+      "leakage": {
+        "train_test_source_intersection_count": 0,
+        "exact_duplicate_count": 0,
+        "near_duplicate_rate": 0.0024600246002460025,
+        "minimum_near_duplicate_distance": 0.0025354345675984145,
+        "near_duplicate_threshold": 0.02
+      },
+      "selection_score_pre_cv": 1.1118966966314252
+    }
+  },
+  "cv_results": [
+    {
+      "dataset_name": "controlled_synthetic_2500_per_class_pima",
+      "model": "soft_voting_xgb_lgbm_et",
+      "feature_set": "all_features",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.31,
+          "train_rows": 3999,
+          "test_rows": 1001,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.974025974025974,
+            "precision": 0.9647749510763209,
+            "recall": 0.9840319361277445,
+            "sensitivity": 0.9840319361277445,
+            "specificity": 0.964,
+            "f1": 0.974308300395257,
+            "roc_auc": 0.9977005988023951,
+            "balanced_accuracy": 0.9740159680638723,
+            "mcc": 0.9482401554299729,
+            "brier": 0.018170005563600298,
+            "threshold": 0.31,
+            "confusion_matrix": {
+              "tn": 482,
+              "fp": 18,
+              "fn": 8,
+              "tp": 493,
+              "matrix": [
+                [
+                  482,
+                  18
+                ],
+                [
+                  8,
+                  493
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.964
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.46,
+          "train_rows": 3999,
+          "test_rows": 1001,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.965034965034965,
+            "precision": 0.9623015873015873,
+            "recall": 0.9680638722554891,
+            "sensitivity": 0.9680638722554891,
+            "specificity": 0.962,
+            "f1": 0.9651741293532339,
+            "roc_auc": 0.9944231536926148,
+            "balanced_accuracy": 0.9650319361277445,
+            "mcc": 0.9300861500348676,
+            "brier": 0.026559506704618485,
+            "threshold": 0.46,
+            "confusion_matrix": {
+              "tn": 481,
+              "fp": 19,
+              "fn": 16,
+              "tp": 485,
+              "matrix": [
+                [
+                  481,
+                  19
+                ],
+                [
+                  16,
+                  485
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.962
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.31,
+          "train_rows": 3999,
+          "test_rows": 1001,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.964035964035964,
+            "precision": 0.9549902152641878,
+            "recall": 0.9740518962075848,
+            "sensitivity": 0.9740518962075848,
+            "specificity": 0.954,
+            "f1": 0.9644268774703557,
+            "roc_auc": 0.9955928143712575,
+            "balanced_accuracy": 0.9640259481037924,
+            "mcc": 0.928255727229406,
+            "brier": 0.02609874791989237,
+            "threshold": 0.31,
+            "confusion_matrix": {
+              "tn": 477,
+              "fp": 23,
+              "fn": 13,
+              "tp": 488,
+              "matrix": [
+                [
+                  477,
+                  23
+                ],
+                [
+                  13,
+                  488
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.954
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.6,
+          "train_rows": 4003,
+          "test_rows": 997,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9769307923771314,
+            "precision": 0.9817073170731707,
+            "recall": 0.971830985915493,
+            "sensitivity": 0.971830985915493,
+            "specificity": 0.982,
+            "f1": 0.9767441860465116,
+            "roc_auc": 0.9986317907444668,
+            "balanced_accuracy": 0.9769154929577465,
+            "mcc": 0.9539077622657534,
+            "brier": 0.0149209946568036,
+            "threshold": 0.6,
+            "confusion_matrix": {
+              "tn": 491,
+              "fp": 9,
+              "fn": 14,
+              "tp": 483,
+              "matrix": [
+                [
+                  491,
+                  9
+                ],
+                [
+                  14,
+                  483
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.971830985915493
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.36,
+          "train_rows": 4000,
+          "test_rows": 1000,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.965,
+            "precision": 0.9585798816568047,
+            "recall": 0.972,
+            "sensitivity": 0.972,
+            "specificity": 0.958,
+            "f1": 0.9652432969215492,
+            "roc_auc": 0.9970000000000001,
+            "balanced_accuracy": 0.965,
+            "mcc": 0.9300911533997687,
+            "brier": 0.023434908142920652,
+            "threshold": 0.36,
+            "confusion_matrix": {
+              "tn": 479,
+              "fp": 21,
+              "fn": 14,
+              "tp": 486,
+              "matrix": [
+                [
+                  479,
+                  21
+                ],
+                [
+                  14,
+                  486
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.958
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9690055390948069,
+        "accuracy_std": 0.0060108419659243234,
+        "precision_mean": 0.9644707904744143,
+        "precision_std": 0.01032569511316966,
+        "recall_mean": 0.9739957381012623,
+        "recall_std": 0.006012166405850426,
+        "specificity_mean": 0.9640000000000001,
+        "specificity_std": 0.010770329614269018,
+        "f1_mean": 0.9691793580373815,
+        "f1_std": 0.005866284556215538,
+        "roc_auc_mean": 0.9966696715221468,
+        "roc_auc_std": 0.0016754330399083091,
+        "balanced_accuracy_mean": 0.9689978690506311,
+        "balanced_accuracy_std": 0.006006281396123157,
+        "mcc_mean": 0.9381161896719536,
+        "mcc_std": 0.01202060638007441,
+        "brier_mean": 0.02183683259756708,
+        "brier_std": 0.005106267063733429,
+        "ana_metrik_minimumu_mean": 0.9619661971830986,
+        "ana_metrik_minimumu_std": 0.006720166867691422,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_2500_per_class_pima",
+      "model": "xgboost",
+      "feature_set": "all_features",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.35,
+          "train_rows": 3999,
+          "test_rows": 1001,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.975024975024975,
+            "precision": 0.96484375,
+            "recall": 0.9860279441117764,
+            "sensitivity": 0.9860279441117764,
+            "specificity": 0.964,
+            "f1": 0.9753208292201382,
+            "roc_auc": 0.996942115768463,
+            "balanced_accuracy": 0.9750139720558881,
+            "mcc": 0.9502783498425853,
+            "brier": 0.018437053837150826,
+            "threshold": 0.35,
+            "confusion_matrix": {
+              "tn": 482,
+              "fp": 18,
+              "fn": 7,
+              "tp": 494,
+              "matrix": [
+                [
+                  482,
+                  18
+                ],
+                [
+                  7,
+                  494
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.964
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.37,
+          "train_rows": 3999,
+          "test_rows": 1001,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.962037962037962,
+            "precision": 0.9530332681017613,
+            "recall": 0.9720558882235529,
+            "sensitivity": 0.9720558882235529,
+            "specificity": 0.952,
+            "f1": 0.9624505928853755,
+            "roc_auc": 0.9938842315369262,
+            "balanced_accuracy": 0.9620279441117765,
+            "mcc": 0.9242588415892926,
+            "brier": 0.027619332450124365,
+            "threshold": 0.37,
+            "confusion_matrix": {
+              "tn": 476,
+              "fp": 24,
+              "fn": 14,
+              "tp": 487,
+              "matrix": [
+                [
+                  476,
+                  24
+                ],
+                [
+                  14,
+                  487
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.952
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.29,
+          "train_rows": 3999,
+          "test_rows": 1001,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9660339660339661,
+            "precision": 0.9623762376237623,
+            "recall": 0.9700598802395209,
+            "sensitivity": 0.9700598802395209,
+            "specificity": 0.962,
+            "f1": 0.9662027833001988,
+            "roc_auc": 0.9945269461077844,
+            "balanced_accuracy": 0.9660299401197605,
+            "mcc": 0.932097090446943,
+            "brier": 0.02877851095270996,
+            "threshold": 0.29,
+            "confusion_matrix": {
+              "tn": 481,
+              "fp": 19,
+              "fn": 15,
+              "tp": 486,
+              "matrix": [
+                [
+                  481,
+                  19
+                ],
+                [
+                  15,
+                  486
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.962
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.61,
+          "train_rows": 4003,
+          "test_rows": 997,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9769307923771314,
+            "precision": 0.9836734693877551,
+            "recall": 0.9698189134808853,
+            "sensitivity": 0.9698189134808853,
+            "specificity": 0.984,
+            "f1": 0.9766970618034447,
+            "roc_auc": 0.9985553319919518,
+            "balanced_accuracy": 0.9769094567404426,
+            "mcc": 0.9539532825614252,
+            "brier": 0.01535234290945456,
+            "threshold": 0.61,
+            "confusion_matrix": {
+              "tn": 492,
+              "fp": 8,
+              "fn": 15,
+              "tp": 482,
+              "matrix": [
+                [
+                  492,
+                  8
+                ],
+                [
+                  15,
+                  482
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9698189134808853
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.45,
+          "train_rows": 4000,
+          "test_rows": 1000,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.968,
+            "precision": 0.9642857142857143,
+            "recall": 0.972,
+            "sensitivity": 0.972,
+            "specificity": 0.964,
+            "f1": 0.9681274900398407,
+            "roc_auc": 0.9966079999999999,
+            "balanced_accuracy": 0.968,
+            "mcc": 0.9360299534377726,
+            "brier": 0.025620763021087352,
+            "threshold": 0.45,
+            "confusion_matrix": {
+              "tn": 482,
+              "fp": 18,
+              "fn": 14,
+              "tp": 486,
+              "matrix": [
+                [
+                  482,
+                  18
+                ],
+                [
+                  14,
+                  486
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.964
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9696055390948068,
+        "accuracy_std": 0.006237622421174711,
+        "precision_mean": 0.9656424878797987,
+        "precision_std": 0.011149617987541154,
+        "recall_mean": 0.9739925252111471,
+        "recall_std": 0.006809125476157622,
+        "specificity_mean": 0.9652000000000001,
+        "specificity_std": 0.011627553482998916,
+        "f1_mean": 0.9697597514497996,
+        "f1_std": 0.006078485822105613,
+        "roc_auc_mean": 0.9961033250810252,
+        "roc_auc_std": 0.0018960453124295415,
+        "balanced_accuracy_mean": 0.9695962626055735,
+        "balanced_accuracy_std": 0.006232586528573626,
+        "mcc_mean": 0.9393235035756037,
+        "mcc_std": 0.012490512898651102,
+        "brier_mean": 0.02316160063410541,
+        "brier_std": 0.005932419042072412,
+        "ana_metrik_minimumu_mean": 0.9623637826961771,
+        "ana_metrik_minimumu_std": 0.006489871315584422,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_2700_per_class_pima",
+      "model": "lightgbm",
+      "feature_set": "all_features",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.21,
+          "train_rows": 4325,
+          "test_rows": 1075,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9674418604651163,
+            "precision": 0.9562043795620438,
+            "recall": 0.9794392523364486,
+            "sensitivity": 0.9794392523364486,
+            "specificity": 0.9555555555555556,
+            "f1": 0.9676823638042474,
+            "roc_auc": 0.9965628245067497,
+            "balanced_accuracy": 0.967497403946002,
+            "mcc": 0.9351631459355201,
+            "brier": 0.024895555826554415,
+            "threshold": 0.21,
+            "confusion_matrix": {
+              "tn": 516,
+              "fp": 24,
+              "fn": 11,
+              "tp": 524,
+              "matrix": [
+                [
+                  516,
+                  24
+                ],
+                [
+                  11,
+                  524
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9555555555555556
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.39,
+          "train_rows": 4319,
+          "test_rows": 1081,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9685476410730804,
+            "precision": 0.9738317757009346,
+            "recall": 0.9630314232902033,
+            "sensitivity": 0.9630314232902033,
+            "specificity": 0.9740740740740741,
+            "f1": 0.9684014869888475,
+            "roc_auc": 0.996802902717875,
+            "balanced_accuracy": 0.9685527486821387,
+            "mcc": 0.9371536169821357,
+            "brier": 0.025020651413510106,
+            "threshold": 0.39,
+            "confusion_matrix": {
+              "tn": 526,
+              "fp": 14,
+              "fn": 20,
+              "tp": 521,
+              "matrix": [
+                [
+                  526,
+                  14
+                ],
+                [
+                  20,
+                  521
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9630314232902033
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.33,
+          "train_rows": 4319,
+          "test_rows": 1081,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.973172987974098,
+            "precision": 0.9740740740740741,
+            "recall": 0.9722735674676525,
+            "sensitivity": 0.9722735674676525,
+            "specificity": 0.9740740740740741,
+            "f1": 0.973172987974098,
+            "roc_auc": 0.996262066132676,
+            "balanced_accuracy": 0.9731738207708633,
+            "mcc": 0.9463476415417266,
+            "brier": 0.021378886387019225,
+            "threshold": 0.33,
+            "confusion_matrix": {
+              "tn": 526,
+              "fp": 14,
+              "fn": 15,
+              "tp": 526,
+              "matrix": [
+                [
+                  526,
+                  14
+                ],
+                [
+                  15,
+                  526
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9722735674676525
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.16,
+          "train_rows": 4319,
+          "test_rows": 1081,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9565217391304348,
+            "precision": 0.9410714285714286,
+            "recall": 0.9741219963031423,
+            "sensitivity": 0.9741219963031423,
+            "specificity": 0.9388888888888889,
+            "f1": 0.9573115349682108,
+            "roc_auc": 0.9949168207024031,
+            "balanced_accuracy": 0.9565054425960156,
+            "mcc": 0.9136052628335326,
+            "brier": 0.029801222523441744,
+            "threshold": 0.16,
+            "confusion_matrix": {
+              "tn": 507,
+              "fp": 33,
+              "fn": 14,
+              "tp": 527,
+              "matrix": [
+                [
+                  507,
+                  33
+                ],
+                [
+                  14,
+                  527
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9388888888888889
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.24,
+          "train_rows": 4318,
+          "test_rows": 1082,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9704251386321626,
+            "precision": 0.956989247311828,
+            "recall": 0.985239852398524,
+            "sensitivity": 0.985239852398524,
+            "specificity": 0.9555555555555556,
+            "f1": 0.9709090909090909,
+            "roc_auc": 0.9972222222222222,
+            "balanced_accuracy": 0.9703977039770397,
+            "mcc": 0.9412586258097951,
+            "brier": 0.01964193534714063,
+            "threshold": 0.24,
+            "confusion_matrix": {
+              "tn": 516,
+              "fp": 24,
+              "fn": 8,
+              "tp": 534,
+              "matrix": [
+                [
+                  516,
+                  24
+                ],
+                [
+                  8,
+                  534
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9555555555555556
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9672218734549783,
+        "accuracy_std": 0.006363481760014532,
+        "precision_mean": 0.960434181044062,
+        "precision_std": 0.013876393594638277,
+        "recall_mean": 0.9748212183591942,
+        "recall_std": 0.008304409632511535,
+        "specificity_mean": 0.9596296296296296,
+        "specificity_std": 0.014837944906674174,
+        "f1_mean": 0.967495492928899,
+        "f1_std": 0.006092112664429535,
+        "roc_auc_mean": 0.9963533672563851,
+        "roc_auc_std": 0.0008764795090980853,
+        "balanced_accuracy_mean": 0.9672254239944118,
+        "balanced_accuracy_std": 0.006367898978488879,
+        "mcc_mean": 0.934705658620542,
+        "mcc_std": 0.012548960539348345,
+        "brier_mean": 0.024147650299533228,
+        "brier_std": 0.003913179440964778,
+        "ana_metrik_minimumu_mean": 0.9570609981515712,
+        "ana_metrik_minimumu_std": 0.012266076302217108,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_2700_per_class_pima",
+      "model": "hist_gradient_boosting",
+      "feature_set": "no_skinthickness_no_insulin",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.11,
+          "train_rows": 4325,
+          "test_rows": 1075,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9646511627906976,
+            "precision": 0.9542961608775137,
+            "recall": 0.9757009345794393,
+            "sensitivity": 0.9757009345794393,
+            "specificity": 0.9537037037037037,
+            "f1": 0.9648798521256932,
+            "roc_auc": 0.9962409138110072,
+            "balanced_accuracy": 0.9647023191415716,
+            "mcc": 0.9295397836939255,
+            "brier": 0.024909512111351343,
+            "threshold": 0.11,
+            "confusion_matrix": {
+              "tn": 515,
+              "fp": 25,
+              "fn": 13,
+              "tp": 522,
+              "matrix": [
+                [
+                  515,
+                  25
+                ],
+                [
+                  13,
+                  522
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9537037037037037
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.42,
+          "train_rows": 4319,
+          "test_rows": 1081,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9703977798334875,
+            "precision": 0.9739292364990689,
+            "recall": 0.966728280961183,
+            "sensitivity": 0.966728280961183,
+            "specificity": 0.9740740740740741,
+            "f1": 0.9703153988868275,
+            "roc_auc": 0.9963716026562607,
+            "balanced_accuracy": 0.9704011775176286,
+            "mcc": 0.9408216779216704,
+            "brier": 0.025174790557131406,
+            "threshold": 0.42,
+            "confusion_matrix": {
+              "tn": 526,
+              "fp": 14,
+              "fn": 18,
+              "tp": 523,
+              "matrix": [
+                [
+                  526,
+                  14
+                ],
+                [
+                  18,
+                  523
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.966728280961183
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.73,
+          "train_rows": 4319,
+          "test_rows": 1081,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9750231267345051,
+            "precision": 0.9830827067669173,
+            "recall": 0.966728280961183,
+            "sensitivity": 0.966728280961183,
+            "specificity": 0.9833333333333333,
+            "f1": 0.9748369058713886,
+            "roc_auc": 0.995851304169234,
+            "balanced_accuracy": 0.9750308071472582,
+            "mcc": 0.9501787106916202,
+            "brier": 0.021590454875839903,
+            "threshold": 0.73,
+            "confusion_matrix": {
+              "tn": 531,
+              "fp": 9,
+              "fn": 18,
+              "tp": 523,
+              "matrix": [
+                [
+                  531,
+                  9
+                ],
+                [
+                  18,
+                  523
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.966728280961183
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.1,
+          "train_rows": 4319,
+          "test_rows": 1081,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9602220166512488,
+            "precision": 0.946236559139785,
+            "recall": 0.9759704251386322,
+            "sensitivity": 0.9759704251386322,
+            "specificity": 0.9444444444444444,
+            "f1": 0.9608735213830755,
+            "roc_auc": 0.9946840555897858,
+            "balanced_accuracy": 0.9602074347915384,
+            "mcc": 0.9208972896560622,
+            "brier": 0.028780875708603118,
+            "threshold": 0.1,
+            "confusion_matrix": {
+              "tn": 510,
+              "fp": 30,
+              "fn": 13,
+              "tp": 528,
+              "matrix": [
+                [
+                  510,
+                  30
+                ],
+                [
+                  13,
+                  528
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9444444444444444
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.2,
+          "train_rows": 4318,
+          "test_rows": 1082,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9658040665434381,
+            "precision": 0.9484902309058615,
+            "recall": 0.985239852398524,
+            "sensitivity": 0.985239852398524,
+            "specificity": 0.9462962962962963,
+            "f1": 0.9665158371040724,
+            "roc_auc": 0.9964602979363126,
+            "balanced_accuracy": 0.9657680743474102,
+            "mcc": 0.932305742803562,
+            "brier": 0.021253299782034572,
+            "threshold": 0.2,
+            "confusion_matrix": {
+              "tn": 511,
+              "fp": 29,
+              "fn": 8,
+              "tp": 534,
+              "matrix": [
+                [
+                  511,
+                  29
+                ],
+                [
+                  8,
+                  534
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9462962962962963
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9672196305106754,
+        "accuracy_std": 0.005669273188270309,
+        "precision_mean": 0.9612069788378292,
+        "precision_std": 0.016385907521463943,
+        "recall_mean": 0.9740735548077923,
+        "recall_std": 0.007727204857212776,
+        "specificity_mean": 0.9603703703703703,
+        "specificity_std": 0.017401496238271856,
+        "f1_mean": 0.9674843030742115,
+        "f1_std": 0.00532680478898193,
+        "roc_auc_mean": 0.9959216348325202,
+        "roc_auc_std": 0.0007299172610882203,
+        "balanced_accuracy_mean": 0.9672219625890814,
+        "balanced_accuracy_std": 0.0056734349216329616,
+        "mcc_mean": 0.934748640953368,
+        "mcc_std": 0.01117954279282744,
+        "brier_mean": 0.024341786606992065,
+        "brier_std": 0.0030753169366778497,
+        "ana_metrik_minimumu_mean": 0.9555802012733621,
+        "ana_metrik_minimumu_std": 0.01075030902296439,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_3000_per_class_pima",
+      "model": "adaboost",
+      "feature_set": "compact_best_features",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.5,
+          "train_rows": 4799,
+          "test_rows": 1201,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9725228975853455,
+            "precision": 0.9701986754966887,
+            "recall": 0.9750415973377704,
+            "sensitivity": 0.9750415973377704,
+            "specificity": 0.97,
+            "f1": 0.9726141078838174,
+            "roc_auc": 0.9965404880754298,
+            "balanced_accuracy": 0.9725207986688852,
+            "mcc": 0.9450573222160519,
+            "brier": 0.10779524445901764,
+            "threshold": 0.5,
+            "confusion_matrix": {
+              "tn": 582,
+              "fp": 18,
+              "fn": 15,
+              "tp": 586,
+              "matrix": [
+                [
+                  582,
+                  18
+                ],
+                [
+                  15,
+                  586
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.97
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.49,
+          "train_rows": 4805,
+          "test_rows": 1195,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9740585774058578,
+            "precision": 0.9795918367346939,
+            "recall": 0.9680672268907563,
+            "sensitivity": 0.9680672268907563,
+            "specificity": 0.98,
+            "f1": 0.9737954353338969,
+            "roc_auc": 0.9952745098039215,
+            "balanced_accuracy": 0.9740336134453782,
+            "mcc": 0.9481787838984839,
+            "brier": 0.11203271814262036,
+            "threshold": 0.49,
+            "confusion_matrix": {
+              "tn": 588,
+              "fp": 12,
+              "fn": 19,
+              "tp": 576,
+              "matrix": [
+                [
+                  588,
+                  12
+                ],
+                [
+                  19,
+                  576
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9680672268907563
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.51,
+          "train_rows": 4798,
+          "test_rows": 1202,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.980865224625624,
+            "precision": 0.9881956155143339,
+            "recall": 0.973421926910299,
+            "sensitivity": 0.973421926910299,
+            "specificity": 0.9883333333333333,
+            "f1": 0.9807531380753138,
+            "roc_auc": 0.9966542081949059,
+            "balanced_accuracy": 0.9808776301218162,
+            "mcc": 0.9618391452223715,
+            "brier": 0.11014559917742565,
+            "threshold": 0.51,
+            "confusion_matrix": {
+              "tn": 593,
+              "fp": 7,
+              "fn": 16,
+              "tp": 586,
+              "matrix": [
+                [
+                  593,
+                  7
+                ],
+                [
+                  16,
+                  586
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.973421926910299
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.51,
+          "train_rows": 4799,
+          "test_rows": 1201,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.980849292256453,
+            "precision": 0.9784768211920529,
+            "recall": 0.9833610648918469,
+            "sensitivity": 0.9833610648918469,
+            "specificity": 0.9783333333333334,
+            "f1": 0.9809128630705394,
+            "roc_auc": 0.9976109262340542,
+            "balanced_accuracy": 0.9808471991125902,
+            "mcc": 0.9617104001952509,
+            "brier": 0.11108052998638074,
+            "threshold": 0.51,
+            "confusion_matrix": {
+              "tn": 587,
+              "fp": 13,
+              "fn": 10,
+              "tp": 591,
+              "matrix": [
+                [
+                  587,
+                  13
+                ],
+                [
+                  10,
+                  591
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9783333333333334
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.5,
+          "train_rows": 4799,
+          "test_rows": 1201,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9700249791840133,
+            "precision": 0.9669421487603306,
+            "recall": 0.9733777038269551,
+            "sensitivity": 0.9733777038269551,
+            "specificity": 0.9666666666666667,
+            "f1": 0.9701492537313433,
+            "roc_auc": 0.9953882418191902,
+            "balanced_accuracy": 0.9700221852468109,
+            "mcc": 0.9400704404735343,
+            "brier": 0.10850451020356093,
+            "threshold": 0.5,
+            "confusion_matrix": {
+              "tn": 580,
+              "fp": 20,
+              "fn": 16,
+              "tp": 585,
+              "matrix": [
+                [
+                  580,
+                  20
+                ],
+                [
+                  16,
+                  585
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9666666666666667
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9756641942114588,
+        "accuracy_std": 0.004954353011511701,
+        "precision_mean": 0.97668101953962,
+        "precision_std": 0.008383765101753803,
+        "recall_mean": 0.9746539039715255,
+        "recall_std": 0.005533889380294004,
+        "specificity_mean": 0.9766666666666668,
+        "specificity_std": 0.008579691784155822,
+        "f1_mean": 0.9756449596189822,
+        "f1_std": 0.004915635244852875,
+        "roc_auc_mean": 0.9962936748255004,
+        "roc_auc_std": 0.0009726971052514937,
+        "balanced_accuracy_mean": 0.9756602853190962,
+        "balanced_accuracy_std": 0.004960226096870711,
+        "mcc_mean": 0.9513712184011384,
+        "mcc_std": 0.009927747440447048,
+        "brier_mean": 0.10991172039380107,
+        "brier_std": 0.0017592013459000048,
+        "ana_metrik_minimumu_mean": 0.971297830760211,
+        "ana_metrik_minimumu_std": 0.004679180692601282,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_3000_per_class_pima",
+      "model": "mlp",
+      "feature_set": "no_skinthickness",
+      "preprocessing": "StandardScaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.83,
+          "train_rows": 4799,
+          "test_rows": 1201,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9758534554537885,
+            "precision": 0.9847457627118644,
+            "recall": 0.9667221297836939,
+            "sensitivity": 0.9667221297836939,
+            "specificity": 0.985,
+            "f1": 0.9756507136859782,
+            "roc_auc": 0.9966916250693288,
+            "balanced_accuracy": 0.9758610648918469,
+            "mcc": 0.9518673230612537,
+            "brier": 0.020614281647534677,
+            "threshold": 0.83,
+            "confusion_matrix": {
+              "tn": 591,
+              "fp": 9,
+              "fn": 20,
+              "tp": 581,
+              "matrix": [
+                [
+                  591,
+                  9
+                ],
+                [
+                  20,
+                  581
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9667221297836939
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.14,
+          "train_rows": 4805,
+          "test_rows": 1195,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9765690376569037,
+            "precision": 0.9732888146911519,
+            "recall": 0.9798319327731092,
+            "sensitivity": 0.9798319327731092,
+            "specificity": 0.9733333333333334,
+            "f1": 0.9765494137353434,
+            "roc_auc": 0.9960224089635854,
+            "balanced_accuracy": 0.9765826330532212,
+            "mcc": 0.9531599262898801,
+            "brier": 0.018935687397847734,
+            "threshold": 0.14,
+            "confusion_matrix": {
+              "tn": 584,
+              "fp": 16,
+              "fn": 12,
+              "tp": 583,
+              "matrix": [
+                [
+                  584,
+                  16
+                ],
+                [
+                  12,
+                  583
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9732888146911519
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.74,
+          "train_rows": 4798,
+          "test_rows": 1202,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9733777038269551,
+            "precision": 0.9830508474576272,
+            "recall": 0.9634551495016611,
+            "sensitivity": 0.9634551495016611,
+            "specificity": 0.9833333333333333,
+            "f1": 0.9731543624161074,
+            "roc_auc": 0.9951661129568107,
+            "balanced_accuracy": 0.9733942414174972,
+            "mcc": 0.9469457958680375,
+            "brier": 0.021732643132937178,
+            "threshold": 0.74,
+            "confusion_matrix": {
+              "tn": 590,
+              "fp": 10,
+              "fn": 22,
+              "tp": 580,
+              "matrix": [
+                [
+                  590,
+                  10
+                ],
+                [
+                  22,
+                  580
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9634551495016611
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.6,
+          "train_rows": 4799,
+          "test_rows": 1201,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9758534554537885,
+            "precision": 0.9750830564784053,
+            "recall": 0.9767054908485857,
+            "sensitivity": 0.9767054908485857,
+            "specificity": 0.975,
+            "f1": 0.9758935993349959,
+            "roc_auc": 0.9955047143649474,
+            "balanced_accuracy": 0.9758527454242929,
+            "mcc": 0.9517081300872149,
+            "brier": 0.022257411351854016,
+            "threshold": 0.6,
+            "confusion_matrix": {
+              "tn": 585,
+              "fp": 15,
+              "fn": 14,
+              "tp": 587,
+              "matrix": [
+                [
+                  585,
+                  15
+                ],
+                [
+                  14,
+                  587
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.975
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.83,
+          "train_rows": 4799,
+          "test_rows": 1201,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9666944213155704,
+            "precision": 0.9636363636363636,
+            "recall": 0.9700499168053245,
+            "sensitivity": 0.9700499168053245,
+            "specificity": 0.9633333333333334,
+            "f1": 0.966832504145937,
+            "roc_auc": 0.9924403771491958,
+            "balanced_accuracy": 0.9666916250693289,
+            "mcc": 0.933409135387637,
+            "brier": 0.030906313866851852,
+            "threshold": 0.83,
+            "confusion_matrix": {
+              "tn": 578,
+              "fp": 22,
+              "fn": 18,
+              "tp": 583,
+              "matrix": [
+                [
+                  578,
+                  22
+                ],
+                [
+                  18,
+                  583
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9633333333333334
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9736696147414012,
+        "accuracy_std": 0.004082998563152712,
+        "precision_mean": 0.9759609689950824,
+        "precision_std": 0.008474166825110022,
+        "recall_mean": 0.9713529239424747,
+        "recall_std": 0.006820199529573972,
+        "specificity_mean": 0.9760000000000002,
+        "specificity_std": 0.008708233651742055,
+        "f1_mean": 0.9736161186636723,
+        "f1_std": 0.0040050393209033735,
+        "roc_auc_mean": 0.9951650477007735,
+        "roc_auc_std": 0.001628243761642602,
+        "balanced_accuracy_mean": 0.9736764619712373,
+        "balanced_accuracy_std": 0.004087240050870314,
+        "mcc_mean": 0.9474180621388045,
+        "mcc_std": 0.008179894159423735,
+        "brier_mean": 0.02288926747940509,
+        "brier_std": 0.004658766221322377,
+        "ana_metrik_minimumu_mean": 0.9683598854619682,
+        "ana_metrik_minimumu_std": 0.005486127259470361,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_4000_per_class_pima",
+      "model": "extra_trees",
+      "feature_set": "no_skinthickness",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "class_weight=balanced",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.41,
+          "train_rows": 6398,
+          "test_rows": 1602,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9837702871410736,
+            "precision": 0.9778325123152709,
+            "recall": 0.9900249376558603,
+            "sensitivity": 0.9900249376558603,
+            "specificity": 0.9775,
+            "f1": 0.9838909541511772,
+            "roc_auc": 0.9990835411471322,
+            "balanced_accuracy": 0.9837624688279302,
+            "mcc": 0.9676154296144991,
+            "brier": 0.011825142041835462,
+            "threshold": 0.41,
+            "confusion_matrix": {
+              "tn": 782,
+              "fp": 18,
+              "fn": 8,
+              "tp": 794,
+              "matrix": [
+                [
+                  782,
+                  18
+                ],
+                [
+                  8,
+                  794
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9775
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.44,
+          "train_rows": 6400,
+          "test_rows": 1600,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.98125,
+            "precision": 0.9848866498740554,
+            "recall": 0.9775,
+            "sensitivity": 0.9775,
+            "specificity": 0.985,
+            "f1": 0.9811794228356336,
+            "roc_auc": 0.99881015625,
+            "balanced_accuracy": 0.98125,
+            "mcc": 0.9625270714545823,
+            "brier": 0.012996843112244895,
+            "threshold": 0.44,
+            "confusion_matrix": {
+              "tn": 788,
+              "fp": 12,
+              "fn": 18,
+              "tp": 782,
+              "matrix": [
+                [
+                  788,
+                  12
+                ],
+                [
+                  18,
+                  782
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9775
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.57,
+          "train_rows": 6397,
+          "test_rows": 1603,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9850280723643169,
+            "precision": 0.9874843554443054,
+            "recall": 0.9825653798256538,
+            "sensitivity": 0.9825653798256538,
+            "specificity": 0.9875,
+            "f1": 0.9850187265917603,
+            "roc_auc": 0.9989259028642591,
+            "balanced_accuracy": 0.985032689912827,
+            "mcc": 0.9700683999685866,
+            "brier": 0.011370021911863102,
+            "threshold": 0.57,
+            "confusion_matrix": {
+              "tn": 790,
+              "fp": 10,
+              "fn": 14,
+              "tp": 789,
+              "matrix": [
+                [
+                  790,
+                  10
+                ],
+                [
+                  14,
+                  789
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9825653798256538
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.46,
+          "train_rows": 6397,
+          "test_rows": 1603,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9806612601372426,
+            "precision": 0.9789081885856079,
+            "recall": 0.9825653798256538,
+            "sensitivity": 0.9825653798256538,
+            "specificity": 0.97875,
+            "f1": 0.980733374766936,
+            "roc_auc": 0.9985398505603985,
+            "balanced_accuracy": 0.980657689912827,
+            "mcc": 0.9613288481012463,
+            "brier": 0.012830103137116775,
+            "threshold": 0.46,
+            "confusion_matrix": {
+              "tn": 783,
+              "fp": 17,
+              "fn": 14,
+              "tp": 789,
+              "matrix": [
+                [
+                  783,
+                  17
+                ],
+                [
+                  14,
+                  789
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.97875
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.41,
+          "train_rows": 6408,
+          "test_rows": 1592,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9755025125628141,
+            "precision": 0.966542750929368,
+            "recall": 0.9848484848484849,
+            "sensitivity": 0.9848484848484849,
+            "specificity": 0.96625,
+            "f1": 0.975609756097561,
+            "roc_auc": 0.9982149621212122,
+            "balanced_accuracy": 0.9755492424242425,
+            "mcc": 0.9511773025211995,
+            "brier": 0.015581770815528891,
+            "threshold": 0.41,
+            "confusion_matrix": {
+              "tn": 773,
+              "fp": 27,
+              "fn": 12,
+              "tp": 780,
+              "matrix": [
+                [
+                  773,
+                  27
+                ],
+                [
+                  12,
+                  780
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.96625
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9812424264410895,
+        "accuracy_std": 0.003674425728468086,
+        "precision_mean": 0.9791308914297214,
+        "precision_std": 0.008110267912509506,
+        "recall_mean": 0.9835008364311306,
+        "recall_std": 0.004531562893802785,
+        "specificity_mean": 0.9789999999999999,
+        "specificity_std": 0.008263246940519192,
+        "f1_mean": 0.9812864468886137,
+        "f1_std": 0.003648819367966244,
+        "roc_auc_mean": 0.9987148825886004,
+        "roc_auc_std": 0.00034280914686031386,
+        "balanced_accuracy_mean": 0.9812504182155652,
+        "balanced_accuracy_std": 0.003656183457183411,
+        "mcc_mean": 0.9625434103320227,
+        "mcc_std": 0.007297511284177779,
+        "brier_mean": 0.012920776203717824,
+        "brier_std": 0.0016355544315351247,
+        "ana_metrik_minimumu_mean": 0.9765130759651306,
+        "ana_metrik_minimumu_std": 0.006101495257826707,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_4000_per_class_pima",
+      "model": "hist_gradient_boosting",
+      "feature_set": "high_signal_features",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.25,
+          "train_rows": 6398,
+          "test_rows": 1602,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.982521847690387,
+            "precision": 0.9777777777777777,
+            "recall": 0.9875311720698254,
+            "sensitivity": 0.9875311720698254,
+            "specificity": 0.9775,
+            "f1": 0.9826302729528535,
+            "roc_auc": 0.9990336658354115,
+            "balanced_accuracy": 0.9825155860349127,
+            "mcc": 0.9650913417348818,
+            "brier": 0.013301258707823315,
+            "threshold": 0.25,
+            "confusion_matrix": {
+              "tn": 782,
+              "fp": 18,
+              "fn": 10,
+              "tp": 792,
+              "matrix": [
+                [
+                  782,
+                  18
+                ],
+                [
+                  10,
+                  792
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9775
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.81,
+          "train_rows": 6400,
+          "test_rows": 1600,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.980625,
+            "precision": 0.993581514762516,
+            "recall": 0.9675,
+            "sensitivity": 0.9675,
+            "specificity": 0.99375,
+            "f1": 0.980367321089297,
+            "roc_auc": 0.998353125,
+            "balanced_accuracy": 0.9806250000000001,
+            "mcc": 0.9615813519155333,
+            "brier": 0.016554893504709015,
+            "threshold": 0.81,
+            "confusion_matrix": {
+              "tn": 795,
+              "fp": 5,
+              "fn": 26,
+              "tp": 774,
+              "matrix": [
+                [
+                  795,
+                  5
+                ],
+                [
+                  26,
+                  774
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9675
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.4,
+          "train_rows": 6397,
+          "test_rows": 1603,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9850280723643169,
+            "precision": 0.9814585908529048,
+            "recall": 0.9887920298879203,
+            "sensitivity": 0.9887920298879203,
+            "specificity": 0.98125,
+            "f1": 0.9851116625310173,
+            "roc_auc": 0.9982845579078455,
+            "balanced_accuracy": 0.9850210149439601,
+            "mcc": 0.9700828032162802,
+            "brier": 0.012599530822541496,
+            "threshold": 0.4,
+            "confusion_matrix": {
+              "tn": 785,
+              "fp": 15,
+              "fn": 9,
+              "tp": 794,
+              "matrix": [
+                [
+                  785,
+                  15
+                ],
+                [
+                  9,
+                  794
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.98125
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.14,
+          "train_rows": 6397,
+          "test_rows": 1603,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9787897691827823,
+            "precision": 0.9683313032886723,
+            "recall": 0.9900373599003736,
+            "sensitivity": 0.9900373599003736,
+            "specificity": 0.9675,
+            "f1": 0.979064039408867,
+            "roc_auc": 0.9976914694894147,
+            "balanced_accuracy": 0.9787686799501868,
+            "mcc": 0.9578192006020847,
+            "brier": 0.015240727603192976,
+            "threshold": 0.14,
+            "confusion_matrix": {
+              "tn": 774,
+              "fp": 26,
+              "fn": 8,
+              "tp": 795,
+              "matrix": [
+                [
+                  774,
+                  26
+                ],
+                [
+                  8,
+                  795
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9675
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.4,
+          "train_rows": 6408,
+          "test_rows": 1592,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9742462311557789,
+            "precision": 0.9735182849936949,
+            "recall": 0.9747474747474747,
+            "sensitivity": 0.9747474747474747,
+            "specificity": 0.97375,
+            "f1": 0.9741324921135647,
+            "roc_auc": 0.9977588383838384,
+            "balanced_accuracy": 0.9742487373737374,
+            "mcc": 0.9484922353004189,
+            "brier": 0.021502330438264182,
+            "threshold": 0.4,
+            "confusion_matrix": {
+              "tn": 779,
+              "fp": 21,
+              "fn": 20,
+              "tp": 772,
+              "matrix": [
+                [
+                  779,
+                  21
+                ],
+                [
+                  20,
+                  772
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9735182849936949
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9802421840786529,
+        "accuracy_std": 0.004071520028755387,
+        "precision_mean": 0.9789334943351132,
+        "precision_std": 0.009539486920470188,
+        "recall_mean": 0.9817216073211188,
+        "recall_std": 0.010047217260923483,
+        "specificity_mean": 0.97875,
+        "specificity_std": 0.009802741963348823,
+        "f1_mean": 0.98026115761912,
+        "f1_std": 0.004127499513494058,
+        "roc_auc_mean": 0.998224331323302,
+        "roc_auc_std": 0.0005421860418341136,
+        "balanced_accuracy_mean": 0.9802358036605593,
+        "balanced_accuracy_std": 0.004069537541176195,
+        "mcc_mean": 0.9606133865538398,
+        "mcc_std": 0.008145377129284037,
+        "brier_mean": 0.015839748215306197,
+        "brier_std": 0.0035312191111012527,
+        "ana_metrik_minimumu_mean": 0.9734536569987389,
+        "ana_metrik_minimumu_std": 0.006083833001738377,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_5000_per_class_pima",
+      "model": "logistic_regression",
+      "feature_set": "no_skinthickness_clinical_interactions",
+      "preprocessing": "StandardScaler",
+      "resampling": "class_weight=balanced",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.46,
+          "train_rows": 8010,
+          "test_rows": 1990,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9864321608040201,
+            "precision": 0.9858585858585859,
+            "recall": 0.9868554095045501,
+            "sensitivity": 0.9868554095045501,
+            "specificity": 0.986013986013986,
+            "f1": 0.9863567458312279,
+            "roc_auc": 0.997715126127664,
+            "balanced_accuracy": 0.9864346977592681,
+            "mcc": 0.9728639906735475,
+            "brier": 0.010912822259290715,
+            "threshold": 0.46,
+            "confusion_matrix": {
+              "tn": 987,
+              "fp": 14,
+              "fn": 13,
+              "tp": 976,
+              "matrix": [
+                [
+                  987,
+                  14
+                ],
+                [
+                  13,
+                  976
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9858585858585859
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.16,
+          "train_rows": 7998,
+          "test_rows": 2002,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.978021978021978,
+            "precision": 0.9650485436893204,
+            "recall": 0.9920159680638723,
+            "sensitivity": 0.9920159680638723,
+            "specificity": 0.964,
+            "f1": 0.9783464566929134,
+            "roc_auc": 0.9978393213572855,
+            "balanced_accuracy": 0.9780079840319361,
+            "mcc": 0.9564169454490966,
+            "brier": 0.01354126382275106,
+            "threshold": 0.16,
+            "confusion_matrix": {
+              "tn": 964,
+              "fp": 36,
+              "fn": 8,
+              "tp": 994,
+              "matrix": [
+                [
+                  964,
+                  36
+                ],
+                [
+                  8,
+                  994
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.964
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.38,
+          "train_rows": 7998,
+          "test_rows": 2002,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9905094905094906,
+            "precision": 0.992,
+            "recall": 0.9890329012961117,
+            "sensitivity": 0.9890329012961117,
+            "specificity": 0.991991991991992,
+            "f1": 0.9905142286570144,
+            "roc_auc": 0.9990928116551248,
+            "balanced_accuracy": 0.9905124466440518,
+            "mcc": 0.9810234246868647,
+            "brier": 0.00886623429625585,
+            "threshold": 0.38,
+            "confusion_matrix": {
+              "tn": 991,
+              "fp": 8,
+              "fn": 11,
+              "tp": 992,
+              "matrix": [
+                [
+                  991,
+                  8
+                ],
+                [
+                  11,
+                  992
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9890329012961117
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.62,
+          "train_rows": 7997,
+          "test_rows": 2003,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9840239640539191,
+            "precision": 0.9830845771144279,
+            "recall": 0.9850448654037887,
+            "sensitivity": 0.9850448654037887,
+            "specificity": 0.983,
+            "f1": 0.9840637450199203,
+            "roc_auc": 0.9965952143569292,
+            "balanced_accuracy": 0.9840224327018943,
+            "mcc": 0.9680496911869596,
+            "brier": 0.01321350822135085,
+            "threshold": 0.62,
+            "confusion_matrix": {
+              "tn": 983,
+              "fp": 17,
+              "fn": 15,
+              "tp": 988,
+              "matrix": [
+                [
+                  983,
+                  17
+                ],
+                [
+                  15,
+                  988
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.983
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.57,
+          "train_rows": 7997,
+          "test_rows": 2003,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9835247129306041,
+            "precision": 0.98989898989899,
+            "recall": 0.9770687936191426,
+            "sensitivity": 0.9770687936191426,
+            "specificity": 0.99,
+            "f1": 0.9834420471650778,
+            "roc_auc": 0.9989830508474576,
+            "balanced_accuracy": 0.9835343968095713,
+            "mcc": 0.9671314711692047,
+            "brier": 0.011838399724773869,
+            "threshold": 0.57,
+            "confusion_matrix": {
+              "tn": 990,
+              "fp": 10,
+              "fn": 23,
+              "tp": 980,
+              "matrix": [
+                [
+                  990,
+                  10
+                ],
+                [
+                  23,
+                  980
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9770687936191426
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9845024612640024,
+        "accuracy_std": 0.004554935650055178,
+        "precision_mean": 0.9831781393122647,
+        "precision_std": 0.01071063541097033,
+        "recall_mean": 0.9860035875774932,
+        "recall_std": 0.005630292012825545,
+        "specificity_mean": 0.9830011956011957,
+        "specificity_std": 0.011179669321241582,
+        "f1_mean": 0.9845446446732307,
+        "f1_std": 0.0044380221813086615,
+        "roc_auc_mean": 0.9980451048688922,
+        "roc_auc_std": 0.0010284512006674,
+        "balanced_accuracy_mean": 0.9845023915893444,
+        "balanced_accuracy_std": 0.004560681770414681,
+        "mcc_mean": 0.9690971046331345,
+        "mcc_std": 0.008974599813358712,
+        "brier_mean": 0.011674445664884469,
+        "brier_std": 0.001893853599400882,
+        "ana_metrik_minimumu_mean": 0.979792056154768,
+        "ana_metrik_minimumu_std": 0.00986524330314576,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_5000_per_class_pima",
+      "model": "random_forest",
+      "feature_set": "all_features",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "class_weight=balanced",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.52,
+          "train_rows": 8010,
+          "test_rows": 1990,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9874371859296482,
+            "precision": 0.9868686868686869,
+            "recall": 0.9878665318503539,
+            "sensitivity": 0.9878665318503539,
+            "specificity": 0.987012987012987,
+            "f1": 0.9873673572511369,
+            "roc_auc": 0.9987105917338475,
+            "balanced_accuracy": 0.9874397594316704,
+            "mcc": 0.9748741028509694,
+            "brier": 0.010608776909237547,
+            "threshold": 0.52,
+            "confusion_matrix": {
+              "tn": 988,
+              "fp": 13,
+              "fn": 12,
+              "tp": 977,
+              "matrix": [
+                [
+                  988,
+                  13
+                ],
+                [
+                  12,
+                  977
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9868686868686869
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.3,
+          "train_rows": 7998,
+          "test_rows": 2002,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9790209790209791,
+            "precision": 0.9678362573099415,
+            "recall": 0.9910179640718563,
+            "sensitivity": 0.9910179640718563,
+            "specificity": 0.967,
+            "f1": 0.9792899408284024,
+            "roc_auc": 0.9991821357285429,
+            "balanced_accuracy": 0.9790089820359281,
+            "mcc": 0.9583164084670839,
+            "brier": 0.010950862409195742,
+            "threshold": 0.3,
+            "confusion_matrix": {
+              "tn": 967,
+              "fp": 33,
+              "fn": 9,
+              "tp": 993,
+              "matrix": [
+                [
+                  967,
+                  33
+                ],
+                [
+                  9,
+                  993
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.967
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.36,
+          "train_rows": 7998,
+          "test_rows": 2002,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9875124875124875,
+            "precision": 0.9851190476190477,
+            "recall": 0.9900299102691924,
+            "sensitivity": 0.9900299102691924,
+            "specificity": 0.984984984984985,
+            "f1": 0.9875683739433118,
+            "roc_auc": 0.9990573824073326,
+            "balanced_accuracy": 0.9875074476270886,
+            "mcc": 0.9750367901042589,
+            "brier": 0.01022687189353856,
+            "threshold": 0.36,
+            "confusion_matrix": {
+              "tn": 984,
+              "fp": 15,
+              "fn": 10,
+              "tp": 993,
+              "matrix": [
+                [
+                  984,
+                  15
+                ],
+                [
+                  10,
+                  993
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.984984984984985
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.54,
+          "train_rows": 7997,
+          "test_rows": 2003,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9855217174238642,
+            "precision": 0.9840954274353877,
+            "recall": 0.9870388833499502,
+            "sensitivity": 0.9870388833499502,
+            "specificity": 0.984,
+            "f1": 0.9855649576903932,
+            "roc_auc": 0.9986321036889332,
+            "balanced_accuracy": 0.9855194416749751,
+            "mcc": 0.9710475966775476,
+            "brier": 0.01142636354110809,
+            "threshold": 0.54,
+            "confusion_matrix": {
+              "tn": 984,
+              "fp": 16,
+              "fn": 13,
+              "tp": 990,
+              "matrix": [
+                [
+                  984,
+                  16
+                ],
+                [
+                  13,
+                  990
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.984
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.51,
+          "train_rows": 7997,
+          "test_rows": 2003,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9850224663005491,
+            "precision": 0.9909182643794148,
+            "recall": 0.9790628115653041,
+            "sensitivity": 0.9790628115653041,
+            "specificity": 0.991,
+            "f1": 0.9849548645937813,
+            "roc_auc": 0.9990767696909271,
+            "balanced_accuracy": 0.985031405782652,
+            "mcc": 0.9701150424950825,
+            "brier": 0.011490176001429956,
+            "threshold": 0.51,
+            "confusion_matrix": {
+              "tn": 991,
+              "fp": 9,
+              "fn": 21,
+              "tp": 982,
+              "matrix": [
+                [
+                  991,
+                  9
+                ],
+                [
+                  21,
+                  982
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9790628115653041
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9849029672375057,
+        "accuracy_std": 0.0034722751058812685,
+        "precision_mean": 0.9829675367224958,
+        "precision_std": 0.008849997118595887,
+        "recall_mean": 0.9870032202213312,
+        "recall_std": 0.00471899590176264,
+        "specificity_mean": 0.9827995943995944,
+        "specificity_std": 0.009230972567038228,
+        "f1_mean": 0.9849490988614052,
+        "f1_std": 0.003358346340746331,
+        "roc_auc_mean": 0.9989317966499167,
+        "roc_auc_std": 0.00024403181407819057,
+        "balanced_accuracy_mean": 0.9849014073104628,
+        "balanced_accuracy_std": 0.003476859909371641,
+        "mcc_mean": 0.9698779881189885,
+        "mcc_std": 0.006831337777901957,
+        "brier_mean": 0.010940610150901978,
+        "brier_std": 0.0005379636812232516,
+        "ana_metrik_minimumu_mean": 0.9803832966837952,
+        "ana_metrik_minimumu_std": 0.008018302111789069,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_7500_per_class_pima",
+      "model": "extra_trees",
+      "feature_set": "high_signal_features",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "class_weight=balanced",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.53,
+          "train_rows": 12016,
+          "test_rows": 2984,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.988941018766756,
+            "precision": 0.9905277401894452,
+            "recall": 0.9871881321645314,
+            "sensitivity": 0.9871881321645314,
+            "specificity": 0.9906728847435043,
+            "f1": 0.9888551165146909,
+            "roc_auc": 0.9995449201543768,
+            "balanced_accuracy": 0.9889305084540179,
+            "mcc": 0.9778862772928589,
+            "brier": 0.008374246928440725,
+            "threshold": 0.53,
+            "confusion_matrix": {
+              "tn": 1487,
+              "fp": 14,
+              "fn": 19,
+              "tp": 1464,
+              "matrix": [
+                [
+                  1487,
+                  14
+                ],
+                [
+                  19,
+                  1464
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9871881321645314
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.62,
+          "train_rows": 11995,
+          "test_rows": 3005,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9896838602329451,
+            "precision": 0.9933065595716198,
+            "recall": 0.986046511627907,
+            "sensitivity": 0.986046511627907,
+            "specificity": 0.9933333333333333,
+            "f1": 0.9896632210736912,
+            "roc_auc": 0.9990921373200443,
+            "balanced_accuracy": 0.9896899224806202,
+            "mcc": 0.979394161791171,
+            "brier": 0.008064256096226621,
+            "threshold": 0.62,
+            "confusion_matrix": {
+              "tn": 1490,
+              "fp": 10,
+              "fn": 21,
+              "tp": 1484,
+              "matrix": [
+                [
+                  1490,
+                  10
+                ],
+                [
+                  21,
+                  1484
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.986046511627907
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.39,
+          "train_rows": 11996,
+          "test_rows": 3004,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9866844207723036,
+            "precision": 0.9815910585141354,
+            "recall": 0.9920265780730897,
+            "sensitivity": 0.9920265780730897,
+            "specificity": 0.981320880587058,
+            "f1": 0.9867812293456708,
+            "roc_auc": 0.9991801843532455,
+            "balanced_accuracy": 0.9866737293300738,
+            "mcc": 0.9734234026237608,
+            "brier": 0.008474315047812288,
+            "threshold": 0.39,
+            "confusion_matrix": {
+              "tn": 1471,
+              "fp": 28,
+              "fn": 12,
+              "tp": 1493,
+              "matrix": [
+                [
+                  1471,
+                  28
+                ],
+                [
+                  12,
+                  1493
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.981320880587058
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.45,
+          "train_rows": 11997,
+          "test_rows": 3003,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9923409923409924,
+            "precision": 0.9920212765957447,
+            "recall": 0.9926813040585496,
+            "sensitivity": 0.9926813040585496,
+            "specificity": 0.992,
+            "f1": 0.9923511805786498,
+            "roc_auc": 0.9992858726990463,
+            "balanced_accuracy": 0.9923406520292748,
+            "mcc": 0.9846821775849318,
+            "brier": 0.006137396239437055,
+            "threshold": 0.45,
+            "confusion_matrix": {
+              "tn": 1488,
+              "fp": 12,
+              "fn": 11,
+              "tp": 1492,
+              "matrix": [
+                [
+                  1488,
+                  12
+                ],
+                [
+                  11,
+                  1492
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.992
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.48,
+          "train_rows": 11996,
+          "test_rows": 3004,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9896804260985352,
+            "precision": 0.9900199600798403,
+            "recall": 0.9893617021276596,
+            "sensitivity": 0.9893617021276596,
+            "specificity": 0.99,
+            "f1": 0.9896907216494846,
+            "roc_auc": 0.9997114361702129,
+            "balanced_accuracy": 0.9896808510638297,
+            "mcc": 0.9793610509569646,
+            "brier": 0.007084748679764848,
+            "threshold": 0.48,
+            "confusion_matrix": {
+              "tn": 1485,
+              "fp": 15,
+              "fn": 16,
+              "tp": 1488,
+              "matrix": [
+                [
+                  1485,
+                  15
+                ],
+                [
+                  16,
+                  1488
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9893617021276596
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9894661436423065,
+        "accuracy_std": 0.0020231047171143856,
+        "precision_mean": 0.9894933189901571,
+        "precision_std": 0.004602294864345836,
+        "recall_mean": 0.9894608456103475,
+        "recall_std": 0.002906332227549274,
+        "specificity_mean": 0.989465419732779,
+        "specificity_std": 0.004729220825430664,
+        "f1_mean": 0.9894682938324374,
+        "f1_std": 0.001999675519534809,
+        "roc_auc_mean": 0.9993629101393852,
+        "roc_auc_std": 0.0002584760334875644,
+        "balanced_accuracy_mean": 0.9894631326715633,
+        "balanced_accuracy_std": 0.0020275238672119358,
+        "mcc_mean": 0.9789494140499375,
+        "mcc_std": 0.004027992219804008,
+        "brier_mean": 0.0076269925983363076,
+        "brier_std": 0.0009975557018917156,
+        "ana_metrik_minimumu_mean": 0.9871834453014312,
+        "ana_metrik_minimumu_std": 0.0039876781195392445,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_7500_per_class_pima",
+      "model": "gradient_boosting",
+      "feature_set": "all_features",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.73,
+          "train_rows": 12016,
+          "test_rows": 2984,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9896112600536193,
+            "precision": 0.9938775510204082,
+            "recall": 0.9851652056641942,
+            "sensitivity": 0.9851652056641942,
+            "specificity": 0.9940039973351099,
+            "f1": 0.9895022011513714,
+            "roc_auc": 0.9995363845995231,
+            "balanced_accuracy": 0.9895846014996521,
+            "mcc": 0.9792578512004482,
+            "brier": 0.008857317673377541,
+            "threshold": 0.73,
+            "confusion_matrix": {
+              "tn": 1492,
+              "fp": 9,
+              "fn": 22,
+              "tp": 1461,
+              "matrix": [
+                [
+                  1492,
+                  9
+                ],
+                [
+                  22,
+                  1461
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9851652056641942
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.53,
+          "train_rows": 11995,
+          "test_rows": 3005,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9876871880199667,
+            "precision": 0.9906417112299465,
+            "recall": 0.9847176079734219,
+            "sensitivity": 0.9847176079734219,
+            "specificity": 0.9906666666666667,
+            "f1": 0.987670776407864,
+            "roc_auc": 0.9986888150609081,
+            "balanced_accuracy": 0.9876921373200442,
+            "mcc": 0.9753920518834681,
+            "brier": 0.009416112350422013,
+            "threshold": 0.53,
+            "confusion_matrix": {
+              "tn": 1486,
+              "fp": 14,
+              "fn": 23,
+              "tp": 1482,
+              "matrix": [
+                [
+                  1486,
+                  14
+                ],
+                [
+                  23,
+                  1482
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9847176079734219
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.27,
+          "train_rows": 11996,
+          "test_rows": 3004,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9866844207723036,
+            "precision": 0.9815910585141354,
+            "recall": 0.9920265780730897,
+            "sensitivity": 0.9920265780730897,
+            "specificity": 0.981320880587058,
+            "f1": 0.9867812293456708,
+            "roc_auc": 0.9990904235160096,
+            "balanced_accuracy": 0.9866737293300738,
+            "mcc": 0.9734234026237608,
+            "brier": 0.009381921952461701,
+            "threshold": 0.27,
+            "confusion_matrix": {
+              "tn": 1471,
+              "fp": 28,
+              "fn": 12,
+              "tp": 1493,
+              "matrix": [
+                [
+                  1471,
+                  28
+                ],
+                [
+                  12,
+                  1493
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.981320880587058
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.42,
+          "train_rows": 11997,
+          "test_rows": 3003,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9933399933399933,
+            "precision": 0.9933466400532269,
+            "recall": 0.9933466400532269,
+            "sensitivity": 0.9933466400532269,
+            "specificity": 0.9933333333333333,
+            "f1": 0.9933466400532269,
+            "roc_auc": 0.9989567531603459,
+            "balanced_accuracy": 0.9933399866932802,
+            "mcc": 0.9866799733865602,
+            "brier": 0.005214637807850997,
+            "threshold": 0.42,
+            "confusion_matrix": {
+              "tn": 1490,
+              "fp": 10,
+              "fn": 10,
+              "tp": 1493,
+              "matrix": [
+                [
+                  1490,
+                  10
+                ],
+                [
+                  10,
+                  1493
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9933333333333333
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.35,
+          "train_rows": 11996,
+          "test_rows": 3004,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.988681757656458,
+            "precision": 0.9867549668874173,
+            "recall": 0.9906914893617021,
+            "sensitivity": 0.9906914893617021,
+            "specificity": 0.9866666666666667,
+            "f1": 0.9887193098871931,
+            "roc_auc": 0.9997074468085105,
+            "balanced_accuracy": 0.9886790780141844,
+            "mcc": 0.9773711530716086,
+            "brier": 0.0078091227047843,
+            "threshold": 0.35,
+            "confusion_matrix": {
+              "tn": 1480,
+              "fp": 20,
+              "fn": 14,
+              "tp": 1490,
+              "matrix": [
+                [
+                  1480,
+                  20
+                ],
+                [
+                  14,
+                  1490
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9866666666666667
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9892009239684683,
+        "accuracy_std": 0.0025590031986446175,
+        "precision_mean": 0.989242385541027,
+        "precision_std": 0.005123910453369522,
+        "recall_mean": 0.9891895042251271,
+        "recall_std": 0.003993105328441094,
+        "specificity_mean": 0.9891983089177669,
+        "specificity_std": 0.005263369456766256,
+        "f1_mean": 0.9892040313690652,
+        "f1_std": 0.0025350496674016493,
+        "roc_auc_mean": 0.9991959646290594,
+        "roc_auc_std": 0.000419243817476912,
+        "balanced_accuracy_mean": 0.9891939065714469,
+        "balanced_accuracy_std": 0.0025599939237893024,
+        "mcc_mean": 0.9784248864331693,
+        "mcc_std": 0.0051030277926559274,
+        "brier_mean": 0.00813582249777931,
+        "brier_std": 0.0017573071724634331,
+        "ana_metrik_minimumu_mean": 0.9862407388449348,
+        "ana_metrik_minimumu_std": 0.004420633880972669,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_10000_per_class_pima",
+      "model": "gaussian_nb",
+      "feature_set": "compact_best_features",
+      "preprocessing": "StandardScaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.9,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9910134797803295,
+            "precision": 0.9905378486055777,
+            "recall": 0.9915254237288136,
+            "sensitivity": 0.9915254237288136,
+            "specificity": 0.9905,
+            "f1": 0.9910313901345291,
+            "roc_auc": 0.9979895314057827,
+            "balanced_accuracy": 0.9910127118644068,
+            "mcc": 0.982027381910989,
+            "brier": 0.008638761971311155,
+            "threshold": 0.9,
+            "confusion_matrix": {
+              "tn": 1981,
+              "fp": 19,
+              "fn": 17,
+              "tp": 1989,
+              "matrix": [
+                [
+                  1981,
+                  19
+                ],
+                [
+                  17,
+                  1989
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9905
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.88,
+          "train_rows": 15993,
+          "test_rows": 4007,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9912652857499377,
+            "precision": 0.9881188118811881,
+            "recall": 0.9945191828599901,
+            "sensitivity": 0.9945191828599901,
+            "specificity": 0.988,
+            "f1": 0.9913086665011175,
+            "roc_auc": 0.9991147234678623,
+            "balanced_accuracy": 0.9912595914299951,
+            "mcc": 0.9825510049075995,
+            "brier": 0.008601203851633397,
+            "threshold": 0.88,
+            "confusion_matrix": {
+              "tn": 1976,
+              "fp": 24,
+              "fn": 11,
+              "tp": 1996,
+              "matrix": [
+                [
+                  1976,
+                  24
+                ],
+                [
+                  11,
+                  1996
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.988
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.83,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9915127309036446,
+            "precision": 0.9881188118811881,
+            "recall": 0.9950149551345963,
+            "sensitivity": 0.9950149551345963,
+            "specificity": 0.988,
+            "f1": 0.9915548931942375,
+            "roc_auc": 0.9984901545363909,
+            "balanced_accuracy": 0.9915074775672981,
+            "mcc": 0.9830492595457844,
+            "brier": 0.008577439063824768,
+            "threshold": 0.83,
+            "confusion_matrix": {
+              "tn": 1976,
+              "fp": 24,
+              "fn": 10,
+              "tp": 1996,
+              "matrix": [
+                [
+                  1976,
+                  24
+                ],
+                [
+                  10,
+                  1996
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.988
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.9,
+          "train_rows": 15995,
+          "test_rows": 4005,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9925093632958801,
+            "precision": 0.9900793650793651,
+            "recall": 0.9950149551345963,
+            "sensitivity": 0.9950149551345963,
+            "specificity": 0.9899949974987494,
+            "f1": 0.9925410243659871,
+            "roc_auc": 0.9986206961905679,
+            "balanced_accuracy": 0.9925049763166729,
+            "mcc": 0.9850308325918139,
+            "brier": 0.00783013424873584,
+            "threshold": 0.9,
+            "confusion_matrix": {
+              "tn": 1979,
+              "fp": 20,
+              "fn": 10,
+              "tp": 1996,
+              "matrix": [
+                [
+                  1979,
+                  20
+                ],
+                [
+                  10,
+                  1996
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9899949974987494
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.89,
+          "train_rows": 16024,
+          "test_rows": 3976,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9914486921529175,
+            "precision": 0.9903991915108641,
+            "recall": 0.9924050632911392,
+            "sensitivity": 0.9924050632911392,
+            "specificity": 0.9905047476261869,
+            "f1": 0.9914011127971675,
+            "roc_auc": 0.9981230903535574,
+            "balanced_accuracy": 0.991454905458663,
+            "mcc": 0.9828988677030018,
+            "brier": 0.008402543883997794,
+            "threshold": 0.89,
+            "confusion_matrix": {
+              "tn": 1982,
+              "fp": 19,
+              "fn": 15,
+              "tp": 1960,
+              "matrix": [
+                [
+                  1982,
+                  19
+                ],
+                [
+                  15,
+                  1960
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9903991915108641
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9915499103765418,
+        "accuracy_std": 0.0005702951667881391,
+        "precision_mean": 0.9894508057916365,
+        "precision_std": 0.0012272530184225584,
+        "recall_mean": 0.9936959160298271,
+        "recall_std": 0.0016228704673512955,
+        "specificity_mean": 0.9893999490249874,
+        "specificity_std": 0.0012946514326346258,
+        "f1_mean": 0.9915674173986078,
+        "f1_std": 0.0005766285324783656,
+        "roc_auc_mean": 0.9984676391908323,
+        "roc_auc_std": 0.00044439633294101455,
+        "balanced_accuracy_mean": 0.9915479325274072,
+        "balanced_accuracy_std": 0.000569171591097109,
+        "mcc_mean": 0.9831114693318377,
+        "mcc_std": 0.0011426275356267548,
+        "brier_mean": 0.008410016603900592,
+        "brier_std": 0.0003366105592033121,
+        "ana_metrik_minimumu_mean": 0.9893788378019227,
+        "ana_metrik_minimumu_std": 0.0012728085584411122,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_10000_per_class_pima",
+      "model": "gaussian_nb",
+      "feature_set": "no_skinthickness_no_insulin",
+      "preprocessing": "StandardScaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.71,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9925112331502746,
+            "precision": 0.9900793650793651,
+            "recall": 0.9950149551345963,
+            "sensitivity": 0.9950149551345963,
+            "specificity": 0.99,
+            "f1": 0.9925410243659871,
+            "roc_auc": 0.9982993519441675,
+            "balanced_accuracy": 0.9925074775672982,
+            "mcc": 0.9850345970970723,
+            "brier": 0.00763418076220175,
+            "threshold": 0.71,
+            "confusion_matrix": {
+              "tn": 1980,
+              "fp": 20,
+              "fn": 10,
+              "tp": 1996,
+              "matrix": [
+                [
+                  1980,
+                  20
+                ],
+                [
+                  10,
+                  1996
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.99
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.8,
+          "train_rows": 15993,
+          "test_rows": 4007,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9925131020713751,
+            "precision": 0.9895988112927192,
+            "recall": 0.9955156950672646,
+            "sensitivity": 0.9955156950672646,
+            "specificity": 0.9895,
+            "f1": 0.992548435171386,
+            "roc_auc": 0.9993571250622819,
+            "balanced_accuracy": 0.9925078475336323,
+            "mcc": 0.9850436712937705,
+            "brier": 0.007399090027167291,
+            "threshold": 0.8,
+            "confusion_matrix": {
+              "tn": 1979,
+              "fp": 21,
+              "fn": 9,
+              "tp": 1998,
+              "matrix": [
+                [
+                  1979,
+                  21
+                ],
+                [
+                  9,
+                  1998
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9895
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.68,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9925112331502746,
+            "precision": 0.9910536779324056,
+            "recall": 0.9940179461615155,
+            "sensitivity": 0.9940179461615155,
+            "specificity": 0.991,
+            "f1": 0.9925335988053758,
+            "roc_auc": 0.9986724825523429,
+            "balanced_accuracy": 0.9925089730807577,
+            "mcc": 0.9850267849260608,
+            "brier": 0.007344923696882126,
+            "threshold": 0.68,
+            "confusion_matrix": {
+              "tn": 1982,
+              "fp": 18,
+              "fn": 12,
+              "tp": 1994,
+              "matrix": [
+                [
+                  1982,
+                  18
+                ],
+                [
+                  12,
+                  1994
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.991
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.76,
+          "train_rows": 15995,
+          "test_rows": 4005,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9910112359550561,
+            "precision": 0.9866600790513834,
+            "recall": 0.9955134596211366,
+            "sensitivity": 0.9955134596211366,
+            "specificity": 0.9864932466233116,
+            "f1": 0.9910669975186104,
+            "roc_auc": 0.9993881536979856,
+            "balanced_accuracy": 0.9910033531222241,
+            "mcc": 0.9820618110917285,
+            "brier": 0.008688214249056154,
+            "threshold": 0.76,
+            "confusion_matrix": {
+              "tn": 1972,
+              "fp": 27,
+              "fn": 9,
+              "tp": 1997,
+              "matrix": [
+                [
+                  1972,
+                  27
+                ],
+                [
+                  9,
+                  1997
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9864932466233116
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.62,
+          "train_rows": 16024,
+          "test_rows": 3976,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9894366197183099,
+            "precision": 0.9859225741578683,
+            "recall": 0.9929113924050633,
+            "sensitivity": 0.9929113924050633,
+            "specificity": 0.9860069965017492,
+            "f1": 0.9894046417759839,
+            "roc_auc": 0.9988086969173641,
+            "balanced_accuracy": 0.9894591944534062,
+            "mcc": 0.9788975824687488,
+            "brier": 0.010069364842573397,
+            "threshold": 0.62,
+            "confusion_matrix": {
+              "tn": 1973,
+              "fp": 28,
+              "fn": 14,
+              "tp": 1961,
+              "matrix": [
+                [
+                  1973,
+                  28
+                ],
+                [
+                  14,
+                  1961
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9859225741578683
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.991596684809058,
+        "accuracy_std": 0.0013712448261012262,
+        "precision_mean": 0.9886629015027484,
+        "precision_std": 0.0022426992589421476,
+        "recall_mean": 0.9945946896779153,
+        "recall_std": 0.0011219553224568006,
+        "specificity_mean": 0.9886000486250122,
+        "specificity_std": 0.0022187877839209315,
+        "f1_mean": 0.9916189395274685,
+        "f1_std": 0.0013927094734295627,
+        "roc_auc_mean": 0.9989051620348285,
+        "roc_auc_std": 0.00046583329938616497,
+        "balanced_accuracy_mean": 0.9915973691514637,
+        "balanced_accuracy_std": 0.0013613353755853146,
+        "mcc_mean": 0.9832128893754761,
+        "mcc_std": 0.0027343853714441595,
+        "brier_mean": 0.008227154715576144,
+        "brier_std": 0.0011642545741095496,
+        "ana_metrik_minimumu_mean": 0.988583164156236,
+        "ana_metrik_minimumu_std": 0.0022436355375888375,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_10000_per_class_pima",
+      "model": "hist_gradient_boosting",
+      "feature_set": "no_skinthickness",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.32,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9910134797803295,
+            "precision": 0.9876237623762376,
+            "recall": 0.9945164506480558,
+            "sensitivity": 0.9945164506480558,
+            "specificity": 0.9875,
+            "f1": 0.9910581222056631,
+            "roc_auc": 0.9988880857427718,
+            "balanced_accuracy": 0.991008225324028,
+            "mcc": 0.9820507202142925,
+            "brier": 0.006745452828378838,
+            "threshold": 0.32,
+            "confusion_matrix": {
+              "tn": 1975,
+              "fp": 25,
+              "fn": 11,
+              "tp": 1995,
+              "matrix": [
+                [
+                  1975,
+                  25
+                ],
+                [
+                  11,
+                  1995
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9875
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.58,
+          "train_rows": 15993,
+          "test_rows": 4007,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9950087347142501,
+            "precision": 0.9960059910134798,
+            "recall": 0.9940209267563528,
+            "sensitivity": 0.9940209267563528,
+            "specificity": 0.996,
+            "f1": 0.9950124688279302,
+            "roc_auc": 0.9996631788739412,
+            "balanced_accuracy": 0.9950104633781764,
+            "mcc": 0.9900194469077623,
+            "brier": 0.004594724967778862,
+            "threshold": 0.58,
+            "confusion_matrix": {
+              "tn": 1992,
+              "fp": 8,
+              "fn": 12,
+              "tp": 1995,
+              "matrix": [
+                [
+                  1992,
+                  8
+                ],
+                [
+                  12,
+                  1995
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9940209267563528
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.33,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9927608587119321,
+            "precision": 0.9905707196029777,
+            "recall": 0.9950149551345963,
+            "sensitivity": 0.9950149551345963,
+            "specificity": 0.9905,
+            "f1": 0.9927878637154937,
+            "roc_auc": 0.9997629611166502,
+            "balanced_accuracy": 0.9927574775672982,
+            "mcc": 0.9855315363754553,
+            "brier": 0.00538310533616215,
+            "threshold": 0.33,
+            "confusion_matrix": {
+              "tn": 1981,
+              "fp": 19,
+              "fn": 10,
+              "tp": 1996,
+              "matrix": [
+                [
+                  1981,
+                  19
+                ],
+                [
+                  10,
+                  1996
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9905
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.4,
+          "train_rows": 15995,
+          "test_rows": 4005,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9915106117353308,
+            "precision": 0.9890873015873016,
+            "recall": 0.9940179461615155,
+            "sensitivity": 0.9940179461615155,
+            "specificity": 0.9889944972486243,
+            "f1": 0.991546494281452,
+            "roc_auc": 0.9995785529853661,
+            "balanced_accuracy": 0.9915062217050699,
+            "mcc": 0.9830332810259804,
+            "brier": 0.006641812903786413,
+            "threshold": 0.4,
+            "confusion_matrix": {
+              "tn": 1977,
+              "fp": 22,
+              "fn": 12,
+              "tp": 1994,
+              "matrix": [
+                [
+                  1977,
+                  22
+                ],
+                [
+                  12,
+                  1994
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9889944972486243
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.47,
+          "train_rows": 16024,
+          "test_rows": 3976,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9937122736418511,
+            "precision": 0.9929221435793731,
+            "recall": 0.9944303797468355,
+            "sensitivity": 0.9944303797468355,
+            "specificity": 0.9930034982508745,
+            "f1": 0.9936756893498608,
+            "roc_auc": 0.9995900783785322,
+            "balanced_accuracy": 0.9937169389988549,
+            "mcc": 0.9874252579981638,
+            "brier": 0.005614539056891298,
+            "threshold": 0.47,
+            "confusion_matrix": {
+              "tn": 1987,
+              "fp": 14,
+              "fn": 11,
+              "tp": 1964,
+              "matrix": [
+                [
+                  1987,
+                  14
+                ],
+                [
+                  11,
+                  1964
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9929221435793731
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9928011917167388,
+        "accuracy_std": 0.0016253041074976995,
+        "precision_mean": 0.991241983631874,
+        "precision_std": 0.0033054303405761717,
+        "recall_mean": 0.9944001316894712,
+        "recall_std": 0.0004130118257556556,
+        "specificity_mean": 0.9911995990998997,
+        "specificity_std": 0.003366632127350281,
+        "f1_mean": 0.9928161276760801,
+        "f1_std": 0.0016020386830989401,
+        "roc_auc_mean": 0.9994965714194523,
+        "roc_auc_std": 0.00034800893017847544,
+        "balanced_accuracy_mean": 0.9927998653946855,
+        "balanced_accuracy_std": 0.0016288839972859635,
+        "mcc_mean": 0.9856120485043309,
+        "mcc_std": 0.0032423938862674332,
+        "brier_mean": 0.005795927018599512,
+        "brier_std": 0.0009032347279686385,
+        "ana_metrik_minimumu_mean": 0.99078751351687,
+        "ana_metrik_minimumu_std": 0.002698004965024341,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_10000_per_class_pima",
+      "model": "xgboost",
+      "feature_set": "clinical_interactions",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.23,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9902646030953569,
+            "precision": 0.9871223377909857,
+            "recall": 0.9935194416749751,
+            "sensitivity": 0.9935194416749751,
+            "specificity": 0.987,
+            "f1": 0.9903105590062112,
+            "roc_auc": 0.9993120638085743,
+            "balanced_accuracy": 0.9902597208374875,
+            "mcc": 0.9805496260575105,
+            "brier": 0.007346986578011587,
+            "threshold": 0.23,
+            "confusion_matrix": {
+              "tn": 1974,
+              "fp": 26,
+              "fn": 13,
+              "tp": 1993,
+              "matrix": [
+                [
+                  1974,
+                  26
+                ],
+                [
+                  13,
+                  1993
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.987
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.57,
+          "train_rows": 15993,
+          "test_rows": 4007,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9940104816571,
+            "precision": 0.9964947421131698,
+            "recall": 0.9915296462381664,
+            "sensitivity": 0.9915296462381664,
+            "specificity": 0.9965,
+            "f1": 0.994005994005994,
+            "roc_auc": 0.9996449925261583,
+            "balanced_accuracy": 0.9940148231190833,
+            "mcc": 0.9880333384473763,
+            "brier": 0.004719752006411284,
+            "threshold": 0.57,
+            "confusion_matrix": {
+              "tn": 1993,
+              "fp": 7,
+              "fn": 17,
+              "tp": 1990,
+              "matrix": [
+                [
+                  1993,
+                  7
+                ],
+                [
+                  17,
+                  1990
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9915296462381664
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.43,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9937593609585622,
+            "precision": 0.9930313588850174,
+            "recall": 0.9945164506480558,
+            "sensitivity": 0.9945164506480558,
+            "specificity": 0.993,
+            "f1": 0.9937733499377335,
+            "roc_auc": 0.9997851445663011,
+            "balanced_accuracy": 0.9937582253240279,
+            "mcc": 0.9875197735641508,
+            "brier": 0.005229216653527554,
+            "threshold": 0.43,
+            "confusion_matrix": {
+              "tn": 1986,
+              "fp": 14,
+              "fn": 11,
+              "tp": 1995,
+              "matrix": [
+                [
+                  1986,
+                  14
+                ],
+                [
+                  11,
+                  1995
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.993
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.47,
+          "train_rows": 15995,
+          "test_rows": 4005,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9922596754057428,
+            "precision": 0.9920279023418037,
+            "recall": 0.9925224327018943,
+            "sensitivity": 0.9925224327018943,
+            "specificity": 0.9919959979989995,
+            "f1": 0.9922751059058061,
+            "roc_auc": 0.999795012162113,
+            "balanced_accuracy": 0.9922592153504469,
+            "mcc": 0.9845194127671052,
+            "brier": 0.005934979837901925,
+            "threshold": 0.47,
+            "confusion_matrix": {
+              "tn": 1983,
+              "fp": 16,
+              "fn": 15,
+              "tp": 1991,
+              "matrix": [
+                [
+                  1983,
+                  16
+                ],
+                [
+                  15,
+                  1991
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9919959979989995
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.5,
+          "train_rows": 16024,
+          "test_rows": 3976,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9914486921529175,
+            "precision": 0.9903991915108641,
+            "recall": 0.9924050632911392,
+            "sensitivity": 0.9924050632911392,
+            "specificity": 0.9905047476261869,
+            "f1": 0.9914011127971675,
+            "roc_auc": 0.9995518696348029,
+            "balanced_accuracy": 0.991454905458663,
+            "mcc": 0.9828988677030018,
+            "brier": 0.0061858075212108884,
+            "threshold": 0.5,
+            "confusion_matrix": {
+              "tn": 1982,
+              "fp": 19,
+              "fn": 15,
+              "tp": 1960,
+              "matrix": [
+                [
+                  1982,
+                  19
+                ],
+                [
+                  15,
+                  1960
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9903991915108641
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9923485626539359,
+        "accuracy_std": 0.0015742364762561642,
+        "precision_mean": 0.991815106528368,
+        "precision_std": 0.00344421380067934,
+        "recall_mean": 0.9928986069108461,
+        "recall_std": 0.0011469524647688446,
+        "specificity_mean": 0.9918001491250374,
+        "specificity_std": 0.0034744097993864185,
+        "f1_mean": 0.9923532243305825,
+        "f1_std": 0.0015679209823669324,
+        "roc_auc_mean": 0.9996178165395898,
+        "roc_auc_std": 0.00019872670818541903,
+        "balanced_accuracy_mean": 0.9923493780179417,
+        "balanced_accuracy_std": 0.001575867674847666,
+        "mcc_mean": 0.9847042037078289,
+        "mcc_std": 0.003145014823673858,
+        "brier_mean": 0.0058833485194126475,
+        "brier_std": 0.0010022760286508216,
+        "ana_metrik_minimumu_mean": 0.990784967149606,
+        "ana_metrik_minimumu_std": 0.002313131662837736,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_10000_per_class_pima",
+      "model": "hist_gradient_boosting",
+      "feature_set": "no_skinthickness_clinical_interactions",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.25,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9895157264103844,
+            "precision": 0.9861386138613861,
+            "recall": 0.9930209371884346,
+            "sensitivity": 0.9930209371884346,
+            "specificity": 0.986,
+            "f1": 0.9895678092399404,
+            "roc_auc": 0.9989973828514456,
+            "balanced_accuracy": 0.9895104685942173,
+            "mcc": 0.9790551022198167,
+            "brier": 0.007170383512960755,
+            "threshold": 0.25,
+            "confusion_matrix": {
+              "tn": 1972,
+              "fp": 28,
+              "fn": 14,
+              "tp": 1992,
+              "matrix": [
+                [
+                  1972,
+                  28
+                ],
+                [
+                  14,
+                  1992
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.986
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.51,
+          "train_rows": 15993,
+          "test_rows": 4007,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9947591714499626,
+            "precision": 0.9950149551345963,
+            "recall": 0.9945191828599901,
+            "sensitivity": 0.9945191828599901,
+            "specificity": 0.995,
+            "f1": 0.9947670072265138,
+            "roc_auc": 0.9994752117588441,
+            "balanced_accuracy": 0.994759591429995,
+            "mcc": 0.9895184433098603,
+            "brier": 0.004643442588403187,
+            "threshold": 0.51,
+            "confusion_matrix": {
+              "tn": 1990,
+              "fp": 10,
+              "fn": 11,
+              "tp": 1996,
+              "matrix": [
+                [
+                  1990,
+                  10
+                ],
+                [
+                  11,
+                  1996
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9945191828599901
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.5,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9937593609585622,
+            "precision": 0.9935226706527155,
+            "recall": 0.9940179461615155,
+            "sensitivity": 0.9940179461615155,
+            "specificity": 0.9935,
+            "f1": 0.9937702466982308,
+            "roc_auc": 0.999798105682951,
+            "balanced_accuracy": 0.9937589730807578,
+            "mcc": 0.9875188076563646,
+            "brier": 0.0054372700425348594,
+            "threshold": 0.5,
+            "confusion_matrix": {
+              "tn": 1987,
+              "fp": 13,
+              "fn": 12,
+              "tp": 1994,
+              "matrix": [
+                [
+                  1987,
+                  13
+                ],
+                [
+                  12,
+                  1994
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9935
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.34,
+          "train_rows": 15995,
+          "test_rows": 4005,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9910112359550561,
+            "precision": 0.9876237623762376,
+            "recall": 0.9945164506480558,
+            "sensitivity": 0.9945164506480558,
+            "specificity": 0.9874937468734367,
+            "f1": 0.9910581222056631,
+            "roc_auc": 0.9997653363072362,
+            "balanced_accuracy": 0.9910050987607463,
+            "mcc": 0.9820461984325376,
+            "brier": 0.0065616861976920265,
+            "threshold": 0.34,
+            "confusion_matrix": {
+              "tn": 1974,
+              "fp": 25,
+              "fn": 11,
+              "tp": 1995,
+              "matrix": [
+                [
+                  1974,
+                  25
+                ],
+                [
+                  11,
+                  1995
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9874937468734367
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.57,
+          "train_rows": 16024,
+          "test_rows": 3976,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9917002012072434,
+            "precision": 0.9933943089430894,
+            "recall": 0.9898734177215189,
+            "sensitivity": 0.9898734177215189,
+            "specificity": 0.993503248375812,
+            "f1": 0.9916307380167385,
+            "roc_auc": 0.99955098400167,
+            "balanced_accuracy": 0.9916883330486654,
+            "mcc": 0.9834054074189216,
+            "brier": 0.006317763015282322,
+            "threshold": 0.57,
+            "confusion_matrix": {
+              "tn": 1988,
+              "fp": 13,
+              "fn": 20,
+              "tp": 1955,
+              "matrix": [
+                [
+                  1988,
+                  13
+                ],
+                [
+                  20,
+                  1955
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9898734177215189
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9921491391962418,
+        "accuracy_std": 0.0021116530547356147,
+        "precision_mean": 0.991138862193605,
+        "precision_std": 0.003973414444989435,
+        "recall_mean": 0.993189586915903,
+        "recall_std": 0.0019519216579043386,
+        "specificity_mean": 0.9910993990498497,
+        "specificity_std": 0.004054647412629908,
+        "f1_mean": 0.9921587846774174,
+        "f1_std": 0.0020978012048529777,
+        "roc_auc_mean": 0.9995174041204293,
+        "roc_auc_std": 0.00032155623942504237,
+        "balanced_accuracy_mean": 0.9921444929828762,
+        "balanced_accuracy_std": 0.0021148091777765136,
+        "mcc_mean": 0.9843087918075002,
+        "mcc_std": 0.004212521719341307,
+        "brier_mean": 0.006026109071374629,
+        "brier_std": 0.0009924423010830574,
+        "ana_metrik_minimumu_mean": 0.9902772694909892,
+        "ana_metrik_minimumu_std": 0.0036941152417221414,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_10000_per_class_pima",
+      "model": "xgboost",
+      "feature_set": "compact_best_features",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.3,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.991263105341987,
+            "precision": 0.9900546991546494,
+            "recall": 0.9925224327018943,
+            "sensitivity": 0.9925224327018943,
+            "specificity": 0.99,
+            "f1": 0.9912870301219816,
+            "roc_auc": 0.9988764955134596,
+            "balanced_accuracy": 0.9912612163509471,
+            "mcc": 0.9825291674089498,
+            "brier": 0.007506124428543288,
+            "threshold": 0.3,
+            "confusion_matrix": {
+              "tn": 1980,
+              "fp": 20,
+              "fn": 15,
+              "tp": 1991,
+              "matrix": [
+                [
+                  1980,
+                  20
+                ],
+                [
+                  15,
+                  1991
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.99
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.26,
+          "train_rows": 15993,
+          "test_rows": 4007,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9937609183928126,
+            "precision": 0.9930348258706467,
+            "recall": 0.9945191828599901,
+            "sensitivity": 0.9945191828599901,
+            "specificity": 0.993,
+            "f1": 0.9937764500871297,
+            "roc_auc": 0.9994399601395116,
+            "balanced_accuracy": 0.993759591429995,
+            "mcc": 0.987522873161628,
+            "brier": 0.004729831317770834,
+            "threshold": 0.26,
+            "confusion_matrix": {
+              "tn": 1986,
+              "fp": 14,
+              "fn": 11,
+              "tp": 1996,
+              "matrix": [
+                [
+                  1986,
+                  14
+                ],
+                [
+                  11,
+                  1996
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.993
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.26,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.990763854218672,
+            "precision": 0.9876176324913324,
+            "recall": 0.9940179461615155,
+            "sensitivity": 0.9940179461615155,
+            "specificity": 0.9875,
+            "f1": 0.9908074534161491,
+            "roc_auc": 0.9996308574277168,
+            "balanced_accuracy": 0.9907589730807578,
+            "mcc": 0.9815481612820864,
+            "brier": 0.006023618027729376,
+            "threshold": 0.26,
+            "confusion_matrix": {
+              "tn": 1975,
+              "fp": 25,
+              "fn": 12,
+              "tp": 1994,
+              "matrix": [
+                [
+                  1975,
+                  25
+                ],
+                [
+                  12,
+                  1994
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9875
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.32,
+          "train_rows": 15995,
+          "test_rows": 4005,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9917602996254682,
+            "precision": 0.9900645802285146,
+            "recall": 0.9935194416749751,
+            "sensitivity": 0.9935194416749751,
+            "specificity": 0.9899949974987494,
+            "f1": 0.9917890022393631,
+            "roc_auc": 0.9994100988679784,
+            "balanced_accuracy": 0.9917572195868622,
+            "mcc": 0.9835264574188546,
+            "brier": 0.006573374022741646,
+            "threshold": 0.32,
+            "confusion_matrix": {
+              "tn": 1979,
+              "fp": 20,
+              "fn": 13,
+              "tp": 1993,
+              "matrix": [
+                [
+                  1979,
+                  20
+                ],
+                [
+                  13,
+                  1993
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9899949974987494
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.41,
+          "train_rows": 16024,
+          "test_rows": 3976,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9911971830985915,
+            "precision": 0.9903943377148635,
+            "recall": 0.9918987341772152,
+            "sensitivity": 0.9918987341772152,
+            "specificity": 0.9905047476261869,
+            "f1": 0.9911459650898052,
+            "roc_auc": 0.9996199368670096,
+            "balanced_accuracy": 0.9912017409017011,
+            "mcc": 0.9823949057176955,
+            "brier": 0.006747613797336729,
+            "threshold": 0.41,
+            "confusion_matrix": {
+              "tn": 1982,
+              "fp": 19,
+              "fn": 16,
+              "tp": 1959,
+              "matrix": [
+                [
+                  1982,
+                  19
+                ],
+                [
+                  16,
+                  1959
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9903943377148635
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9917490721355062,
+        "accuracy_std": 0.0011788819911986044,
+        "precision_mean": 0.9902332150920014,
+        "precision_std": 0.0019220146625750553,
+        "recall_mean": 0.9932955475151181,
+        "recall_std": 0.0010744842799832314,
+        "specificity_mean": 0.9901999490249874,
+        "specificity_std": 0.0019560736903420214,
+        "f1_mean": 0.9917611801908857,
+        "f1_std": 0.001180570782543068,
+        "roc_auc_mean": 0.9993954697631352,
+        "roc_auc_std": 0.000307132100847479,
+        "balanced_accuracy_mean": 0.9917477482700526,
+        "balanced_accuracy_std": 0.0011789949465134382,
+        "mcc_mean": 0.9835043129978429,
+        "mcc_std": 0.0023535897652937118,
+        "brier_mean": 0.006316112318824374,
+        "brier_std": 0.0010332408064150647,
+        "ana_metrik_minimumu_mean": 0.9901778670427227,
+        "ana_metrik_minimumu_std": 0.0019523923679647412,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_10000_per_class_pima",
+      "model": "gaussian_nb",
+      "feature_set": "no_skinthickness",
+      "preprocessing": "StandardScaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.5,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.991263105341987,
+            "precision": 0.9871478002965892,
+            "recall": 0.9955134596211366,
+            "sensitivity": 0.9955134596211366,
+            "specificity": 0.987,
+            "f1": 0.9913129808885579,
+            "roc_auc": 0.9977126121635094,
+            "balanced_accuracy": 0.9912567298105683,
+            "mcc": 0.9825613398360775,
+            "brier": 0.008240954233264665,
+            "threshold": 0.5,
+            "confusion_matrix": {
+              "tn": 1974,
+              "fp": 26,
+              "fn": 9,
+              "tp": 1997,
+              "matrix": [
+                [
+                  1974,
+                  26
+                ],
+                [
+                  9,
+                  1997
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.987
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.83,
+          "train_rows": 15993,
+          "test_rows": 4007,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9910157224856501,
+            "precision": 0.9861864824864331,
+            "recall": 0.9960139511709019,
+            "sensitivity": 0.9960139511709019,
+            "specificity": 0.986,
+            "f1": 0.9910758552305404,
+            "roc_auc": 0.9971412556053811,
+            "balanced_accuracy": 0.9910069755854509,
+            "mcc": 0.9820800125864447,
+            "brier": 0.009164821326036287,
+            "threshold": 0.83,
+            "confusion_matrix": {
+              "tn": 1972,
+              "fp": 28,
+              "fn": 8,
+              "tp": 1999,
+              "matrix": [
+                [
+                  1972,
+                  28
+                ],
+                [
+                  8,
+                  1999
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.986
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.75,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9917623564653021,
+            "precision": 0.9890927119484383,
+            "recall": 0.9945164506480558,
+            "sensitivity": 0.9945164506480558,
+            "specificity": 0.989,
+            "f1": 0.9917971662938105,
+            "roc_auc": 0.998926221335992,
+            "balanced_accuracy": 0.9917582253240279,
+            "mcc": 0.9835393723835796,
+            "brier": 0.007767454129699457,
+            "threshold": 0.75,
+            "confusion_matrix": {
+              "tn": 1978,
+              "fp": 22,
+              "fn": 11,
+              "tp": 1995,
+              "matrix": [
+                [
+                  1978,
+                  22
+                ],
+                [
+                  11,
+                  1995
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.989
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.83,
+          "train_rows": 15995,
+          "test_rows": 4005,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9912609238451935,
+            "precision": 0.9866666666666667,
+            "recall": 0.996011964107677,
+            "sensitivity": 0.996011964107677,
+            "specificity": 0.9864932466233116,
+            "f1": 0.9913172909947904,
+            "roc_auc": 0.9989696992065324,
+            "balanced_accuracy": 0.9912526053654943,
+            "mcc": 0.9825657348144295,
+            "brier": 0.008918800500232128,
+            "threshold": 0.83,
+            "confusion_matrix": {
+              "tn": 1972,
+              "fp": 27,
+              "fn": 8,
+              "tp": 1998,
+              "matrix": [
+                [
+                  1972,
+                  27
+                ],
+                [
+                  8,
+                  1998
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9864932466233116
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.83,
+          "train_rows": 16024,
+          "test_rows": 3976,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9904426559356136,
+            "precision": 0.9869281045751634,
+            "recall": 0.9939240506329113,
+            "sensitivity": 0.9939240506329113,
+            "specificity": 0.9870064967516242,
+            "f1": 0.9904137235116044,
+            "roc_auc": 0.9987698555785398,
+            "balanced_accuracy": 0.9904652736922678,
+            "mcc": 0.9809096981790144,
+            "brier": 0.009147857893922674,
+            "threshold": 0.83,
+            "confusion_matrix": {
+              "tn": 1975,
+              "fp": 26,
+              "fn": 12,
+              "tp": 1963,
+              "matrix": [
+                [
+                  1975,
+                  26
+                ],
+                [
+                  12,
+                  1963
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9869281045751634
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9911489528147491,
+        "accuracy_std": 0.00047917584238816533,
+        "precision_mean": 0.987204353194658,
+        "precision_std": 0.0011147396438268412,
+        "recall_mean": 0.9951959752361365,
+        "recall_std": 0.0009374519541218869,
+        "specificity_mean": 0.987099948674987,
+        "specificity_std": 0.001140930815651007,
+        "f1_mean": 0.9911834033838607,
+        "f1_std": 0.0005038340110475847,
+        "roc_auc_mean": 0.998303928777991,
+        "roc_auc_std": 0.0008290130155193565,
+        "balanced_accuracy_mean": 0.9911479619555619,
+        "balanced_accuracy_std": 0.00046934595178106035,
+        "mcc_mean": 0.9823312315599091,
+        "mcc_std": 0.0009554336673191193,
+        "brier_mean": 0.008647977616631043,
+        "brier_std": 0.0006187370991592693,
+        "ana_metrik_minimumu_mean": 0.9870842702396949,
+        "ana_metrik_minimumu_std": 0.0011430726759928944,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_10000_per_class_pima",
+      "model": "gaussian_nb",
+      "feature_set": "no_skinthickness_clinical_interactions",
+      "preprocessing": "StandardScaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.5,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9920119820269596,
+            "precision": 0.9895833333333334,
+            "recall": 0.9945164506480558,
+            "sensitivity": 0.9945164506480558,
+            "specificity": 0.9895,
+            "f1": 0.9920437593237196,
+            "roc_auc": 0.9967462612163509,
+            "balanced_accuracy": 0.9920082253240279,
+            "mcc": 0.9840360726995778,
+            "brier": 0.00789223077125739,
+            "threshold": 0.5,
+            "confusion_matrix": {
+              "tn": 1979,
+              "fp": 21,
+              "fn": 11,
+              "tp": 1995,
+              "matrix": [
+                [
+                  1979,
+                  21
+                ],
+                [
+                  11,
+                  1995
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9895
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.17,
+          "train_rows": 15993,
+          "test_rows": 4007,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9910157224856501,
+            "precision": 0.9861864824864331,
+            "recall": 0.9960139511709019,
+            "sensitivity": 0.9960139511709019,
+            "specificity": 0.986,
+            "f1": 0.9910758552305404,
+            "roc_auc": 0.9957683109118086,
+            "balanced_accuracy": 0.9910069755854509,
+            "mcc": 0.9820800125864447,
+            "brier": 0.008778820274343431,
+            "threshold": 0.17,
+            "confusion_matrix": {
+              "tn": 1972,
+              "fp": 28,
+              "fn": 8,
+              "tp": 1999,
+              "matrix": [
+                [
+                  1972,
+                  28
+                ],
+                [
+                  8,
+                  1999
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.986
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.89,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9915127309036446,
+            "precision": 0.9881188118811881,
+            "recall": 0.9950149551345963,
+            "sensitivity": 0.9950149551345963,
+            "specificity": 0.988,
+            "f1": 0.9915548931942375,
+            "roc_auc": 0.996357926221336,
+            "balanced_accuracy": 0.9915074775672981,
+            "mcc": 0.9830492595457844,
+            "brier": 0.008510360286809512,
+            "threshold": 0.89,
+            "confusion_matrix": {
+              "tn": 1976,
+              "fp": 24,
+              "fn": 10,
+              "tp": 1996,
+              "matrix": [
+                [
+                  1976,
+                  24
+                ],
+                [
+                  10,
+                  1996
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.988
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.5,
+          "train_rows": 15995,
+          "test_rows": 4005,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9907615480649189,
+            "precision": 0.9866534849233811,
+            "recall": 0.9950149551345963,
+            "sensitivity": 0.9950149551345963,
+            "specificity": 0.9864932466233116,
+            "f1": 0.9908165797964755,
+            "roc_auc": 0.9958835349878329,
+            "balanced_accuracy": 0.990754100878954,
+            "mcc": 0.9815581377313023,
+            "brier": 0.0089390768580082,
+            "threshold": 0.5,
+            "confusion_matrix": {
+              "tn": 1972,
+              "fp": 27,
+              "fn": 10,
+              "tp": 1996,
+              "matrix": [
+                [
+                  1972,
+                  27
+                ],
+                [
+                  10,
+                  1996
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9864932466233116
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.84,
+          "train_rows": 16024,
+          "test_rows": 3976,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9906941649899397,
+            "precision": 0.9879154078549849,
+            "recall": 0.9934177215189873,
+            "sensitivity": 0.9934177215189873,
+            "specificity": 0.9880059970014993,
+            "f1": 0.9906589245140116,
+            "roc_auc": 0.9970427444505595,
+            "balanced_accuracy": 0.9907118592602433,
+            "mcc": 0.9814032313156092,
+            "brier": 0.008643046009631073,
+            "threshold": 0.84,
+            "confusion_matrix": {
+              "tn": 1977,
+              "fp": 24,
+              "fn": 13,
+              "tp": 1962,
+              "matrix": [
+                [
+                  1977,
+                  24
+                ],
+                [
+                  13,
+                  1962
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9879154078549849
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9911992296942225,
+        "accuracy_std": 0.0005565922705219053,
+        "precision_mean": 0.9876915040958641,
+        "precision_std": 0.001337377709155764,
+        "recall_mean": 0.9947956067214274,
+        "recall_std": 0.0009430119822526327,
+        "specificity_mean": 0.9875998487249621,
+        "specificity_std": 0.0013892206886971794,
+        "f1_mean": 0.991230002411797,
+        "f1_std": 0.0005675746448495012,
+        "roc_auc_mean": 0.9963597555575776,
+        "roc_auc_std": 0.0005459983055670385,
+        "balanced_accuracy_mean": 0.9911977277231948,
+        "balanced_accuracy_std": 0.0005527455665027878,
+        "mcc_mean": 0.9824253427757437,
+        "mcc_std": 0.0011067669570822862,
+        "brier_mean": 0.008552706840009921,
+        "brier_std": 0.0004020547566951167,
+        "ana_metrik_minimumu_mean": 0.9875817308956591,
+        "ana_metrik_minimumu_std": 0.0013831771714905559,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_10000_per_class_pima",
+      "model": "random_forest",
+      "feature_set": "no_skinthickness_clinical_interactions",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "class_weight=balanced",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.39,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9917623564653021,
+            "precision": 0.9910403185664509,
+            "recall": 0.9925224327018943,
+            "sensitivity": 0.9925224327018943,
+            "specificity": 0.991,
+            "f1": 0.9917808219178083,
+            "roc_auc": 0.9991360917248254,
+            "balanced_accuracy": 0.9917612163509472,
+            "mcc": 0.9835257421784293,
+            "brier": 0.0064028763952836175,
+            "threshold": 0.39,
+            "confusion_matrix": {
+              "tn": 1982,
+              "fp": 18,
+              "fn": 15,
+              "tp": 1991,
+              "matrix": [
+                [
+                  1982,
+                  18
+                ],
+                [
+                  15,
+                  1991
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.991
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.41,
+          "train_rows": 15993,
+          "test_rows": 4007,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9932617918642376,
+            "precision": 0.9905847373637264,
+            "recall": 0.9960139511709019,
+            "sensitivity": 0.9960139511709019,
+            "specificity": 0.9905,
+            "f1": 0.9932919254658386,
+            "roc_auc": 0.9995788490284006,
+            "balanced_accuracy": 0.993256975585451,
+            "mcc": 0.9865382831326549,
+            "brier": 0.004505677949391036,
+            "threshold": 0.41,
+            "confusion_matrix": {
+              "tn": 1981,
+              "fp": 19,
+              "fn": 8,
+              "tp": 1999,
+              "matrix": [
+                [
+                  1981,
+                  19
+                ],
+                [
+                  8,
+                  1999
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9905
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.45,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9932601098352472,
+            "precision": 0.9930244145490782,
+            "recall": 0.9935194416749751,
+            "sensitivity": 0.9935194416749751,
+            "specificity": 0.993,
+            "f1": 0.9932718664340892,
+            "roc_auc": 0.999831630109671,
+            "balanced_accuracy": 0.9932597208374876,
+            "mcc": 0.9865203022987449,
+            "brier": 0.004961980254926253,
+            "threshold": 0.45,
+            "confusion_matrix": {
+              "tn": 1986,
+              "fp": 14,
+              "fn": 13,
+              "tp": 1993,
+              "matrix": [
+                [
+                  1986,
+                  14
+                ],
+                [
+                  13,
+                  1993
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.993
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.42,
+          "train_rows": 15995,
+          "test_rows": 4005,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9920099875156055,
+            "precision": 0.991044776119403,
+            "recall": 0.9930209371884346,
+            "sensitivity": 0.9930209371884346,
+            "specificity": 0.9909954977488744,
+            "f1": 0.9920318725099602,
+            "roc_auc": 0.9998011218969405,
+            "balanced_accuracy": 0.9920082174686545,
+            "mcc": 0.9840218335837221,
+            "brier": 0.005465889474576532,
+            "threshold": 0.42,
+            "confusion_matrix": {
+              "tn": 1981,
+              "fp": 18,
+              "fn": 14,
+              "tp": 1992,
+              "matrix": [
+                [
+                  1981,
+                  18
+                ],
+                [
+                  14,
+                  1992
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9909954977488744
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.45,
+          "train_rows": 16024,
+          "test_rows": 3976,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9909456740442656,
+            "precision": 0.9898938858009095,
+            "recall": 0.9918987341772152,
+            "sensitivity": 0.9918987341772152,
+            "specificity": 0.9900049975012494,
+            "f1": 0.9908952959028832,
+            "roc_auc": 0.9995002498750625,
+            "balanced_accuracy": 0.9909518658392322,
+            "mcc": 0.9818927996653111,
+            "brier": 0.006004297389273914,
+            "threshold": 0.45,
+            "confusion_matrix": {
+              "tn": 1981,
+              "fp": 20,
+              "fn": 16,
+              "tp": 1959,
+              "matrix": [
+                [
+                  1981,
+                  20
+                ],
+                [
+                  16,
+                  1959
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9898938858009095
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.9922479839449316,
+        "accuracy_std": 0.0010050737214018855,
+        "precision_mean": 0.9911176264799136,
+        "precision_std": 0.0011649717259250318,
+        "recall_mean": 0.9933950993826842,
+        "recall_std": 0.0015822846619530668,
+        "specificity_mean": 0.9911000990500247,
+        "specificity_std": 0.0011390732135936014,
+        "f1_mean": 0.9922543564461158,
+        "f1_std": 0.0010286709456663625,
+        "roc_auc_mean": 0.99956958852698,
+        "roc_auc_std": 0.00028066286514206605,
+        "balanced_accuracy_mean": 0.9922475992163544,
+        "balanced_accuracy_std": 0.001002001463065045,
+        "mcc_mean": 0.9844997921717724,
+        "mcc_std": 0.002013177482300455,
+        "brier_mean": 0.005468144292690271,
+        "brier_std": 0.0007654627400972742,
+        "ana_metrik_minimumu_mean": 0.9910778767099568,
+        "ana_metrik_minimumu_std": 0.0011665317164490422,
+        "max_source_intersection_count": 0
+      }
+    },
+    {
+      "dataset_name": "controlled_synthetic_10000_per_class_pima",
+      "model": "gaussian_nb",
+      "feature_set": "no_insulin",
+      "preprocessing": "StandardScaler",
+      "resampling": "none",
+      "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+      "folds": [
+        {
+          "fold": 1,
+          "threshold": 0.74,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.992261607588617,
+            "precision": 0.9895884977689638,
+            "recall": 0.9950149551345963,
+            "sensitivity": 0.9950149551345963,
+            "specificity": 0.9895,
+            "f1": 0.9922943077305494,
+            "roc_auc": 0.9981981555333999,
+            "balanced_accuracy": 0.9922574775672981,
+            "mcc": 0.9845379001411652,
+            "brier": 0.007742226876411382,
+            "threshold": 0.74,
+            "confusion_matrix": {
+              "tn": 1979,
+              "fp": 21,
+              "fn": 10,
+              "tp": 1996,
+              "matrix": [
+                [
+                  1979,
+                  21
+                ],
+                [
+                  10,
+                  1996
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9895
+          }
+        },
+        {
+          "fold": 2,
+          "threshold": 0.66,
+          "train_rows": 15993,
+          "test_rows": 4007,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9915148490142252,
+            "precision": 0.9876421156697973,
+            "recall": 0.9955156950672646,
+            "sensitivity": 0.9955156950672646,
+            "specificity": 0.9875,
+            "f1": 0.9915632754342432,
+            "roc_auc": 0.9989347284504236,
+            "balanced_accuracy": 0.9915078475336323,
+            "mcc": 0.9830607591743101,
+            "brier": 0.007669719541078489,
+            "threshold": 0.66,
+            "confusion_matrix": {
+              "tn": 1975,
+              "fp": 25,
+              "fn": 9,
+              "tp": 1998,
+              "matrix": [
+                [
+                  1975,
+                  25
+                ],
+                [
+                  9,
+                  1998
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9875
+          }
+        },
+        {
+          "fold": 3,
+          "threshold": 0.89,
+          "train_rows": 15994,
+          "test_rows": 4006,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9930104842735896,
+            "precision": 0.9910625620655412,
+            "recall": 0.9950149551345963,
+            "sensitivity": 0.9950149551345963,
+            "specificity": 0.991,
+            "f1": 0.9930348258706467,
+            "roc_auc": 0.9988234047856431,
+            "balanced_accuracy": 0.9930074775672981,
+            "mcc": 0.9860287183433698,
+            "brier": 0.0070658728390381575,
+            "threshold": 0.89,
+            "confusion_matrix": {
+              "tn": 1982,
+              "fp": 18,
+              "fn": 10,
+              "tp": 1996,
+              "matrix": [
+                [
+                  1982,
+                  18
+                ],
+                [
+                  10,
+                  1996
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.991
+          }
+        },
+        {
+          "fold": 4,
+          "threshold": 0.79,
+          "train_rows": 15995,
+          "test_rows": 4005,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9915106117353308,
+            "precision": 0.9871541501976284,
+            "recall": 0.996011964107677,
+            "sensitivity": 0.996011964107677,
+            "specificity": 0.9869934967483742,
+            "f1": 0.9915632754342432,
+            "roc_auc": 0.9991856596294159,
+            "balanced_accuracy": 0.9915027304280256,
+            "mcc": 0.9830606217479796,
+            "brier": 0.00877281670584151,
+            "threshold": 0.79,
+            "confusion_matrix": {
+              "tn": 1973,
+              "fp": 26,
+              "fn": 8,
+              "tp": 1998,
+              "matrix": [
+                [
+                  1973,
+                  26
+                ],
+                [
+                  8,
+                  1998
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9869934967483742
+          }
+        },
+        {
+          "fold": 5,
+          "threshold": 0.71,
+          "train_rows": 16024,
+          "test_rows": 3976,
+          "source_intersection_count": 0,
+          "metrics": {
+            "accuracy": 0.9901911468812877,
+            "precision": 0.9869215291750503,
+            "recall": 0.9934177215189873,
+            "sensitivity": 0.9934177215189873,
+            "specificity": 0.9870064967516242,
+            "f1": 0.9901589704769115,
+            "roc_auc": 0.9987186153758564,
+            "balanced_accuracy": 0.9902121091353058,
+            "mcc": 0.9804032557924939,
+            "brier": 0.009606173556918604,
+            "threshold": 0.71,
+            "confusion_matrix": {
+              "tn": 1975,
+              "fp": 26,
+              "fn": 13,
+              "tp": 1962,
+              "matrix": [
+                [
+                  1975,
+                  26
+                ],
+                [
+                  13,
+                  1962
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9869215291750503
+          }
+        }
+      ],
+      "summary": {
+        "accuracy_mean": 0.99169773989861,
+        "accuracy_std": 0.0010463667032644469,
+        "precision_mean": 0.9884737709753961,
+        "precision_std": 0.0017879429020455481,
+        "recall_mean": 0.9949950581926243,
+        "recall_std": 0.000973902350585542,
+        "specificity_mean": 0.9883999986999996,
+        "specificity_std": 0.0017818601726888724,
+        "f1_mean": 0.9917229309893187,
+        "f1_std": 0.001065890688224652,
+        "roc_auc_mean": 0.9987721127549477,
+        "roc_auc_std": 0.0003648234559163263,
+        "balanced_accuracy_mean": 0.9916975284463121,
+        "balanced_accuracy_std": 0.0010380155783680394,
+        "mcc_mean": 0.9834182510398637,
+        "mcc_std": 0.002086507197371525,
+        "brier_mean": 0.00817136190385763,
+        "brier_std": 0.0010097450622484367,
+        "ana_metrik_minimumu_mean": 0.9883830051846848,
+        "ana_metrik_minimumu_std": 0.001798797046523275,
+        "max_source_intersection_count": 0
+      }
+    }
+  ],
+  "final": {
+    "status": "completed",
+    "dataset_name": "controlled_synthetic_2500_per_class_pima",
+    "target_per_class": 2500,
+    "model": "soft_voting_xgb_lgbm_et",
+    "feature_set": "all_features",
+    "preprocessing": "tree_models_no_scaler",
+    "resampling": "none",
+    "default_threshold_metrics": {
+      "accuracy": 0.9667318982387475,
+      "precision": 0.9667318982387475,
+      "recall": 0.9667318982387475,
+      "sensitivity": 0.9667318982387475,
+      "specificity": 0.9667318982387475,
+      "f1": 0.9667318982387475,
+      "roc_auc": 0.996189506014453,
+      "balanced_accuracy": 0.9667318982387475,
+      "mcc": 0.9334637964774951,
+      "brier": 0.025347762053460655,
+      "threshold": 0.5,
+      "confusion_matrix": {
+        "tn": 494,
+        "fp": 17,
+        "fn": 17,
+        "tp": 494,
+        "matrix": [
+          [
+            494,
+            17
+          ],
+          [
+            17,
+            494
+          ]
+        ]
+      },
+      "ana_metrik_minimumu": 0.9667318982387475
+    },
+    "tuned_threshold_metrics": {
+      "accuracy": 0.9677103718199609,
+      "precision": 0.9686274509803922,
+      "recall": 0.9667318982387475,
+      "sensitivity": 0.9667318982387475,
+      "specificity": 0.9686888454011742,
+      "f1": 0.9676787463271302,
+      "roc_auc": 0.996189506014453,
+      "balanced_accuracy": 0.9677103718199609,
+      "mcc": 0.9354225348084421,
+      "brier": 0.025347762053460655,
+      "threshold": 0.52,
+      "confusion_matrix": {
+        "tn": 495,
+        "fp": 16,
+        "fn": 17,
+        "tp": 494,
+        "matrix": [
+          [
+            495,
+            16
+          ],
+          [
+            17,
+            494
+          ]
+        ]
+      },
+      "ana_metrik_minimumu": 0.9667318982387475
+    },
+    "threshold_report": {
+      "default_threshold": 0.5,
+      "default_min_main_metric": 0.9701897018970189,
+      "selected_threshold": 0.52,
+      "tuned_min_main_metric": 0.975609756097561,
+      "selected_validation_metrics": {
+        "accuracy": 0.975609756097561,
+        "precision": 0.975609756097561,
+        "recall": 0.975609756097561,
+        "sensitivity": 0.975609756097561,
+        "specificity": 0.975609756097561,
+        "f1": 0.975609756097561,
+        "roc_auc": 0.9965555482113087,
+        "balanced_accuracy": 0.975609756097561,
+        "mcc": 0.9512195121951219,
+        "brier": 0.021307399992608726,
+        "threshold": 0.52,
+        "confusion_matrix": {
+          "tn": 360,
+          "fp": 9,
+          "fn": 9,
+          "tp": 360,
+          "matrix": [
+            [
+              360,
+              9
+            ],
+            [
+              9,
+              360
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.975609756097561
+      }
+    },
+    "split": {
+      "method": "GroupShuffleSplit(source_id)",
+      "train_rows": 3978,
+      "test_rows": 1022,
+      "train_source_families": 491,
+      "test_source_families": 123,
+      "train_class_distribution": {
+        "0": 1989,
+        "1": 1989
+      },
+      "test_class_distribution": {
+        "0": 511,
+        "1": 511
+      }
+    },
+    "leakage": {
+      "train_test_source_intersection_count": 0,
+      "exact_duplicate_count": 0,
+      "near_duplicate_rate": 0.0,
+      "minimum_near_duplicate_distance": 0.16721105173019227,
+      "near_duplicate_threshold": 0.02
+    },
+    "selection_score_pre_cv": 1.0858438935991235,
+    "selection_score": 0.9713994579605705,
+    "target_hit_holdout": true,
+    "target_hit_cv": true
+  },
+  "final_cv": {
+    "dataset_name": "controlled_synthetic_2500_per_class_pima",
+    "model": "soft_voting_xgb_lgbm_et",
+    "feature_set": "all_features",
+    "preprocessing": "tree_models_no_scaler",
+    "resampling": "none",
+    "cv_method": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=42)",
+    "folds": [
+      {
+        "fold": 1,
+        "threshold": 0.31,
+        "train_rows": 3999,
+        "test_rows": 1001,
+        "source_intersection_count": 0,
+        "metrics": {
+          "accuracy": 0.974025974025974,
+          "precision": 0.9647749510763209,
+          "recall": 0.9840319361277445,
+          "sensitivity": 0.9840319361277445,
+          "specificity": 0.964,
+          "f1": 0.974308300395257,
+          "roc_auc": 0.9977005988023951,
+          "balanced_accuracy": 0.9740159680638723,
+          "mcc": 0.9482401554299729,
+          "brier": 0.018170005563600298,
+          "threshold": 0.31,
+          "confusion_matrix": {
+            "tn": 482,
+            "fp": 18,
+            "fn": 8,
+            "tp": 493,
+            "matrix": [
+              [
+                482,
+                18
+              ],
+              [
+                8,
+                493
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.964
+        }
+      },
+      {
+        "fold": 2,
+        "threshold": 0.46,
+        "train_rows": 3999,
+        "test_rows": 1001,
+        "source_intersection_count": 0,
+        "metrics": {
+          "accuracy": 0.965034965034965,
+          "precision": 0.9623015873015873,
+          "recall": 0.9680638722554891,
+          "sensitivity": 0.9680638722554891,
+          "specificity": 0.962,
+          "f1": 0.9651741293532339,
+          "roc_auc": 0.9944231536926148,
+          "balanced_accuracy": 0.9650319361277445,
+          "mcc": 0.9300861500348676,
+          "brier": 0.026559506704618485,
+          "threshold": 0.46,
+          "confusion_matrix": {
+            "tn": 481,
+            "fp": 19,
+            "fn": 16,
+            "tp": 485,
+            "matrix": [
+              [
+                481,
+                19
+              ],
+              [
+                16,
+                485
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.962
+        }
+      },
+      {
+        "fold": 3,
+        "threshold": 0.31,
+        "train_rows": 3999,
+        "test_rows": 1001,
+        "source_intersection_count": 0,
+        "metrics": {
+          "accuracy": 0.964035964035964,
+          "precision": 0.9549902152641878,
+          "recall": 0.9740518962075848,
+          "sensitivity": 0.9740518962075848,
+          "specificity": 0.954,
+          "f1": 0.9644268774703557,
+          "roc_auc": 0.9955928143712575,
+          "balanced_accuracy": 0.9640259481037924,
+          "mcc": 0.928255727229406,
+          "brier": 0.02609874791989237,
+          "threshold": 0.31,
+          "confusion_matrix": {
+            "tn": 477,
+            "fp": 23,
+            "fn": 13,
+            "tp": 488,
+            "matrix": [
+              [
+                477,
+                23
+              ],
+              [
+                13,
+                488
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.954
+        }
+      },
+      {
+        "fold": 4,
+        "threshold": 0.6,
+        "train_rows": 4003,
+        "test_rows": 997,
+        "source_intersection_count": 0,
+        "metrics": {
+          "accuracy": 0.9769307923771314,
+          "precision": 0.9817073170731707,
+          "recall": 0.971830985915493,
+          "sensitivity": 0.971830985915493,
+          "specificity": 0.982,
+          "f1": 0.9767441860465116,
+          "roc_auc": 0.9986317907444668,
+          "balanced_accuracy": 0.9769154929577465,
+          "mcc": 0.9539077622657534,
+          "brier": 0.0149209946568036,
+          "threshold": 0.6,
+          "confusion_matrix": {
+            "tn": 491,
+            "fp": 9,
+            "fn": 14,
+            "tp": 483,
+            "matrix": [
+              [
+                491,
+                9
+              ],
+              [
+                14,
+                483
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.971830985915493
+        }
+      },
+      {
+        "fold": 5,
+        "threshold": 0.36,
+        "train_rows": 4000,
+        "test_rows": 1000,
+        "source_intersection_count": 0,
+        "metrics": {
+          "accuracy": 0.965,
+          "precision": 0.9585798816568047,
+          "recall": 0.972,
+          "sensitivity": 0.972,
+          "specificity": 0.958,
+          "f1": 0.9652432969215492,
+          "roc_auc": 0.9970000000000001,
+          "balanced_accuracy": 0.965,
+          "mcc": 0.9300911533997687,
+          "brier": 0.023434908142920652,
+          "threshold": 0.36,
+          "confusion_matrix": {
+            "tn": 479,
+            "fp": 21,
+            "fn": 14,
+            "tp": 486,
+            "matrix": [
+              [
+                479,
+                21
+              ],
+              [
+                14,
+                486
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.958
+        }
+      }
+    ],
+    "summary": {
+      "accuracy_mean": 0.9690055390948069,
+      "accuracy_std": 0.0060108419659243234,
+      "precision_mean": 0.9644707904744143,
+      "precision_std": 0.01032569511316966,
+      "recall_mean": 0.9739957381012623,
+      "recall_std": 0.006012166405850426,
+      "specificity_mean": 0.9640000000000001,
+      "specificity_std": 0.010770329614269018,
+      "f1_mean": 0.9691793580373815,
+      "f1_std": 0.005866284556215538,
+      "roc_auc_mean": 0.9966696715221468,
+      "roc_auc_std": 0.0016754330399083091,
+      "balanced_accuracy_mean": 0.9689978690506311,
+      "balanced_accuracy_std": 0.006006281396123157,
+      "mcc_mean": 0.9381161896719536,
+      "mcc_std": 0.01202060638007441,
+      "brier_mean": 0.02183683259756708,
+      "brier_std": 0.005106267063733429,
+      "ana_metrik_minimumu_mean": 0.9619661971830986,
+      "ana_metrik_minimumu_std": 0.006720166867691422,
+      "max_source_intersection_count": 0
+    }
+  },
+  "external_holdout_result": {
+    "note": "External holdout selection_score icine dahil edilmedi; yalniz dis kontrol olarak raporlandi.",
+    "rows": 154,
+    "class_distribution": {
+      "0": 100,
+      "1": 54
+    },
+    "metrics": {
+      "accuracy": 0.7337662337662337,
+      "precision": 0.6326530612244898,
+      "recall": 0.5740740740740741,
+      "sensitivity": 0.5740740740740741,
+      "specificity": 0.82,
+      "f1": 0.6019417475728155,
+      "roc_auc": 0.8166666666666668,
+      "balanced_accuracy": 0.697037037037037,
+      "mcc": 0.4037216635973952,
+      "brier": 0.18339654169923444,
+      "threshold": 0.52,
+      "confusion_matrix": {
+        "tn": 82,
+        "fp": 18,
+        "fn": 23,
+        "tp": 31,
+        "matrix": [
+          [
+            82,
+            18
+          ],
+          [
+            23,
+            31
+          ]
+        ]
+      },
+      "ana_metrik_minimumu": 0.5740740740740741
+    }
+  },
+  "graphics": {
+    "original_class_distribution": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_orijinal_pima_sinif_dagilimi.png",
+    "candidate_distribution": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_aday_veri_boyutlari.png",
+    "holdout_min_metric": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_holdout_ana_metrik_minimumu.png",
+    "cv_min_metric": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_cv_ana_metrik_minimumu_mean.png",
+    "holdout_roc_auc": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_holdout_roc_auc.png",
+    "cv_roc_auc": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_cv_roc_auc_mean.png",
+    "threshold_effect": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_threshold_tuning_etkisi.png",
+    "confusion_matrix": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_selected_model_confusion_matrix.png",
+    "feature_importance": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_selected_model_feature_importance.png",
+    "calibration_curve": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_selected_model_calibration_curve.png",
+    "brier": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_brier_karsilastirma.png",
+    "leakage_summary": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_controlled_benchmark/controlled_benchmark_leakage_ozeti.png"
+  }
+}

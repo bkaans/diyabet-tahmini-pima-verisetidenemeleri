@@ -1,0 +1,1835 @@
+{
+  "created_for": "strict benchmark and controlled benchmark method comparison",
+  "generation_comparison": {
+    "strict2700": {
+      "source": "makine_ogrenmesi/kaynak/sentetik_benchmark_optimizasyonu.py",
+      "target": "2700 / class",
+      "methods": {
+        "source_bound_bootstrap_noise": "Yaklasik %58; parent etrafinda std * 0.060 noise.",
+        "source_bound_local_gaussian_noise": "Yaklasik %42; feature bazli std * 0.050-0.090 noise ve orta sinif ayrimi guclendirme."
+      },
+      "class_signal": "Pozitif sinifta Glucose +16, BMI +2.2, Insulin +18, DPF +0.055; negatifte daha dusuk ters kaydirma.",
+      "clipping": "Klinik min/max sinirlari; quantile-preserving yok.",
+      "metadata": "source_id, is_synthetic, parent_original_index, generation_method."
+    },
+    "controlled_benchmark_2500": {
+      "source": "makine_ogrenmesi/kaynak/controlled_synthetic_benchmark.py",
+      "target": "2500 / class",
+      "methods": {
+        "one_parent_gaussian_local": "Yaklasik %24; parent ile sinif hedef merkezi arasinda 0.62-0.82 guc.",
+        "class_conditional_source_bound_gaussian": "Yaklasik %34; parent ile sinif hedef merkezi arasinda 0.76-0.94 guc.",
+        "quantile_preserving_local_augmentation": "Yaklasik %24; parent-hedef interpolasyonu ve quantile clipping.",
+        "controlled_jitter_augmentation": "Yaklasik %18; daha dusuk guclu kontrollu jitter."
+      },
+      "class_signal": "Hard-coded class target centers: pozitif Glucose 174/BMI 40.5/DPF 0.86/Age 52; negatif Glucose 86/BMI 24.5/DPF 0.23/Age 29.",
+      "clipping": "Klinik min/max + sinif ici quantile sinirlari; strong profilde sinirlar genisletiliyor.",
+      "metadata": "source_id, is_synthetic, parent_original_index, generation_method, synthetic_strength, noise_profile."
+    }
+  },
+  "distribution": {
+    "original_dev": {
+      "rows": 614,
+      "class_distribution": {
+        "0": 400,
+        "1": 214
+      },
+      "class_feature_stats": {
+        "0": {
+          "Glucose": {
+            "mean": 110.4375,
+            "std": 23.453277688541522,
+            "q10": 83.0,
+            "q50": 108.0,
+            "q90": 142.10000000000002
+          },
+          "BMI": {
+            "mean": 30.8085,
+            "std": 6.338206362982304,
+            "q10": 22.990000000000002,
+            "q50": 30.45,
+            "q90": 39.11000000000001
+          },
+          "Age": {
+            "mean": 31.285,
+            "std": 11.609078419684568,
+            "q10": 21.0,
+            "q50": 27.0,
+            "q90": 48.0
+          },
+          "DiabetesPedigreeFunction": {
+            "mean": 0.43752250000000004,
+            "std": 0.30527844144449,
+            "q10": 0.1569,
+            "q50": 0.3415,
+            "q90": 0.8172000000000003
+          }
+        },
+        "1": {
+          "Glucose": {
+            "mean": 142.66822429906543,
+            "std": 29.672820266361306,
+            "q10": 104.0,
+            "q50": 141.0,
+            "q90": 182.70000000000002
+          },
+          "BMI": {
+            "mean": 35.51308411214953,
+            "std": 6.654428919630373,
+            "q10": 28.09,
+            "q50": 34.3,
+            "q90": 44.07
+          },
+          "Age": {
+            "mean": 37.257009345794394,
+            "std": 11.278144656039013,
+            "q10": 24.0,
+            "q50": 36.0,
+            "q90": 53.0
+          },
+          "DiabetesPedigreeFunction": {
+            "mean": 0.552018691588785,
+            "std": 0.36169163016267797,
+            "q10": 0.1976,
+            "q50": 0.461,
+            "q90": 1.0241000000000005
+          }
+        }
+      },
+      "class_separation": {
+        "Glucose": {
+          "positive_minus_negative_mean": 32.23072429906543,
+          "cohens_d": 1.2498018570429932,
+          "absolute_cohens_d": 1.2498018570429932,
+          "single_feature_auc_directionless": 0.7974415887850468
+        },
+        "BMI": {
+          "positive_minus_negative_mean": 4.704584112149529,
+          "cohens_d": 0.7293902433717628,
+          "absolute_cohens_d": 0.7293902433717628,
+          "single_feature_auc_directionless": 0.6929672897196262
+        },
+        "Age": {
+          "positive_minus_negative_mean": 5.972009345794394,
+          "cohens_d": 0.519531881373533,
+          "absolute_cohens_d": 0.519531881373533,
+          "single_feature_auc_directionless": 0.6815887850467289
+        },
+        "DiabetesPedigreeFunction": {
+          "positive_minus_negative_mean": 0.11449619158878499,
+          "cohens_d": 0.35119181970333246,
+          "absolute_cohens_d": 0.35119181970333246,
+          "single_feature_auc_directionless": 0.6038084112149533
+        },
+        "aggregate": {
+          "mean_abs_cohens_d": 0.7124789503729053,
+          "mean_single_feature_auc_directionless": 0.6939515186915888
+        }
+      }
+    },
+    "strict2700_all_rows": {
+      "rows": 5400,
+      "class_distribution": {
+        "0": 2700,
+        "1": 2700
+      },
+      "class_feature_stats": {
+        "0": {
+          "Glucose": {
+            "mean": 106.97219444315924,
+            "std": 23.235391083335827,
+            "q10": 79.0,
+            "q50": 105.33176252085721,
+            "q90": 137.8142317033187
+          },
+          "BMI": {
+            "mean": 30.3301702179696,
+            "std": 6.314226732619455,
+            "q10": 22.5,
+            "q50": 30.056714352830113,
+            "q90": 38.718052151648095
+          },
+          "Age": {
+            "mean": 31.131851851851852,
+            "std": 11.793503350668567,
+            "q10": 21.0,
+            "q50": 27.0,
+            "q90": 48.0
+          },
+          "DiabetesPedigreeFunction": {
+            "mean": 0.43096294119010325,
+            "std": 0.3081693650129656,
+            "q10": 0.14698136808352338,
+            "q50": 0.33950506879369674,
+            "q90": 0.817268139560093
+          }
+        },
+        "1": {
+          "Glucose": {
+            "mean": 149.15173186774194,
+            "std": 31.012044511513697,
+            "q10": 109.0,
+            "q50": 147.4330769290127,
+            "q90": 190.44898184027477
+          },
+          "BMI": {
+            "mean": 36.408838732140545,
+            "std": 6.652794204793816,
+            "q10": 28.714818412661195,
+            "q50": 35.253405141424935,
+            "q90": 45.555227122503034
+          },
+          "Age": {
+            "mean": 37.31814814814815,
+            "std": 11.1377529531334,
+            "q10": 24.0,
+            "q50": 36.0,
+            "q90": 53.0
+          },
+          "DiabetesPedigreeFunction": {
+            "mean": 0.5731415702758799,
+            "std": 0.36163109918362973,
+            "q10": 0.20498726915494697,
+            "q50": 0.4999007554661491,
+            "q90": 1.0571931916118902
+          }
+        }
+      },
+      "class_separation": {
+        "Glucose": {
+          "positive_minus_negative_mean": 42.179537424582705,
+          "cohens_d": 1.5393426360785714,
+          "absolute_cohens_d": 1.5393426360785714,
+          "single_feature_auc_directionless": 0.8578218106995885
+        },
+        "BMI": {
+          "positive_minus_negative_mean": 6.078668514170946,
+          "cohens_d": 0.9372388011484101,
+          "absolute_cohens_d": 0.9372388011484101,
+          "single_feature_auc_directionless": 0.7451211248285322
+        },
+        "Age": {
+          "positive_minus_negative_mean": 6.186296296296295,
+          "cohens_d": 0.5393309758219186,
+          "absolute_cohens_d": 0.5393309758219186,
+          "single_feature_auc_directionless": 0.6902001371742112
+        },
+        "DiabetesPedigreeFunction": {
+          "positive_minus_negative_mean": 0.1421786290857766,
+          "cohens_d": 0.423194345624726,
+          "absolute_cohens_d": 0.423194345624726,
+          "single_feature_auc_directionless": 0.6335400548696845
+        },
+        "aggregate": {
+          "mean_abs_cohens_d": 0.8597766896684065,
+          "mean_single_feature_auc_directionless": 0.731670781893004
+        }
+      }
+    },
+    "strict2700_synthetic_only": {
+      "rows": 4786,
+      "class_distribution": {
+        "0": 2300,
+        "1": 2486
+      },
+      "class_feature_stats": {
+        "0": {
+          "Glucose": {
+            "mean": 106.3695326071869,
+            "std": 23.149514558427693,
+            "q10": 77.881394797774,
+            "q50": 104.77660715904162,
+            "q90": 137.21897222955755
+          },
+          "BMI": {
+            "mean": 30.246982429790393,
+            "std": 6.307726474824523,
+            "q10": 22.461833768971495,
+            "q50": 29.974949077630615,
+            "q90": 38.634806061512705
+          },
+          "Age": {
+            "mean": 31.105217391304347,
+            "std": 11.827573327539094,
+            "q10": 21.0,
+            "q50": 27.0,
+            "q90": 48.0
+          },
+          "DiabetesPedigreeFunction": {
+            "mean": 0.42982214835359955,
+            "std": 0.30872101200455143,
+            "q10": 0.14584417176917766,
+            "q50": 0.33789800689415106,
+            "q90": 0.817268139560093
+          }
+        },
+        "1": {
+          "Glucose": {
+            "mean": 149.70984555225397,
+            "std": 31.06715909183717,
+            "q10": 109.3363230123808,
+            "q50": 148.13432730712472,
+            "q90": 191.29253410895802
+          },
+          "BMI": {
+            "mean": 36.48594713466592,
+            "std": 6.648350981708759,
+            "q10": 28.766447771104726,
+            "q50": 35.35537525037094,
+            "q90": 45.58305955681986
+          },
+          "Age": {
+            "mean": 37.323411102172166,
+            "std": 11.127864448882258,
+            "q10": 24.0,
+            "q50": 36.0,
+            "q90": 53.0
+          },
+          "DiabetesPedigreeFunction": {
+            "mean": 0.5749598711765388,
+            "std": 0.361640975080957,
+            "q10": 0.2055618777761376,
+            "q50": 0.5008157642640694,
+            "q90": 1.06150279679703
+          }
+        }
+      },
+      "class_separation": {
+        "Glucose": {
+          "positive_minus_negative_mean": 43.34031294506707,
+          "cohens_d": 1.5732790141893414,
+          "absolute_cohens_d": 1.5732790141893414,
+          "single_feature_auc_directionless": 0.8645834062051838
+        },
+        "BMI": {
+          "positive_minus_negative_mean": 6.238964704875528,
+          "cohens_d": 0.9617800920840934,
+          "absolute_cohens_d": 0.9617800920840934,
+          "single_feature_auc_directionless": 0.7511051453356186
+        },
+        "Age": {
+          "positive_minus_negative_mean": 6.218193710867819,
+          "cohens_d": 0.5421529406343127,
+          "absolute_cohens_d": 0.5421529406343127,
+          "single_feature_auc_directionless": 0.6909034943509742
+        },
+        "DiabetesPedigreeFunction": {
+          "positive_minus_negative_mean": 0.14513772282293924,
+          "cohens_d": 0.43035931055024085,
+          "absolute_cohens_d": 0.43035931055024085,
+          "single_feature_auc_directionless": 0.6367211165133443
+        },
+        "aggregate": {
+          "mean_abs_cohens_d": 0.8768928393644971,
+          "mean_single_feature_auc_directionless": 0.7358282906012803
+        }
+      }
+    },
+    "controlled_benchmark_2500_all_rows": {
+      "rows": 5000,
+      "class_distribution": {
+        "0": 2500,
+        "1": 2500
+      },
+      "class_feature_stats": {
+        "0": {
+          "Glucose": {
+            "mean": 95.48987134664777,
+            "std": 14.777252889567116,
+            "q10": 81.0,
+            "q50": 93.07025049941294,
+            "q90": 112.00769596141305
+          },
+          "BMI": {
+            "mean": 26.928262498713902,
+            "std": 4.0615502454515005,
+            "q10": 22.577792436203158,
+            "q50": 26.410115896670476,
+            "q90": 31.73032187915702
+          },
+          "Age": {
+            "mean": 29.9468,
+            "std": 7.003912597732118,
+            "q10": 22.0,
+            "q50": 29.0,
+            "q90": 38.0
+          },
+          "DiabetesPedigreeFunction": {
+            "mean": 0.3085531640480791,
+            "std": 0.16740703379293223,
+            "q10": 0.1669718847461995,
+            "q50": 0.276407558785926,
+            "q90": 0.47198753269897065
+          }
+        },
+        "1": {
+          "Glucose": {
+            "mean": 163.66447041618486,
+            "std": 16.538874052155606,
+            "q10": 144.9272936157259,
+            "q50": 165.19603339438564,
+            "q90": 182.4139302786316
+          },
+          "BMI": {
+            "mean": 38.85124062276841,
+            "std": 4.162507140519319,
+            "q10": 33.751457545657544,
+            "q50": 38.810137417732435,
+            "q90": 43.89833236643844
+          },
+          "Age": {
+            "mean": 47.1544,
+            "std": 8.367901131570514,
+            "q10": 37.0,
+            "q50": 47.0,
+            "q90": 57.0
+          },
+          "DiabetesPedigreeFunction": {
+            "mean": 0.7605208818515011,
+            "std": 0.2180592496618003,
+            "q10": 0.5033761485664635,
+            "q50": 0.7574660036087024,
+            "q90": 1.0271391362014861
+          }
+        }
+      },
+      "class_separation": {
+        "Glucose": {
+          "positive_minus_negative_mean": 68.17459906953708,
+          "cohens_d": 4.347088595629858,
+          "absolute_cohens_d": 4.347088595629858,
+          "single_feature_auc_directionless": 0.9894576
+        },
+        "BMI": {
+          "positive_minus_negative_mean": 11.922978124054506,
+          "cohens_d": 2.899318255617561,
+          "absolute_cohens_d": 2.899318255617561,
+          "single_feature_auc_directionless": 0.96848976
+        },
+        "Age": {
+          "positive_minus_negative_mean": 17.207600000000003,
+          "cohens_d": 2.2300888079624936,
+          "absolute_cohens_d": 2.2300888079624936,
+          "single_feature_auc_directionless": 0.93657248
+        },
+        "DiabetesPedigreeFunction": {
+          "positive_minus_negative_mean": 0.45196771780342204,
+          "cohens_d": 2.3250563120224728,
+          "absolute_cohens_d": 2.3250563120224728,
+          "single_feature_auc_directionless": 0.94745296
+        },
+        "aggregate": {
+          "mean_abs_cohens_d": 2.9503879928080963,
+          "mean_single_feature_auc_directionless": 0.9604932
+        }
+      }
+    },
+    "controlled_benchmark_2500_synthetic_only": {
+      "rows": 4386,
+      "class_distribution": {
+        "0": 2100,
+        "1": 2286
+      },
+      "class_feature_stats": {
+        "0": {
+          "Glucose": {
+            "mean": 92.64270398410449,
+            "std": 10.23383587201321,
+            "q10": 80.74485511676663,
+            "q50": 91.85831998028547,
+            "q90": 105.74621853499707
+          },
+          "BMI": {
+            "mean": 26.18916964132607,
+            "std": 2.9304604500421334,
+            "q10": 22.565039755590718,
+            "q50": 26.06455708074443,
+            "q90": 29.930109497369692
+          },
+          "Age": {
+            "mean": 29.691904761904762,
+            "std": 5.690177020238853,
+            "q10": 23.0,
+            "q50": 29.0,
+            "q90": 37.0
+          },
+          "DiabetesPedigreeFunction": {
+            "mean": 0.2839875762477132,
+            "std": 0.10898087307478314,
+            "q10": 0.16835230837451426,
+            "q50": 0.26977356891144966,
+            "q90": 0.41144695915981233
+          }
+        },
+        "1": {
+          "Glucose": {
+            "mean": 165.6299982679187,
+            "std": 13.112026028044673,
+            "q10": 148.3348929606516,
+            "q50": 166.12052279358116,
+            "q90": 182.38015011739043
+          },
+          "BMI": {
+            "mean": 39.163736464094946,
+            "std": 3.698659899182556,
+            "q10": 34.62601861074684,
+            "q50": 39.01734136688653,
+            "q90": 43.86860340650475
+          },
+          "Age": {
+            "mean": 48.08092738407699,
+            "std": 7.39525036627192,
+            "q10": 39.0,
+            "q50": 48.0,
+            "q90": 57.0
+          },
+          "DiabetesPedigreeFunction": {
+            "mean": 0.7800394595926303,
+            "std": 0.18803142064992848,
+            "q10": 0.5415189983097054,
+            "q50": 0.768767331837404,
+            "q90": 1.0270100735539405
+          }
+        }
+      },
+      "class_separation": {
+        "Glucose": {
+          "positive_minus_negative_mean": 72.98729428381421,
+          "cohens_d": 6.173984901404315,
+          "absolute_cohens_d": 6.173984901404315,
+          "single_feature_auc_directionless": 0.9999764612756739
+        },
+        "BMI": {
+          "positive_minus_negative_mean": 12.974566822768875,
+          "cohens_d": 3.8696667327923104,
+          "absolute_cohens_d": 3.8696667327923104,
+          "single_feature_auc_directionless": 0.996442944631921
+        },
+        "Age": {
+          "positive_minus_negative_mean": 18.38902262217223,
+          "cohens_d": 2.7720217702597956,
+          "absolute_cohens_d": 2.7720217702597956,
+          "single_feature_auc_directionless": 0.9740269966254218
+        },
+        "DiabetesPedigreeFunction": {
+          "positive_minus_negative_mean": 0.4960518833449171,
+          "cohens_d": 3.1943972446753923,
+          "absolute_cohens_d": 3.1943972446753923,
+          "single_feature_auc_directionless": 0.9890705328500604
+        },
+        "aggregate": {
+          "mean_abs_cohens_d": 4.002517662282953,
+          "mean_single_feature_auc_directionless": 0.9898792338457693
+        }
+      }
+    },
+    "external_holdout": {
+      "rows": 154,
+      "class_distribution": {
+        "0": 100,
+        "1": 54
+      },
+      "class_feature_stats": {
+        "0": {
+          "Glucose": {
+            "mean": 111.67,
+            "std": 29.28199881404025,
+            "q10": 81.8,
+            "q50": 106.0,
+            "q90": 153.10000000000002
+          },
+          "BMI": {
+            "mean": 31.203000000000003,
+            "std": 7.156793128125744,
+            "q10": 23.28,
+            "q50": 30.2,
+            "q90": 40.61
+          },
+          "Age": {
+            "mean": 30.81,
+            "std": 11.95082094301982,
+            "q10": 21.0,
+            "q50": 26.0,
+            "q90": 48.10000000000001
+          },
+          "DiabetesPedigreeFunction": {
+            "mean": 0.3985799999999999,
+            "std": 0.2721122087327471,
+            "q10": 0.159,
+            "q50": 0.3085,
+            "q90": 0.6918000000000004
+          }
+        },
+        "1": {
+          "Glucose": {
+            "mean": 140.0,
+            "std": 29.330259987654323,
+            "q10": 106.3,
+            "q50": 134.0,
+            "q90": 184.0
+          },
+          "BMI": {
+            "mean": 34.87407407407407,
+            "std": 6.3902397623895615,
+            "q10": 27.78,
+            "q50": 33.55,
+            "q90": 43.269999999999996
+          },
+          "Age": {
+            "mean": 36.31481481481482,
+            "std": 9.702798806635151,
+            "q10": 25.3,
+            "q50": 35.0,
+            "q90": 49.7
+          },
+          "DiabetesPedigreeFunction": {
+            "mean": 0.5444814814814815,
+            "std": 0.415539918875306,
+            "q10": 0.2218,
+            "q50": 0.405,
+            "q90": 1.1052000000000008
+          }
+        }
+      },
+      "class_separation": {
+        "Glucose": {
+          "positive_minus_negative_mean": 28.33,
+          "cohens_d": 0.9669326194925629,
+          "absolute_cohens_d": 0.9669326194925629,
+          "single_feature_auc_directionless": 0.7646296296296297
+        },
+        "BMI": {
+          "positive_minus_negative_mean": 3.6710740740740704,
+          "cohens_d": 0.5321024880578314,
+          "absolute_cohens_d": 0.5321024880578314,
+          "single_feature_auc_directionless": 0.6611111111111111
+        },
+        "Age": {
+          "positive_minus_negative_mean": 5.504814814814818,
+          "cohens_d": 0.4907021275629783,
+          "absolute_cohens_d": 0.4907021275629783,
+          "single_feature_auc_directionless": 0.7112962962962963
+        },
+        "DiabetesPedigreeFunction": {
+          "positive_minus_negative_mean": 0.14590148148148158,
+          "cohens_d": 0.4430722394812021,
+          "absolute_cohens_d": 0.4430722394812021,
+          "single_feature_auc_directionless": 0.6146296296296296
+        },
+        "aggregate": {
+          "mean_abs_cohens_d": 0.6082023686486437,
+          "mean_single_feature_auc_directionless": 0.6879166666666666
+        }
+      }
+    }
+  },
+  "distribution_shift_vs_original_dev": {
+    "strict2700_all_rows": {
+      "0": {
+        "Glucose": -0.1477535721386095,
+        "BMI": -0.07546768827598292,
+        "Age": -0.013192102130042207,
+        "DiabetesPedigreeFunction": -0.021487134102424105
+      },
+      "1": {
+        "Glucose": 0.21849987667085916,
+        "BMI": 0.13461029200395644,
+        "Age": 0.005420998242030477,
+        "DiabetesPedigreeFunction": 0.05840024187895751
+      },
+      "aggregate": {
+        "avg_abs_z_mean_shift": 0.0843539881803578,
+        "max_abs_z_mean_shift": 0.21849987667085916
+      }
+    },
+    "strict2700_synthetic_only": {
+      "0": {
+        "Glucose": -0.17344984555402138,
+        "BMI": -0.08859250362832873,
+        "Age": -0.015486380761354028,
+        "DiabetesPedigreeFunction": -0.025224026989801925
+      },
+      "1": {
+        "Glucose": 0.2373087960624793,
+        "BMI": 0.146197823174048,
+        "Age": 0.00588764893543162,
+        "DiabetesPedigreeFunction": 0.06342745497714591
+      },
+      "aggregate": {
+        "avg_abs_z_mean_shift": 0.09444681001032637,
+        "max_abs_z_mean_shift": 0.2373087960624793
+      }
+    },
+    "controlled_benchmark_2500_all_rows": {
+      "0": {
+        "Glucose": -0.6373364461827495,
+        "BMI": -0.6121980382254919,
+        "Age": -0.11527185463153766,
+        "DiabetesPedigreeFunction": -0.4224646042533336
+      },
+      "1": {
+        "Glucose": 0.70759186112558,
+        "BMI": 0.5016443260474862,
+        "Age": 0.8775725933703055,
+        "DiabetesPedigreeFunction": 0.5764639623232036
+      },
+      "aggregate": {
+        "avg_abs_z_mean_shift": 0.556317960769961,
+        "max_abs_z_mean_shift": 0.8775725933703055
+      }
+    },
+    "controlled_benchmark_2500_synthetic_only": {
+      "0": {
+        "Glucose": -0.7587338645032736,
+        "BMI": -0.7288071883636813,
+        "Age": -0.13722839837087808,
+        "DiabetesPedigreeFunction": -0.50293405268254
+      },
+      "1": {
+        "Glucose": 0.7738318691224628,
+        "BMI": 0.5486049060011895,
+        "Age": 0.9597250583664758,
+        "DiabetesPedigreeFunction": 0.630428655209103
+      },
+      "aggregate": {
+        "avg_abs_z_mean_shift": 0.6300367490774506,
+        "max_abs_z_mean_shift": 0.9597250583664758
+      }
+    },
+    "external_holdout": {
+      "0": {
+        "Glucose": 0.05255129011678225,
+        "BMI": 0.06224158340820903,
+        "Age": -0.04091625388580222,
+        "DiabetesPedigreeFunction": -0.12756387190571145
+      },
+      "1": {
+        "Glucose": -0.08992149297282236,
+        "BMI": -0.096027780263817,
+        "Age": -0.08354162494937219,
+        "DiabetesPedigreeFunction": -0.020838773913329323
+      },
+      "aggregate": {
+        "avg_abs_z_mean_shift": 0.07170033392698072,
+        "max_abs_z_mean_shift": 0.12756387190571145
+      }
+    }
+  },
+  "cross_model_experiments": {
+    "strict_xgb_no_skin_on_strict2700": {
+      "status": "completed",
+      "dataset_name": "sentetik_2700_per_class_pima",
+      "target_per_class": 2700,
+      "model": "strict_xgboost",
+      "feature_set": "no_skinthickness",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "default_threshold_metrics": {
+        "accuracy": 0.8088768115942029,
+        "precision": 0.7888513513513513,
+        "recall": 0.8444846292947559,
+        "sensitivity": 0.8444846292947559,
+        "specificity": 0.7731397459165155,
+        "f1": 0.8157205240174672,
+        "roc_auc": 0.8914254208196177,
+        "balanced_accuracy": 0.8088121876056357,
+        "mcc": 0.6192513453672728,
+        "brier": 0.13509140704909472,
+        "threshold": 0.5,
+        "confusion_matrix": {
+          "tn": 426,
+          "fp": 125,
+          "fn": 86,
+          "tp": 467,
+          "matrix": [
+            [
+              426,
+              125
+            ],
+            [
+              86,
+              467
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.7731397459165155
+      },
+      "tuned_threshold_metrics": {
+        "accuracy": 0.8161231884057971,
+        "precision": 0.8059440559440559,
+        "recall": 0.833634719710669,
+        "sensitivity": 0.833634719710669,
+        "specificity": 0.7985480943738656,
+        "f1": 0.8195555555555556,
+        "roc_auc": 0.8914254208196177,
+        "balanced_accuracy": 0.8160914070422673,
+        "mcc": 0.632597133832397,
+        "brier": 0.13509140704909472,
+        "threshold": 0.57,
+        "confusion_matrix": {
+          "tn": 440,
+          "fp": 111,
+          "fn": 92,
+          "tp": 461,
+          "matrix": [
+            [
+              440,
+              111
+            ],
+            [
+              92,
+              461
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.7985480943738656
+      },
+      "threshold_report": {
+        "default_threshold": 0.5,
+        "default_min_main_metric": 0.7885572139303483,
+        "selected_threshold": 0.57,
+        "tuned_min_main_metric": 0.8229426433915212,
+        "selected_validation_metrics": {
+          "accuracy": 0.8244084682440846,
+          "precision": 0.825,
+          "recall": 0.8229426433915212,
+          "sensitivity": 0.8229426433915212,
+          "specificity": 0.8258706467661692,
+          "f1": 0.8239700374531835,
+          "roc_auc": 0.8869120730512028,
+          "balanced_accuracy": 0.8244066450788452,
+          "mcc": 0.6488173150415472,
+          "brier": 0.13265642621528126,
+          "threshold": 0.57,
+          "confusion_matrix": {
+            "tn": 332,
+            "fp": 70,
+            "fn": 71,
+            "tp": 330,
+            "matrix": [
+              [
+                332,
+                70
+              ],
+              [
+                71,
+                330
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.8229426433915212
+        }
+      },
+      "split": {
+        "method": "GroupShuffleSplit(source_id)",
+        "train_rows": 4296,
+        "test_rows": 1104,
+        "train_source_families": 491,
+        "test_source_families": 123,
+        "train_class_distribution": {
+          "0": 2149,
+          "1": 2147
+        },
+        "test_class_distribution": {
+          "0": 551,
+          "1": 553
+        }
+      },
+      "leakage": {
+        "train_test_source_intersection_count": 0,
+        "exact_duplicate_count": 0,
+        "near_duplicate_rate": 0.0,
+        "minimum_near_duplicate_distance": 0.09675399080509496,
+        "near_duplicate_threshold": 0.02
+      },
+      "selection_score_pre_cv": 0.9049888083148455,
+      "experiment_label": "strict_xgb_no_skin_on_strict2700"
+    },
+    "strict_xgb_no_skin_on_controlled_benchmark_2500": {
+      "status": "completed",
+      "dataset_name": "controlled_synthetic_2500_per_class_pima",
+      "target_per_class": 2500,
+      "model": "strict_xgboost",
+      "feature_set": "no_skinthickness",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "default_threshold_metrics": {
+        "accuracy": 0.9657534246575342,
+        "precision": 0.9666666666666667,
+        "recall": 0.9647749510763209,
+        "sensitivity": 0.9647749510763209,
+        "specificity": 0.9667318982387475,
+        "f1": 0.9657198824681684,
+        "roc_auc": 0.9945351005855523,
+        "balanced_accuracy": 0.9657534246575342,
+        "mcc": 0.9315086329891599,
+        "brier": 0.027669743434145303,
+        "threshold": 0.5,
+        "confusion_matrix": {
+          "tn": 494,
+          "fp": 17,
+          "fn": 18,
+          "tp": 493,
+          "matrix": [
+            [
+              494,
+              17
+            ],
+            [
+              18,
+              493
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9647749510763209
+      },
+      "tuned_threshold_metrics": {
+        "accuracy": 0.961839530332681,
+        "precision": 0.9738955823293173,
+        "recall": 0.949119373776908,
+        "sensitivity": 0.949119373776908,
+        "specificity": 0.974559686888454,
+        "f1": 0.9613478691774033,
+        "roc_auc": 0.9945351005855523,
+        "balanced_accuracy": 0.961839530332681,
+        "mcc": 0.923978112781151,
+        "brier": 0.027669743434145303,
+        "threshold": 0.66,
+        "confusion_matrix": {
+          "tn": 498,
+          "fp": 13,
+          "fn": 26,
+          "tp": 485,
+          "matrix": [
+            [
+              498,
+              13
+            ],
+            [
+              26,
+              485
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.949119373776908
+      },
+      "threshold_report": {
+        "default_threshold": 0.5,
+        "default_min_main_metric": 0.9701897018970189,
+        "selected_threshold": 0.66,
+        "tuned_min_main_metric": 0.9728997289972899,
+        "selected_validation_metrics": {
+          "accuracy": 0.9742547425474255,
+          "precision": 0.9755434782608695,
+          "recall": 0.9728997289972899,
+          "sensitivity": 0.9728997289972899,
+          "specificity": 0.975609756097561,
+          "f1": 0.9742198100407056,
+          "roc_auc": 0.9964160075205089,
+          "balanced_accuracy": 0.9742547425474255,
+          "mcc": 0.9485129681579515,
+          "brier": 0.022602357015944784,
+          "threshold": 0.66,
+          "confusion_matrix": {
+            "tn": 360,
+            "fp": 9,
+            "fn": 10,
+            "tp": 359,
+            "matrix": [
+              [
+                360,
+                9
+              ],
+              [
+                10,
+                359
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.9728997289972899
+        }
+      },
+      "split": {
+        "method": "GroupShuffleSplit(source_id)",
+        "train_rows": 3978,
+        "test_rows": 1022,
+        "train_source_families": 491,
+        "test_source_families": 123,
+        "train_class_distribution": {
+          "0": 1989,
+          "1": 1989
+        },
+        "test_class_distribution": {
+          "0": 511,
+          "1": 511
+        }
+      },
+      "leakage": {
+        "train_test_source_intersection_count": 0,
+        "exact_duplicate_count": 0,
+        "near_duplicate_rate": 0.0,
+        "minimum_near_duplicate_distance": 0.07983682896655699,
+        "near_duplicate_threshold": 0.02
+      },
+      "selection_score_pre_cv": 1.0680194889667805,
+      "experiment_label": "strict_xgb_no_skin_on_controlled_benchmark_2500"
+    },
+    "new_soft_all_on_strict2700": {
+      "status": "completed",
+      "dataset_name": "sentetik_2700_per_class_pima",
+      "target_per_class": 2700,
+      "model": "soft_voting_xgb_lgbm_et",
+      "feature_set": "all_features",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "default_threshold_metrics": {
+        "accuracy": 0.8152173913043478,
+        "precision": 0.7893864013266998,
+        "recall": 0.8607594936708861,
+        "sensitivity": 0.8607594936708861,
+        "specificity": 0.7695099818511797,
+        "f1": 0.8235294117647058,
+        "roc_auc": 0.8969258589511754,
+        "balanced_accuracy": 0.815134737761033,
+        "mcc": 0.6329758205851451,
+        "brier": 0.13380909183278983,
+        "threshold": 0.5,
+        "confusion_matrix": {
+          "tn": 424,
+          "fp": 127,
+          "fn": 77,
+          "tp": 476,
+          "matrix": [
+            [
+              424,
+              127
+            ],
+            [
+              77,
+              476
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.7695099818511797
+      },
+      "tuned_threshold_metrics": {
+        "accuracy": 0.8161231884057971,
+        "precision": 0.7956081081081081,
+        "recall": 0.8517179023508138,
+        "sensitivity": 0.8517179023508138,
+        "specificity": 0.7803992740471869,
+        "f1": 0.8227074235807861,
+        "roc_auc": 0.8969258589511754,
+        "balanced_accuracy": 0.8160585881990003,
+        "mcc": 0.633782324054687,
+        "brier": 0.13380909183278983,
+        "threshold": 0.54,
+        "confusion_matrix": {
+          "tn": 430,
+          "fp": 121,
+          "fn": 82,
+          "tp": 471,
+          "matrix": [
+            [
+              430,
+              121
+            ],
+            [
+              82,
+              471
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.7803992740471869
+      },
+      "threshold_report": {
+        "default_threshold": 0.5,
+        "default_min_main_metric": 0.7885572139303483,
+        "selected_threshold": 0.54,
+        "tuned_min_main_metric": 0.8079800498753117,
+        "selected_validation_metrics": {
+          "accuracy": 0.8169364881693649,
+          "precision": 0.8223350253807107,
+          "recall": 0.8079800498753117,
+          "sensitivity": 0.8079800498753117,
+          "specificity": 0.8258706467661692,
+          "f1": 0.8150943396226416,
+          "roc_auc": 0.8860187838860559,
+          "balanced_accuracy": 0.8169253483207404,
+          "mcc": 0.6339608221046223,
+          "brier": 0.1369127770575179,
+          "threshold": 0.54,
+          "confusion_matrix": {
+            "tn": 332,
+            "fp": 70,
+            "fn": 77,
+            "tp": 324,
+            "matrix": [
+              [
+                332,
+                70
+              ],
+              [
+                77,
+                324
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.8079800498753117
+        }
+      },
+      "split": {
+        "method": "GroupShuffleSplit(source_id)",
+        "train_rows": 4296,
+        "test_rows": 1104,
+        "train_source_families": 491,
+        "test_source_families": 123,
+        "train_class_distribution": {
+          "0": 2149,
+          "1": 2147
+        },
+        "test_class_distribution": {
+          "0": 551,
+          "1": 553
+        }
+      },
+      "leakage": {
+        "train_test_source_intersection_count": 0,
+        "exact_duplicate_count": 0,
+        "near_duplicate_rate": 0.0,
+        "minimum_near_duplicate_distance": 0.12044541101932515,
+        "near_duplicate_threshold": 0.02
+      },
+      "selection_score_pre_cv": 0.8874156781056486,
+      "experiment_label": "new_soft_all_on_strict2700"
+    },
+    "new_soft_all_on_controlled_benchmark_2500": {
+      "status": "completed",
+      "dataset_name": "controlled_synthetic_2500_per_class_pima",
+      "target_per_class": 2500,
+      "model": "soft_voting_xgb_lgbm_et",
+      "feature_set": "all_features",
+      "preprocessing": "tree_models_no_scaler",
+      "resampling": "none",
+      "default_threshold_metrics": {
+        "accuracy": 0.9667318982387475,
+        "precision": 0.9667318982387475,
+        "recall": 0.9667318982387475,
+        "sensitivity": 0.9667318982387475,
+        "specificity": 0.9667318982387475,
+        "f1": 0.9667318982387475,
+        "roc_auc": 0.996189506014453,
+        "balanced_accuracy": 0.9667318982387475,
+        "mcc": 0.9334637964774951,
+        "brier": 0.025347762053460655,
+        "threshold": 0.5,
+        "confusion_matrix": {
+          "tn": 494,
+          "fp": 17,
+          "fn": 17,
+          "tp": 494,
+          "matrix": [
+            [
+              494,
+              17
+            ],
+            [
+              17,
+              494
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9667318982387475
+      },
+      "tuned_threshold_metrics": {
+        "accuracy": 0.9677103718199609,
+        "precision": 0.9686274509803922,
+        "recall": 0.9667318982387475,
+        "sensitivity": 0.9667318982387475,
+        "specificity": 0.9686888454011742,
+        "f1": 0.9676787463271302,
+        "roc_auc": 0.996189506014453,
+        "balanced_accuracy": 0.9677103718199609,
+        "mcc": 0.9354225348084421,
+        "brier": 0.025347762053460655,
+        "threshold": 0.52,
+        "confusion_matrix": {
+          "tn": 495,
+          "fp": 16,
+          "fn": 17,
+          "tp": 494,
+          "matrix": [
+            [
+              495,
+              16
+            ],
+            [
+              17,
+              494
+            ]
+          ]
+        },
+        "ana_metrik_minimumu": 0.9667318982387475
+      },
+      "threshold_report": {
+        "default_threshold": 0.5,
+        "default_min_main_metric": 0.9701897018970189,
+        "selected_threshold": 0.52,
+        "tuned_min_main_metric": 0.975609756097561,
+        "selected_validation_metrics": {
+          "accuracy": 0.975609756097561,
+          "precision": 0.975609756097561,
+          "recall": 0.975609756097561,
+          "sensitivity": 0.975609756097561,
+          "specificity": 0.975609756097561,
+          "f1": 0.975609756097561,
+          "roc_auc": 0.9965555482113087,
+          "balanced_accuracy": 0.975609756097561,
+          "mcc": 0.9512195121951219,
+          "brier": 0.021307399992608726,
+          "threshold": 0.52,
+          "confusion_matrix": {
+            "tn": 360,
+            "fp": 9,
+            "fn": 9,
+            "tp": 360,
+            "matrix": [
+              [
+                360,
+                9
+              ],
+              [
+                9,
+                360
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.975609756097561
+        }
+      },
+      "split": {
+        "method": "GroupShuffleSplit(source_id)",
+        "train_rows": 3978,
+        "test_rows": 1022,
+        "train_source_families": 491,
+        "test_source_families": 123,
+        "train_class_distribution": {
+          "0": 1989,
+          "1": 1989
+        },
+        "test_class_distribution": {
+          "0": 511,
+          "1": 511
+        }
+      },
+      "leakage": {
+        "train_test_source_intersection_count": 0,
+        "exact_duplicate_count": 0,
+        "near_duplicate_rate": 0.0,
+        "minimum_near_duplicate_distance": 0.16721105173019243,
+        "near_duplicate_threshold": 0.02
+      },
+      "selection_score_pre_cv": 1.0858438935991235,
+      "experiment_label": "new_soft_all_on_controlled_benchmark_2500"
+    }
+  },
+  "feature_effect_experiments": {
+    "strict_xgb_strict2700_all_vs_no_skin": {
+      "all_features": {
+        "status": "completed",
+        "dataset_name": "sentetik_2700_per_class_pima",
+        "target_per_class": 2700,
+        "model": "strict_xgboost",
+        "feature_set": "all_features",
+        "preprocessing": "tree_models_no_scaler",
+        "resampling": "none",
+        "default_threshold_metrics": {
+          "accuracy": 0.8161231884057971,
+          "precision": 0.7996575342465754,
+          "recall": 0.8444846292947559,
+          "sensitivity": 0.8444846292947559,
+          "specificity": 0.7876588021778584,
+          "f1": 0.8214599824098505,
+          "roc_auc": 0.8923476303154217,
+          "balanced_accuracy": 0.8160717157363071,
+          "mcc": 0.6332072799799056,
+          "brier": 0.1354278148198059,
+          "threshold": 0.5,
+          "confusion_matrix": {
+            "tn": 434,
+            "fp": 117,
+            "fn": 86,
+            "tp": 467,
+            "matrix": [
+              [
+                434,
+                117
+              ],
+              [
+                86,
+                467
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.7876588021778584
+        },
+        "tuned_threshold_metrics": {
+          "accuracy": 0.8179347826086957,
+          "precision": 0.8044982698961938,
+          "recall": 0.840867992766727,
+          "sensitivity": 0.840867992766727,
+          "specificity": 0.79491833030853,
+          "f1": 0.8222811671087533,
+          "roc_auc": 0.8923476303154217,
+          "balanced_accuracy": 0.8178931615376285,
+          "mcc": 0.6364917150626291,
+          "brier": 0.1354278148198059,
+          "threshold": 0.52,
+          "confusion_matrix": {
+            "tn": 438,
+            "fp": 113,
+            "fn": 88,
+            "tp": 465,
+            "matrix": [
+              [
+                438,
+                113
+              ],
+              [
+                88,
+                465
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.79491833030853
+        },
+        "threshold_report": {
+          "default_threshold": 0.5,
+          "default_min_main_metric": 0.8009950248756219,
+          "selected_threshold": 0.52,
+          "tuned_min_main_metric": 0.8154613466334164,
+          "selected_validation_metrics": {
+            "accuracy": 0.8156911581569116,
+            "precision": 0.8154613466334164,
+            "recall": 0.8154613466334164,
+            "sensitivity": 0.8154613466334164,
+            "specificity": 0.8159203980099502,
+            "f1": 0.8154613466334164,
+            "roc_auc": 0.8781404697212193,
+            "balanced_accuracy": 0.8156908723216834,
+            "mcc": 0.6313817446433667,
+            "brier": 0.13691492078460857,
+            "threshold": 0.52,
+            "confusion_matrix": {
+              "tn": 328,
+              "fp": 74,
+              "fn": 74,
+              "tp": 327,
+              "matrix": [
+                [
+                  328,
+                  74
+                ],
+                [
+                  74,
+                  327
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.8154613466334164
+          }
+        },
+        "split": {
+          "method": "GroupShuffleSplit(source_id)",
+          "train_rows": 4296,
+          "test_rows": 1104,
+          "train_source_families": 491,
+          "test_source_families": 123,
+          "train_class_distribution": {
+            "0": 2149,
+            "1": 2147
+          },
+          "test_class_distribution": {
+            "0": 551,
+            "1": 553
+          }
+        },
+        "leakage": {
+          "train_test_source_intersection_count": 0,
+          "exact_duplicate_count": 0,
+          "near_duplicate_rate": 0.0,
+          "minimum_near_duplicate_distance": 0.12044541101932515,
+          "near_duplicate_threshold": 0.02
+        },
+        "selection_score_pre_cv": 0.9014445370436761,
+        "experiment_label": "strict_xgb_all_on_strict2700"
+      },
+      "no_skinthickness": {
+        "status": "completed",
+        "dataset_name": "sentetik_2700_per_class_pima",
+        "target_per_class": 2700,
+        "model": "strict_xgboost",
+        "feature_set": "no_skinthickness",
+        "preprocessing": "tree_models_no_scaler",
+        "resampling": "none",
+        "default_threshold_metrics": {
+          "accuracy": 0.8088768115942029,
+          "precision": 0.7888513513513513,
+          "recall": 0.8444846292947559,
+          "sensitivity": 0.8444846292947559,
+          "specificity": 0.7731397459165155,
+          "f1": 0.8157205240174672,
+          "roc_auc": 0.8914254208196177,
+          "balanced_accuracy": 0.8088121876056357,
+          "mcc": 0.6192513453672728,
+          "brier": 0.13509140704909472,
+          "threshold": 0.5,
+          "confusion_matrix": {
+            "tn": 426,
+            "fp": 125,
+            "fn": 86,
+            "tp": 467,
+            "matrix": [
+              [
+                426,
+                125
+              ],
+              [
+                86,
+                467
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.7731397459165155
+        },
+        "tuned_threshold_metrics": {
+          "accuracy": 0.8161231884057971,
+          "precision": 0.8059440559440559,
+          "recall": 0.833634719710669,
+          "sensitivity": 0.833634719710669,
+          "specificity": 0.7985480943738656,
+          "f1": 0.8195555555555556,
+          "roc_auc": 0.8914254208196177,
+          "balanced_accuracy": 0.8160914070422673,
+          "mcc": 0.632597133832397,
+          "brier": 0.13509140704909472,
+          "threshold": 0.57,
+          "confusion_matrix": {
+            "tn": 440,
+            "fp": 111,
+            "fn": 92,
+            "tp": 461,
+            "matrix": [
+              [
+                440,
+                111
+              ],
+              [
+                92,
+                461
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.7985480943738656
+        },
+        "threshold_report": {
+          "default_threshold": 0.5,
+          "default_min_main_metric": 0.7885572139303483,
+          "selected_threshold": 0.57,
+          "tuned_min_main_metric": 0.8229426433915212,
+          "selected_validation_metrics": {
+            "accuracy": 0.8244084682440846,
+            "precision": 0.825,
+            "recall": 0.8229426433915212,
+            "sensitivity": 0.8229426433915212,
+            "specificity": 0.8258706467661692,
+            "f1": 0.8239700374531835,
+            "roc_auc": 0.8869120730512028,
+            "balanced_accuracy": 0.8244066450788452,
+            "mcc": 0.6488173150415472,
+            "brier": 0.13265642621528126,
+            "threshold": 0.57,
+            "confusion_matrix": {
+              "tn": 332,
+              "fp": 70,
+              "fn": 71,
+              "tp": 330,
+              "matrix": [
+                [
+                  332,
+                  70
+                ],
+                [
+                  71,
+                  330
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.8229426433915212
+          }
+        },
+        "split": {
+          "method": "GroupShuffleSplit(source_id)",
+          "train_rows": 4296,
+          "test_rows": 1104,
+          "train_source_families": 491,
+          "test_source_families": 123,
+          "train_class_distribution": {
+            "0": 2149,
+            "1": 2147
+          },
+          "test_class_distribution": {
+            "0": 551,
+            "1": 553
+          }
+        },
+        "leakage": {
+          "train_test_source_intersection_count": 0,
+          "exact_duplicate_count": 0,
+          "near_duplicate_rate": 0.0,
+          "minimum_near_duplicate_distance": 0.09675399080509496,
+          "near_duplicate_threshold": 0.02
+        },
+        "selection_score_pre_cv": 0.9049888083148455,
+        "experiment_label": "strict_xgb_no_skin_on_strict2700"
+      }
+    },
+    "new_soft_controlled_benchmark_2500_all_vs_no_skin": {
+      "all_features": {
+        "status": "completed",
+        "dataset_name": "controlled_synthetic_2500_per_class_pima",
+        "target_per_class": 2500,
+        "model": "soft_voting_xgb_lgbm_et",
+        "feature_set": "all_features",
+        "preprocessing": "tree_models_no_scaler",
+        "resampling": "none",
+        "default_threshold_metrics": {
+          "accuracy": 0.9667318982387475,
+          "precision": 0.9667318982387475,
+          "recall": 0.9667318982387475,
+          "sensitivity": 0.9667318982387475,
+          "specificity": 0.9667318982387475,
+          "f1": 0.9667318982387475,
+          "roc_auc": 0.996189506014453,
+          "balanced_accuracy": 0.9667318982387475,
+          "mcc": 0.9334637964774951,
+          "brier": 0.025347762053460655,
+          "threshold": 0.5,
+          "confusion_matrix": {
+            "tn": 494,
+            "fp": 17,
+            "fn": 17,
+            "tp": 494,
+            "matrix": [
+              [
+                494,
+                17
+              ],
+              [
+                17,
+                494
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.9667318982387475
+        },
+        "tuned_threshold_metrics": {
+          "accuracy": 0.9677103718199609,
+          "precision": 0.9686274509803922,
+          "recall": 0.9667318982387475,
+          "sensitivity": 0.9667318982387475,
+          "specificity": 0.9686888454011742,
+          "f1": 0.9676787463271302,
+          "roc_auc": 0.996189506014453,
+          "balanced_accuracy": 0.9677103718199609,
+          "mcc": 0.9354225348084421,
+          "brier": 0.025347762053460655,
+          "threshold": 0.52,
+          "confusion_matrix": {
+            "tn": 495,
+            "fp": 16,
+            "fn": 17,
+            "tp": 494,
+            "matrix": [
+              [
+                495,
+                16
+              ],
+              [
+                17,
+                494
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.9667318982387475
+        },
+        "threshold_report": {
+          "default_threshold": 0.5,
+          "default_min_main_metric": 0.9701897018970189,
+          "selected_threshold": 0.52,
+          "tuned_min_main_metric": 0.975609756097561,
+          "selected_validation_metrics": {
+            "accuracy": 0.975609756097561,
+            "precision": 0.975609756097561,
+            "recall": 0.975609756097561,
+            "sensitivity": 0.975609756097561,
+            "specificity": 0.975609756097561,
+            "f1": 0.975609756097561,
+            "roc_auc": 0.9965555482113087,
+            "balanced_accuracy": 0.975609756097561,
+            "mcc": 0.9512195121951219,
+            "brier": 0.021307399992608726,
+            "threshold": 0.52,
+            "confusion_matrix": {
+              "tn": 360,
+              "fp": 9,
+              "fn": 9,
+              "tp": 360,
+              "matrix": [
+                [
+                  360,
+                  9
+                ],
+                [
+                  9,
+                  360
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.975609756097561
+          }
+        },
+        "split": {
+          "method": "GroupShuffleSplit(source_id)",
+          "train_rows": 3978,
+          "test_rows": 1022,
+          "train_source_families": 491,
+          "test_source_families": 123,
+          "train_class_distribution": {
+            "0": 1989,
+            "1": 1989
+          },
+          "test_class_distribution": {
+            "0": 511,
+            "1": 511
+          }
+        },
+        "leakage": {
+          "train_test_source_intersection_count": 0,
+          "exact_duplicate_count": 0,
+          "near_duplicate_rate": 0.0,
+          "minimum_near_duplicate_distance": 0.16721105173019243,
+          "near_duplicate_threshold": 0.02
+        },
+        "selection_score_pre_cv": 1.0858438935991235,
+        "experiment_label": "new_soft_all_on_controlled_benchmark_2500"
+      },
+      "no_skinthickness": {
+        "status": "completed",
+        "dataset_name": "controlled_synthetic_2500_per_class_pima",
+        "target_per_class": 2500,
+        "model": "soft_voting_xgb_lgbm_et",
+        "feature_set": "no_skinthickness",
+        "preprocessing": "tree_models_no_scaler",
+        "resampling": "none",
+        "default_threshold_metrics": {
+          "accuracy": 0.9667318982387475,
+          "precision": 0.9667318982387475,
+          "recall": 0.9667318982387475,
+          "sensitivity": 0.9667318982387475,
+          "specificity": 0.9667318982387475,
+          "f1": 0.9667318982387475,
+          "roc_auc": 0.9963426917023143,
+          "balanced_accuracy": 0.9667318982387475,
+          "mcc": 0.9334637964774951,
+          "brier": 0.02553762940411733,
+          "threshold": 0.5,
+          "confusion_matrix": {
+            "tn": 494,
+            "fp": 17,
+            "fn": 17,
+            "tp": 494,
+            "matrix": [
+              [
+                494,
+                17
+              ],
+              [
+                17,
+                494
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.9667318982387475
+        },
+        "tuned_threshold_metrics": {
+          "accuracy": 0.9647749510763209,
+          "precision": 0.9759519038076152,
+          "recall": 0.9530332681017613,
+          "sensitivity": 0.9530332681017613,
+          "specificity": 0.9765166340508806,
+          "f1": 0.9643564356435643,
+          "roc_auc": 0.9963426917023143,
+          "balanced_accuracy": 0.9647749510763209,
+          "mcc": 0.9298063169451157,
+          "brier": 0.02553762940411733,
+          "threshold": 0.68,
+          "confusion_matrix": {
+            "tn": 499,
+            "fp": 12,
+            "fn": 24,
+            "tp": 487,
+            "matrix": [
+              [
+                499,
+                12
+              ],
+              [
+                24,
+                487
+              ]
+            ]
+          },
+          "ana_metrik_minimumu": 0.9530332681017613
+        },
+        "threshold_report": {
+          "default_threshold": 0.5,
+          "default_min_main_metric": 0.9701897018970189,
+          "selected_threshold": 0.68,
+          "tuned_min_main_metric": 0.9728997289972899,
+          "selected_validation_metrics": {
+            "accuracy": 0.975609756097561,
+            "precision": 0.9782016348773842,
+            "recall": 0.9728997289972899,
+            "sensitivity": 0.9728997289972899,
+            "specificity": 0.978319783197832,
+            "f1": 0.9755434782608695,
+            "roc_auc": 0.9965775809519613,
+            "balanced_accuracy": 0.975609756097561,
+            "mcc": 0.9512334844848478,
+            "brier": 0.02185032757352264,
+            "threshold": 0.68,
+            "confusion_matrix": {
+              "tn": 361,
+              "fp": 8,
+              "fn": 10,
+              "tp": 359,
+              "matrix": [
+                [
+                  361,
+                  8
+                ],
+                [
+                  10,
+                  359
+                ]
+              ]
+            },
+            "ana_metrik_minimumu": 0.9728997289972899
+          }
+        },
+        "split": {
+          "method": "GroupShuffleSplit(source_id)",
+          "train_rows": 3978,
+          "test_rows": 1022,
+          "train_source_families": 491,
+          "test_source_families": 123,
+          "train_class_distribution": {
+            "0": 1989,
+            "1": 1989
+          },
+          "test_class_distribution": {
+            "0": 511,
+            "1": 511
+          }
+        },
+        "leakage": {
+          "train_test_source_intersection_count": 0,
+          "exact_duplicate_count": 0,
+          "near_duplicate_rate": 0.0,
+          "minimum_near_duplicate_distance": 0.07983682896655699,
+          "near_duplicate_threshold": 0.02
+        },
+        "selection_score_pre_cv": 1.0721567846839104,
+        "experiment_label": "new_soft_no_skin_on_controlled_benchmark_2500"
+      }
+    }
+  },
+  "threshold_effect": {
+    "strict_xgb_no_skin_on_strict2700": {
+      "default_min_main_metric": 0.7731397459165155,
+      "tuned_min_main_metric": 0.7985480943738656,
+      "delta": 0.025408348457350183,
+      "selected_threshold": 0.57
+    },
+    "strict_xgb_no_skin_on_controlled_benchmark_2500": {
+      "default_min_main_metric": 0.9647749510763209,
+      "tuned_min_main_metric": 0.949119373776908,
+      "delta": -0.015655577299412915,
+      "selected_threshold": 0.66
+    },
+    "new_soft_all_on_strict2700": {
+      "default_min_main_metric": 0.7695099818511797,
+      "tuned_min_main_metric": 0.7803992740471869,
+      "delta": 0.010889292196007205,
+      "selected_threshold": 0.54
+    },
+    "new_soft_all_on_controlled_benchmark_2500": {
+      "default_min_main_metric": 0.9667318982387475,
+      "tuned_min_main_metric": 0.9667318982387475,
+      "delta": 0.0,
+      "selected_threshold": 0.52
+    }
+  },
+  "decomposition": {
+    "farkin_ana_nedeni": "Ana fark modelden cok veri uretiminden geliyor. Controlled Benchmark uretimi parent satiri sinif hedef merkezlerine yuksek synthetic_strength ile yaklastirdigi icin Glucose, BMI, Age ve DPF sinif ayrimi belirgin artiyor.",
+    "veri_uretimi_etkisi_min_main_metric_delta": 0.15057127940304238,
+    "model_etkisi_strict_data_delta": -0.01814882032667875,
+    "model_etkisi_controlled_benchmark_data_delta": 0.017612524461839474,
+    "threshold_etkisi": {
+      "strict_xgb_no_skin_on_strict2700": {
+        "default_min_main_metric": 0.7731397459165155,
+        "tuned_min_main_metric": 0.7985480943738656,
+        "delta": 0.025408348457350183,
+        "selected_threshold": 0.57
+      },
+      "strict_xgb_no_skin_on_controlled_benchmark_2500": {
+        "default_min_main_metric": 0.9647749510763209,
+        "tuned_min_main_metric": 0.949119373776908,
+        "delta": -0.015655577299412915,
+        "selected_threshold": 0.66
+      },
+      "new_soft_all_on_strict2700": {
+        "default_min_main_metric": 0.7695099818511797,
+        "tuned_min_main_metric": 0.7803992740471869,
+        "delta": 0.010889292196007205,
+        "selected_threshold": 0.54
+      },
+      "new_soft_all_on_controlled_benchmark_2500": {
+        "default_min_main_metric": 0.9667318982387475,
+        "tuned_min_main_metric": 0.9667318982387475,
+        "delta": 0.0,
+        "selected_threshold": 0.52
+      }
+    },
+    "feature_set_etkisi": {
+      "strict_xgb_strict2700_all_vs_no_skin": {
+        "all_features": 0.79491833030853,
+        "no_skinthickness": 0.7985480943738656,
+        "delta_second_minus_first": 0.003629764065335661
+      },
+      "new_soft_controlled_benchmark_2500_all_vs_no_skin": {
+        "all_features": 0.9667318982387475,
+        "no_skinthickness": 0.9530332681017613,
+        "delta_second_minus_first": -0.013698630136986245
+      }
+    },
+    "synthetic_distribution_shift": {
+      "strict2700_avg_abs_z_shift": 0.0843539881803578,
+      "controlled_benchmark_2500_avg_abs_z_shift": 0.556317960769961,
+      "strict2700_mean_abs_cohens_d": 0.8597766896684065,
+      "controlled_benchmark_2500_mean_abs_cohens_d": 2.9503879928080963,
+      "var_mi": true
+    },
+    "rapor_dili": "Yeni skorlar 'ham PIMA genellenebilirliği' olarak değil, source_id aile ayrımı korunmuş fakat sınıf hedef merkezleriyle güçlendirilmiş kontrollü sentetik benchmark sonucu olarak açıklanmalı."
+  }
+}

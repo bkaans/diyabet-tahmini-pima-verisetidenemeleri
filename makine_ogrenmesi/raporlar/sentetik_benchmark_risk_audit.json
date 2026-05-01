@@ -1,14 +1,14 @@
 {
   "created_at_utc": "2026-04-27T12:19:14.377404+00:00",
   "source_files": {
-    "sweep": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/min90_small_scale_sweep_results.json",
-    "selection": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/min90_small_scale_selection_report.json"
+    "sweep": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/benchmark_scale_sweep_results.json",
+    "selection": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/benchmark_scale_sweep_selection_report.json"
   },
   "candidate_rows": [
     {
       "target": 500,
       "candidate": "500/500",
-      "dataset_name": "small_t500_s0p4_low",
+      "dataset_name": "scale_sweep_500_per_class_strength_0p40_low",
       "best_model": "XGB+LGBM+ET Soft Voting",
       "accuracy": 0.92,
       "min_main": 0.91,
@@ -39,7 +39,7 @@
     {
       "target": 650,
       "candidate": "650/650",
-      "dataset_name": "small_t650_s0p5_low",
+      "dataset_name": "scale_sweep_650_per_class_strength_0p50_low",
       "best_model": "XGB+LGBM+ET Soft Voting",
       "accuracy": 0.9198606271777003,
       "min_main": 0.916083916083916,
@@ -70,7 +70,7 @@
     {
       "target": 800,
       "candidate": "800/800",
-      "dataset_name": "small_t800_s0p6_low",
+      "dataset_name": "scale_sweep_800_per_class_strength_0p60_low",
       "best_model": "XGB+LGBM+ET Soft Voting",
       "accuracy": 0.9119496855345912,
       "min_main": 0.9119496855345912,
@@ -101,7 +101,7 @@
     {
       "target": 1000,
       "candidate": "1000/1000",
-      "dataset_name": "small_t1000_s0p6_adaptive",
+      "dataset_name": "scale_sweep_1000_per_class_strength_0p60_adaptive",
       "best_model": "ExtraTrees",
       "accuracy": 0.9415887850467289,
       "min_main": 0.9248826291079812,
@@ -132,7 +132,7 @@
     {
       "target": 1250,
       "candidate": "1250/1250",
-      "dataset_name": "small_t1250_s0p5_low",
+      "dataset_name": "scale_sweep_1250_per_class_strength_0p50_low",
       "best_model": "XGBoost",
       "accuracy": 0.9344894026974951,
       "min_main": 0.9343629343629344,
@@ -163,7 +163,7 @@
     {
       "target": 1500,
       "candidate": "1500/1500",
-      "dataset_name": "small_t1500_s0p6_adaptive",
+      "dataset_name": "scale_sweep_1500_per_class_strength_0p60_adaptive",
       "best_model": "XGB+LGBM+ET Soft Voting",
       "accuracy": 0.9479674796747968,
       "min_main": 0.9478827361563518,
@@ -194,7 +194,7 @@
     {
       "target": 2000,
       "candidate": "2000/2000",
-      "dataset_name": "small_t2000_s0p6_low",
+      "dataset_name": "scale_sweep_2000_per_class_strength_0p60_low",
       "best_model": "LightGBM",
       "accuracy": 0.963855421686747,
       "min_main": 0.9637681159420289,
@@ -225,7 +225,7 @@
     {
       "target": 2250,
       "candidate": "2250/2250",
-      "dataset_name": "small_t2250_s0p6_low",
+      "dataset_name": "scale_sweep_2250_per_class_strength_0p60_low",
       "best_model": "ExtraTrees",
       "accuracy": 0.9675615212527964,
       "min_main": 0.9664429530201343,
@@ -256,7 +256,7 @@
     {
       "target": 2500,
       "candidate": "2500/2500",
-      "dataset_name": "small_t2500_s0p6_low",
+      "dataset_name": "scale_sweep_2500_per_class_strength_0p60_low",
       "best_model": "ExtraTrees",
       "accuracy": 0.9698795180722891,
       "min_main": 0.9678714859437751,
@@ -289,7 +289,7 @@
     {
       "target": 500,
       "candidate": "500/500",
-      "dataset_name": "small_t500_s0p4_low",
+      "dataset_name": "scale_sweep_500_per_class_strength_0p40_low",
       "best_model": "XGB+LGBM+ET Soft Voting",
       "accuracy": 0.92,
       "min_main": 0.91,
@@ -320,7 +320,7 @@
     {
       "target": 650,
       "candidate": "650/650",
-      "dataset_name": "small_t650_s0p5_low",
+      "dataset_name": "scale_sweep_650_per_class_strength_0p50_low",
       "best_model": "XGB+LGBM+ET Soft Voting",
       "accuracy": 0.9198606271777003,
       "min_main": 0.916083916083916,
@@ -351,7 +351,7 @@
     {
       "target": 800,
       "candidate": "800/800",
-      "dataset_name": "small_t800_s0p6_low",
+      "dataset_name": "scale_sweep_800_per_class_strength_0p60_low",
       "best_model": "XGB+LGBM+ET Soft Voting",
       "accuracy": 0.9119496855345912,
       "min_main": 0.9119496855345912,
@@ -382,7 +382,7 @@
     {
       "target": 1000,
       "candidate": "1000/1000",
-      "dataset_name": "small_t1000_s0p6_adaptive",
+      "dataset_name": "scale_sweep_1000_per_class_strength_0p60_adaptive",
       "best_model": "ExtraTrees",
       "accuracy": 0.9415887850467289,
       "min_main": 0.9248826291079812,
@@ -415,7 +415,7 @@
     "selected_candidate": {
       "target": 1000,
       "candidate": "1000/1000",
-      "dataset_name": "small_t1000_s0p6_adaptive",
+      "dataset_name": "scale_sweep_1000_per_class_strength_0p60_adaptive",
       "best_model": "ExtraTrees",
       "accuracy": 0.9415887850467289,
       "min_main": 0.9248826291079812,
@@ -484,7 +484,7 @@
     "candidate_500": {
       "target": 500,
       "candidate": "500/500",
-      "dataset_name": "small_t500_s0p4_low",
+      "dataset_name": "scale_sweep_500_per_class_strength_0p40_low",
       "best_model": "XGB+LGBM+ET Soft Voting",
       "accuracy": 0.92,
       "min_main": 0.91,
@@ -525,10 +525,10 @@
     }
   },
   "graphics": {
-    "gap": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_risk_audit/risk_audit_gap_analizi.png",
-    "candidate_risk": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_risk_audit/risk_audit_aday_karsilastirma.png",
-    "risk_level": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_risk_audit/risk_audit_risk_duzeyleri.png",
-    "candidate_confusion": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_min90_risk_audit/risk_audit_aday_hata_matrisi_heatmap.png"
+    "gap": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_synthetic_risk_audit/risk_audit_gap_analizi.png",
+    "candidate_risk": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_synthetic_risk_audit/risk_audit_aday_karsilastirma.png",
+    "risk_level": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_synthetic_risk_audit/risk_audit_risk_duzeyleri.png",
+    "candidate_confusion": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_synthetic_risk_audit/risk_audit_aday_hata_matrisi_heatmap.png"
   },
   "quality_metric_definitions": {
     "cohens_d": "Outcome=0 ve Outcome=1 siniflari arasindaki ortalama mutlak standartlastirilmis fark. Deger yukseldikce siniflar daha kolay ayrisir.",

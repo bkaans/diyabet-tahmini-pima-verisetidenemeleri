@@ -16,13 +16,13 @@ from docx.shared import Cm, Inches, Pt, RGBColor
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW_CSV = ROOT / "makine_ogrenmesi" / "veri" / "ham" / "diabetes.csv"
-SMALL_DIR = ROOT / "makine_ogrenmesi" / "veri" / "deneysel" / "min90_small_scale"
+SMALL_DIR = ROOT / "makine_ogrenmesi" / "veri" / "deneysel" / "benchmark_scale_sweep"
 REPORT_DIR = ROOT / "makine_ogrenmesi" / "raporlar"
 GRAPH_DIR = REPORT_DIR / "grafikler_pima_korelasyon_deney_dagilim"
 OUT_DOCX = REPORT_DIR / "pima_korelasyon_deney_dagilim_raporu.docx"
 DESKTOP_DOCX = Path("/Users/beratkaanseven/Desktop/PIMA_Korelasyon_Deney_Dagilim_Raporu.docx")
 OUT_JSON = REPORT_DIR / "pima_korelasyon_deney_dagilim_ozeti.json"
-SWEEP_RESULTS_JSON = REPORT_DIR / "min90_small_scale_sweep_results.json"
+SWEEP_RESULTS_JSON = REPORT_DIR / "benchmark_scale_sweep_results.json"
 
 FEATURES = [
     "Pregnancies",
@@ -80,7 +80,7 @@ FEATURE_SET_TR = {
 EXPERIMENTS = [
     {
         "label": "500/500",
-        "dataset_name": "small_t500_s0p4_low",
+        "dataset_name": "scale_sweep_500_per_class_strength_0p40_low",
         "target_per_class": 500,
         "strength": 0.40,
         "noise_profile": "low",
@@ -90,7 +90,7 @@ EXPERIMENTS = [
     },
     {
         "label": "650/650",
-        "dataset_name": "small_t650_s0p5_low",
+        "dataset_name": "scale_sweep_650_per_class_strength_0p50_low",
         "target_per_class": 650,
         "strength": 0.50,
         "noise_profile": "low",
@@ -100,7 +100,7 @@ EXPERIMENTS = [
     },
     {
         "label": "800/800",
-        "dataset_name": "small_t800_s0p6_low",
+        "dataset_name": "scale_sweep_800_per_class_strength_0p60_low",
         "target_per_class": 800,
         "strength": 0.60,
         "noise_profile": "low",
@@ -110,7 +110,7 @@ EXPERIMENTS = [
     },
     {
         "label": "1000/1000",
-        "dataset_name": "small_t1000_s0p6_adaptive",
+        "dataset_name": "scale_sweep_1000_per_class_strength_0p60_adaptive",
         "target_per_class": 1000,
         "strength": 0.60,
         "noise_profile": "adaptive",

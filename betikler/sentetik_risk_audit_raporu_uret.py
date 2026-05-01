@@ -27,9 +27,9 @@ from docx.shared import Inches, Pt, RGBColor
 
 
 RAPOR_DIR = PROJE_KOKU / "makine_ogrenmesi" / "raporlar"
-GRAFIK_DIR = RAPOR_DIR / "grafikler_min90_risk_audit"
-SWEEP_JSON = RAPOR_DIR / "min90_small_scale_sweep_results.json"
-SELECTION_JSON = RAPOR_DIR / "min90_small_scale_selection_report.json"
+GRAFIK_DIR = RAPOR_DIR / "grafikler_synthetic_risk_audit"
+SWEEP_JSON = RAPOR_DIR / "benchmark_scale_sweep_results.json"
+SELECTION_JSON = RAPOR_DIR / "benchmark_scale_sweep_selection_report.json"
 AUDIT_JSON = RAPOR_DIR / "sentetik_benchmark_risk_audit.json"
 DOCX_PATH = RAPOR_DIR / "sentetik_benchmark_risk_audit_raporu.docx"
 DESKTOP_DOCX = Path("/Users/beratkaanseven/Desktop/Sentetik_Benchmark_Risk_Audit_Raporu.docx")
@@ -136,7 +136,7 @@ def _rank_key(row: dict[str, Any]) -> tuple[float, float, float]:
 
 
 def _target_from_dataset(name: str) -> int:
-    # small_t1000_s0p6_adaptive -> 1000
+    # scale_sweep_1000_per_class_strength_0p60_adaptive -> 1000
     return int(name.split("_")[1][1:])
 
 

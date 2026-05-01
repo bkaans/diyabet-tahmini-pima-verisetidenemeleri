@@ -121,7 +121,7 @@
   "experiments": [
     {
       "label": "500/500",
-      "dataset_name": "small_t500_s0p4_low",
+      "dataset_name": "scale_sweep_500_per_class_strength_0p40_low",
       "target_per_class": 500,
       "total_rows": 1000,
       "original_dev_rows": 614,
@@ -395,7 +395,7 @@
     },
     {
       "label": "650/650",
-      "dataset_name": "small_t650_s0p5_low",
+      "dataset_name": "scale_sweep_650_per_class_strength_0p50_low",
       "target_per_class": 650,
       "total_rows": 1300,
       "original_dev_rows": 614,
@@ -669,7 +669,7 @@
     },
     {
       "label": "800/800",
-      "dataset_name": "small_t800_s0p6_low",
+      "dataset_name": "scale_sweep_800_per_class_strength_0p60_low",
       "target_per_class": 800,
       "total_rows": 1600,
       "original_dev_rows": 614,
@@ -943,7 +943,7 @@
     },
     {
       "label": "1000/1000",
-      "dataset_name": "small_t1000_s0p6_adaptive",
+      "dataset_name": "scale_sweep_1000_per_class_strength_0p60_adaptive",
       "target_per_class": 1000,
       "total_rows": 2000,
       "original_dev_rows": 614,
@@ -1223,14 +1223,14 @@
     "synthetic_additions": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/aday_sentetik_eklenen_satirlar.png",
     "model_effects": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/aday_model_etkisi.png",
     "feature_change_summary": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/aday_ozellik_oynama_ozeti.png",
-    "small_t500_s0p4_low_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/small_t500_s0p4_low_korelasyon_matrisi.png",
-    "small_t500_s0p4_low_diff": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/small_t500_s0p4_low_pima_fark_heatmap.png",
-    "small_t650_s0p5_low_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/small_t650_s0p5_low_korelasyon_matrisi.png",
-    "small_t650_s0p5_low_diff": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/small_t650_s0p5_low_pima_fark_heatmap.png",
-    "small_t800_s0p6_low_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/small_t800_s0p6_low_korelasyon_matrisi.png",
-    "small_t800_s0p6_low_diff": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/small_t800_s0p6_low_pima_fark_heatmap.png",
-    "small_t1000_s0p6_adaptive_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/small_t1000_s0p6_adaptive_korelasyon_matrisi.png",
-    "small_t1000_s0p6_adaptive_diff": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/small_t1000_s0p6_adaptive_pima_fark_heatmap.png"
+    "scale_sweep_500_per_class_strength_0p40_low_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_500_per_class_strength_0p40_low_korelasyon_matrisi.png",
+    "scale_sweep_500_per_class_strength_0p40_low_diff": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_500_per_class_strength_0p40_low_pima_fark_heatmap.png",
+    "scale_sweep_650_per_class_strength_0p50_low_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_650_per_class_strength_0p50_low_korelasyon_matrisi.png",
+    "scale_sweep_650_per_class_strength_0p50_low_diff": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_650_per_class_strength_0p50_low_pima_fark_heatmap.png",
+    "scale_sweep_800_per_class_strength_0p60_low_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_800_per_class_strength_0p60_low_korelasyon_matrisi.png",
+    "scale_sweep_800_per_class_strength_0p60_low_diff": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_800_per_class_strength_0p60_low_pima_fark_heatmap.png",
+    "scale_sweep_1000_per_class_strength_0p60_adaptive_corr": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_1000_per_class_strength_0p60_adaptive_korelasyon_matrisi.png",
+    "scale_sweep_1000_per_class_strength_0p60_adaptive_diff": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/scale_sweep_1000_per_class_strength_0p60_adaptive_pima_fark_heatmap.png"
   },
   "word_report": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/pima_korelasyon_deney_dagilim_raporu.docx",
   "desktop_copy": "/Users/beratkaanseven/Desktop/PIMA_Korelasyon_Deney_Dagilim_Raporu.docx"

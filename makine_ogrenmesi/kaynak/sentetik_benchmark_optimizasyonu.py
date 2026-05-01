@@ -1274,7 +1274,7 @@ def _uyumluluk_raporlarini_yaz(
     leakage_json: dict[str, Any],
 ) -> None:
     _json_yaz(klasor / "sentetik_benchmark_leaderboard.json", {"leaderboard": karsilastirma["holdout_leaderboard"]})
-    _json_yaz(klasor / "final_metrik_raporu.json", karsilastirma)
+    _json_yaz(klasor / "selected_model_metrics_report.json", karsilastirma)
     _json_yaz(
         klasor / "feature_ablation_raporu.json",
         {
@@ -1408,7 +1408,7 @@ def _grafik_holdout_cv(grafik_klasoru: Path, rapor: dict[str, Any]) -> Path:
 
 
 def _grafik_confusion_matrix(grafik_klasoru: Path, final_sonuc: dict[str, Any]) -> Path:
-    yol = grafik_klasoru / "final_confusion_matrix.png"
+    yol = grafik_klasoru / "selected_model_confusion_matrix.png"
     cm = np.array(final_sonuc["test_metrikleri"]["confusion_matrix"]["matris"])
     fig, ax = plt.subplots(figsize=(4.2, 3.6))
     im = ax.imshow(cm, cmap="YlGnBu")
@@ -1426,7 +1426,7 @@ def _grafik_confusion_matrix(grafik_klasoru: Path, final_sonuc: dict[str, Any]) 
 
 
 def _grafik_feature_importance(grafik_klasoru: Path, final_sonuc: dict[str, Any]) -> Path:
-    yol = grafik_klasoru / "final_feature_importance.png"
+    yol = grafik_klasoru / "selected_model_feature_importance.png"
     model = final_sonuc["_model"]
     names = FeatureAblationTransformer(tuple(final_sonuc["cikarilan_featurelar"])).feature_names()
     raw_model = model.named_steps["model"] if isinstance(model, Pipeline) else model
@@ -1449,7 +1449,7 @@ def _grafik_feature_importance(grafik_klasoru: Path, final_sonuc: dict[str, Any]
 
 
 def _grafik_calibration(grafik_klasoru: Path, final_sonuc: dict[str, Any]) -> Path:
-    yol = grafik_klasoru / "final_calibration_curve.png"
+    yol = grafik_klasoru / "selected_model_calibration_curve.png"
     y_true = np.asarray(final_sonuc["_test_y"], dtype=int)
     prob = np.asarray(final_sonuc["_test_prob"], dtype=float)
     frac, mean_pred = calibration_curve(y_true, prob, n_bins=8, strategy="quantile")
@@ -1766,7 +1766,7 @@ def _terminal_ozeti_yaz(rapor: dict[str, Any]) -> None:
     leak = next(
         a for a in rapor["source_id_leakage_raporu"]["adaylar"] if a["dataset_name"] == final["veri_adayi"]
     )
-    print("\n=== FINAL SENTETIK BENCHMARK OZETI ===")
+    print("\n=== SELECTED SYNTHETIC BENCHMARK SUMMARY ===")
     print(f"- En iyi savunulabilir aday: {final['veri_adayi']}")
     print(f"- Veri boyutu: {rapor['final_veri']['satir_sayisi']}")
     print(f"- Model: {final['model']}")

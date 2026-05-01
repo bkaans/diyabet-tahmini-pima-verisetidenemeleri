@@ -605,6 +605,6 @@
   "graphics": {
     "quality_scatter": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_conservative_500/conservative_500_quality_scatter.png",
     "score_vs_quality": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_conservative_500/conservative_500_score_quality.png",
-    "final_confusion": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_conservative_500/conservative_500_final_confusion.png"
+    "final_confusion": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/raporlar/grafikler_conservative_500/conservative_500_selected_confusion.png"
   }
 }

@@ -1,6 +1,6 @@
 """500/500 icin daha muhafazakar sentetik benchmark aramasi.
 
-Bu modül mevcut min90 small-scale hattını bozmaz. Amaç 500/500 adayının
+Bu modül mevcut controlled_benchmark small-scale hattını bozmaz. Amaç 500/500 adayının
 mevcut skorlarını koruyarak Cohen's d ve dağılım kaymasını azaltabilecek
 distribution-matched üretim varyantlarını denemektir.
 """
@@ -25,7 +25,7 @@ import numpy as np
 import pandas as pd
 from sklearn.ensemble import ExtraTreesClassifier, RandomForestClassifier, VotingClassifier
 
-from .min90_sentetik_benchmark import (
+from .controlled_synthetic_benchmark import (
     DatasetCandidate,
     ModelSpec,
     _apply_imputer,
@@ -43,7 +43,7 @@ from .min90_sentetik_benchmark import (
     _json_clean,
     _validate_metadata,
 )
-from .min90_small_scale_sweep import (
+from .benchmark_scale_sweep_sweep import (
     _class_separation,
     _distribution_shift,
     _feature_label,
@@ -64,7 +64,7 @@ BASELINE_MIN_MAIN = 0.9100
 BASELINE_CV_MIN_MAIN = 0.8560
 BASELINE_COHENS_D_REPORTED = 0.704
 BASELINE_SHIFT_REPORTED = 0.105
-BASELINE_DATASET = "small_t500_s0p4_low"
+BASELINE_DATASET = "scale_sweep_500_per_class_strength_0p40_low"
 
 
 @dataclass(frozen=True)
@@ -372,7 +372,7 @@ def _mean_match_synthetic(data: pd.DataFrame, metadata: pd.DataFrame, dev: pd.Da
 
 
 def _baseline_quality(original_dev: pd.DataFrame) -> dict[str, Any]:
-    base_path = Path("makine_ogrenmesi/veri/deneysel/min90_small_scale/small_t500_s0p4_low.csv")
+    base_path = Path("makine_ogrenmesi/veri/deneysel/benchmark_scale_sweep/scale_sweep_500_per_class_strength_0p40_low.csv")
     if base_path.exists():
         frame = pd.read_csv(base_path)[OZELLIK_KOLONLARI + [HEDEF_KOLONU]]
         return {
@@ -729,7 +729,7 @@ def _plot_score_vs_quality(grafik_dir: Path, sweep: dict[str, Any], selection: d
 
 
 def _plot_final_confusion(grafik_dir: Path, selection: dict[str, Any]) -> Path:
-    path = grafik_dir / "conservative_500_final_confusion.png"
+    path = grafik_dir / "conservative_500_selected_confusion.png"
     final = selection.get("final")
     if not final:
         fig, ax = plt.subplots(figsize=(4, 3))

@@ -29,8 +29,8 @@ Deneme gruplarının yaklaşık dağılımı:
 | Literatür profilleri | 16 |
 | İlk veri müdahalesi ve sentetik benchmark denemeleri | 100+ |
 | Strict `source_id` 2500/2700/5000 benchmark | 88 |
-| Min90 geniş benchmark | 678 |
-| Small-scale sweep | 1.635 |
+| Kontrollü sentetik benchmark geniş taraması | 678 |
+| Küçük/orta ölçek benchmark taraması | 1.635 |
 | Conservative 500 sweep | 2.420 |
 
 Bu sayıların amacı skoru şişirmek değildir. Amaç, hangi veri boyutu, üretim yaklaşımı, model ailesi, feature seti ve doğrulama protokolünün daha savunulabilir sonuç verdiğini sistematik olarak görmekti.
@@ -116,22 +116,22 @@ Repo yalnız final artifact'ten oluşmaz. Deney akışları kontrol edilebilsin 
 
 - Veri artırmadan benchmark: `betikler/ml_yeniden_kur.py`, `betikler/literatur_deneyleri.py`
 - Veri müdahalesi ve yüksek metrik araması: `betikler/veri_mudahale_deneyleri.py`
-- Source ID kontrollü min90 benchmark: `betikler/min90_sentetik_benchmark.py`
-- Küçük/orta ölçek sweep: `betikler/min90_small_scale_sweep.py`
+- Source ID kontrollü sentetik benchmark: `betikler/controlled_synthetic_benchmark.py`
+- Küçük/orta ölçek sweep: `betikler/benchmark_scale_sweep.py`
 - 500/650/800/1000 korelasyon ve dağılım raporu: `betikler/pima_korelasyon_deney_dagilim_raporu.py`
 - Sentetik risk audit: `betikler/sentetik_risk_audit_raporu_uret.py`
 
 Deneysel veri çıktıları:
 
 - `makine_ogrenmesi/veri/deneysel/`
-- `makine_ogrenmesi/veri/deneysel/min90_small_scale/`
+- `makine_ogrenmesi/veri/deneysel/benchmark_scale_sweep/`
 - `makine_ogrenmesi/veri/deneysel/conservative_500/`
 
 Deney raporları:
 
 - `makine_ogrenmesi/raporlar/`
 - `makine_ogrenmesi/raporlar/degerlendirme/`
-- `makine_ogrenmesi/raporlar/grafikler_min90_small_scale/`
+- `makine_ogrenmesi/raporlar/grafikler_benchmark_scale_sweep/`
 - `makine_ogrenmesi/raporlar/grafikler_pima_korelasyon_deney_dagilim/`
 
 ## Kurulum
@@ -180,11 +180,11 @@ curl -s -X POST http://127.0.0.1:8000/predict \
 ## Önemli Betikler
 
 ```bash
-# Final 1000/1000 artifact üretimi
-python betikler/final_1000_artifact_uret.py
+# Seçili model artifact dışa aktarımı
+python betikler/model_artifact_export.py
 
 # Küçük/orta ölçek benchmark sweep
-python betikler/min90_small_scale_sweep.py --n-jobs 2
+python betikler/benchmark_scale_sweep.py --n-jobs 2
 
 # PIMA korelasyon ve aday dağılım raporu
 python betikler/pima_korelasyon_deney_dagilim_raporu.py
@@ -200,7 +200,7 @@ pytest -q
 
 Öne çıkan raporlar:
 
-- `makine_ogrenmesi/raporlar/min90_small_scale_literatur_stili_rapor.docx`
+- `makine_ogrenmesi/raporlar/benchmark_scale_sweep_literature_style_report.docx`
 - `makine_ogrenmesi/raporlar/pima_korelasyon_deney_dagilim_raporu.docx`
 - `makine_ogrenmesi/raporlar/sentetik_benchmark_risk_audit_raporu.docx`
 - `raporlar/PIMA_Tum_Raporlar/`

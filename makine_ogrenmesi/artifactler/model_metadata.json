@@ -6,10 +6,10 @@
   "python_surumu": "3.13.0",
   "sklearn_surumu": "1.8.0",
   "model_adi": "ExtraTrees",
-  "mod": "final_1000_source_id_kontrollu_sentetik_benchmark",
+  "mod": "selected_source_id_controlled_synthetic_benchmark",
   "final_benchmark_adayi": "1000/1000",
-  "veri_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/min90_small_scale/small_t1000_s0p6_adaptive.csv",
-  "metadata_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/min90_small_scale/small_t1000_s0p6_adaptive_metadata.csv",
+  "veri_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/benchmark_scale_sweep/scale_sweep_1000_per_class_strength_0p60_adaptive.csv",
+  "metadata_yolu": "/Users/beratkaanseven/Desktop/VSCoding/Diyabet_Projesi_ML_Deneme/diyabet_risk_tahmini/makine_ogrenmesi/veri/deneysel/benchmark_scale_sweep/scale_sweep_1000_per_class_strength_0p60_adaptive_metadata.csv",
   "feature_set": "high_signal_features",
   "model_girdi_kolonlari": [
     "Pregnancies",
@@ -96,7 +96,7 @@
   },
   "selection_report_final": {
     "status": "completed",
-    "dataset_name": "small_t1000_s0p6_adaptive",
+    "dataset_name": "scale_sweep_1000_per_class_strength_0p60_adaptive",
     "target_per_class": 1000,
     "model": "extra_trees",
     "feature_set": "all_features",
