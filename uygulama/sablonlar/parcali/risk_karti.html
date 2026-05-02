@@ -7,84 +7,77 @@
   "cok_yuksek": "Yüksek",
   "çok_yüksek": "Yüksek"
 } %}
-{% set oran_yuzde = '%.1f'|format(sonuc.olasilik * 100) %}
-{% set sonuc_renk = {
-  "dusuk": "#16a34a",
-  "cok_dusuk": "#16a34a",
-  "çok_düşük": "#16a34a",
-  "orta": "#dade00",
-  "yuksek": "#dc2626",
-  "cok_yuksek": "#dc2626",
-  "çok_yüksek": "#dc2626"
-} %}
 {% set risk_css_sinifi = {
-  "dusuk": "dusuk",
-  "cok_dusuk": "dusuk",
-  "çok_düşük": "dusuk",
-  "orta": "orta",
-  "yuksek": "yuksek",
-  "cok_yuksek": "yuksek",
-  "çok_yüksek": "yuksek"
-}.get(sonuc.risk_kategorisi, "orta") %}
+  "dusuk": "low",
+  "cok_dusuk": "low",
+  "çok_düşük": "low",
+  "orta": "mid",
+  "yuksek": "high",
+  "cok_yuksek": "high",
+  "çok_yüksek": "high"
+}.get(sonuc.risk_kategorisi, "mid") %}
+{% set oran_yuzde = '%.1f'|format(sonuc.olasilik * 100) %}
 {% set risk_metin_degeri = risk_metin.get(sonuc.risk_kategorisi, "Orta") %}
-{% set risk_renk_degeri = sonuc_renk.get(sonuc.risk_kategorisi, sonuc_renk["orta"]) %}
-{% set ikili_tahmin_metin = "Diyabet Risk Sinyali Var - 1" if sonuc.sinif|int == 1 else "Diyabet Risk Sinyali Yok - 0" %}
+{% set ikili_var = sonuc.sinif|int == 1 %}
+{% set risk_kisa_aciklama = {
+  "low": "Düşük olasılıklı sinyal. Yaşam tarzını koruyun, periyodik kontrolleri ihmal etmeyin.",
+  "mid": "Orta düzey sinyal. Beslenme ve aktivite gözden geçirilmeli, hekim takibi önerilir.",
+  "high": "Yüksek olasılıklı sinyal. Bir sağlık profesyoneline danışmanız önerilir."
+}.get(risk_css_sinifi) %}
 
-<section class="sonuc-ust">
-  <h3>Tahmin Özeti</h3>
-  <span class="risk-rozet risk-{{ risk_css_sinifi }}">{{ risk_metin_degeri }} Risk</span>
-</section>
-
-<section class="ozet-grid">
-  <div class="ozet-sol">
-    <section class="risk-karti">
-      <div class="ozet-kutusu">
-        <p class="etiket ozet-etiket">Risk Yüzdesi</p>
-        <p class="deger">%{{ oran_yuzde }}</p>
+<section class="risk-hero risk-{{ risk_css_sinifi }}">
+  <div class="gauge-wrap">
+    <div class="gauge" style="--p: {{ oran_yuzde }}">
+      <div class="gauge-center">
+        <span class="gauge-pct">%{{ oran_yuzde }}</span>
+        <span class="gauge-cat">{{ risk_metin_degeri }} Risk</span>
       </div>
-      <div class="ozet-kutusu">
-        <p class="etiket ozet-etiket">Risk Seviyesi</p>
-        <p class="deger buyuk">{{ risk_metin_degeri }}</p>
-      </div>
-      <div class="ozet-kutusu">
-        <p class="etiket ozet-etiket">İkili Tahmin</p>
-        <p class="deger buyuk">{{ ikili_tahmin_metin }}</p>
-      </div>
-    </section>
+    </div>
   </div>
 
-  <div class="ozet-sag">
-    <section class="grafik-karti">
-      <div class="pie-blok">
-        <h4>Risk Yüzdesi Grafiği</h4>
-        <div class="pie-grafik"
-          style="--oran-yuzde: {{ oran_yuzde }}%; --sonuc-renk: {{ risk_renk_degeri }};">
-          <div class="pie-merkez">
-            <strong>%{{ oran_yuzde }}</strong>
-            <span>{{ risk_metin_degeri }} risk</span>
-          </div>
-        </div>
-      </div>
+  <div class="risk-summary">
+    <span class="risk-badge">{{ risk_metin_degeri }} Risk Sinyali</span>
+    <h2>
+      {% if ikili_var %}Modelimiz <em>diyabet risk sinyali</em> tespit etti.{% else %}Modelimiz belirgin bir <em>risk sinyali tespit etmedi</em>.{% endif %}
+    </h2>
+    <p class="risk-desc">{{ risk_kisa_aciklama }}</p>
 
-      <div class="cizgi-blok">
-        <h4>Doğrusal Risk Barı</h4>
-        <div class="cizgi-etiketler">
-          <span>Düşük (%0-33)</span>
-          <span>Orta (%33-66)</span>
-          <span>Yüksek (%66-100)</span>
-        </div>
-        <div class="risk-cizgi"
-          style="--oran-yuzde: {{ oran_yuzde }}%; --sonuc-renk: {{ risk_renk_degeri }};">
-          <div class="risk-segment dusuk"></div>
-          <div class="risk-segment orta"></div>
-          <div class="risk-segment yuksek"></div>
-          <div class="risk-dolgu"></div>
-          <div class="risk-gosterge"></div>
-        </div>
-        <p class="cizgi-notu">
-          Gösterge, modelin tahmin ettiği risk olasılığının doğrusal konumunu gösterir.
-        </p>
+    <div class="kpi-row">
+      <div class="kpi">
+        <span class="kpi-lab">Olasılık</span>
+        <span class="kpi-val">%{{ oran_yuzde }}</span>
       </div>
-    </section>
+      <div class="kpi">
+        <span class="kpi-lab">Kategori</span>
+        <span class="kpi-val">{{ risk_metin_degeri }}</span>
+      </div>
+      <div class="kpi">
+        <span class="kpi-lab">İkili Sınıf</span>
+        <span class="kpi-val">{{ "1 / Pozitif" if ikili_var else "0 / Negatif" }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="risk-bar-card">
+  <div class="risk-bar-head">
+    <h3>Risk Skalası</h3>
+    <span class="risk-bar-note">Göstergenin bulunduğu konum kişisel olasılığınızı temsil eder.</span>
+  </div>
+  <div class="risk-bar" style="--p: {{ oran_yuzde }}%;">
+    <div class="risk-bar-track">
+      <span class="seg seg-low"></span>
+      <span class="seg seg-mid"></span>
+      <span class="seg seg-high"></span>
+    </div>
+    <div class="risk-bar-marker risk-{{ risk_css_sinifi }}">
+      <span class="marker-dot"></span>
+      <span class="marker-pct">%{{ oran_yuzde }}</span>
+    </div>
+  </div>
+  <div class="risk-bar-legend">
+    <span class="legend-item"><span class="lg lg-low"></span>Düşük · 0-33</span>
+    <span class="legend-item"><span class="lg lg-mid"></span>Orta · 33-66</span>
+    <span class="legend-item"><span class="lg lg-high"></span>Yüksek · 66-100</span>
   </div>
 </section>

@@ -8,53 +8,65 @@
   "pregnancies": "Gebelik Sayısı",
   "age": "Yaş"
 } %}
-{% set yon_adlari = {"arttirici": "Artırıcı", "azaltici": "Azaltıcı"} %}
 
-<section class="faktor-karti">
-  <div class="faktor-baslik-satir">
-    <h3>En Etkili Faktörler (Top 3)</h3>
-    <details class="tum-faktor-detay">
-      <summary class="tum-faktor-buton">Tüm Faktörleri Gör</summary>
-      <div class="tum-faktor-panel">
-        <h4>Kişiye Özel Faktör Dağılımı</h4>
-        {% if tum_faktorler and tum_faktorler|length > 0 %}
-        <div class="shap-grafik">
-          {% for faktor in tum_faktorler %}
-          {% set shap_deger = faktor.shap_katkisi|float %}
-          {% set oran = (shap_deger|abs / max_mutlak_shap * 100) %}
-          <div class="shap-satir">
-            <span class="shap-ozellik">{{ ozellik_adlari.get(faktor.ozellik, faktor.ozellik) }}</span>
-            <div class="shap-cubuk-zemin">
-              <div class="shap-cubuk {{ 'arttirici' if shap_deger >= 0 else 'azaltici' }}"
-                style="width: {{ '%.1f'|format(oran) }}%;"></div>
-            </div>
-            <span class="shap-deger">{{ '%+.4f'|format(shap_deger) }}</span>
-          </div>
-          {% endfor %}
-        </div>
-        <p class="shap-notu">
-          Pozitif değerler (Kırmızı Barlar) riski artırır, negatif değerler (Yeşil Barlar) riski azaltır.
-        </p>
-        {% else %}
-        <p class="bos-durum">Bu aşamada detay SHAP faktörleri henüz üretilemedi.</p>
-        {% endif %}
-      </div>
-    </details>
-  </div>
+<section class="factor-card">
+  <header class="factor-head">
+    <div>
+      <h3>En Etkili Faktörler</h3>
+      <p class="factor-sub">Bu sonucu en çok şekillendiren ilk 3 değer (SHAP katkısına göre).</p>
+    </div>
+    {% if tum_faktorler and tum_faktorler|length > 0 %}
+    <button type="button" class="factor-toggle-btn" data-toggle="all-factors" aria-expanded="false" aria-controls="all-factors">
+      <span class="ft-text">Tüm Faktörleri Gör</span>
+      <span class="ft-arrow" aria-hidden="true">↓</span>
+    </button>
+    {% endif %}
+  </header>
+
   {% if sonuc.top_faktorler and sonuc.top_faktorler|length > 0 %}
-  <ul class="faktor-listesi">
+  <ol class="top-factors">
     {% for faktor in sonuc.top_faktorler %}
-    <li>
-      <span class="sira-balonu">{{ loop.index }}</span>
-      <div class="faktor-icerik">
-        <strong>{{ ozellik_adlari.get(faktor.ozellik, faktor.ozellik) }}</strong>
-        <span>Değer: {{ faktor.ozellik_degeri }}</span>
-        <span>Katkı: {{ '%.4f'|format(faktor.shap_katkisi) }} ({{ yon_adlari.get(faktor.yon, faktor.yon) }})</span>
+    {% set yon_class = 'inc' if faktor.yon == 'arttirici' else 'dec' %}
+    <li class="top-factor top-{{ yon_class }}">
+      <div class="tf-head">
+        <span class="rank">{{ '%02d'|format(loop.index) }}</span>
+        <strong class="tf-name">{{ ozellik_adlari.get(faktor.ozellik, faktor.ozellik) }}</strong>
       </div>
+      <div class="tf-arrow tf-{{ yon_class }}">
+        {% if yon_class == 'inc' %}<span class="tf-arrow-icon">↑</span> Riski artırıyor{% else %}<span class="tf-arrow-icon">↓</span> Riski azaltıyor{% endif %}
+      </div>
+      <dl class="tf-meta">
+        <div><dt>Değer</dt><dd>{{ faktor.ozellik_degeri }}</dd></div>
+        <div><dt>Katkı</dt><dd>{{ '%+.4f'|format(faktor.shap_katkisi) }}</dd></div>
+      </dl>
     </li>
     {% endfor %}
-  </ul>
+  </ol>
   {% else %}
-  <p class="bos-durum">Bu aşamada faktör açıklamaları henüz eklenmedi.</p>
+  <p class="empty">Bu aşamada faktör açıklamaları üretilemedi.</p>
+  {% endif %}
+
+  {% if tum_faktorler and tum_faktorler|length > 0 %}
+  <div class="all-factors" id="all-factors" hidden>
+    <h4>Kişiye Özel Tüm Faktörler</h4>
+    <div class="shap-list">
+      {% for faktor in tum_faktorler %}
+      {% set shap_deger = faktor.shap_katkisi|float %}
+      {% set oran = (shap_deger|abs / max_mutlak_shap * 100) %}
+      {% set yon_class = 'inc' if shap_deger >= 0 else 'dec' %}
+      <div class="shap-row shap-{{ yon_class }}">
+        <span class="shap-name">{{ ozellik_adlari.get(faktor.ozellik, faktor.ozellik) }}</span>
+        <div class="shap-track">
+          <div class="shap-fill" style="width: {{ '%.1f'|format(oran) }}%;"></div>
+        </div>
+        <span class="shap-val">{{ '%+.4f'|format(shap_deger) }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="shap-note">
+      <span class="legend-item"><span class="lg lg-high"></span>Pozitif değerler riski artırır</span>
+      <span class="legend-item"><span class="lg lg-low"></span>Negatif değerler riski azaltır</span>
+    </div>
+  </div>
   {% endif %}
 </section>

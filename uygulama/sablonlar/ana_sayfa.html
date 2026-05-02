@@ -1,16 +1,100 @@
 {% extends "base.html" %}
 
-{% block title %}Diyabet Risk Tahmini | Ana Sayfa{% endblock %}
+{% block title %}Diyabet Risk Tahmini | Risk Hesaplama{% endblock %}
+{% block body_class %}is-form{% endblock %}
 
 {% block icerik %}
-<section class="kart">
-  <h2>Risk Hesaplama Formu</h2>
-  <p class="kart-aciklama">
-    Aşağıdaki bilgileri girerek tahmini risk olasılığını hesaplayabilirsiniz.
-  </p>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Birkaç dakikada <span class="hero-accent">diyabet risk tahmini</span></h1>
+    <p class="hero-lead">
+      <strong>Sekiz</strong> klinik parametreyi girin. Kalibre edilmiş yapay zeka modelimiz risk olasılığınızı, kategorinizi ve kişiselleştirilmiş etki faktörlerini paylaşsın.
+    </p>
+
+    <div class="vticker-box" aria-label="Öne çıkan özellikler">
+    <div class="vticker">
+      <ul class="vticker-track">
+        <li class="vt-item"><b>Sonucunu sade ve net görürsün</b><em>yüzdesel olasılık + risk kategorisi</em></li>
+        <li class="vt-item"><b>Hangi değerin sonucu nasıl etkilediğini görürsün</b><em>SHAP tabanlı kişisel açıklama</em></li>
+        <li class="vt-item"><b>Aile öyküsü de hesaba katılır</b><em>diabetes pedigree function</em></li>
+        <li class="vt-item"><b>Olasılık güvenilir biçimde ayarlanır</b><em>isotonic kalibrasyon</em></li>
+        <li class="vt-item"><b>Veri sızıntısız öğrenildi</b><em>source_id kontrollü GroupCV</em></li>
+        <li class="vt-item"><b>Sınıflar arası karar dengeli</b><em>min(precision, recall) optimize</em></li>
+        <li class="vt-item"><b>Anlık yanıt verir</b><em>saniye altı tahmin</em></li>
+        <li class="vt-item"><b>Verin saklanmaz</b><em>stateless çağrı</em></li>
+        <!-- duplicate for seamless loop -->
+        <li class="vt-item" aria-hidden="true"><b>Sonucunu sade ve net görürsün</b><em>yüzdesel olasılık + risk kategorisi</em></li>
+        <li class="vt-item" aria-hidden="true"><b>Hangi değerin sonucu nasıl etkilediğini görürsün</b><em>SHAP tabanlı kişisel açıklama</em></li>
+        <li class="vt-item" aria-hidden="true"><b>Aile öyküsü de hesaba katılır</b><em>diabetes pedigree function</em></li>
+        <li class="vt-item" aria-hidden="true"><b>Olasılık güvenilir biçimde ayarlanır</b><em>isotonic kalibrasyon</em></li>
+        <li class="vt-item" aria-hidden="true"><b>Veri sızıntısız öğrenildi</b><em>source_id kontrollü GroupCV</em></li>
+        <li class="vt-item" aria-hidden="true"><b>Sınıflar arası karar dengeli</b><em>min(precision, recall) optimize</em></li>
+        <li class="vt-item" aria-hidden="true"><b>Anlık yanıt verir</b><em>saniye altı tahmin</em></li>
+        <li class="vt-item" aria-hidden="true"><b>Verin saklanmaz</b><em>stateless çağrı</em></li>
+      </ul>
+      <span class="vt-fade vt-fade-top" aria-hidden="true"></span>
+      <span class="vt-fade vt-fade-bot" aria-hidden="true"></span>
+    </div>
+    </div>
+  </div>
+
+  <aside class="hero-stats" aria-label="Model performansı">
+    <header class="stats-title"><span class="stats-dot"></span>Model Performansı</header>
+
+    {% set ticker_rows = [
+      [
+        {"v":"%93.9","l":"Doğruluk"},
+        {"v":"0.986","l":"ROC-AUC"},
+        {"v":"0.939","l":"F1 Skoru"},
+        {"v":"0.879","l":"MCC"}
+      ],
+      [
+        {"v":"0.943","l":"Precision"},
+        {"v":"0.934","l":"Recall"},
+        {"v":"0.944","l":"Specificity"},
+        {"v":"0.939","l":"Bal. Accuracy"}
+      ],
+      [
+        {"v":"0.046","l":"Brier"},
+        {"v":"0.45","l":"Eşik"},
+        {"v":"2000","l":"Eğitim Satırı"},
+        {"v":"8","l":"Klinik Parametre"}
+      ]
+    ] %}
+
+    {% for row in ticker_rows %}
+    <div class="hticker">
+      <ul class="hticker-track">
+        {% for m in row %}
+        <li class="metric"><span class="m-num">{{ m.v }}</span><span class="m-lab">{{ m.l }}</span></li>
+        {% endfor %}
+        {% for m in row %}
+        <li class="metric" aria-hidden="true"><span class="m-num">{{ m.v }}</span><span class="m-lab">{{ m.l }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </aside>
+</section>
+
+<section class="form-card" id="form-bolumu">
+  <header class="card-head">
+    <div>
+      <h2>Risk Hesaplama Formu</h2>
+      <p class="card-sub">Tüm alanları doldurun. Veriler yalnız tahmin için işlenir, kayıt tutulmaz.</p>
+    </div>
+    <div class="step-line" aria-hidden="true">
+      <span class="step active">1<small>Veri Girişi</small></span>
+      <span class="step">2<small>Tahmin</small></span>
+      <span class="step">3<small>Sonuç</small></span>
+    </div>
+  </header>
 
   {% if hata_mesaji %}
-  <div class="uyari hata">{{ hata_mesaji }}</div>
+  <div class="alert alert-error" role="alert">
+    <span class="alert-icon">!</span>
+    <span>{{ hata_mesaji }}</span>
+  </div>
   {% endif %}
 
   {% include "parcali/form.html" %}

@@ -1,70 +1,90 @@
-<form method="post" action="{{ url_for('sonuc_sayfasi') }}" class="risk-formu" id="risk-formu">
-  <div class="alan-grup">
-    <h3>Kişisel Bilgiler</h3>
+<form method="post" action="{{ url_for('sonuc_sayfasi') }}" class="form-grid" id="risk-formu" novalidate>
 
-    <label class="form-alani">
-      <span class="alan-baslik">Yaş (Age) <span class="birim">Yıl</span></span>
+  <fieldset class="field-group">
+    <legend>
+      <span class="leg-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+      </span>
+      Kişisel Bilgiler
+    </legend>
+
+    <label class="field">
+      <span class="field-label">Yaş <em>yıl</em></span>
       <input type="number" name="age" min="18" max="120" step="1" required placeholder="Örn: 32"
         value="{{ form_data.get('age', '') if form_data else '' }}" />
-      <small class="alan-yardim">Geçerli aralık: 18-120</small>
+      <span class="field-hint">18 - 120 arası</span>
     </label>
 
-    <label class="form-alani">
-      <span class="alan-baslik">Gebelik Sayısı (Pregnancies)</span>
+    <label class="field">
+      <span class="field-label">Gebelik Sayısı</span>
       <input type="number" name="pregnancies" min="0" max="20" step="1" required placeholder="Örn: 2"
         value="{{ form_data.get('pregnancies', '') if form_data else '' }}" />
-      <small class="alan-yardim">Geçerli aralık: 0-20</small>
+      <span class="field-hint">Toplam gebelik sayısı</span>
     </label>
 
-    <label class="form-alani">
-      <span class="alan-baslik">Soyağacı Fonksiyonu (DPF)</span>
+    <label class="field">
+      <span class="field-label">Soyağacı Fonksiyonu (DPF)</span>
       <input type="number" name="diabetes_pedigree_function" min="0" max="3" step="0.001" required placeholder="Örn: 0.627"
         value="{{ form_data.get('diabetes_pedigree_function', '') if form_data else '' }}" />
-      <small class="alan-yardim">Geçerli aralık: 0-3</small>
+      <span class="field-hint">Ailesel diyabet katsayısı (0 - 3)</span>
     </label>
-  </div>
+  </fieldset>
 
-  <div class="alan-grup">
-    <h3>Klinik Ölçümler</h3>
+  <fieldset class="field-group">
+    <legend>
+      <span class="leg-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+      </span>
+      Klinik Ölçümler
+    </legend>
 
-    <label class="form-alani">
-      <span class="alan-baslik">Glikoz (Glucose) <span class="birim">mg/dL</span></span>
+    <label class="field">
+      <span class="field-label">Glikoz <em>mg/dL</em></span>
       <input type="number" name="glucose" min="0" max="300" step="0.1" required placeholder="Örn: 120"
         value="{{ form_data.get('glucose', '') if form_data else '' }}" />
-      <small class="alan-yardim">Geçerli aralık: 0-300</small>
+      <span class="field-hint">Plazma glikoz konsantrasyonu</span>
     </label>
 
-    <label class="form-alani">
-      <span class="alan-baslik">Kan Basıncı (Blood Pressure) <span class="birim">mmHg</span></span>
+    <label class="field">
+      <span class="field-label">Kan Basıncı <em>mmHg</em></span>
       <input type="number" name="blood_pressure" min="0" max="200" step="0.1" required placeholder="Örn: 72"
         value="{{ form_data.get('blood_pressure', '') if form_data else '' }}" />
-      <small class="alan-yardim">Geçerli aralık: 0-200</small>
+      <span class="field-hint">Diastolik kan basıncı</span>
     </label>
 
-    <label class="form-alani">
-      <span class="alan-baslik">Cilt Kalınlığı (Skin Thickness) <span class="birim">mm</span></span>
+    <label class="field">
+      <span class="field-label">Cilt Kalınlığı <em>mm</em></span>
       <input type="number" name="skin_thickness" min="0" max="120" step="0.1" required placeholder="Örn: 35"
         value="{{ form_data.get('skin_thickness', '') if form_data else '' }}" />
-      <small class="alan-yardim">Geçerli aralık: 0-120</small>
+      <span class="field-hint">Triceps deri kıvrım kalınlığı</span>
     </label>
 
-    <label class="form-alani">
-      <span class="alan-baslik">İnsülin (Insulin) <span class="birim">µU/mL</span></span>
+    <label class="field">
+      <span class="field-label">İnsülin <em>µU/mL</em></span>
       <input type="number" name="insulin" min="0" max="1000" step="0.1" required placeholder="Örn: 79"
         value="{{ form_data.get('insulin', '') if form_data else '' }}" />
-      <small class="alan-yardim">Geçerli aralık: 0-1000</small>
+      <span class="field-hint">2 saatlik serum insülin</span>
     </label>
 
-    <label class="form-alani">
-      <span class="alan-baslik">Vücut Kitle İndeksi (BMI) <span class="birim">kg/m²</span></span>
+    <label class="field">
+      <span class="field-label">Vücut Kitle İndeksi <em>kg/m²</em></span>
       <input type="number" name="bmi" min="0" max="80" step="0.1" required placeholder="Örn: 33.6"
         value="{{ form_data.get('bmi', '') if form_data else '' }}" />
-      <small class="alan-yardim">Geçerli aralık: 0-80</small>
+      <span class="field-hint">BMI = kilo / boy²</span>
     </label>
-  </div>
+  </fieldset>
 
-  <div class="buton-alani">
-    <button type="reset" class="buton ikincil">Tümünü Temizle</button>
-    <button type="submit" class="buton">Tahmini Hesapla</button>
+  <div class="form-foot">
+    <div class="progress" aria-hidden="true">
+      <div class="progress-bar" id="form-progress"></div>
+      <span class="progress-text"><span id="form-progress-count">0</span>/8 alan dolduruldu</span>
+    </div>
+    <div class="form-actions">
+      <button type="reset" class="btn btn-ghost">Temizle</button>
+      <button type="submit" class="btn btn-primary">
+        <span>Riski Hesapla</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </button>
+    </div>
   </div>
 </form>

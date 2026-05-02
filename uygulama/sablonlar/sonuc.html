@@ -1,25 +1,46 @@
 {% extends "base.html" %}
 
 {% block title %}Diyabet Risk Tahmini | Sonuç{% endblock %}
+{% block body_class %}is-result{% endblock %}
 
 {% block icerik %}
-<section class="kart">
-  <h2>Tahmin Sonucu</h2>
-  <p class="kart-aciklama">Hesaplanan risk değerleri aşağıdaki gibidir.</p>
+<section class="result-shell">
+  <header class="result-head">
+    <div>
+      <span class="eyebrow">Tahmin Tamamlandı</span>
+      <h1>Kişisel Risk Raporunuz</h1>
+      <p class="result-lead">Aşağıdaki değerler kalibre edilmiş model çıktılarıdır. Klinik tanı yerine geçmez.</p>
+    </div>
+    <div class="step-line step-line-done" aria-hidden="true">
+      <span class="step done">1<small>Veri</small></span>
+      <span class="step done">2<small>Tahmin</small></span>
+      <span class="step active">3<small>Sonuç</small></span>
+    </div>
+  </header>
 
   {% include "parcali/risk_karti.html" %}
   {% include "parcali/faktor_listesi.html" %}
 
-  <div class="aciklama-karti">
-    <h3>Kısa Açıklama</h3>
-    <p>{{ sonuc.kisa_aciklama }}</p>
+  <section class="explain-card">
+    <div class="explain-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+    </div>
+    <div>
+      <h3>Modelin Yorumu</h3>
+      <p>{{ sonuc.kisa_aciklama }}</p>
+    </div>
+  </section>
+
+  <div class="alert alert-info" role="note">
+    <span class="alert-icon">i</span>
+    <span><strong>Etik / Klinik Uyarı:</strong> Bu sonuç tanı amaçlı kullanılamaz. Kesin değerlendirme için bir sağlık profesyoneline başvurunuz.</span>
   </div>
 
-  <div class="uyari bilgi">
-    Etik/Klinik Uyarı: Bu sonuç tanı amaçlı kullanılmaz. Klinik değerlendirme için sağlık
-    profesyoneline başvurunuz.
+  <div class="result-actions">
+    <a class="btn btn-primary" href="{{ url_for('ana_sayfa') }}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      <span>Yeni Hesaplama</span>
+    </a>
   </div>
-
-  <a class="buton ikincil" href="{{ url_for('ana_sayfa') }}">Yeni Hesaplama</a>
 </section>
 {% endblock %}
