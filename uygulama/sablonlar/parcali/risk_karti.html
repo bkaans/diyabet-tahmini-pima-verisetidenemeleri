@@ -80,4 +80,48 @@
     <span class="legend-item"><span class="lg lg-mid"></span>Orta · 33-66</span>
     <span class="legend-item"><span class="lg lg-high"></span>Yüksek · 66-100</span>
   </div>
+
+  <div class="risk-example-table" aria-label="Örnek risk profilleri">
+    <div class="risk-example-head">
+      <h4>Deney Ölçeği Örnekleri</h4>
+      <span>Model çıktısı</span>
+    </div>
+    <div class="risk-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Profil</th>
+            <th>Girdi</th>
+            <th>Risk</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Düşük Risk</strong>
+              <span>Genç, normal kilo, normal glikoz</span>
+            </td>
+            <td><code>pregnancies: 0, glucose: 92, blood_pressure: 68, skin_thickness: 20, insulin: 80, bmi: 22.5, dpf: 0.180, age: 25</code></td>
+            <td><strong>%0.0</strong><span>Düşük</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Orta Risk</strong>
+              <span>Orta yaş, hafif yüksek glikoz, hafif obez</span>
+            </td>
+            <td><code>pregnancies: 3, glucose: 128, blood_pressure: 78, skin_thickness: 30, insulin: 140, bmi: 31.0, dpf: 0.480, age: 42</code></td>
+            <td><strong>%59.1</strong><span>Orta</span></td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Yüksek Risk</strong>
+              <span>İleri yaş, yüksek glikoz, obez, güçlü aile öyküsü</span>
+            </td>
+            <td><code>pregnancies: 4, glucose: 140, blood_pressure: 82, skin_thickness: 34, insulin: 160, bmi: 33.0, dpf: 0.550, age: 46</code></td>
+            <td><strong>%97.3</strong><span>Yüksek</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </section>

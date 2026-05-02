@@ -41,7 +41,7 @@ API üzerinde doğrulanmış, gerçek hayata uygun üç örnek profil. Her satı
 
 | Profil | JSON | Olasılık | Kategori |
 | --- | --- | ---: | --- |
-| Düşük risk (genç, normal kilo, normal glikoz) | `{"pregnancies":0,"glucose":92,"blood_pressure":68,"skin_thickness":20,"insulin":0,"bmi":22.5,"diabetes_pedigree_function":0.180,"age":25}` | %0.5 | Düşük |
+| Düşük risk (genç, normal kilo, normal glikoz) | `{"pregnancies":0,"glucose":92,"blood_pressure":68,"skin_thickness":20,"insulin":80,"bmi":22.5,"diabetes_pedigree_function":0.180,"age":25}` | %0.0 | Düşük |
 | Orta risk (orta yaş, hafif yüksek glikoz, hafif obez) | `{"pregnancies":3,"glucose":128,"blood_pressure":78,"skin_thickness":30,"insulin":140,"bmi":31.0,"diabetes_pedigree_function":0.480,"age":42}` | %59 | Orta |
 | Yüksek risk (ileri yaş, yüksek glikoz, obez, güçlü aile öyküsü) | `{"pregnancies":4,"glucose":140,"blood_pressure":82,"skin_thickness":34,"insulin":160,"bmi":33.0,"diabetes_pedigree_function":0.550,"age":46}` | %97 | Yüksek |
 
