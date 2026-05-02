@@ -37,8 +37,7 @@ Bu sayıların amacı skoru şişirmek değildir. Amaç, hangi veri boyutu, üre
 
 ## Risk Seviyelerine Örnek Girdiler
 
-API üzerinde doğrulanmış üç örnek profil aşağıdadır. Her örnek `/predict` endpointine gönderilebilecek tam JSON gövdesidir. Düşük risk örneği özellikle `%5` altına düşmeyecek şekilde yeniden denenmiştir.
-
+API üzerinde doğrulanmış üç örnek profil aşağıdadır. Her örnek `/predict` endpointine gönderilebilecek tam JSON gövdesidir.
 **Düşük risk**  
 Normal BMI, sınırda glikoz ve anlamlı insülin değeri. Model çıktısı: `%7.7`, kategori: `Düşük`.
 
