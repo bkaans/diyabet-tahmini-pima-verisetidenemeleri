@@ -37,7 +37,7 @@ Bu sayıların amacı skoru şişirmek değildir. Amaç, hangi veri boyutu, üre
 
 ## Risk Seviyelerine Örnek Girdiler
 
-API üzerinde doğrulanmış üç örnek profil. Her satır `/predict` endpointine gönderilebilecek tam JSON gövdesini içerir. Düşük risk örneği özellikle `%5` altına düşmeyecek şekilde yeniden denenmiştir.
+API üzerinde doğrulanmış üç örnek profil. Her satır `/predict` endpointine gönderilebilecek tam JSON gövdesini içerir.
 
 | Profil | JSON | Olasılık | Kategori |
 | --- | --- | ---: | --- |
